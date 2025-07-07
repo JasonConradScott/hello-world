@@ -34,7 +34,7 @@ CONTENTS
 7.0 TECHNICAL INFORMATION REQUIRED FOR DUAL CONVERSION RECEIVER. 
 ) 
 Appendix I Derivation of Spurious Receiver Response Frequencies 
-'•-:.-1" 
+'â€¢-:.-1" 
 96 09 20 Network Standard 
 1.0 INTRODUCTION 
 The intent of this report is to provide a presentation on the general principles used in computing 
@@ -43,7 +43,7 @@ documentation. This supplements the CTX instructions contained in the TSIP Refer
 The CTXDOATD computer program available for use in the MICS computer system is to be used as the basic tool in computation of the interference objectives. 
 
 2.0 PROBLEM STATEMENT 
-To characterize a victim dataset for a radio receiver, three of the parameters that the CTX program requires are the receiver's Intermediate Frequency (IF), RF filter response at ± IF away from the carrier or Specific IF Response Factor, and RF filter response at ± 2 · IF away from the carrier or Specific 2 · IF Response Factor. These Specific Response Factors can be extracted from Threshold/ Continuous Wave Interference Curve, or Susceptibility to Continuous Wave Interference Curve. 
+To characterize a victim dataset for a radio receiver, three of the parameters that the CTX program requires are the receiver's Intermediate Frequency (IF), RF filter response at Â± IF away from the carrier or Specific IF Response Factor, and RF filter response at Â± 2 Â· IF away from the carrier or Specific 2 Â· IF Response Factor. These Specific Response Factors can be extracted from Threshold/ Continuous Wave Interference Curve, or Susceptibility to Continuous Wave Interference Curve. 
 As the name implies, dual conversion receiver has two intermediate frequency stages in cascade and this makes the coding of victim file more complicated ie. which IF to consider? 
 
 3.0 REVIEW OF VICTIM DATASET PARAMETERS 
@@ -67,7 +67,7 @@ AI70 -RF filter response (dB) at carrier frequency shifted by the IF frequency X
 which can be found from the RF filter curve (Note 2) 
 AIJ40 -RF filter response (dB) at carrier frequency shifted by twice the intermediate frequency 2XIF which can be found using the RF filter attenuation curve (Note 2) 
 THDCRIT -Threshold Degradation due to Interference of which a value of either I dB or 3dB is assumed. Refer to the CTX Instructional Report for more detail 
-(fi,ai) -where i=l,2, ...24 are the Frequency Versus Frequency Response Data Point Pairs · and are obtained from susceptibility to continuous wave interference curves. Zeros may be used for null data to complete the dataset 
+(fi,ai) -where i=l,2, ...24 are the Frequency Versus Frequency Response Data Point Pairs Â· and are obtained from susceptibility to continuous wave interference curves. Zeros may be used for null data to complete the dataset 
 Note 1: If a user chooses a default selectivity, the program \viii still look for the first two lines in the dataset. The digital victim dataset name is limited to 6 alphanumeric characters. Also, the selectivity data at frequencies above those provided by the supplier must be truncated to 110 dB starting 0.1 MHz above the highest frequency given in the specifications to a frequency of 400 MHz. 
 Note 2: The program uses AI70 and AI140 as default values to approximate the IF and Image response of the radio. It is preferred to use the SPECIFIC IF RESPONSE FACTOR and the SPECIFIC IMAGE RESPONSE FACTOR derived from the T/I or C/I curves. It is important to note that AI70 and AI140 are by definition not the same as the Specific IF 
 Q 
@@ -84,7 +84,7 @@ LO> LO,
 
 IF 
 
-IF• 
+IFâ€¢ 
 MIXER 
 
 AMPLIFIER 
@@ -92,7 +92,7 @@ AMPLIFIER
 Figure 1 This figure shows a simplified block diagram of a typical dual conversion receiver. 
 Toe responses of concern are the image, and IF. These all are sensitive to receiver filter characteristics and are descripted in the following sections. 
 4.1 Image Response 
-Image response is the receiver's response to a mixing phenomenon where an interference frequency is mixed with the local oscillator (LO) to produce an interference spectrum similar to the intermediate frequency at the intermediate frequency (IF) stage. For receivers with a single IF stage, the interference frequency is F, ± 2 IF (where F, denotes the victim receive RF frequency), and the image response is limited by the RF filter selectivity at that frequency. On the other hand, image response for dual conversion receivers is more complex due to the additional IF stage. 
+Image response is the receiver's response to a mixing phenomenon where an interference frequency is mixed with the local oscillator (LO) to produce an interference spectrum similar to the intermediate frequency at the intermediate frequency (IF) stage. For receivers with a single IF stage, the interference frequency is F, Â± 2 IF (where F, denotes the victim receive RF frequency), and the image response is limited by the RF filter selectivity at that frequency. On the other hand, image response for dual conversion receivers is more complex due to the additional IF stage. 
 96 09 20 Network Standard 
 According to Case Studies I through 4 in Appendix I, the frequencies that can produce an interference 
 Q 
@@ -107,8 +107,8 @@ v)  F, -(IF1 -IF,)  F, + (IF1 -IF,)
 Table 1 Possible image response frequencies for dual conversion receiver. 
 where IF1 is the first intermediate frequency, L01 is the first local oscillator frequency, and L02 is the second local oscillator frequency. 
 i) When mixed with LO 1, an interference spectrum similar to IF 1 at the IF, stage is produced. The receiver response at this frequency is dependent on the RF filter response. 
-ii) and iii) When mixed with L01, an interference spectrum at the IF1 stage is produced, which can be down converted by L02• The second order product is an interference spectrum similar to IF2, thus interfering with IF2•.The receiver response at this frequency is dependent on the combined response ofthe RF filter, and the first IF filter. 
-iv) and v) When mixed with L01, an interference spectrum similar to IF2 at the IF1 stage is produced, which can be down converted by L02• The fundamental product is an interference spectrum similar to IF2 at the IF2 stage. The receiver response at this frequency is dependent on the combined response of the RF filter, the first IF filter, and the second mixer efficiency. 
+ii) and iii) When mixed with L01, an interference spectrum at the IF1 stage is produced, which can be down converted by L02â€¢ The second order product is an interference spectrum similar to IF2, thus interfering with IF2â€¢.The receiver response at this frequency is dependent on the combined response ofthe RF filter, and the first IF filter. 
+iv) and v) When mixed with L01, an interference spectrum similar to IF2 at the IF1 stage is produced, which can be down converted by L02â€¢ The fundamental product is an interference spectrum similar to IF2 at the IF2 stage. The receiver response at this frequency is dependent on the combined response of the RF filter, the first IF filter, and the second mixer efficiency. 
 96 09 20 Network Standard 
 Example 1 
 Radio: Manufacturer: 
@@ -122,8 +122,8 @@ Receiver #1
 156.4  
 21.4  
 
-Possible Frequencies (MHz): i) Fc±21F1 ii) Fc±21F2 iii) Fc±2L02 
-iv) F, ± (IF1 + IF2) v) F, ± (IF1 -IF2)
+Possible Frequencies (MHz): i) FcÂ±21F1 ii) FcÂ±21F2 iii) FcÂ±2L02 
+iv) F, Â± (IF1 + IF2) v) F, Â± (IF1 -IF2)
 ) 
 
 F, -270 = 10347.5 F, + 42.8 = 10660.3 F, -312.8 = 10304.7 F,-156.4=10461.1 F,-113.6=10503.9 
@@ -136,33 +136,33 @@ iv) and v) When mixed with L01, a 21.4 MHz interference spectrum is produced at 
 4.2 IF Response 
 IF spurious response is the receiver's response to a second order distortion product that can create an interference spectrum at IF frequency, with a bandwidth equal to the sum of the interferer and victim bandwidths (ie. convolution of the interferer and victim PSD). The generated second order energy depends mainly on the receiverfront end design and will be controlled if the energy at 'IF' response frequency can be maintained IO -20 dB below the receiver overload point as measured at the receiver RF input port. 
 96 09 20 Network Standard 
-In the case of receivers with a single IF stage, the IF response depends on the sum of the RF filter response at F, ± IF, and 20 dB. For dual conversion receivers, there are frequencies other than F, ± IF that can produce an interference spectrum at the IF frequencies due to the additional IF stage. According to Case Studies I through 4 in Appendix I, the possible frequencies which can interfere with the IF frequencies are as follow: 
+In the case of receivers with a single IF stage, the IF response depends on the sum of the RF filter response at F, Â± IF, and 20 dB. For dual conversion receivers, there are frequencies other than F, Â± IF that can produce an interference spectrum at the IF frequencies due to the additional IF stage. According to Case Studies I through 4 in Appendix I, the possible frequencies which can interfere with the IF frequencies are as follow: 
 LO1 < Fe and LO2 > IF 1  I L01 < Fe and L02 < IF1  I L01 > Fe and Lo2 > IF1  I L01 > Fe and L02 < IF1  
-vi)  Fe± IF1  
-vii)  Fe± IF2  
-viii)  F, ±(LO,+ IF,)  I  F,± (LO,-IF2)  I  F, ±(LO,+ IF2)  I  F, ± (LO, -IF2)  
+vi)  FeÂ± IF1  
+vii)  FeÂ± IF2  
+viii)  F, Â±(LO,+ IF,)  I  F,Â± (LO,-IF2)  I  F, Â±(LO,+ IF2)  I  F, Â± (LO, -IF2)  
 
 Table 3Possible IF response frequencies for dual conversion receiver. 
-vi) Both F, and F, ± IF1 get into the first mixer. A second order distortion product similar to IF1 is generated at the IF1 stage, thus interfering with IF1• The receiver response at this frequency is dependent on the combined response ofthe RF filter and first mixer efficiency. 
-vii) Both F, and F, ± IF2 get into the first mixer. A second order distortion product similar to IF2 is generated at the IF 1 stage. Again, it is mixed with L02 and produces a fundamental product similar to IF2, thus interfering with IF2• The receiver response at this frequency is dependent on the combined response ofthe RF filter, first IF filter, and first and second mixer efficiencies. 
-viii) Either F, ± (L02 + IF2) or F, ± (L02 -IF2), and Fe get into the first mixer. A second order distortion product either (L02 + IF2) or (L02 -IF2) respectively is generated at the IF1 stage. Again, it is mixed with L02 and produces a second order product similar to IF2, thus interfering with IF2• The receiver response at this frequency is dependent on the combined response ofthe RF filter, first IF filter, and first mixer efficiency. 
+vi) Both F, and F, Â± IF1 get into the first mixer. A second order distortion product similar to IF1 is generated at the IF1 stage, thus interfering with IF1â€¢ The receiver response at this frequency is dependent on the combined response ofthe RF filter and first mixer efficiency. 
+vii) Both F, and F, Â± IF2 get into the first mixer. A second order distortion product similar to IF2 is generated at the IF 1 stage. Again, it is mixed with L02 and produces a fundamental product similar to IF2, thus interfering with IF2â€¢ The receiver response at this frequency is dependent on the combined response ofthe RF filter, first IF filter, and first and second mixer efficiencies. 
+viii) Either F, Â± (L02 + IF2) or F, Â± (L02 -IF2), and Fe get into the first mixer. A second order distortion product either (L02 + IF2) or (L02 -IF2) respectively is generated at the IF1 stage. Again, it is mixed with L02 and produces a second order product similar to IF2, thus interfering with IF2â€¢ The receiver response at this frequency is dependent on the combined response ofthe RF filter, first IF filter, and first mixer efficiency. 
 96 09 20 Network Standard 
 Example 2 
-Radio: Manufacturer: Transmit Frequency (MHz): Receive Frequency (MHz): First LO Frequency (LO,. MHz): First IF Frequency (IF,. MHz): Second LO Frequency (LO,, MHz): Second IF Frequency (IF,, MHz): IF Response Possible Frequencies (MHz): vi) Fe± IF1 vii) Fe± IF2 viii) F, ±(LO,+ IF,), for LO,> IF1 or F, ± (LO,-IF,), for LO,< IF1  10552.5 10617.5 10482.5 F,±135 F,±21.4 F,-1TT.8  Receiver#2 135 156.4 21.4  10617.5 10552.5 10687.5 Fc±135 F,±21.4 F, + 177.8  
+Radio: Manufacturer: Transmit Frequency (MHz): Receive Frequency (MHz): First LO Frequency (LO,. MHz): First IF Frequency (IF,. MHz): Second LO Frequency (LO,, MHz): Second IF Frequency (IF,, MHz): IF Response Possible Frequencies (MHz): vi) FeÂ± IF1 vii) FeÂ± IF2 viii) F, Â±(LO,+ IF,), for LO,> IF1 or F, Â± (LO,-IF,), for LO,< IF1  10552.5 10617.5 10482.5 F,Â±135 F,Â±21.4 F,-1TT.8  Receiver#2 135 156.4 21.4  10617.5 10552.5 10687.5 FcÂ±135 F,Â±21.4 F, + 177.8  
 
 Table 4Poss1ble IF response frequencies for Rece1ver#2. 
 ) vi) A 135 MHz second order distortion product at IF1 interferes with IF,. The receiver response at this frequency is dependent on the combined response of the RF filter, and the first mixer efficiency. 
-vii) A 21.4 MHz second order distortion product at IF1• The fundamental product with LO2 is 21.4 MHz at IF2 stage (same as the IF2 frequency), thus interfering with IF2. The receiver response at this frequency is dependent on the combined response of the RF filter, first IF filter, and first and second mixer efficiencies. 
-viii) A 177.8 MHz second order distortion product at IF1• The second order product with LO2 is 21.4 MHz at IF2 stage (same as the IF2 frequency), thus interfering with IF2• The receiver response at this frequency is dependent on the combined response of the RF filter, first mixer efficiency, and first IF filter. 
+vii) A 21.4 MHz second order distortion product at IF1â€¢ The fundamental product with LO2 is 21.4 MHz at IF2 stage (same as the IF2 frequency), thus interfering with IF2. The receiver response at this frequency is dependent on the combined response of the RF filter, first IF filter, and first and second mixer efficiencies. 
+viii) A 177.8 MHz second order distortion product at IF1â€¢ The second order product with LO2 is 21.4 MHz at IF2 stage (same as the IF2 frequency), thus interfering with IF2â€¢ The receiver response at this frequency is dependent on the combined response of the RF filter, first mixer efficiency, and first IF filter. 
 5.0 CTXDOATD CTX DATASET GENERATION PROGRAM 
-In the CTX model, the image response is accounted for by replicating a double-sided version of the main CTX objective shifted in frequency by 2 IF and by increasing the interference objective by an amount equal to the RF filter response (attenuation) at frequency F, ± 2 IF. A comparison is then made between the main interference objective and the replicated objective over the frequency range 2 IF± IF/2. 
+In the CTX model, the image response is accounted for by replicating a double-sided version of the main CTX objective shifted in frequency by 2 IF and by increasing the interference objective by an amount equal to the RF filter response (attenuation) at frequency F, Â± 2 IF. A comparison is then made between the main interference objective and the replicated objective over the frequency range 2 IFÂ± IF/2. 
 J 
 Network Standard 
 96 09 20 
 The IF response is accounted for by replicating the main co-channel objective shifted in frequency by IF 
-Q from the centre frequency and by increasing the interference objective by an amount equal to the sum of 20 dB plus the RF filter response (attenuation) at the frequency shifted by F, ± IF. A comparison is rriade between the main co-channel objective and the replicated response over the frequency range IF ± IF/2. The worst objective is selected. 
-In the victim file, it is prefered to use the Specific IF Response Factor and the Specific Image Response Factor derived from the T/I or C/I curves. In the program, the Specific IF Response Factor is assumed to be 20 dB higher than the RF filter attenuation at F, ± IF, therefore the Specific IF Response Factor can be input into the victim file after reducing it by 20 dB. 
-For more indepth explanation on the CTX model, refer to the CTX instructions in the TSIP Reference Manual. · 
+Q from the centre frequency and by increasing the interference objective by an amount equal to the sum of 20 dB plus the RF filter response (attenuation) at the frequency shifted by F, Â± IF. A comparison is rriade between the main co-channel objective and the replicated response over the frequency range IF Â± IF/2. The worst objective is selected. 
+In the victim file, it is prefered to use the Specific IF Response Factor and the Specific Image Response Factor derived from the T/I or C/I curves. In the program, the Specific IF Response Factor is assumed to be 20 dB higher than the RF filter attenuation at F, Â± IF, therefore the Specific IF Response Factor can be input into the victim file after reducing it by 20 dB. 
+For more indepth explanation on the CTX model, refer to the CTX instructions in the TSIP Reference Manual. Â· 
 6.0 DATASETS FOR DUAL CONVERSION DIGITAL RADIO RECEIVER 
 In the CTX model image and IF responses are based on the replicated main co-channel response shifted by the corresponding frequencies and attenuated to the corresponding level. Therefore, the calculations for image response and IF response are the same except for the shift in frequency and the level of attenuation. In these calculations, the image and IF responses are derived by comparing the main objective with the replicated objective and selecting the worst objective. 
 The separations amongst the possible receiver spurious response frequencies are relatively large when 
@@ -171,9 +171,9 @@ compared to the channel bandwidth, therefore the responses at these frequencies 
 6.1 Interferer Dataset 
 The following interferer dataset is created using Equipment #I power spectral density (PSD) shown in Figure 2. 
 Interferer Dataset 
-INTERFERER: Equipment # 1 · 0,0.2,0.4,0.6,0.8,l,l.2,l.4,1.6,1.8,2.2,2.6/ 26,26.6,26.9,27. 7,28.8,30.4,32. 7,3 8.2,58 .8,57. 7,66, 76/ 2.8,3.4,4.4,4.8,5,5.2,5.8,6.8,7.6,7.8,8.2,9.2/ 80 .4,86,87 .1,88.2,87. 7,88.2,86,88.2,86.6,86.6,88.2,87. I/ 9 .4, I0, I 0.1,400,0,0,0,0,0,0,.0,0/ 88.2,88.2, 150, 150,0,0,0,0,0,0,0,0/ CREATED: 94 09 21: RCTL PC 
+INTERFERER: Equipment # 1 Â· 0,0.2,0.4,0.6,0.8,l,l.2,l.4,1.6,1.8,2.2,2.6/ 26,26.6,26.9,27. 7,28.8,30.4,32. 7,3 8.2,58 .8,57. 7,66, 76/ 2.8,3.4,4.4,4.8,5,5.2,5.8,6.8,7.6,7.8,8.2,9.2/ 80 .4,86,87 .1,88.2,87. 7,88.2,86,88.2,86.6,86.6,88.2,87. I/ 9 .4, I0, I 0.1,400,0,0,0,0,0,0,.0,0/ 88.2,88.2, 150, 150,0,0,0,0,0,0,0,0/ CREATED: 94 09 21: RCTL PC 
 96 09 20 Network Standard 
-CIR 10.5685 6H1 SPAN 2 >Ill/ 11:S BK 4kllz VF.01 lf1 -7 dBi 10 IIB/ AJTEJj 20 dB SllP .wm • 1a2 Ml/S 49 Cffl /' \ I ' I \UlfllilI I ~­\ \ FCC'...u J \,.' f , I 9.? MtlrAFChanial  
+CIR 10.5685 6H1 SPAN 2 >Ill/ 11:S BK 4kllz VF.01 lf1 -7 dBi 10 IIB/ AJTEJj 20 dB SllP .wm â€¢ 1a2 Ml/S 49 Cffl /' \ I ' I \UlfllilI I ~Â­\ \ FCC'...u J \,.' f , I 9.? MtlrAFChanial  
 
 -26 -36 i-46 0. 
 g,
@@ -201,7 +201,7 @@ T/1 vs Frequency Offset (CW signal)
 0 
 -10 -20 -30 
 -40 
-=•~--­
+=â€¢~--Â­
 -60 
 -70 
 Frequency Offset (MHz) 
@@ -222,17 +222,17 @@ Radio:
 Frequency (MHz, Spurious Response) 
 
 Image Response 
-i) Fc±2IF1=Fc±270 
-ii) Fe± 21F2 =Fe± 42.8 
-iii) Fe± 2 L02 =Fe± 312.8 
-iv) F, ± (IF1 + IF2) = F, ± 156.4 
-v) F, ± (IF, -IF,)= F, ± 113.6 
+i) FcÂ±2IF1=FcÂ±270 
+ii) FeÂ± 21F2 =FeÂ± 42.8 
+iii) FeÂ± 2 L02 =FeÂ± 312.8 
+iv) F, Â± (IF1 + IF2) = F, Â± 156.4 
+v) F, Â± (IF, -IF,)= F, Â± 113.6 
 
 
 IF Response 
-vi) Fc±IF1=Fc±135 
-vii) Fc±lF2=Fc±21.4 
-viii)  F, ±(LO,+ IF2) = F, ± 177.8  
+vi) FcÂ±IF1=FcÂ±135 
+vii) FcÂ±lF2=FcÂ±21.4 
+viii)  F, Â±(LO,+ IF2) = F, Â± 177.8  
 Note 1:  Extrapolated from RF Filter Response curve.  
 Note 2:  Derived from T/I (CW) curve.  
 
@@ -259,7 +259,7 @@ Table 5 RF filter response and Specific Response factors for the possible image 
 96 09 20 Network Standard 
 Specific Response Factors are used since they contain the combined RF, IF, and Baseband filter data as 
 well as the mixer efficiencies. However, if Specific Response Factor is not available for a particular 
-frequency, RF filter response is used instead in the following victim datasets. · 
+frequency, RF filter response is used instead in the following victim datasets. Â· 
 VICTIM DATASETS 
 I) SET IF= 21.4 MHz ( for 21.4, and 42.8 MHz) VICTIM: Equipment #1 3.75, 7,21.4,46.3, 76, 1/ 0,3,5, 10, 15,20,30, 70, 70.1,400,0,0/ 0,6,32.4,48,58,65.5, 70. 7,86.8,110, 110,0,0/ 
 o,o,o,o,o,o,o,o,o,o,o,01 
@@ -378,20 +378,20 @@ J
 96 09 20 Network Standard 
 Equipment #1 Interference Curve (set IF= 21.4 MHz) 
 jFc -Fil MHz 
-Figure 6 Data generated with interferer dataset in Section 6.1 and victim dataset 1). · Equipment #1 Interference Curve (set IF= 135 MHz) 
-IFc -Fil MHz 0 ~ R ~ ij @ 8 R 8 ffi § ~ B 6 ~ § § ~ § § ~ ~ R ~ ~ ~ ~ ~ ~ ~ ~ 
+Figure 6 Data generated with interferer dataset in Section 6.1 and victim dataset 1). Â· Equipment #1 Interference Curve (set IF= 135 MHz) 
+IFc -Fil MHz 0 ~ R ~ ij @ 8 R 8 ffi Â§ ~ B 6 ~ Â§ Â§ ~ Â§ Â§ ~ ~ R ~ ~ ~ ~ ~ ~ ~ ~ 
 
 
 Figure 7 Data generated with interferer dataset in Section 6.1 and victim dataset 2). 
 96 09 20 Network Standard 
 Equipment #1 Interference Curve (set IF = 156.4 MHz) 
 !Fe-Fil MHz 
-0 ~ R ~ ~ ~ ~ g ~ @ § ~ B 6 ~ § § g § 6 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+0 ~ R ~ ~ ~ ~ g ~ @ Â§ ~ B 6 ~ Â§ Â§ g Â§ 6 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 Figure 8 Data generated with interferer dataset in Section 6.1 and victim dataset 3). 
 ) 
 
 Equipment #1 Interference Curve (set IF =113.6 MHz) 
-!Fe -Fil MHz 0 ~ R ~ ~ ~ ~ g ~ ~ § ~ B 6 ~ § § ~ § 6 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+!Fe -Fil MHz 0 ~ R ~ ~ ~ ~ g ~ ~ Â§ ~ B 6 ~ Â§ Â§ ~ Â§ 6 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
 
 J Figure 9 Data generated with interferer dataset in Section 6.1 and victim dataset 4 ). 
@@ -402,7 +402,7 @@ Equipment #1 Interference Curve (set IF =177.8 MHz)
 
 Figure 10 Data generated with interferer dataset in Section 6.1 and victim dataset 5). Equipment #1 Interference Curve (composite) 
 !Fe -Fil MHz 
-0 ~ R ~ ~ ~ ~ R ~ ~ § § B 6 ~ § § ~ § § ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ § 
+0 ~ R ~ ~ ~ ~ R ~ ~ Â§ Â§ B 6 ~ Â§ Â§ ~ Â§ Â§ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Â§ 
 
 Figure 11 Composite of Figures 6 to 10. At each frequency the requirements were compared and the worst 
 Q 
@@ -414,7 +414,7 @@ Network Standard
 
 6.4 Conclusion and Recommendation 
 In figure 11, the composite CTX curve for Equipment # I taking into account of all possible spurious responses due to the dual conversion receiver is a very conservative approach. However, to generate such type of composite curve is very cumbersome and is not very practical. 
-As it is realized that many conservative assumptions have been made to the current CTX model such as the IF response is based on replicating the main co-channel objective shifted in frequency by IF from the centre frequency and increasing the interference objective by adding 20 dB to the RF filter response (attenuation) at the frequency shifted by F, ± IF or receiver selectivity attenuation remains l lOdB at f(max) plus 0.1 MHz entirely to 400 MHz for the purpose of extrapolation where f(max) is the maximum frequency provided in a supplier's 
+As it is realized that many conservative assumptions have been made to the current CTX model such as the IF response is based on replicating the main co-channel objective shifted in frequency by IF from the centre frequency and increasing the interference objective by adding 20 dB to the RF filter response (attenuation) at the frequency shifted by F, Â± IF or receiver selectivity attenuation remains l lOdB at f(max) plus 0.1 MHz entirely to 400 MHz for the purpose of extrapolation where f(max) is the maximum frequency provided in a supplier's 
 curve. 
 Therefore, for the sake of simplicity and being practical, it is recommended that the most conservative values for AI70 and AI140 be used by selecting only between the first IF frequency and the second IF frequency for deriving specific IF and Image response factors from either T/I or susceptibility to CW int~rference or RF receiver 
 selectivity curves. 
@@ -433,15 +433,15 @@ Note 2: It is preferred to have bandwidth wide enough to cover the frequency sep
 Note 3: It is recommended that Specific Response Factors derived from T/I or Susceptibility curve. be used instead of the factors from RF Filter Response Curve since they contain the combined RF, IF, and Baseband filter data as well as the mixer efficiencies. 
 96 09 20 Network Standard 
 L01 < Fe and L02 > IF1  I LO,< Fe and L02 < IF1  L01 > Fe and L02 > IF1  I L01 > Fe and L02 < IF1  
-I)  F,·2 IF1  Fc+2lF1  
-ii)  Fc+21F2  I  Fc-21F2  F,•2 IF,  I  Fc~21F2  
+I)  F,Â·2 IF1  Fc+2lF1  
+ii)  Fc+21F2  I  Fc-21F2  F,â€¢2 IF,  I  Fc~21F2  
 iii)  Fc~2L02  Fc+2L02  
-iv)  F, ·(IF,+ IF,)  F, + (IF1 + IF,)  
-v)  F, ·(IF,· IF,)  F, + (IF, -IF,)  
-vi)  Fe± IF1  
-vii)  Fe± IF2  
-viii)  F, ±(LO,+ IF2)  I  F,± (LO2 -IF2)  
- F, ±(LO,+ IF,)  I  F, ±(LO,· IF2)  
+iv)  F, Â·(IF,+ IF,)  F, + (IF1 + IF,)  
+v)  F, Â·(IF,Â· IF,)  F, + (IF, -IF,)  
+vi)  FeÂ± IF1  
+vii)  FeÂ± IF2  
+viii)  F, Â±(LO,+ IF2)  I  F,Â± (LO2 -IF2)  
+ F, Â±(LO,+ IF,)  I  F, Â±(LO,Â· IF2)  
 
 Table 6Poss1ble image response and IF response frequencies for dual conversion receiver. 
 CTX GENERATION FOR DUAL CONVERSION RECEIVERS 
@@ -455,19 +455,19 @@ Given:101frequency is lower than the receive frequency. 102frequency is higher t
 Image Response The following are the possible frequencies at the IF1 stage that can produce an interference spectrum at IF2: 
 102+ IF2 102 -IF2 = IF1 IF2 
 To have the above interference spectrum at IF1, the following are the possible frequencies at RF that can mix with 101: 
-i) 101 ±(LO,+ IF2) Since 101= F, -IF1, and IF1= 102 -IF2, we have 101 = F, -LO,+ IF2. Substituting into i), we have · F, -102+ IF2± (102+ IF2) = F, -102 + IF2 +LO,+ IF2 =F,+2IF2 
+i) 101 Â±(LO,+ IF2) Since 101= F, -IF1, and IF1= 102 -IF2, we have 101 = F, -LO,+ IF2. Substituting into i), we have Â· F, -102+ IF2Â± (102+ IF2) = F, -102 + IF2 +LO,+ IF2 =F,+2IF2 
 ) or 
 = F, -102+ IF2-LO, -IF2 =F,-2102 
-ii) 101 ± IF1 
-Substituting 101 = F, -IF1, we have F, -IF1 ± IF1 =F,-IF1+IF1 = F, 
+ii) 101 Â± IF1 
+Substituting 101 = F, -IF1, we have F, -IF1 Â± IF1 =F,-IF1+IF1 = F, 
 or =F,-IF1-IF1 =F,-2IF1 
-iii) 101 ± IF2 
-Substituting 101 = F, -IF1, we have F,-IF1±IF2 =F,-IF1 +IF, 
+iii) 101 Â± IF2 
+Substituting 101 = F, -IF1, we have F,-IF1Â±IF2 =F,-IF1 +IF, 
 or =F,-IF1-IF2 
 IF Response The following frequencies among with F, can produce a distortion that can create an interference spectrum 
 at the IF2frequency: 
-iv) F, ± IF1 v) F,±IF2 
-vi) F, ± (LO, + IF2) 
+iv) F, Â± IF1 v) F,Â±IF2 
+vi) F, Â± (LO, + IF2) 
 CTX GENERATION FOR DUAL CONVERSION RECEIVERS 
 94 09 29 Network Standard A pendix 1 
 
@@ -476,20 +476,20 @@ Given: L01 frequency is higher than the receive frequency. L02 frequency is high
 Image Response The following are the possible frequencies at the IF1 stage that can produce an interference spectrum at IF2: 
 L02 + IF2 L02 -IF2 = IF1 IF2 
 To have the above interference spectnun at IF1, the following are the possible frequencies at RF that can mix with L01: 
-i) L01 ± (L02 + IF2) Since L01 = F, + IF1, and IF1 = L02 -IF2, we have L01 = F, + L02 -IF,. Substituting into i), we 
-have F, + L02 -IF2 ± (L02 + IF2) = F, + L02 -IF2 + L02 + IF2 =F, + 2 L02 
+i) L01 Â± (L02 + IF2) Since L01 = F, + IF1, and IF1 = L02 -IF2, we have L01 = F, + L02 -IF,. Substituting into i), we 
+have F, + L02 -IF2 Â± (L02 + IF2) = F, + L02 -IF2 + L02 + IF2 =F, + 2 L02 
 or = F, + L02 -IF2-L02 -IF2 =F,-2IF2 
-ii) L01 ±IF, 
-Substituting L01 = F, + IF,, we have F,+IF1 ±IF1 =F,+IF, +IF, =F,+2IF1 
+ii) L01 Â±IF, 
+Substituting L01 = F, + IF,, we have F,+IF1 Â±IF1 =F,+IF, +IF, =F,+2IF1 
 or =F,+IF1 -IF1 = F, 
-iii) LO, ± IF2 
-Substituting L01 = F, + IF1, we have F,+IF,±IF2 =F,+IF,+IF2 
+iii) LO, Â± IF2 
+Substituting L01 = F, + IF1, we have F,+IF,Â±IF2 =F,+IF,+IF2 
 or =F,+IF1 -IF, 
 IF Response The following frequencies among with F, can produce a distortion that can create an interference spectrum at the IF2 frequency: 
-iv) F,±IF1 
-v) F, ± IF2 
-vi) F, ± (L02 + IF2) 
-• 
+iv) F,Â±IF1 
+v) F, Â± IF2 
+vi) F, Â± (L02 + IF2) 
+â€¢ 
 Network Standard A pendix 1 
 94 09 29 
 
@@ -498,19 +498,19 @@ Given: LO1frequency is lower than the receive frequency. LO2 frequency is lower 
 Image Response The following are the possible frequencies at the IF1stage that can produce an interference spectrum at IF2: 
 LO,+ IF2= IF1 LO2 -IF2 IF, 
 To have the above interference spectrum at IF1, the follo\\fog are the possible frequencies at RF that can mix with LO1: 
-i) LO1 ± IF1 
-Substituting LO1= F, -IF1, we have F, -IF1 ± IF1 =F,-IF1+IF1 =F, 
+i) LO1 Â± IF1 
+Substituting LO1= F, -IF1, we have F, -IF1 Â± IF1 =F,-IF1+IF1 =F, 
 or 
 =F,-IF1-IF1 =F,-2IF1 
-ii) LO1± (LO2-IF,) Since LO1= F, -IF1, and IF1= LO2 + IF2, we have LO1 = F, -LO2 -IF2. Substituting into ii), we) have F, -LO, -IF2± (LO, -IF,) = F, -LO2-IF2+ LO2-IF2 =F,-2IF2 
+ii) LO1Â± (LO2-IF,) Since LO1= F, -IF1, and IF1= LO2 + IF2, we have LO1 = F, -LO2 -IF2. Substituting into ii), we) have F, -LO, -IF2Â± (LO, -IF,) = F, -LO2-IF2+ LO2-IF2 =F,-2IF2 
 or 
 = F, -LO2 -IF2-LO2 + IF2 =F,-2LO2 
-iii) LO1 ± IF2 
-Substituting LO1 = F, -IF1, we have F,-IF1±IF2 =F,-IF1 +IF2 
+iii) LO1 Â± IF2 
+Substituting LO1 = F, -IF1, we have F,-IF1Â±IF2 =F,-IF1 +IF2 
 or =F,-IF,-IF2 
 IF Response The following frequencies among with F, can produce a distortion that can create an interference spectrum 
 at the IF 2 frequency: 
-iv) F, ± IF1 v) F,±IF2 vi) F, ± (LO2 -IF2) 
+iv) F, Â± IF1 v) F,Â±IF2 vi) F, Â± (LO2 -IF2) 
 J 
 CTX GENERATION FOR DUAL CONVERSION RECEIVERS 
 ' 
@@ -519,21 +519,21 @@ Case Study _4 0 Given: LO1 frequency is higher than the receive frequency. LO2 f
 Image Response The following are the possible frequencies at the IF1 stage that can produce an interference spectrum at IF2: 
 LO2 + IF2 =IF, LO, -IF2 IF, 
 To have the above interference spectrum at IF1, the following are the possible frequencies at RF that can mix with LO,: 
-i) LO,± IF1 
-Substituting LO1 = F, + IF1, we have F,+IF1 ±IF1 = F, + IF 1 + IF1 =F,+2IF1 
+i) LO,Â± IF1 
+Substituting LO1 = F, + IF1, we have F,+IF1 Â±IF1 = F, + IF 1 + IF1 =F,+2IF1 
 or 
 =F,+IF1 -IF1 =F, 
-ii) LO1 ± (LO2 -IF,) Since LO1 = F, + IF1, and IF1 =LO,+ IF2, we have LO1 = F, + LO2 + IF2. Substituting into ii), we have 
+ii) LO1 Â± (LO2 -IF,) Since LO1 = F, + IF1, and IF1 =LO,+ IF2, we have LO1 = F, + LO2 + IF2. Substituting into ii), we have 
 0 
-F, +LO2 + IF2 ± (LO2 -IF2) = F, + LO2 + IF2 + LO2-IF2 =F,+2 LO, 
+F, +LO2 + IF2 Â± (LO2 -IF2) = F, + LO2 + IF2 + LO2-IF2 =F,+2 LO, 
 or 
 = F, + LO2 + IF2 -LO2 + IF2 =F,+2 IF2 
-iii) LO, ± IF2 
-Substituting LO1 = F, + IF1, we have F, + IF1 ± IF2 =F,+IF1 +IF2 
+iii) LO, Â± IF2 
+Substituting LO1 = F, + IF1, we have F, + IF1 Â± IF2 =F,+IF1 +IF2 
 or =F,+IF1 -IF2 
 IF Response l11e following frequencies among with F, can produce a distortion that can create an interference spectrum at the IF2frequency: 
-iv) F, ± IF 1 
-v) F, ± IF2 vi) F, ± (LO2 -IF2) 
+iv) F, Â± IF 1 
+v) F, Â± IF2 vi) F, Â± (LO2 -IF2) 
 Frequency 
 Coordination 
 System 
@@ -547,23 +547,23 @@ All references to manufacturers names and equipment models have been removed fro
 Regards, 
 A. Moreno Radio System Engineer 
 
-09:50 FCSA OTTAWA ONT. TEL:613 241 ·~632. P.. 00 l 
+09:50 FCSA OTTAWA ONT. TEL:613 241 Â·~632. P.. 00 l 
 . 
 .. C;~,~F i"RMAT I ON REPORT .. 
-···\ · 
+Â·Â·Â·\ Â· 
 TRANSMISSION TRANSACTION(S) COMPLETED 
-i:·-' 
+i:Â·-' 
 ' 
 NO, DATE/TIME DESTINATION DURATION PGS STATUS MODE' 
 .. .... 
-998 MAY. 5 09 ,so 7488712 0° 00' 33" 002 ···OK N E.CM 
+998 MAY. 5 09 ,so 7488712 0Â° 00' 33" 002 Â·Â·Â·OK N E.CM 
 
 FACS:CM!LE TRANSM:t'.SSION 
-Frequency Coordination Number of Pages:•.,:(;).._ 
+Frequency Coordination Number of Pages:â€¢.,:(;).._ 
 . .. " ' 
 System Association 
 Date: , .'Yi-Ai ..~(-. JCJ.9.i.. ,.,. 
-To: .½M~-.Af~o~St;__ '7.?.1/.:J;A.i. . . . ' ' ' ' . . . . . . . 
+To: .Â½M~-.Af~o~St;__ '7.?.1/.:J;A.i. . . . ' ' ' ' . . . . . . . 
 
 . ' 
 From: .kt ./0#.,NJ. -~ . . . . . 
@@ -582,12 +582,12 @@ i ' '
 (i 
 ::o 
 ,. ' 
-"· 
+"Â· 
 
 Therefore, the mean-square value ofthe phase modulation with pre-emphasis is: 
 
 25 0 6522
-l. -1.25 + 4.7895 -2.8123 tan -I [ · x I ] 3.15cr 2 
+l. -1.25 + 4.7895 -2.8123 tan -I [ Â· x I ] 3.15cr 2 
 XJ 1-0.64XJ 2 
 
 
@@ -595,11 +595,11 @@ XJ 1-0.64XJ 2
 
 7.90 (fm -fmin )fr [O 64x 2 1 461x + 1]
 +0.6277 ln . I -' I 0.64xi2 + 1.461x1 + 1 
-22 0.319m ·{1.25 + 35395 _ 2_8123 tan-l[ 0.6522x1 ]+o_62771 n[0.64x1 -1.461x1 +1]} 
+22 0.319m Â·{1.25 + 35395 _ 2_8123 tan-l[ 0.6522x1 ]+o_62771 n[0.64x1 -1.461x1 +1]} 
 1-XJ XJ 1-0./54xi2 0.64x1 2 + 1.461x1 + 1 
 
 Similar to equation (18) of Garrison (Ref. 2) and neglecting the effect of pre-emphasis on the second and higher order sidebands, we obtain: 
--P(f) = exp [-R~(o)] -+ ­fb fb x=o 2 
+-P(f) = exp [-R~(o)] -+ Â­fb fb x=o 2 
 fm j[fm] [1 
 
 where: 
@@ -672,7 +672,7 @@ documentation. This supplements the CTX instructions contained in the TSIP Refer
 The CTXDOA TD computer program available for use in the MICS computer system is to be used as the basic tool in computation ofthe interference objectives. 
 
 2.0 PROBLEM STATEMENT 
-To characterize a victim_ dataset for a radio receiver, three of the parameters that the CTX program requires are the_ receiver's Intermediate Frequency (IF), RF filter response at ± IF away from the carrier or Specific IF Resp6iise Factor, and RF filter response at ± 2 ' IF away from the carrier or Specific 2 ' IF Response Factor. These Specific Response Factors can be extracted from Threshold / Continuous. Wave Interference Curve, or Susceptibility to Continuous Wave Interference Curve. · 
+To characterize a victim_ dataset for a radio receiver, three of the parameters that the CTX program requires are the_ receiver's Intermediate Frequency (IF), RF filter response at Â± IF away from the carrier or Specific IF Resp6iise Factor, and RF filter response at Â± 2 ' IF away from the carrier or Specific 2 ' IF Response Factor. These Specific Response Factors can be extracted from Threshold / Continuous. Wave Interference Curve, or Susceptibility to Continuous Wave Interference Curve. Â· 
 As the name implies, dual conversion receiver has two intermediate frequency stages in cascade and this makes the coding of victim file more complicated ie. which IF to consider? 
 
 3.0 REVIEW OF VICTIM DATASET PARAMETERS 
@@ -705,7 +705,7 @@ ANTENNA
 
 
 CIRCULATOR 
-LO> LO• 
+LO> LOâ€¢ 
 
 RF RF 
 MIXER 
@@ -714,7 +714,7 @@ AMPLIFIER
 Figure 1 This figure shows a simplified block diagram of a typical dual conversion receiver. 
 The responses of concern are the image, and IF. These all are sensitive to receiver filter characteristics and are descripted in the following sections. 
 4. I Image Response 
-Image response is the receiver's response to a mixing phenomenon where an interference frequency is mixed with the local oscillator (LO) to produce an interference spectrum similar to the intermediate frequency at the intermediate frequency (IF) stage. For receivers with a single 1F stage, the interference frequency is Fe ± 2 IF (where F, denotes the victim receive RF frequency), and the image response is limited by the RF filter selectivity at that frequency. On the other hand, image response for dual conversion receivers is more complex due to the additional IF stage. 
+Image response is the receiver's response to a mixing phenomenon where an interference frequency is mixed with the local oscillator (LO) to produce an interference spectrum similar to the intermediate frequency at the intermediate frequency (IF) stage. For receivers with a single 1F stage, the interference frequency is Fe Â± 2 IF (where F, denotes the victim receive RF frequency), and the image response is limited by the RF filter selectivity at that frequency. On the other hand, image response for dual conversion receivers is more complex due to the additional IF stage. 
 96 09 20 Network Standard 
 According to Case Studies I through 4 in Appendix I, the frequencies that can produce an interference 
 Q 
@@ -729,8 +729,8 @@ v)  F, -(IF, -IF,)  F, + (IF, -IF,)
 Table 1 Possible image response frequencies for dual conversion receiver. 
 where IF, is the first intermediate frequency, LO, is the first local oscillator frequency, and LO2 is the second local oscillator frequency. 
 i) When mixed with LO1, an interference spectrum similar to IF, at the IF, stage is produced. The receiver response at this frequency is dependent on the RF filter response. 
-ii) and iii) When mixed with LO1, an interference spectrum at the IF, stage is produced, which can be down converted by L02• The second order product is an interference spectrum similar to IF2, thus interfering with IF2. The receiver response at this frequency is dependent on the combined response ofthe RF filter, and the first IF filter. 
-iv) and v) When mixed with LO1, an interference spectrum similar to IF2 at the IF, stage is produced, which can be down converted by L02• The fundamental product is an interference spectrum similar to IF2 at the IF2 stage. The receiver response at this frequency is dependent on the combined response of the RF filter, the first IF filter, and the second mixer efficiency. 
+ii) and iii) When mixed with LO1, an interference spectrum at the IF, stage is produced, which can be down converted by L02â€¢ The second order product is an interference spectrum similar to IF2, thus interfering with IF2. The receiver response at this frequency is dependent on the combined response ofthe RF filter, and the first IF filter. 
+iv) and v) When mixed with LO1, an interference spectrum similar to IF2 at the IF, stage is produced, which can be down converted by L02â€¢ The fundamental product is an interference spectrum similar to IF2 at the IF2 stage. The receiver response at this frequency is dependent on the combined response of the RF filter, the first IF filter, and the second mixer efficiency. 
 96 09 20 Network Standard 
 Example 1 
 Radio: 
@@ -748,12 +748,12 @@ Receiver #1
 135 
 156.4 
 21.4 
-i) Fc±21F1 
+i) FcÂ±21F1 
 
-ii) Fc±2lF2 
-iii) Fc±2L02 
-iv) F, ± (IF, + IF,) 
-v) F, ± (IF, -IF,)
+ii) FcÂ±2lF2 
+iii) FcÂ±2L02 
+iv) F, Â± (IF, + IF,) 
+v) F, Â± (IF, -IF,)
 ) 
 F, -270 =10347.5 
 F, + 42.8 =10660.3 
@@ -773,19 +773,19 @@ iv) and v) When mixed with L01, a 21.4 MHz interference spectrum is produced at 
 IF spurious response is the receiver's response to a second order distortion product that can create an interference spectrum at IF frequency, with a bandwidth equal to the sum of the interferer and victim bandwidths (ie. convolution of the interferer and victim PSD). The generated second order energy depends mainly on the receiverfront end design and will be controlled ifthe energy at 'IF' response frequency can be maintained IO -20 dB below the receiver overload point as measured at the receiver RF input port. 
 CTX GENERATION FOR DUAL CONVERSION RECEIVERS Pages 
 96 09 20 Network Standard 
-In the case of receivers with a single IF stage, the IF response depends on the sum ofthe RF filter response at F, ± IF, and 20 dB. For dual conversion receivers, there are frequencies other than F, ± IF that can produce an interference spectrum at ;the IF frequencies due to the additional IF stage. According to Case Studies I through 4 in Appendix I, the possible frequencies which can interfere with the IF frequencies are 
+In the case of receivers with a single IF stage, the IF response depends on the sum ofthe RF filter response at F, Â± IF, and 20 dB. For dual conversion receivers, there are frequencies other than F, Â± IF that can produce an interference spectrum at ;the IF frequencies due to the additional IF stage. According to Case Studies I through 4 in Appendix I, the possible frequencies which can interfere with the IF frequencies are 
 as follow: 
 L01 < Fe and L02 > IF1  I L01 < Fe and L02 < IF1  I L01 > Fe and L02 > IF1  I L01 > Fe and L02 < IF1  
-vi)  Fe± lF1  
-vii)  Fe± IF2  
-viii)  F, ± (L02 + IF2)  I  F, ± (L02 ­IF2)  I  F, ± (L02 + IF2)  I  F, ± (L02 -IF2)  
+vi)  FeÂ± lF1  
+vii)  FeÂ± IF2  
+viii)  F, Â± (L02 + IF2)  I  F, Â± (L02 Â­IF2)  I  F, Â± (L02 + IF2)  I  F, Â± (L02 -IF2)  
 
 Table 3 Possible IF response frequencies for dual conversion receiver. 
-vi) Both F, and F, ± IFI get into the first mixer. A second order distortion product similar to IF1 is generated at the IF1 stage, thus interfering with IF1• The receiver response at this frequency is dependent on the combined response ofthe RF filter and first mixer efficiency. 
-vii) Both F, and F, ± IF2 get into the first mixer. A second order distortion product similar to IF2 is generated at the IF1 stage. Again, it is mixed with LO2 and produces a fundamental product similar to IF2, thus interfering with IF2. The receiver response at this frequency is dependent on the combined response ofthe RF filter, first IF filter, and first and second mixer efficiencies. 
-viii) Either F, ± (LO, + IF2) or F, ± (LO2 -IF2), and Fe get into the first mixer. A second order distortion product either (LO2 + IF2) or (LO2 -IF2) respectively is generated at the IF1 stage. Again, it is mixed with LO2 and produces a second order product similar to IF2, thus interfering with IF2. The receiver response at this frequency is dependent on the combined response ofthe RF filter, first IF filter, and first mixer efficiency. 
+vi) Both F, and F, Â± IFI get into the first mixer. A second order distortion product similar to IF1 is generated at the IF1 stage, thus interfering with IF1â€¢ The receiver response at this frequency is dependent on the combined response ofthe RF filter and first mixer efficiency. 
+vii) Both F, and F, Â± IF2 get into the first mixer. A second order distortion product similar to IF2 is generated at the IF1 stage. Again, it is mixed with LO2 and produces a fundamental product similar to IF2, thus interfering with IF2. The receiver response at this frequency is dependent on the combined response ofthe RF filter, first IF filter, and first and second mixer efficiencies. 
+viii) Either F, Â± (LO, + IF2) or F, Â± (LO2 -IF2), and Fe get into the first mixer. A second order distortion product either (LO2 + IF2) or (LO2 -IF2) respectively is generated at the IF1 stage. Again, it is mixed with LO2 and produces a second order product similar to IF2, thus interfering with IF2. The receiver response at this frequency is dependent on the combined response ofthe RF filter, first IF filter, and first mixer efficiency. 
 96 09 20 Network Standard 
-·) Example2 
+Â·) Example2 
 Radio:  Recelver#2  
 Manufacturer:  
 Transmit Frequency (MHz):  10552.5  10617.5  
@@ -796,22 +796,22 @@ Second LO Frequency (LO,, MHz):  156.4
 Second IF Frequency (IF,, MHz):  21.4  
 IF Response  
 Possible Frequencies (MHz):  
-vi)  Fe± IF1  F,±135  F, ± 135  
-vii)  Fe± IF2  F,±21.4  F,± 21.4  
-viii)  Fe± (L02 + IF2), for L02 > IF1  F, -177.8  F,+177.8  
+vi)  FeÂ± IF1  F,Â±135  F, Â± 135  
+vii)  FeÂ± IF2  F,Â±21.4  F,Â± 21.4  
+viii)  FeÂ± (L02 + IF2), for L02 > IF1  F, -177.8  F,+177.8  
 or  
-F, ± (LO,-IF,), for LO2 < IF1  
+F, Â± (LO,-IF,), for LO2 < IF1  
 
 Table 4Possible IF response frequencies for Receiver#2. 
 vi) A 135 MHz second order distortion product at IF1interferes with IF1. The receiver response at this frequency is dependent on the combined response of the RF filter, and the first mixer efficiency. 
 vii) A 21.4 MHz second order distortion product at IF1. The fundamental product with 102 is 21.4 MHz at IF2stage (same as the IF2 frequency), thus interfering with IF2. The receiver response at this frequency is dependent on the combined response of the RF filter, first IF filter, and first and second mixer efficiencies. 
 viii) A 177.8 MHz second order distortion product at IF1. The second order product with 102 is 21.4 MHz at IF2 stage (same as the IF2 frequency), thus interfering with IF2. The receiver response at this frequency is dependent on the combined response of the RF filter, first mixer efficiency, and first IF filter. 
 5.0 CTXDOATD CTX DATASET GENERATION PROGRAM 
-In the CTX model, the image response is accounted for by replicating a double-sided version of the main CTX objective shifted in frequency by 2 IF and by increasing the interference objective by an amoU11t equal to the RF filter response (attenuation) at frequency F, ± 2 IF. A comparison is then made between the main interference objective and the replicated objective over the freqnency range 2 IF± IF/2. 
+In the CTX model, the image response is accounted for by replicating a double-sided version of the main CTX objective shifted in frequency by 2 IF and by increasing the interference objective by an amoU11t equal to the RF filter response (attenuation) at frequency F, Â± 2 IF. A comparison is then made between the main interference objective and the replicated objective over the freqnency range 2 IFÂ± IF/2. 
 96 09 20 Network Standard 
 The IF response is accounted for by replicating the main co-channel objective shifted in frequency by IF 
-Q from the centre frequency and by increasing the interference objective by an amount equal to the sum of 20 dB plus the RF filter response (attenuation) at the frequency shifted by F, ± IF. A comparison is made between the main co-channel objective and the replicated response over the frequency range IF± IF/2. The worst objective is selected. 
-In the victim file, it is prefered to use the Specific IF Response Factor and the Specific Image Response Factor derived from the T/I or C/I curves. In the program, the Specific IF Response Factor is assumed to be 20 dB higher than the RF filter attenuation at F, ± IF, therefore the Specific IF Response Factor can be input into the victim file after reducing it by 20 dB. 
+Q from the centre frequency and by increasing the interference objective by an amount equal to the sum of 20 dB plus the RF filter response (attenuation) at the frequency shifted by F, Â± IF. A comparison is made between the main co-channel objective and the replicated response over the frequency range IFÂ± IF/2. The worst objective is selected. 
+In the victim file, it is prefered to use the Specific IF Response Factor and the Specific Image Response Factor derived from the T/I or C/I curves. In the program, the Specific IF Response Factor is assumed to be 20 dB higher than the RF filter attenuation at F, Â± IF, therefore the Specific IF Response Factor can be input into the victim file after reducing it by 20 dB. 
 For more indepth explanation on the CTX model, refer to the CTX instructions in the TSIP Reference Manual. 
 6.0 DATASETS FOR DUAL CONVERSION DIGITAL RADIO RECEIVER 
 In the CTX model image and IF responses are based on the replicated main co-channel response shifted by the corresponding frequencies and attenuated to the corresponding level. Therefore, the calculations for image response and IF response are the same except for the shift in frequency and the level of attenuation. In these calculations, the image and IF responses are derived by comparing the main objective with the replicated objective and selecting the worst objective. 
@@ -822,7 +822,7 @@ Interferer Dataset
 INTERFERER: Equipment # I 0,0.2,0.4,0.6,0.8,l,l.2,l.4,l.6,1.8,2.2,2.6/ 26,26.6,26.9,27. 7,28.8,30 .4,32. 7,3 8 .2,58.8,57 .7,66, 76/ 2.8,3.4,4.4,4.8,5,5.2,5.8,6.8,7.6,7.8,8.2,9.2/ 80.4,86,87 .1,88 .2,87. 7,88.2,86,88.2,86.6,86.6,88.2,87. I/ 9.4, I0,I0. l,400,0,0,0,0,0,0,0,0/ 88.2,88.2, 150, 150,0,0,0,0,0,0,0,0/ CREATED: 94 09 21: RCTL PC 
 Network Standard 
 96 09 20 
-C1ll 10.5695 6Hl SPAN 2 lltz/ 1£S BM 4 kHZ 1£F-7d!I 10 Iii!/ ATTl'll 20 dB SllP .wm 13.2 M>/9 49 a>FI I \ r "\ I \Ulllil I t ~­\\ FCC ""u J \'• T I , t 3.? MtlrAFChannol  ¥F .tt I  
+C1ll 10.5695 6Hl SPAN 2 lltz/ 1Â£S BM 4 kHZ 1Â£F-7d!I 10 Iii!/ ATTl'll 20 dB SllP .wm 13.2 M>/9 49 a>FI I \ r "\ I \Ulllil I t ~Â­\\ FCC ""u J \'â€¢ T I , t 3.? MtlrAFChannol  Â¥F .tt I  
 
 -26  
 -36 -46  Io.  
@@ -845,7 +845,7 @@ The Equipment # 1 characteristic for CW tone, and RF Filter Response are shown _
 0 
 -10 -20 -30 -40 
 -70 
-\  \ \  T/1 vs Frequency Offset (CW signal) .. " "' -· r---. -----1-­ 
+\  \ \  T/1 vs Frequency Offset (CW signal) .. " "' -Â· r---. -----1-Â­ 
 
 20 40 60
 0 
@@ -874,11 +874,11 @@ Specifc Response Factor (dB) (note 2)
 Frequency (MHz, Spurious Response) 
 
 Image Response 
-i) Fe± 2 lF1 =Fe± 270 
-ii) Fe± 2 IF2 =Fe± 42.8 
-iii) Fc±2L02=Fc±312.8 
-iv) F, ± (IF1 + IF2) = F, ± 156.4 
-v) F, ± (IF1 -IF,)= F, ± 113.6 
+i) FeÂ± 2 lF1 =FeÂ± 270 
+ii) FeÂ± 2 IF2 =FeÂ± 42.8 
+iii) FcÂ±2L02=FcÂ±312.8 
+iv) F, Â± (IF1 + IF2) = F, Â± 156.4 
+v) F, Â± (IF1 -IF,)= F, Â± 113.6 
 
 
 IF Response 
@@ -892,9 +892,9 @@ IF Response
 >83 
 >63 
 >83 
-vi)  Fe± IF, =Fe± 135  66  >83  
-vii)  Fe± IF2 = Fc±21.4  20  66.3  
-viii)  F,±(LO2 + IF,)= F,± 177.8  80  >83  
+vi)  FeÂ± IF, =FeÂ± 135  66  >83  
+vii)  FeÂ± IF2 = FcÂ±21.4  20  66.3  
+viii)  F,Â±(LO2 + IF,)= F,Â± 177.8  80  >83  
 
 Note 1: Extrapolated from RF Filter Response curve. 
 Note 2: Derived from T/I (CW) curve. Table 5 RF filter response and Specific Response factors for the possible image and IF response frequencies for Equipment #1. 
@@ -983,7 +983,7 @@ C
 \. 
 The following is a list of technical infonnation required for generation of CTI( dataset for dual conversion receiver: 
 I. Transmitter Characteristics Power Spectral Density Characteristic 
-II. Receiver Characteristics Authorized Bandwidth (Mhz) Noise Figure (Note l)' · First Intermediate Frequency (MHz) Second Intermediate Frequency (MHz) Second Local Oscillator Frequency (MHz) First Local Oscillator Frequency < OR > Carrier Frequency? RF Filter Response at Frequency Separations from Carrier Given in Table 6 T/I (Threshold/ Continuous Wave Interference) Curve (Note 2) 
+II. Receiver Characteristics Authorized Bandwidth (Mhz) Noise Figure (Note l)' Â· First Intermediate Frequency (MHz) Second Intermediate Frequency (MHz) Second Local Oscillator Frequency (MHz) First Local Oscillator Frequency < OR > Carrier Frequency? RF Filter Response at Frequency Separations from Carrier Given in Table 6 T/I (Threshold/ Continuous Wave Interference) Curve (Note 2) 
 or Susceptibility to Continuous Wave Interference Curve (Note 2) Note 1: Referenced to input of the receiver branching circulator. (Includes the effect of the circulator and receive filter.) 
 Note 2: It is preferred to have bandwidth wide enough to cover the frequency separations from carrier given in Table 6. If it is not possible, values at these frequencies will be required. The T /I or susceptibility to CW data are preferred to be measured values. 
 Note 3: It is recommended that Specific Response Factors derived from T/I or Susceptibility curve be used instead of the factors from RF Filter Response Curve since they contain the combined RF, IF, and Baseband filter data as well as the mixer efficiencies. 
@@ -993,34 +993,34 @@ L01 < Fe and L02 > IF 1  l L01 < Fe and L02 < IF1  LO1 > Fe and LO2 > IF1  I L01
 i)  F,-21F1  Fe+ 2 IF1  
 ii)  Fe+ 2 IF2  T  Fc-21F2  Fc-2 IF2  I  Fc+21F2  
 Iii)  F,-2LO2  Fc+2L02  
-iv)  F, ·(IF,+ IF2)  F, +(IF,+ IF,)  
-v)  F, • (IF, -IF2)  F, + (IF, -IF,)  
-vi)  Fe± IF1  
-vii)  Fe± IF2  
-viii)  F, ±(LO2 + IF2)  I  F, ±(LO,-IF,)  
- F, ±(LO2 + IF2)  I  F, ±(LO, -IF2)  
+iv)  F, Â·(IF,+ IF2)  F, +(IF,+ IF,)  
+v)  F, â€¢ (IF, -IF2)  F, + (IF, -IF,)  
+vi)  FeÂ± IF1  
+vii)  FeÂ± IF2  
+viii)  F, Â±(LO2 + IF2)  I  F, Â±(LO,-IF,)  
+ F, Â±(LO2 + IF2)  I  F, Â±(LO, -IF2)  
 
 Table 6 Possible image response and IF response frequencies for dual conversion receiver. 
 ) 
 
-94 09 29 Network·Standard A endix 1 
+94 09 29 NetworkÂ·Standard A endix 1 
 Case Study 4 Given: LO,. frequency is higher th,m the re<;eive frequency. LO, frequency is lower than the IF1 frequency. 
 Image Response . . The following are the possible rr~quencies at the IF I stage that can produce an interference spectrum at IF2: 
 LO,+ IF,= IF1 LO, -IF, IF2 
 To have the above interference spectrum at IF1, the following are the possible frequencies at-RF that:can mix with L01: 
-i) L01 ± IF, 
-Substituting L01= F, + IF1, we have F,+IF1±IF1 =F,+IF1 +IF1 =F,+2IF1 
+i) L01 Â± IF, 
+Substituting L01= F, + IF1, we have F,+IF1Â±IF1 =F,+IF1 +IF1 =F,+2IF1 
 or =F,+IF1 -IF1 = F, 
-ii) L01 ± (LO, -IF2) Since L01 =, F, + IF1, and IF1=LO,+ IF2, we have LO,=, F~+'r:,02 + IF,. Substituting,into ii)!./ 
-we have F, +LO,+ IF2 ± (LO, -IF2) = F, + L02 + IF2 + L02 -IF, =F,+2L02 
+ii) L01 Â± (LO, -IF2) Since L01 =, F, + IF1, and IF1=LO,+ IF2, we have LO,=, F~+'r:,02 + IF,. Substituting,into ii)!./ 
+we have F, +LO,+ IF2 Â± (LO, -IF2) = F, + L02 + IF2 + L02 -IF, =F,+2L02 
 or = F, +LO,+ IF2 -L02+ IF2 = F, + 2 IF, 
-iii) L01± IF, 
-Substituting L01 = F, + !Fi, we have F,+IF1±IF2 =F,+IF1 +IF, 
+iii) L01Â± IF, 
+Substituting L01 = F, + !Fi, we have F,+IF1Â±IF2 =F,+IF1 +IF, 
 or =F, + IF1 -IF2 
-IF Response The following frequencies among with F, can produce a distortion that can create an interference spectnirn at the IF 2frequency: · 
-iv) F,±IF1 
-v) F, ± IF2 
-vi) F, ± (L02 -IF,) 
+IF Response The following frequencies among with F, can produce a distortion that can create an interference spectnirn at the IF 2frequency: Â· 
+iv) F,Â±IF1 
+v) F, Â± IF2 
+vi) F, Â± (L02 -IF,) 
 CHAPTER SIX 
 COMPUTER-AIDED TECHNIQUES 
 
@@ -1062,7 +1062,7 @@ Engineering Considerations 6-3 Fall 1996,
 iii) A Master Data Base Reporting System --which can retrieve and report on various Q 
 aspects ofall or portions ofthe data files; 
 iv) The calculation programs --which consist of the main interference calculation programs as well as a number of other programs used to perform miscellaneous calculations. 
-The inputs to the system will consist ofperiodic updates to the Master Data Base, as well as user­supplied information on planned systems for interference calculation purposes. 
+The inputs to the system will consist ofperiodic updates to the Master Data Base, as well as userÂ­supplied information on planned systems for interference calculation purposes. 
 The outputs from the system consist of report of interference cases and reports of miscellaneous calculations and various catalogue reports. 
 6.3.2 Data Base Management Systems 
 In automated systems the functions of updating, accessing and reporting data are performed by applications software. The applications software which provides these functions can be either an application related file management program or a Data Base Management System (DBMS). A DBMS permits efficient management of large amounts of varied information by users not 
@@ -1118,9 +1118,9 @@ FIGURE6.1 INTERFERENCE ANALYSIS FLOW CHART
 
 ANNEXS.1 
 GEOMETRIC ORBIT TRACE E (s) 
-In Figure A.5 .1. the line PL0 lies on a great circle that intersects the equator at 10 • A line from the earth centre, C, extended through 10 intersects the GSO at T. The points, C, P, 10 and Tall lie in the azimuth plane ofpoint P. S is the angle between the azimuth at P and true south. M is 
-the latitude ofP. · 
-Consider the right angle spherical triangle PL1L0• Standard relations give: 
+In Figure A.5 .1. the line PL0 lies on a great circle that intersects the equator at 10 â€¢ A line from the earth centre, C, extended through 10 intersects the GSO at T. The points, C, P, 10 and Tall lie in the azimuth plane ofpoint P. S is the angle between the azimuth at P and true south. M is 
+the latitude ofP. Â· 
+Consider the right angle spherical triangle PL1L0â€¢ Standard relations give: 
 SinM = tanL cot S AS-1 Coss= tanM cot p AS-2 
 or 
 L = arctan (sin M. tan S) AS-3 and 1 0 = 11 -L AS-4 and p = arctan (tan M/cos S) AS-5 
@@ -1184,16 +1184,16 @@ AS-17
 AS-18 
 AS-19 
 Then: 
-cos v = cos a 0 • cos [Rh (2)) • cos 0 + sin a 0 , sin [Rh (2)) AS-20 
+cos v = cos a 0 â€¢ cos [Rh (2)) â€¢ cos 0 + sin a 0 , sin [Rh (2)) AS-20 
 
 cos v -sin a0 sin[Rh (2)] 
 cos e + 
 AS-21 
-cos a0 • cos [Rh (2)] 
-Then the critical azimuth Sc(2) can be expressed as: cos v -sin a0 • sin [Rh (2)]]
+cos a0 â€¢ cos [Rh (2)] 
+Then the critical azimuth Sc(2) can be expressed as: cos v -sin a0 â€¢ sin [Rh (2)]]
 = 8(2) -arc cos AS-22
 [
-. cos a0 • cos [Rh (2)] 
+. cos a0 â€¢ cos [Rh (2)] 
 
 X 
 ) 
@@ -1210,7 +1210,7 @@ The two vectors G and H define a plane through the center of the unit sphere whi
 The vector G can be expressed as the vectorial sum of its three perpendicular components: 
 
 AS-23 
-or: 0G = [cos(E1) . coss] • a1 + [cos(E1) • sins] • az 
+or: 0G = [cos(E1) . coss] â€¢ a1 + [cos(E1) â€¢ sins] â€¢ az 
 AS-24 
 + [sin (E1 )] . a3 
 Let Wg be the angle between the tangent of the curve E1(s) and the tangent of the horizontal at the station site. In other words, Wg is the crossing angle between E1(s) and the local horizontal as shown in Figure A.5.5. 
@@ -1218,7 +1218,7 @@ BG I 8E1
 tan (Wg) = AS-25
 aGt as BG 
 = -[cos E1 . sin SJ . a1 + [cosE1 . cos SJ az
-as BG ­
+as BG Â­
 = [sinE1 . cos SJ a1 -[sinE1 sin SJ . az + [cos E1] a3
 8E1 
 BG 
@@ -1234,15 +1234,15 @@ BG
 Figure A.5.4: The Unit Vectors G and H 
 Engineering Consideration SA-9 Fall 1996 
 \ aG 
-\ ­
+\ Â­
 \ as 
 \ 
 Parallel to local horizontal 
 ,, 
 / / g /
 / / 
--­
----·----­
+-Â­
+---Â·----Â­
 G 
 I I 
 I 
@@ -1250,7 +1250,7 @@ I Local meridian
 Figure A.5.5: The Angle Wg 
 0 
 ) 
-® 
+Â® 
 Figure A.5.6: Calculations ofEv (S) and Its First Derivative Wh 
 
 Substituting these values in Equation A.5.25 gives: 
@@ -1275,14 +1275,14 @@ II
 b = -Ev AS-31 
 2 
 Napier's analogies for the spherical triangle ab v are: 
-tan (Wh;Ev) sin ( -a-v)­
+tan (Wh;Ev) sin ( -a-v)Â­
 2 
 = AS-32 
 sm. (a+v)
 cot (!) 
 2 
 (Wh +Ev) ( a-v)
-tan cos -2­
+tan cos -2Â­
 2 
 = AS-33 
 (a+v)
@@ -1299,15 +1299,15 @@ AS-37
 Then from (AS-32): 
 ) 
 (WJ . [II2 -E1 -v]
-tan _____[ • sm -='-------­2 2 
+tan _____[ â€¢ sm -='-------Â­2 2 
 Q1 = arctan 
 AS-38 
 ~ -E1 + v]
 sin [2 
 
-II -Er -vi·
+II -Er -viÂ·
 2
-• cos -='-------­[ 2 
+â€¢ cos -='-------Â­[ 2 
 
 arctan 
 
@@ -1319,7 +1319,7 @@ Wh = QI + Q2 AS-40
 0 = Q2 -QI AS-41 
 Rewriting (AS-34): 
 II 
-cos Q1 • tan(~ -E1 + v) 
+cos Q1 â€¢ tan(~ -E1 + v) 
 Ev = -2 arctan 
 AS-42 
 2 
@@ -1343,9 +1343,9 @@ AS-44
 By inspection: cos [S(2)] AS-45
 ) 
 cos [Rh (2)] sin [8(2)] AS-46 AS-47 
-From (AS-44) -(A5-47): Cos Un = cos a 0 , cos [Rh(2)] • [cos S0 , cos S(2) + 
+From (AS-44) -(A5-47): Cos Un = cos a 0 , cos [Rh(2)] â€¢ [cos S0 , cos S(2) + 
 A4-48 
-sin S0 sin S(2)] + sin a 0 , sin Rh (2)] Or: Un = arc cos [cosao . cos [Rh(2)] • cos [S(2) -S0 ]+ 
+sin S0 sin S(2)] + sin a 0 , sin Rh (2)] Or: Un = arc cos [cosao . cos [Rh(2)] â€¢ cos [S(2) -S0 ]+ 
 AS-49 
 sinao , sin [Rh (2)]] 
 
@@ -1364,7 +1364,7 @@ Applying the law of sines on the spherical triangle a, b,U5 gives:
 ) sin B sin F 
 = AS-52 
 sin a sin b 
-Sµbstituting: 
+SÂµbstituting: 
 II 
 a = -E1 
 2 
@@ -1388,19 +1388,19 @@ tan 0 ~ -1
 sin2 0 
 gives: 
 J/2 
-1 sinB-[ -1 AS-54 -[cos a0 I sin Wg • cos E1J2 ] 
+1 sinB-[ -1 AS-54 -[cos a0 I sin Wg â€¢ cos E1J2 ] 
 Napier's analogies give: 
 (B-F)
-sm -­2 
+sm -Â­2 
 
 AS-55 
 sm. (B+F)
-2· 
+2Â· 
 . Substituting: 
 ) 
 
 gives: 
-cos B-WgJ• tan(E1
+cos B-WgJâ€¢ tan(E1
 ( 
 2 
 
@@ -1425,7 +1425,7 @@ b = -ao
 2 and F = IT -Wg 
 gives: 
 . (E1-a0 ) (Wg +B)
-sm • tan 
+sm â€¢ tan 
 2 2 
 AS-58
 X = 2 arctan 
@@ -1443,14 +1443,14 @@ This chapter details the geometry of this problem and the calculations of the an
 also deals with the question ofimposing power limitations on the terrestrial transmitters. 
 
 G 
-y• 
+yâ€¢ 
 ;' 
 = 
 -
 
 P ~ radio site 
 PL ~ true south direction N ~ north poJe N "" norther latitude 
-Figu~ s.1, Goomeuy "'"""' u,,.,."''"' RM;, &y, (PY., PY. PY• .,,PY,)
+Figu~ s.1, Goomeuy "'"""' u,,.,."''"' RM;, &y, (PY., PY. PYâ€¢ .,,PY,)
 and the Geostationary Orbit (GSQ) 
 0
 5-2 
@@ -1535,10 +1535,10 @@ For a station elevation of H5 (AMSL), the refractivity N5 is related to N0 by th
 expression: 
 
 5.8 
-At any other height, H, along the ray path, N(H) can be expressed as: N(H) = N s e·Co(H-Hs) 
+At any other height, H, along the ray path, N(H) can be expressed as: N(H) = N s eÂ·Co(H-Hs) 
 5.9 
 Where: N,
-= loge -----"­
+= loge -----"Â­
 C0 
 N, + L\.N 5.10 = decay constant 
 LiN = -7.32 exp (.005577 N ,) = difference in refractivity at a height of 1 km above the 5.11 surface and at the surface 
@@ -1548,7 +1548,7 @@ Using Equation (5.7) and (5.9), the index of refraction can be expressed as a fu
 5.12 
 5.3.3. Total Refraction Bending 
 For a ray reaching the geostationary satellite orbit the total ray bending can be calculated from Equation (5.6) by substituting: 
-= n, = I + 10·6 N,
+= n, = I + 10Â·6 N,
 n1 = I
 n2 Then, 
 I 
@@ -1566,7 +1566,7 @@ Using (5.13) the total ray bending can be expressed as:
 I 
 dn 
 ~ = -f 5.14 
-n, ntan[cos·'[n,(Ro+H,)]cos0] n(R+H) . 0 
+n, ntan[cosÂ·'[n,(Ro+H,)]cos0] n(R+H) . 0 
 The Assumed Radio Horizon Angle 
 For a radio link between two terrestrial stations, it is often convenient to assume that the earth surface at the receiving site extends in all directions without change. This gives rise to the concept of "assumed radio horizon". More specifically, the assumed radio horizon, Rh is defined as the antenna elevation angle for which the refracted beam grazes an earth-centered sphere at the receive-station height. The definition is illustrated in Fig. 5.2 where the two station heights are 
 ) 
@@ -1610,21 +1610,21 @@ Figure 5.3: Trace of a Refracted Radio Ray Intercepting the GSO
 
 To overcome these two problems one needs at least an approximate function that relations ,: to E directly in an analytic form. Several mathematical functions were investigate. It was found that the exponential function 
 
-provides a good approximation. The first derivative of,: (E) is: ,:'(s) = (3aE2 +2bE + c) • -c(E) The coefficients a, b, c and d can be evaluated by substituting in (5.18) and (5.19) values of,: and ,:' at two known points. 
+provides a good approximation. The first derivative of,: (E) is: ,:'(s) = (3aE2 +2bE + c) â€¢ -c(E) The coefficients a, b, c and d can be evaluated by substituting in (5.18) and (5.19) values of,: and ,:' at two known points. 
 -c(E1) = exp(aE/ + bE/ + cE1 + d) 
 -c(E2) = exp(aE/ + bE/ + cE2 + d) 
-,:'(E,) = (3aE/" + 2bE, + c) • ,:(s,) 
+,:'(E,) = (3aE/" + 2bE, + c) â€¢ ,:(s,) 
 ) 
-,:'(E2) = (3 a E/ + 2 b s2 + c) • -c(E2) 
+,:'(E2) = (3 a E/ + 2 b s2 + c) â€¢ -c(E2) 
 Then, by defining the ray bending, -c, and its first derivative at two points along the ray path the four coefficients could be determined by simultaneously solving the four equations (5.20). 
 The solution ofthe four simultaneous equations given in (5.20) is: 
-·.:..:, -__ ..
+Â·.:..:, -__ ..
 1 ,: I ' ,: ' 
 a= +--1.;, ( 2 )i ('C2} 
 ,: I 'C2 -E2 -El n ~ 
 (E2-E1)2 1 ,: ' ,: ' 3
 2 I
-b = + -(E1-E2) • a 2(E2-E1) ,:2 ,: I 2 
+b = + -(E1-E2) â€¢ a 2(E2-E1) ,:2 ,: I 2 
 5.21 
 ,: ' 
 I 2
@@ -1651,12 +1651,12 @@ E2 = 0
 = -0.275A
 2 
 0 
-b) O:s;s:,;3° 
+b) O:s;s:,;3Â° 
 5.24a
-E1 = o· ,: I = 0.796A 5.24b ,: I I = -0.275A 5.24c 
+E1 = oÂ· ,: I = 0.796A 5.24b ,: I I = -0.275A 5.24c 
 30 5.25a
 E2 = ,: 2 = 0.352A 5.25b ,: 2I = -0.08A 5,25c 
-c) 3°:,; E :,;10° 
+c) 3Â°:,; E :,;10Â° 
 5.26a
 = 30
 E1 
@@ -1666,19 +1666,19 @@ E1
 Fall 1996 5-14 Engineering Considerations 
 
 5.27a 
-E2 = 10° 
+E2 = 10Â° 
 ~ 
-180 10·6 N 5.27b
-= • o . e 7 cot(10°)
+180 10Â·6 N 5.27b
+= â€¢ o . e 7 cot(10Â°)
 '2 
 7t 
 -~ 
-10·6 N e 7 't2' = 0 Sin2 (10°) 5.27c 
+10Â·6 N e 7 't2' = 0 Sin2 (10Â°) 5.27c 
 In the above equations i:,, Ez, ,, and '2 are in degrees and the factor A is a function ofN0 and H8 and is given by: 
 A= No 1743 + N 0 [H (N )us] . exp --;f . 17~ . 5.28 
 400 (-2143) 
-Approximation in the Range i; < -3° 
-For values of i; below (-2.5 °to -3 °approximately) the exponential equation for , is replaced by a straight line tangent to the ray path at E =Emin, where Emin is given by the following numerical equation: 
+Approximation in the Range i; < -3Â° 
+For values of i; below (-2.5 Â°to -3 Â°approximately) the exponential equation for , is replaced by a straight line tangent to the ray path at E =Emin, where Emin is given by the following numerical equation: 
 N -41.837 Emin = -2.51 -(0.173469 + H,) 5.29
 1530_61 
 Emin represents the refracted sea level, hence values of E below Emin are below sea level grazing and are not usually involved in minimum angular separation calculations. However, this portion of the refracted orbit provides a monotonically decreasing relationship between , and i; which facilitates some iterative solution techniques. 
@@ -1690,10 +1690,10 @@ where:
 400-N0 )
 i:'(Emin)R< -.95A(l.198) SO 5.31 0
 ( The factor A is given by Equation (5.28). 
-Approximation in the Range 10° < E < 90° 
-For values of E greater than 10 degrees, ,: is approximated by a cotangent function: ,: = 180 • 10·6 • N, • Cot(E) 5.32 
+Approximation in the Range 10Â° < E < 90Â° 
+For values of E greater than 10 degrees, ,: is approximated by a cotangent function: ,: = 180 â€¢ 10Â·6 â€¢ N, â€¢ Cot(E) 5.32 
 7t 
-and: ,:' = -10-6 • Ns • (-.-l-)2 
+and: ,:' = -10-6 â€¢ Ns â€¢ (-.-l-)2 
 5.33
 SmE 
 5.3.6 Slope of the Refracted Orbit Trace 0 
@@ -1714,9 +1714,9 @@ ds
 0 
 
 ,:' is given in section 5.3.5 by Equations (5.19), (5.31) and (5.33). e' can be calculated from Equation (5.1) -(5.3) as follows: 
-, sin (2~) • tan (s) [ 2k ]
+, sin (2~) â€¢ tan (s) [ 2k ]
 1 5.38 
-& = 4 • + l+k2 -(l-k2)cos ~ where k and ~ are defined in section 5.2.1. 
+& = 4 â€¢ + l+k2 -(l-k2)cos ~ where k and ~ are defined in section 5.2.1. 
 5.3.7 Refracted Orbit Trace Calculations 
 The ROT is a symmetrical arc with respect to the meridian of longitude of the terrestrial radio station. The arc can be plotted as a curve in a two0 dimension graph with the following coordinates: 
 s: The azimuth angle from true south 
@@ -1729,16 +1729,16 @@ Minimally refracted orbit = (S) (when N0 = 200)
 00 
 E2 (S) = Maximally refracted orbit = (S) (when N0 = 400)
 00 
-The Geometric Refracted Orbit, & (S), corresponds to the case where N0 = 0 (no refraction). The ROT can be calculated as follows: Step 1: Calculated the Geometric Orbit Trace, & (S), using Equation (5.1) Step 2: Calculate the slope ofthe Geometric Orbit Trace,&' (S) using Equation (5.38). Step 3: Evaluate the constant A in Equation (5.28) and substitute in Equation (5.22) ­
+The Geometric Refracted Orbit, & (S), corresponds to the case where N0 = 0 (no refraction). The ROT can be calculated as follows: Step 1: Calculated the Geometric Orbit Trace, & (S), using Equation (5.1) Step 2: Calculate the slope ofthe Geometric Orbit Trace,&' (S) using Equation (5.38). Step 3: Evaluate the constant A in Equation (5.28) and substitute in Equation (5.22) Â­
 (5.27) to calculate the e1's and 1: 1's. 
-Step 4: Substitute Equation (5.22) -(5.27) in Equation (5.21) to calculate the coefficients a, b, c and d. · 
+Step 4: Substitute Equation (5.22) -(5.27) in Equation (5.21) to calculate the coefficients a, b, c and d. Â· 
 Step 5: Equations (5.18) and (5.19) give the total ray bending and its first derivative as a 0 
 functions ofe in the range (-3 < E < +10). 
 Step 6: Determine Emin from Equation (5.29) and the slope,' at Emin from Equation (5.31) or from the expression of ,'(e) in the range -3 < E < 0. Then use Equation (5.30) to obtain, (e) in the range (e <emin). 
-Step 7: , (e) and,' for (10° < e < 90°) can be calculated directly from Equation (5.32) and (5.33). 
+Step 7: , (e) and,' for (10Â° < e < 90Â°) can be calculated directly from Equation (5.32) and (5.33). 
 Step 8: The ROT 00 (S), E1 (S) and E2 (S) can now be calculated as a function of S by adding E (S) and ,(e) (Equation (5.18)). 
 Step 9: The slope of the ROT 00 (S) can be calculated from Equation (5.34) and the information obtained in steps 5, 6 and 7. 
-Examples of the ROT calculation are illustrated graphically in Figure 5.4 for station latitude of 50° North. 
+Examples of the ROT calculation are illustrated graphically in Figure 5.4 for station latitude of 50Â° North. 
 
 
 -
@@ -1767,10 +1767,10 @@ i ' I I ' ' I
 'i ,, 
 ' ! . i ! 
 '' 
-r r:-~-­
+r r:-~-Â­
 i I' I I ' 
 I ' ' '' +++-:: ' ' I . '' ' 
-rrr-+-+­
+rrr-+-+Â­
 I I Ii
 i 'I ''' I':
 I I i i
@@ -1798,7 +1798,7 @@ I
 ,-H-+ I ~ I ' I I I 
 '
 '
-' ,· 
+' ,Â· 
 I I 'I 
 I
 ' 
@@ -1844,7 +1844,7 @@ E ' I I
 I I 
 I M,I I 
 I z II 
-I C ' 'ii,, :,:·•
+I C ' 'ii,, :,:Â·â€¢
 '~-' .,,< "' ." i 
 No,
 ;; I 
@@ -1853,7 +1853,7 @@ i
 "" ' 
 I
 = I 
-·"' ~ ' ' I
+Â·"' ~ ' ' I
 t 
 I " ~ ' 
 I ~I' 
@@ -1864,7 +1864,7 @@ M ,-.
 "\:. 
 I ,-<-I '' 
 I I 
-§ I' 
+Â§ I' 
 ~ 
 N 
 w 
@@ -1881,9 +1881,9 @@ M
 " 
 ' 
 ~ 
-:,: " • _, I ' 
+:,: " â€¢ _, I ' 
 '' 
-aj'i1uv uopu,,·:i13 I I 
+aj'i1uv uopu,,Â·:i13 I I 
 I I 1 I I I I I I I I I I' 
 ' M
 ' M ' N ' 0 ' N 
@@ -1910,7 +1910,7 @@ where ~ can be expressed in terms of a 0 as:
 k and Mare defined in section 5.2.1. 
 
 ) 
-Minimally refracted trace, E1(s) Maximally refracted Geometric orbit.trace, E2(s) trace, E(s)Elevation angles 1--------~,<--+---,f--------­ 
+Minimally refracted trace, E1(s) Maximally refracted Geometric orbit.trace, E2(s) trace, E(s)Elevation angles 1--------~,<--+---,f--------Â­ 
 
 Assumed radio horizon (No ,= 400), Rh(2) 
 Antenna elevation angle, cr0 
@@ -1921,7 +1921,7 @@ Figure 5.5: Three Reference Points Along the Azimuth Axis
 S(l): The intersection point of the minimally refracted orbit trace E(l) and the refracted 
 Q 
 assumed radio horizon (for N0 =250) which is denoted by Rh (1). 
-· S(2): The intersection point of the maximally refracted orbit trace E(2) and the refracted assumed radio horizon Rh(2) (for N0 = 400). 
+Â· S(2): The intersection point of the maximally refracted orbit trace E(2) and the refracted assumed radio horizon Rh(2) (for N0 = 400). 
 
 S(l) and S(2) can only be determined by an iterative solution. The solution technique for both points is identical and may be described as follows: (For S(l)): 
 Initially S is set equal to S(0). A value for E(l) is computed for S = S(0). The slope of the tangent to the E(l) curve at this point is given by: 
@@ -1937,7 +1937,7 @@ Figure 5.6 illustrates a situation where the center of an unrefracted radio beam
 Since the refracted orbit trace is bounded by the two extreme traces E(l) (minimum refraction) and E(2) (maximum refraction), the calculation ofthe minimum azimuth displacement should be worked out on the right and left of these two curves, respectively. The azimuths satisfying a minimum angular separation of two degrees are noted in Figure 5.7 by Sc(l) and Sc(2), and are called the critical azimuths. Note that in the case of Sc(2), Rh(2) (the assumed radio horizon for N0 = 400) bounds the minimum angular separation (i.e.: the minimum angular separation is not perpendicular to the tangent to the E(2) orbit trace). 
 
 
-Refracted trace · 
+Refracted trace Â· 
 E 
 Antenna elevation angle, ao
 ) 
@@ -1949,20 +1949,20 @@ Elevation angle
 
 Maximally refracted radio horizon, Rh(2) 
 Antenna elevation angle, a0 
-s· 
+sÂ· 
 Figure 5.7: Critical Azimuth Sc(l) and Sc(2) for Minimum Angular Separation, v 
 Fall 1996 
 5-24 
 Engineering Consideration 
 
 Sc(2) can be calculated directly from the following equation (see Annex 5.2). 
-S (2) = S(2) _ arc cos [cos u -sin a. 0 , sin [Rh (2)]] c COS a. 0 • COS [Rh (2)] 
+S (2) = S(2) _ arc cos [cos u -sin a. 0 , sin [Rh (2)]] c COS a. 0 â€¢ COS [Rh (2)] 
 Unlike Sc(2), there is no simple solution for Sc(l) and an iterative technique must be used. The technique is illustrative graphically in Figure 5.8 and is detailed analytically in Appendix A.5.3. to solve for Sc(l) a new locus of points called Ev is to be calculated. The locus is located at an angular distance v from the perpendicular to a tangent to E(l). As illustrated in Fjgure 5.8, the solution starts at point A (the intersection of a.0 and e(s)). The corresponding azimuth is s(0). Point 2 has an azimuth of (S(0) + v) and the corresponding point on the E1(s) curve is point 3. Point 4 (on the locus Ev) is calculated by moving an angular distance v perpendicular to E1(s) at 
 3. The tangent to Ey(s) at point 4 intersect the elevation angle line at point 5. If the difference between the value of Ey(s) at 5 and the elevation angle is nearly zero, then Sc(s) is set equal to 
 point 5, otherwise the iterative search continues by subtracting from the azimuth of 5, a value equal to the difference in azimuths between points 3 and 4. 
 ) 5.4.5 Angular Separation Calculations 
 There are two different procedures for calculating the angular separation, U, between an earth station radio beam and the geostationary satellite orbit, depending on whether the radio beam falls below or above the GSO. For a given station latitude, antenna height and antenna elevation angle the relative position of the radio beam with respect to the GSO depends on the antenna 
-azimuth, which will be denoted by S0 • As a matter of notation, S0 is said to be south of the GSO when the radio beam falls below the GSO, and is said to be north of the GSO when the radio beam is above the GSO. 
+azimuth, which will be denoted by S0 â€¢ As a matter of notation, S0 is said to be south of the GSO when the radio beam falls below the GSO, and is said to be north of the GSO when the radio beam is above the GSO. 
 
 
 /Ev(S) 
@@ -1987,7 +1987,7 @@ South ofthe GSO
 S0 
 Where S0 is south ofthe refracted GSO the angular separation, U5, is the angle between points C 
 Q 
-and D in Figure 5.10. Point C: Has the coordinates S0 ( antenna azimuth) and a 0 ( antenna elevation angle) PointD: A point normal to the tangent to the minimally refracted trace E1(S) Unlike Un, there is no closed from formula for calculating U5• Instead, an iterative procedure 
+and D in Figure 5.10. Point C: Has the coordinates S0 ( antenna azimuth) and a 0 ( antenna elevation angle) PointD: A point normal to the tangent to the minimally refracted trace E1(S) Unlike Un, there is no closed from formula for calculating U5â€¢ Instead, an iterative procedure 
 must be used as described below: The desired point of E1(s) is denoted by D (see Figure 5.10), and U5, is the angular distance between D and C. The azimuth ofpoint D is S' and the azimuth difference (S0 -S)is denoted by x. To find the point D, we define a function called DIFF (for difference), where DIFF = S + X -S0 For any arbitrary point on E1(s), S', the DIFF function is DIFF = S' + X' -S0 = 0. The technique is based on minimizing the function Diff until we find the desired value of S such that DIFF = 0 = S + X -S0 
 
 Elevation angle 
@@ -2036,7 +2036,7 @@ Latitude
 Step 1: 
 Based on the geographical location of each station (latitude and longitude), identify the antenna that points toward the equator. In the case of east-west link select the antenna with the largest elevation (AMSL). The analysis will be carried out for that antenna only. 
 Step 2: 
-Based on the geographical locations and the elevations of the two antennas, calculate the antenna · elevation angle, a 0 , and the azimuth angle from true south, S0 , for the antenna selected in Step 1. 
+Based on the geographical locations and the elevations of the two antennas, calculate the antenna Â· elevation angle, a 0 , and the azimuth angle from true south, S0 , for the antenna selected in Step 1. 
 (Note: The calculation of a0 and S from the positional data ofthe two stations has not been covered in this report). 
 Steps 1 and 2 constitute the first section ofthe interference prediction procedure. 
 5.6.2 Calculation of the Refracted Orbit Trace 
@@ -2048,7 +2048,7 @@ iv) The minimally refracted assumed radio horizon Rh(l).
 These four parameters are functions of: 
 i) The station latitude, M; 
 ii) Antenna height (AMSL), H8; and 
-) iii) Antenna elevation angle, a0• Mand H8 are part ofthe radio link data, and a 0 is calculated under step 2, section 5.6.1. 
+) iii) Antenna elevation angle, a0â€¢ Mand H8 are part ofthe radio link data, and a 0 is calculated under step 2, section 5.6.1. 
 5.6.3 Angular Separation Calculation 
 The angular separation calculation involves the following steps: 
 Step 1: 
@@ -2068,12 +2068,12 @@ The interference prediction process, as outlined in sections 5.6.1, 5.6.2 and 5.
 i) Above entire orbit: This means that the antenna elevation angle is too high(above local horizontal) to cause interference, and the radio beam passes above the orbit for any azimuth angle. 
 ii) Below Sea Level: . In this case the antenna is pointed too low such that radio beam will be intercepted by the earth's surface and interference to the orbit is not possible. 
 Fall 1996 5 -36 
-iii) More than 2° angular separation: In this case the orbit is exposed to the antenna under consideration, but for all possible pointing directions the angular separation between the terrestrial radio beam and the orbit is greater than 2°. This is considered to be an acceptable separation, and possible interference is not likely. The angular separation is usually measured along two directions: 
+iii) More than 2Â° angular separation: In this case the orbit is exposed to the antenna under consideration, but for all possible pointing directions the angular separation between the terrestrial radio beam and the orbit is greater than 2Â°. This is considered to be an acceptable separation, and possible interference is not likely. The angular separation is usually measured along two directions: 
 Along the assumed radio horizon in the direction ofthe receive antenna, and 
 perpendicular to the refracted orbit. 
-Smaller separation is exhibited in the case of perpendicular direction and as along as this separation is greater than 2° the possibility ofinterference in minimal. 
+Smaller separation is exhibited in the case of perpendicular direction and as along as this separation is greater than 2Â° the possibility ofinterference in minimal. 
 ) 
-iv) Less than 2° Angular Separation: When the angular separation between the radio beam and the orbit is less than 2°, intersection is possible. In this case more detailed and careful calculations should be carried out to examine the actual radio horizon and azimuth pointing ofthe antenna. Should such further analysis indicate that interference is indeed a real possibility detailed calculation of the EIRP should be carried out and maximum power limitation should be enforced in accordance with the CCIR Rec. 406-4. 
+iv) Less than 2Â° Angular Separation: When the angular separation between the radio beam and the orbit is less than 2Â°, intersection is possible. In this case more detailed and careful calculations should be carried out to examine the actual radio horizon and azimuth pointing ofthe antenna. Should such further analysis indicate that interference is indeed a real possibility detailed calculation of the EIRP should be carried out and maximum power limitation should be enforced in accordance with the CCIR Rec. 406-4. 
 Figure 5.12 represents a flow chart of the interference prediction steps discussed in this section. 
 Engineering Consideration 5-37 Fall 1996 
 
@@ -2093,13 +2093,13 @@ Yes
 l l 
 Above entire orbit? 
 l No Below Sea Level? 
-• No 
+â€¢ No 
 Calculate: S(0), S(l), S(2) Critical Azimuths Sc(l), S0(2) 
 l 
 Calcualte Angular Separation 
 u., u,. 
 l 
-u > 2°? I I 
+u > 2Â°? I I 
 l No 
 Detailed EIRP Calcualtions 
 Interference Prediction Process 
@@ -2118,7 +2118,7 @@ In this case, the link points below the sea level horizon. Since all of Canada i
 Engineering Consideration 5-39 Fall 1996. 
 
 
-Adjacent Station ~j'""•--2° Min. ---i 
+Adjacent Station ~j'""â€¢--2Â° Min. ---i 
 / 0 
 / 
 / 
@@ -2150,7 +2150,7 @@ Not more than 2 degrees north ofthe No = 400 orbit trace measured perpendicular 
 See Figure 5 .14. 
 Engineering Consideration 5-41 Fall 1996 
 
-Adjacent Station ~,,..,.__2° Min. --i-, 
+Adjacent Station ~,,..,.__2Â° Min. --i-, 
 
 
 / 
@@ -2174,7 +2174,7 @@ Engineering Consideration 5-43 Fall 1996
 
 
 Adjacent Station ~ 
-2°Max. --­
+2Â°Max. --Â­
 ------.._ 
 /
 I 
@@ -2192,7 +2192,7 @@ Figure 5.15
 0 
 Example 6: Intersection 
 The south-pointing link from 
-A to B Latitude · 380000N 37 57 56N Longitude 1221858W 122 00 00 W Ground Elevation, AMSL 350 m/1148 ft 300 m/984 ft Antenna Height, AGL 149 m/488 ft 99 m/324 ft Distance 28.03 km or 17.42 mi Azimuth 97.74 deg Elevation Angle -.297 deg Intersects the refracted geostationary orbit (N=250) Intersection Longitude 44.77 East Min. Angular Separation 1.14 deg Max. EIRP (CCIR Rec. 406-4) 
+A to B Latitude Â· 380000N 37 57 56N Longitude 1221858W 122 00 00 W Ground Elevation, AMSL 350 m/1148 ft 300 m/984 ft Antenna Height, AGL 149 m/488 ft 99 m/324 ft Distance 28.03 km or 17.42 mi Azimuth 97.74 deg Elevation Angle -.297 deg Intersects the refracted geostationary orbit (N=250) Intersection Longitude 44.77 East Min. Angular Separation 1.14 deg Max. EIRP (CCIR Rec. 406-4) 
 ( 1-10 GHZ) 52.2 DBW (10-15 GHZ) 45.0 DBW (Above 15 GHZ) 55.0 DBW 
 Note: Angular separation for intersection is set at 1.5 degrees for 1-15 GHZ and zero degrees. 
 for above 15 GHZ. Critical Azimuths 98.90 to 93.49 deg Critical Longitudes 46.59 West to 37.98 East 
@@ -2214,7 +2214,7 @@ Assumed Radio Horizon
 I 
 I 
 ./ J 
-Note: Values for X: Min. 0° -Max. 2° 
+Note: Values for X: Min. 0Â° -Max. 2Â° 
 Figure 5.16 
 0 
 Example 7: Intersection 
@@ -2230,7 +2230,7 @@ Engineering Consideration 5-47 Fall 1996
 
 
 Adjacent Station 
-• 
+â€¢ 
 I I I 
 I I
 I 
@@ -2264,10 +2264,10 @@ a)
 Long-Term, Mode 1, interference level which is the interference.level exceeded 20% ofthe time due to Mode 1 propagation and is designated X(20). 
 
 b) 
-Short-Term, Mode 1, interference level which is the interference level exceed q¾ of the time (q :C:: 1%) due to mode 1 propagation and is designated X (q). 
+Short-Term, Mode 1, interference level which is the interference level exceed qÂ¾ of the time (q :C:: 1%) due to mode 1 propagation and is designated X (q). 
 
 c) 
-Short-Term, Mode 2, interference level which is the interference level exceeded q¾ ofthe time (q :C:: 1 %) due to Mode 2 propagation and is designated X, (q). 
+Short-Term, Mode 2, interference level which is the interference level exceeded qÂ¾ ofthe time (q :C:: 1 %) due to Mode 2 propagation and is designated X, (q). 
 
 
 To facilitate the interference calculations for Mode 1 and Mode 2 propagation, the world has been divided into "Radio-Climatic Zones" (see section 4.3.1) and "Rain-Climatic Zones" (see section 4.5.7). 
@@ -2281,8 +2281,8 @@ The details of the SJM model are given in Seciton 4 of Annex 10-1 of the Report 
 4.3.2 Radio-Climatic Zones 
 The basic transmission loss of a path, expressed in terms of percentage of time, is a complex function of distance, fequency, elevation angle of the transmission path and on climate. For convenience of use the world has been divided into three basic radio-climatic regions termed Zones A, Band C respectivley. These zones are defined as follows (CCIR Rep. 382-2): 
 ZONE A: land, with the exception of a coastal strip the width of which is either 100 km or that distance from the actual coast at which the terrain begins to exceed an altitude of 1000 m whichever is the lesser distance. 
-ZONEB: sea, at latitudes greater than 23.5° (North or South), excluding the Mediterranean and Black Seas, but including the coastal strip defined above wherever land borders and sea at alti dues greater than 23 .5°. 
-ZONEC: sea, at latitudes smaller than 23.5° (North or South), including the Mediterranean and Black Seas, _and the coastal strip above wherever land borders on sea at latitudes smaller than 23.5°. 
+ZONEB: sea, at latitudes greater than 23.5Â° (North or South), excluding the Mediterranean and Black Seas, but including the coastal strip defined above wherever land borders and sea at alti dues greater than 23 .5Â°. 
+ZONEC: sea, at latitudes smaller than 23.5Â° (North or South), including the Mediterranean and Black Seas, _and the coastal strip above wherever land borders on sea at latitudes smaller than 23.5Â°. 
 _) 
 Engineering Considerations 4-3 Fall 1996 
 he2=0.58 km 
@@ -2300,8 +2300,8 @@ Engineering Considerations 4-5 Fall 1996
 0
 4.3.3 Long-Term Basic Transmission Loss, L(20) 
 The basic transmission loss exceeded for all but 20% of the time in Zone A for the SJM model path is shown in Figure 4,2 (Figure 10-1-14 of the SJM Report). Similar figures for Zones Band C are included in the SJM report. 
-The equations implemented in TS-ES are linear approximations to the 0 = 0° curve and the expressions used are: 
-Zone A:· 
+The equations implemented in TS-ES are linear approximations to the 0 = 0Â° curve and the expressions used are: 
+Zone A:Â· 
 = 104.45 + 20 log DA + 20 log (f / 4); DA< 90km(l) 
 LbA(20)= -228 + 190logDA + 20log(f/4); 90 !s DA !s 160km 
 . 4.2 
@@ -2325,7 +2325,7 @@ HTx = aht (int) + intgmd is the antenna height of the interfering transmit stati
 HRx = aht (vie)+ vicgmd is the antenna height of the victim receiving station; aht is the antenna height above ground level and vicgmd is the victim site altitude (AMSL) 
 Transition Distance 
 The transition distance, Dh in km, is defined as follows: 
-Dh = 4.123*((HTx0 ') + (HRx0·')) 
+Dh = 4.123*((HTx0 ') + (HRx0Â·')) 
 Spherical Earth Propagation Loss Calculation 
 ) 
 a) Ford> DH the Spherical Earth propagation loss is calculated as follows: 
@@ -2354,7 +2354,7 @@ Summer 1997 4-8 Engineering Considerations
 
 Ah: horizon angle correction, in dB.  
 The horizon angle correction, Ah, is calculated as follows:  
-Ah = Ah= Ah =  20 log (I 8s -4  + 4.5f112 s) +  113f s  for c > 0° for -0.5° :,; c :,; 0° for c < -0.5°  4.4.3  
+Ah = Ah= Ah =  20 log (I 8s -4  + 4.5f112 s) +  113f s  for c > 0Â° for -0.5Â° :,; c :,; 0Â° for c < -0.5Â°  4.4.3  
 Where s is the horizon angle in degrees.  
 The rate ofattenuation, p, is calculated as follows: p = Pz + Pv + Po (dB/km)  4.4.4  
 p0 :  rate of attenuation due to oxygen (dB/km)  
@@ -2369,7 +2369,7 @@ I I
 (! + 22.3)2 f 
 PvB Pvc  = =  2 PvA 5 PvA  4.4.7 4.4.8  
 p2 :  rate ofattenuation due to all effects except atmospheric gases, dB/km.  
-PzA P28  = =  0.154 (I Pzc =  4+ 3.05 log f) 0 · x (0.9028 + 0.0486 log q) 2 (0.272 + 0.047 log q) 2 (dB/ km)  (dB/ km)  4.4.9 4.4.10  
+PzA P28  = =  0.154 (I Pzc =  4+ 3.05 log f) 0 Â· x (0.9028 + 0.0486 log q) 2 (0.272 + 0.047 log q) 2 (dB/ km)  (dB/ km)  4.4.9 4.4.10  
 When  q: f:  percentage oftime (q:,; I%) frequency in GH2  
 
 Engineering Considerations 4-9 Summer 1997 
@@ -2381,7 +2381,7 @@ I. dA, dB, de are obtained from a map and expressed in km. For an overland path 
 f: frequency expressed in GHz 
 
 3. 
-i:: horizon angle in degrees. IfE is unknown set E = 0° 
+i:: horizon angle in degrees. IfE is unknown set E = 0Â° 
 
 4. 
 qi: desired percentage ofthe time (q:,; I%); usually q = 0.01 %. 
@@ -2420,7 +2420,7 @@ Gb: antenna gain at station Bin the direction of the scattering volume, dbi
 
 AFSL(B): antenna feed system loss at station B, dB. 
 LR: rain attenuation as a function of the rain rate and frequency, in dB. 
-LR =0 forf< 1 (GHz) LR= Ax 10·3 x f·2 for 1 :S f:S 10 (GHz) LR= Ax 10·2 x f2·2 for 10 < f (GHz) 
+LR =0 forf< 1 (GHz) LR= Ax 10Â·3 x fÂ·2 for 1 :S f:S 10 (GHz) LR= Ax 10Â·2 x f2Â·2 for 10 < f (GHz) 
 Rain Zone CCIR  A  B  C  D  E  F  G  K  M  
 Rain Zone MICS Code  1  2  3  4  5  6  7  8  9  
 Factor A  1.78  2.33  2.72  3.12  3.58  4.27  5.11  5.79  7.01  
@@ -2469,15 +2469,15 @@ I.I
 3.8 
 2.5 
 
-The reflectivity factor exceeded for q(¾) of the time, Z(q), is given by the following equations: 
-= 26 + 14 log R(q) (dB) for h::; hR 4.6.1 = 26 + 14 log R(q) -6.5 (h-h0 (dB) for h > hR 4.6.2 maximum rain cell height, km (Table 4.1) height ofantenna beam intersection volume, km rain rate exceeded for q(¾) ofthe time, mm/h (Figure 4.5) 
+The reflectivity factor exceeded for q(Â¾) of the time, Z(q), is given by the following equations: 
+= 26 + 14 log R(q) (dB) for h::; hR 4.6.1 = 26 + 14 log R(q) -6.5 (h-h0 (dB) for h > hR 4.6.2 maximum rain cell height, km (Table 4.1) height ofantenna beam intersection volume, km rain rate exceeded for q(Â¾) ofthe time, mm/h (Figure 4.5) 
 0 
 The maximum rain cell diameter, D(q), is approximately given by the following equation (linear approximations to the curve of Figure 13, CCIR Rep 563-1): 
 D(q) = 5.31 -0.069 R(q) (km) for 10::; R(q)::; 30 mm/h 4.6.3 D(q) = 3.77 -0.017 R(q) (km) for 30 < R(q) mm/h 4.6.4 
 4.4.5 Short-Term Mode 2. Interference Level 
 The short-term interference level Xx(q) is given by: 
 Xx(q) = P -L,(q) 4.7 
-where L,(q) = effective scatter transmission loss (Mode 2) exceeded for all but q¾ of the time. The determination ofL,(q) is described in Sections 4.4.2 and 
+where L,(q) = effective scatter transmission loss (Mode 2) exceeded for all but qÂ¾ of the time. The determination ofL,(q) is described in Sections 4.4.2 and 
 4.12. q is defined in section 4.3.3. 
 
 
@@ -2537,12 +2537,12 @@ $ = . a2 +$/ -a 4.9 where: r $2
 a = -2........2.. tan e
 0 4.10
 2h 
-¢0 = _1 {.l + 8khc -1} 4.112C 
+Â¢0 = _1 {.l + 8khc -1} 4.112C 
 r0 
-Nsro 10·
+Nsro 10Â·
 C0 6rl
 k = [1 -6 4.12 
-1 + N 10·
+1 + N 10Â·
 s C0 (k-l)r0 2 1
 + _!_ (2 k + 1)
 
@@ -2608,7 +2608,7 @@ D2 + 2Dr0 sin 0 -(h2 + 2r0h) = 0 4.22 Solving the second order equations 4.22, w
 D = .J(r0 sin 0) + h (h + 2r0) -sin 0 4.23
 r0 where 0 is the apparent elevation angle of the refracted beam calculated in section 4.6.3. 
 0 
-""'"~~~•"~-~ll1".i.~
+""'"~~~â€¢"~-~ll1".i.~
 :~~~~ , , \ aJ~J r~~ 
 
 0 
@@ -2635,7 +2635,7 @@ The geocentric latitude \Jf and the geodetic latitude ~ are related with the equ
 0 
 'J The distance r from the center ofthe earth to a point on the surface of the earth is given by: 
 I 
-r = re 1 + e2 sin2 ¢]-2 4.27 
+r = re 1 + e2 sin2 Â¢]-2 4.27 
 [ 2
 1 -e 
 where re = equatorial radius. 
@@ -2650,25 +2650,25 @@ Figure 4.10: Geodetic Latitude, ~ Geocentric Latitude, \j/
 4.8.1 General 
 The coordinate systems used are righthand rectangular systems. A rectangular coordinate system is usually defined by specifying its origin, its fundamental (x-y) plane, the principal or primary axis (x) direction, and the direction of the positive tertiary (z) axis. Three unit vectors are then defined to indicate the directions of the three mutually perpendicular axes. 
 4.8.2 Geocentric Coordinate System -(IJK) 
-The geocentric coordinate system shown in Figure 4.11 has its origins at the earth's center and is the principal system to which all others are referenced. The fundamental plane is the equator and the positive x-axis points at 180° longitude. The z-axis points in the direction of the north pole. Unit vectors, I, J, and K, shown in Figure 4.11 lie along the s, y and z axes, and the unit vector U is thus defined by: 
+The geocentric coordinate system shown in Figure 4.11 has its origins at the earth's center and is the principal system to which all others are referenced. The fundamental plane is the equator and the positive x-axis points at 180Â° longitude. The z-axis points in the direction of the north pole. Unit vectors, I, J, and K, shown in Figure 4.11 lie along the s, y and z axes, and the unit vector U is thus defined by: 
 ) 
 u = 4.28 
 Where: ui = -cos \j/ cos "' uj = cos \j/ sin A, Uk = sin \j/ 
 \jf = geocentric latitude 11, = longitude 
 In the geocentric coordinate system: 
--longitude is measured positively from the negative of the primary x-axis (0° longitude) towards the secondary y-axis in the x-y phase 
+-longitude is measured positively from the negative of the primary x-axis (0Â° longitude) towards the secondary y-axis in the x-y phase 
 -latitude is measured relative to the x-y plane with positive direction towards the tertiary (z) axis. 
 Engineering Considerations 4-31 Summer 1997 
 Therefore in the geocentric coordinate system: 
 I. latitude is positive in Northern hemisphere. 
 2. longitude is positive, west ofprim meridian. 
 4.8.3 Topocentric Coordinate System -(SEZ) 
-In the Topocentric coordinate system, the origin is taken at the observer. In this system (shown in Figure 4.12), the x-axis is directed toward the south point, the y-axis toward the east and the z­axis is directed to the astronomical zenith. 
+In the Topocentric coordinate system, the origin is taken at the observer. In this system (shown in Figure 4.12), the x-axis is directed toward the south point, the y-axis toward the east and the zÂ­axis is directed to the astronomical zenith. 
 Unit vectors S(south), E(east) and Z(zenith) shown in Figure 4.12 lie along the x, y and z axes, and the unit vector is thus defined by 
 V = v, S + V0 E+ Vz Z 4.29 
 V
-where: v, = -cos 8 cosµ 0 =cosssinµ 0 Vz=sins s = elevation angle 
-µ = azimuth 
+where: v, = -cos 8 cosÂµ 0 =cosssinÂµ 0 Vz=sins s = elevation angle 
+Âµ = azimuth 
 The S (south) and E (east) vectors are in the plan tangential to the earth's surface and the 
 Z (zenith) vector as normal to this tangential surface is not parallel to the earth radius vector (see Figure 4.13). 
 
@@ -2727,7 +2727,7 @@ Transition Distance
 The transition distance, Dh in km, is defined as follows: 
 ) 
 Spherical Earth Propagation Loss Calculation 
-.,. ­
+.,. Â­
 a) For d > n/the Spherical Earth propagation loss is calculated as follows: 
 Lb(20) = 29.73 + 30 * log (FMHz) + 10 log (d) + 30 * log (theta)+ N (H, h) 
 Where: 
@@ -2744,7 +2744,7 @@ P = Effective transmitted power ofthe interfering stations (ES or TS). P depends
 Lb (20) = Effective basic transmission loss (Mode 1) exceeded for all but 20% of the time. The determination ofLb(20) is described in section 4.3.3. 
 Ge = Effective gain of ES antenna (see section 4.5.2) 
 0 
-4.3.5 Short-Term Basic Transmissioin Loss, L(q) · 
+4.3.5 Short-Term Basic Transmissioin Loss, L(q) Â· 
 The basic transmission loss exceeded for all but q (%) of the time (q:,l %), for propagation Mode 1, is calculated using the following equation (Equation 6 of Appendix 28 of the Radio Regulations): 
 
 
@@ -2755,7 +2755,7 @@ f = frequency, GH,
 ~A, ~B, ~C: rate of attenuation, in dB/ km, for Zone A, B and C respectively. dA, dB, de: path distance, in km, over Zones A, Band C respectively. 
 
 Ah: horizon angle correction, in dB. The horizon angle correction, Ah, is calculated as follows: 
-Ah = 20 log (1 + 4.Sf112 e) + f 113 e fore> 0° Ah = 8E for -0,5° :S: E :S: 0° 4.4.3 Ah = -4 for E < -0.5° 
+Ah = 20 log (1 + 4.Sf112 e) + f 113 e fore> 0Â° Ah = 8E for -0,5Â° :S: E :S: 0Â° 4.4.3 Ah = -4 for E < -0.5Â° 
 Where E is the horizon angle in degrees. 
 The rate of attenuation, p, is calculated as follows: 
 
@@ -2765,7 +2765,7 @@ p
 P0 = 68 X 10"4 f2 [ l + l + (f2 l ] (dB/km) 4.4.5 (60-f) 2 (60 + f) 2 + 0.36) . 
 ) 
 rate ofattenuation due to atmospheric water vapour, dB/km 
-Pv A= 3.5 x 10-4 1 + 1 + 3 x 10·6f2 (dB/km) 4.46 ­2
+Pv A= 3.5 x 10-4 1 + 1 + 3 x 10Â·6f2 (dB/km) 4.46 Â­2
 (1-22.3)2 9 (1 +22.3)-t f + f2 f 
 PvB = 2 PvA 4.4.7 Pvc = 5 PvA 4.4.8 
 p
@@ -2786,7 +2786,7 @@ dA, d8, de are obtained from a map and expressed in km. For an overland path d8 
 f: frequency expressed in GHz 
 
 3. 
-i:: horizon angle in degrees. If Eis unknown set E=0° 
+i:: horizon angle in degrees. If Eis unknown set E=0Â° 
 
 4. 
 qi: desired percentage of the time (q:,; 1 %); usually q = 0.01%. 
@@ -2798,7 +2798,7 @@ However any value :,; 1% can be used. The subindex j_ is used if the calculation
 4.3.6 Short-Term Mode I Interference Level 
 The short-term interference level X(q) is given by: 
 4.5 
-Where Lb( q) = Effective basic transmission loss Mode 1 exceeded for all but q¾ ofthe time. The determination ofLb(q) is described in section 4:3.5. 
+Where Lb( q) = Effective basic transmission loss Mode 1 exceeded for all but qÂ¾ ofthe time. The determination ofLb(q) is described in section 4:3.5. 
 
 START
 [ l 
@@ -2856,7 +2856,7 @@ Gb: antenna gain at station B in the direction ofthe scattering volume, dbi
 AFSL(B): antenna feed system loss at station B, dB. 
 
 rain attenuation as a function of the rain rate and frequency, in dB. 
-11} = 0 for f < I (GHz) LR= Ax 10·3 x f"2 for I ::; f::; IO (GHz) LR=Ax10·2 xf·2 for!O<f(GHz) ­
+11} = 0 for f < I (GHz) LR= Ax 10Â·3 x f"2 for I ::; f::; IO (GHz) LR=Ax10Â·2 xfÂ·2 for!O<f(GHz) Â­
 Rain Zone CCIR  A  B  C  D  E  F  G  K  M  
 Rain Zone MICS Code  I  2  3  4  5  6  7  8  9  
 Factor A  1.78  2.33  2.72  3.12  3.58  4.27  5.11  5.79  7.01  
@@ -2899,7 +2899,7 @@ Figure 4.5: Rain Fall Distribution
 4.5.1 Earth Station Service Arc 
 The earth station service arc is defined, for the purpose of coordination with terrestrial systems, as that arc of the geostationary satellite orbit with which the associated operational space station may be located. This arc, therefore, determines the range of azimuths and elevation angles ofthe ES antenna beam. The service arc is specified by the longitude of the mid-point ofthe arc and by the longitudinal variance about the mid-point. See Figure 4.6. 
 4.5.2 Effective Gain of ES A.ntenna 
-Contrary to the case at the terrestrial station for which the antenna pointing is fixed, earth stations are generally coordinated for a range of antenna pointing angles to allow for the use of space satellites or the relocation of an operational satellite. The ES antenna gain in the direction of a · particular TS, therefore, varies with satellite position and the maximum such value is appropriate for coordination purposes. 
+Contrary to the case at the terrestrial station for which the antenna pointing is fixed, earth stations are generally coordinated for a range of antenna pointing angles to allow for the use of space satellites or the relocation of an operational satellite. The ES antenna gain in the direction of a Â· particular TS, therefore, varies with satellite position and the maximum such value is appropriate for coordination purposes. 
 ) 
 The effective gain 0 0 of an ES antenna is defined as the maximum gain, relative to an isotropic radiator, in the direction of the Terrestrial Station for all ES antenna pointing angle defined by all possible locations ofthe satellite(s) without regard to polarization 
 Figure 4.6: ES Service Arc 
@@ -2957,7 +2957,7 @@ I_ C0 Nsro 10'
 [ 6rl
 k = 
 6 4.12
-I + N s 10­
+I + N s 10Â­
 C0 (k -I) r0 2 I
 C = + 2_ ( 2 k + I) _ 
 4.13
@@ -2981,7 +2981,7 @@ Figure 4.7: Angular Distance~ and Apparent Elevation Angle 9
 Engineering Considerations 4-23 Fall 1996 
 
 d 
-§__ 
+Â§__ 
 
 
 
@@ -2996,7 +2996,7 @@ where all parameters are as defined in section 4.6.2.
 ~ : ': 
 . The elevation angle 8, at a station of a specified point in the troposphere h kms above the station ~ without radio ray refraction (see Figure 4.8) is given by the equation: 
 1
-·e = tan-I [-. (cos~ -ro + h)] 4.17 sm~ r0 
+Â·e = tan-I [-. (cos~ -ro + h)] 4.17 sm~ r0 
 The distance from the station to a point in the troposphere h kms above the station is given by the equation: 
 . "' r0 + h
 d = sm'I' 4.18 
@@ -3061,35 +3061,35 @@ Figure 4. I0: Geodetic Latitude ~ Geometric Latitude
 4.8.1 General 
 The coordinate systems used are righthand rectangular systems. A rectangular coordinate system is usually defined by specifying its origin, its fundamental (x-y) plane, the principal or primary axis (x) direction, and the direction of the positive tertiary (z) axis. Three unit vectors are then defined to indicate the directions ofthe three mutually perpendicular axes. 
 4.8.2 Geocentric Coordinate System -(IJK) 
-The geocentric coordinate system shown in Figure 4.11 has its origins at the earth's center and is the principal system to which all others are referenced. The fundamental plane is the equator and the positive x-axis points at 180° longitude. The z-axis points in the direction of the north pole; Unit vectors, I, J, and K, shown in Figure 4.11 lie along the s, y and z axes, and the unit vector U is thus defined by: 
+The geocentric coordinate system shown in Figure 4.11 has its origins at the earth's center and is the principal system to which all others are referenced. The fundamental plane is the equator and the positive x-axis points at 180Â° longitude. The z-axis points in the direction of the north pole; Unit vectors, I, J, and K, shown in Figure 4.11 lie along the s, y and z axes, and the unit vector U is thus defined by: 
 ) 
 u = 4.28 
 Where: Ui = -cos \If cos 11. Uj = cos 1v sin 11. Uk = sin \II 
 \If = geocentric latitude 
-11. = longitude r£.-----__, ____ _ 
+11. = longitude rÂ£.-----__, ____ _ 
 In the geocentric coordinate system: 
-longitude is measured positively from the negative of the primary x-axis (0° longitude) towards the secondary y-axis in the x-y phase 
+longitude is measured positively from the negative of the primary x-axis (0Â° longitude) towards the secondary y-axis in the x-y phase 
 -latitude is measured relative to the x-y plane with positive direction towards the tertiary (z) axis. 
 Engineering Considerations 4-31 Fall 1996 
 Therefore in the geocentric coordinate system: 
 I. latitude is positive in Northern hemisphere. 
 2. longitude is positive, west ofprim meridian. 
 4.8.3 Topocentric Coordinate System -(SEZ) 
-In the Topocentric coordinate system, the origin is taken at the observer. In this system (shown in Figure 4.12), the x-axis is directed toward the south point, the y-axis toward the east and the z­axis is directed to the astronomical zenith. 
-Unit vectors S(south), E(east) and Z(zenith) shown in Figure 4.12 lie along the x, y and z axes, and the unit vector is thus defined by · 
+In the Topocentric coordinate system, the origin is taken at the observer. In this system (shown in Figure 4.12), the x-axis is directed toward the south point, the y-axis toward the east and the zÂ­axis is directed to the astronomical zenith. 
+Unit vectors S(south), E(east) and Z(zenith) shown in Figure 4.12 lie along the x, y and z axes, and the unit vector is thus defined by Â· 
 4.29 
 where: 
-V5 =-cosEcosµ. 
-Ve = cos E sin µ 0 
+V5 =-cosEcosÂµ. 
+Ve = cos E sin Âµ 0 
 = sinE
-V2 E = elevation angle µ = azimuth 
+V2 E = elevation angle Âµ = azimuth 
 The S (south) and E (east) vectors are in the plan tangential to the earth's surface and the 
 Z (zenith) vector as normal to this tangential surface is not parallel to the earth radius vector (see Figure 4.13). 
 Fall 1996 4-32 Engineering Considerations 
 
 
 ) 
-180° longitude 
+180Â° longitude 
 North Pok 
 K 
 Figure 4.11: Geocentric Coordinate System I, J, K 
@@ -3139,7 +3139,7 @@ and the unit vectors E ux, E uy, E uz of E calculated from:
 -
 Ex 
 -
-Eux = M­
+Eux = MÂ­
 E, 4.32 
 Eur= 
 -M 
@@ -3153,7 +3153,7 @@ Vector Eis shown in Figure 4.16. Vector S is normal to the surface defined by th
 
 4.34 
 where: 
-S1 = Eu2 Z3 -Eu3 Z2 S2 = Eu3 Z1 -Eu1 Z3 = ­
+S1 = Eu2 Z3 -Eu3 Z2 S2 = Eu3 Z1 -Eu1 Z3 = Â­
 S3 Eu1 Z2 Eu2 Z1 
 The calculated vectors E, S and Z, shown in Figure 4.16 define the topocentric coordinates system described in section 4.8.3. 
 Engineering Considerations 4 -39 Fall 1996 
@@ -3162,14 +3162,14 @@ Engineering Considerations 4 -39 Fall 1996
 ,J 
 4.8.5 Distance Calculation 
 From the given geodetic latitude LAT and from equations 4.26, 4.27, calculate the geocentric latitude (CLAT) and the distance IR I from the center of the earth. 
-For the calculated geocentric latitude (CLAT) and the given longitude, generate the unit vector Ru and by multiplication by IR I we generate the vector R = IR I • R0 in the geocentric coordinate system shown in Figure 4.17. However, the calculated vector R is the distance from the center of the earth to the sea level of the given point on the surface ofthe earth. 
+For the calculated geocentric latitude (CLAT) and the given longitude, generate the unit vector Ru and by multiplication by IR I we generate the vector R = IR I â€¢ R0 in the geocentric coordinate system shown in Figure 4.17. However, the calculated vector R is the distance from the center of the earth to the sea level of the given point on the surface ofthe earth. 
 The wanted distance RH from the center of the earth to the point at height H1from the sea level is the magnitude ofthe vector Rh, that is, 
 4.35 
 where 
-= IHT I • z, + RI RH2 = IHTI •Z2+ R 2) RH3 = IHTl•Z3+R3 
+= IHT I â€¢ z, + RI RH2 = IHTI â€¢Z2+ R 2) RH3 = IHTlâ€¢Z3+R3 
 The vector RH is shown in Figure 4.17. 
 4.8.6 Vector derivation in the Geocentric Coordinate System Given the Geodetic Parameters 
-Given a station with GDLAT = Geodetic Latitude in degrees GDLONG = Geodetic Longitude in degrees HASL = Ground elevation above sea level ANTH ·= Antenna height 
+Given a station with GDLAT = Geodetic Latitude in degrees GDLONG = Geodetic Longitude in degrees HASL = Ground elevation above sea level ANTH Â·= Antenna height 
 a vector VD is generated with the following components (see Figure 4.18). 
 = -cos (GDLAT) . sin (GDLONG) . IV01 cos (GDLAT) . sin (GDLONG) . IVol 4.36
 _) 
@@ -3220,7 +3220,7 @@ Figure 4.19: Geostationary Satellite Vector S
 4.9.1 Earth Station Beam Axis Vector (BE) 
 -
 The ES beam axis vector BE is the vector with origin in the ES and termination in the operational satellite. If coordination is required for more than one satellite position, that is, if the 
-ES service arc is not zero, then the first ES beam axis vectro BE 1 is generated using the operational satellite longitude (OPSLO), which is the center of the service ,arc. From the center of the service arc the orbit longitude increment is set equal to the maximum of 1° or Service Arc/9.5 degrees and from one to 19 additional beam axis vectors are generated for every orbit longitude increment (see Figure 4.20). 
+ES service arc is not zero, then the first ES beam axis vectro BE 1 is generated using the operational satellite longitude (OPSLO), which is the center of the service ,arc. From the center of the service arc the orbit longitude increment is set equal to the maximum of 1Â° or Service Arc/9.5 degrees and from one to 19 additional beam axis vectors are generated for every orbit longitude increment (see Figure 4.20). 
 4.9.2 Generation of ES Beam Axis Vector (BE) 
 ) 
 Generation of the Beam Axis Vector (BE) required the calculation of the elevation angle, the 
@@ -3232,7 +3232,7 @@ From the calculated geocentric altitude (GCLAT) and distance IRol generate the v
 From the anteuna height (center line A.M,S.L.), calculate the actual vector R for the earth's 
 center to the ES anteuna center (see sections 4.8.5 and 4.8.6). Vector R and R are shown in Figure 4.21. 
 As described in section 4.8.7, generate vector S from the earth's center to the satellite, 
-• Engineering Considerations 4-47 Fall 1996 
+â€¢ Engineering Considerations 4-47 Fall 1996 
 Figure 4.20: ES Beam Axis Vector (s) BE 
 ) 
 Figure 4.21: Vectors R0, R, Sand BE 
@@ -3246,28 +3246,28 @@ By definition, ES elevation angle (ELES) is the angle between the horizontal pla
 ELES = 90 -0 = 90 -ANGLE (BE, Z) 4.42 
 Where Z is the component of the S, E.Z coordinate system normal to the horizontal plan ( S , E) (see Figure 4.23) and: 
 0
-..... --­
-ANGLE (BE,Z) = arccos (BE-Z) 4.43 Where BE• Z is the dot product defined as: BE. Z = IBE I • I Z I , cos (BE, Z) 4.44 Where I BE I, IZI are the magnitudes fo the vectors BE, Zcalcualted in section 4.9.2 and section 4.9.3. From the equaiton 4.38, we have that: BE• Z 
-cos (BE, Z) = 4.45 IBEI IZI or = BE1 • Z1 + BE2 • Z2 + BE3 • Z3 
-cos (BE, Z) 4.46 IBEI • IZI 
+..... --Â­
+ANGLE (BE,Z) = arccos (BE-Z) 4.43 Where BEâ€¢ Z is the dot product defined as: BE. Z = IBE I â€¢ I Z I , cos (BE, Z) 4.44 Where I BE I, IZI are the magnitudes fo the vectors BE, Zcalcualted in section 4.9.2 and section 4.9.3. From the equaiton 4.38, we have that: BEâ€¢ Z 
+cos (BE, Z) = 4.45 IBEI IZI or = BE1 â€¢ Z1 + BE2 â€¢ Z2 + BE3 â€¢ Z3 
+cos (BE, Z) 4.46 IBEI â€¢ IZI 
 where BE1, BE2, BE3 and Z1, Z2, Z3 are the components of the vectors BE, Z calculated in 
 Q 
 sections 4.9.2 and 4.9.3. 
 
 From equations 4.42, 4.43 and 4.46 we obtain: 
-ELES = 90 -Arc cos [BE1 • Z1 + BEz • Z2 + BE3 • Z3] 
+ELES = 90 -Arc cos [BE1 â€¢ Z1 + BEz â€¢ Z2 + BE3 â€¢ Z3] 
 4.47 
-IBEI • IZI The ES elevation angle ELES is shown in Figure 4.22. 
+IBEI â€¢ IZI The ES elevation angle ELES is shown in Figure 4.22. 
 4.9.4 Calculation of ES azimuth (AZES) 
 The ES Azimuth (AZES), is defined as the angle between, the projection of vector BE on the horizontal plane (S, E) and the S component of the topocentric coordinate system. That is: 
 ) 
-AZES = ANGLE ( OC, OS) from figure 4.22 we have that AZES = 180 -0° 4.48 
+AZES = ANGLE ( OC, OS) from figure 4.22 we have that AZES = 180 -0Â° 4.48 
 and OC = I BEi cos ESEL 
 and 
-A -­
+A -Â­
 Angle(BOD) = Arccos (BE,S) From the triangle DOB we have that 
 A 
-OD = IBEI • Cos (BOD) and from the triangle DOC we have that 
+OD = IBEI â€¢ Cos (BOD) and from the triangle DOC we have that 
 OD = IBEI cos (BOD)
 cos 0 = or 
 oc IBEI cos (ESEL) 
@@ -3291,20 +3291,20 @@ therefore: DOT(BE. S)
 cos 8 = 4.49 
 IBEI ISi . cos (ESEL) 
 From equation 4.49 and 4.48 we obtain: 
-AZES = 180 -Arc cos [ DOT (BE· S) ] 4.50 IBEI ISi cos (ESEL) 
+AZES = 180 -Arc cos [ DOT (BEÂ· S) ] 4.50 IBEI ISi cos (ESEL) 
 The ES azimuth AZES is shown in Figure 4.22. 
 4.9.5 Effective ES . TS Vector (ETRV) 
 Between the earth station (ES) and the terrestrial station (TS) two vectors are defined --the
-) -­
-geometric vector (unrefraced vector ETV) and the refracted vector ETRV (See section 4.6). The refracted vector ETRV is called Effective Earth Station (ES) Terrestrial· Station (TS) vector and has the azimuth of the geometric vector (ETV). However, the elevation angle of the ETRV vector is to the same as the elevation angle of ETV and is calcualted as follows ( see section 
+) -Â­
+geometric vector (unrefraced vector ETV) and the refracted vector ETRV (See section 4.6). The refracted vector ETRV is called Effective Earth Station (ES) TerrestrialÂ· Station (TS) vector and has the azimuth of the geometric vector (ETV). However, the elevation angle of the ETRV vector is to the same as the elevation angle of ETV and is calcualted as follows ( see section 
 4.6.3): 
 From the Longitude and Latitude of the Earth Station (ES) and the Terrestrial Station (TS), the vecotrs RE and RT are generated from the earth's center in the geocentric coordinates using the equation given in section 4.8.6. 
 The difference lhl = IRT I -I RE I is the distance in the troposphere h km above the ES, as shown in Figure 4.23. 
 Next, calcualte the angle 0 from: 
-RE•RT-]
+REâ€¢RT-]
 [-4.510 = arc cos . 
-IREl•IRTI 
-where (RE • RT) is the dot product of the the vectors RE and RT, that is: 
+IRElâ€¢IRTI 
+where (RE â€¢ RT) is the dot product of the the vectors RE and RT, that is: 
 
 
 E 
@@ -3322,11 +3322,11 @@ ETRV = RT -RE
 A 
 The effective off-axis angle ( ESOX) of an earth station, towards a given TS, is defined as the 
 angle between the beam axis vector BE and the effective ES.TS vector ETRV and is calculated by the equation: 
-A -­
+A -Â­
 ESOX = ANGLE (BE,ETRV) 4.54 or 
-ESOX = Arc cos [ BE · ETRV ] 4.55 IBEI IETRVI 
-where (BE· ETRV) is the dot product given by 
-(BE·ETRV) = BEfETRV1 + BE2·ETRV2 + BE3·ETRV3 
+ESOX = Arc cos [ BE Â· ETRV ] 4.55 IBEI IETRVI 
+where (BEÂ· ETRV) is the dot product given by 
+(BEÂ·ETRV) = BEfETRV1 + BE2Â·ETRV2 + BE3Â·ETRV3 
 -
 where BE1, BE2, BE3 and ETRV 1, ETRV2, ETRV3 are the components of the vectors BE and 
 -
@@ -3338,7 +3338,7 @@ z
 -0 
 
 llll-_ _.!E~T!:_!R~V"----~/,,______.:_____________...,_ 
-• E 
+â€¢ E 
 
 s 
 Figure 4.24: ES Off-Axis Angle ESOX 
@@ -3421,16 +3421,16 @@ On the main beam of the terrestrial station BT, derived in section 4.10.2, calcu
 4.23 of section 4.6.5 
 From the calculated distance IDBTI and the unit vector UBT, derived in section 4.10.2, calculate 
 the vector DBT given by; 
-DBT = IDBTI • UBT 4.62 
+DBT = IDBTI â€¢ UBT 4.62 
 Vector DBT is shown in Figure 4.29. 
 -
 Next, generate the apparent vector EBT, from the ES towards the point P1'. The point P1' is the 
-·­
+Â·Â­
 apparent location, relative to the ES, of the point P 1. The vector EBT is generated following the 
 method given in section 4.9.5. Vector EBT is shown in Figure 4.30. 
 From the terrestrial station (TS), calculate the distance IDBUI and the elevation angle V0 to the point P2. Point P2 is the point where the refracted TS beam has height equal to the rain cell height. The rain cell height is defined by the rain climatic zone of the ES (see section 4.5.7). 
 The distance IDBUI and the elevation angle V0 are calculated using equations 4.19 and. 4.17 respectively. From the calculated distance IDBUI and elevation angle V0, generate the vector DBU, in the TS topocentric coordinates system, as described in section 4.10.2. Vector DBU is shown in Figure 4.29. 
-Next, generate the apparent vector EBU, from the ES towards the point Pz'. The point P2' is the apparent location, relative to the ES, of the point P2. The vector EBU is generated following the method given in section 4.9.5. and is shown in figure 4.31. · 
+Next, generate the apparent vector EBU, from the ES towards the point Pz'. The point P2' is the apparent location, relative to the ES, of the point P2. The vector EBU is generated following the method given in section 4.9.5. and is shown in figure 4.31. Â· 
 From the vectors EBT, EBU and the vector ETRV (see section 4.9.5), calculate the vectors BTR 
 and BUR, where: 
 BTR = EBT -ETRV 
@@ -3499,8 +3499,8 @@ i\ ~
 \\' 
 \ 
 \ 
-____,~\11~~1~;~~\~1~--------~e~u~R~----------1 :· 0 
-P2 \ \f:• 
+____,~\11~~1~;~~\~1~--------~e~u~R~----------1 :Â· 0 
+P2 \ \f:â€¢ 
 I I I 
 Figure 4.35:  Vector BE Passes Sufficiently Close to BUR and Off-axis Angle a< Beam  
 ' Width b  0  
@@ -3512,13 +3512,13 @@ In addition, the effective length ofthe scattering volume Dis given by:
 4.65 
 max. rain cell diameter 
 where: = beam width of station B antenna in radians 
-08 J = angle between TS and ES antenna beam axes (180° -scattering angle) 
+08 J = angle between TS and ES antenna beam axes (180Â° -scattering angle) 
 4.12.6 Scattering from Antenna Main Beams --(Main Beam -Side Beam) Geometry 
 The precipitation scatter loss L(0.01) for the case of scattering from Antenna Main Beams (main Beam -Side Beam), is determined on the basis of the scattering rain cell being located at as many as 8 points ( 4 points in each beam). These points are defined as follows: 
 ) 
 BEi Volume in the ES main beam, at the ES or just at the point where the ES beam comes visible from the TS. 
 BE2 Volume in the ES main beam, at the minimum distance from the TS. 
-BE3 · Volume in the ES main beam, at a distance from the ES that corresponds to the minimum off-axis angle at the TS. 
+BE3 Â· Volume in the ES main beam, at a distance from the ES that corresponds to the minimum off-axis angle at the TS. 
 BE4 Volume in the refracted or unrefracted ES main beam, at a distance from the ES corresponding to the maximum rain cell height. BE scattering cases are shown in Figure 4.36. 
 The BT! to BT4 points are defined as BEi to BE4, but with the roles of ES and TS interchanged. See Figure 4.37. 
 ES 
@@ -3593,7 +3593,7 @@ From the C/I curves find the required value of C/I (20) and C/I (0.01) for the g
 STEP 19 
 Compare the calculated C/I with the required C/I for channel analysis. 
 If ( ~) required < ( ~) calculated No Interference continue with scatter analysis STEP 21. 
-If· ( ~) required> ( ~) calculated Interference exist and continue to STEP 20. 
+IfÂ· ( ~) required> ( ~) calculated Interference exist and continue to STEP 20. 
 STEP20 
 a) 
 Check if the antenna PEAK to RMS value is applicable (see section 2.6.6). 
@@ -3604,10 +3604,10 @@ From path profile studies determine if ground elevation provides the required ad
 c) 
 Ifpost manual analysis does not eliminate the interference case then: 
 
-• 
+â€¢ 
 Change frequency plan of the proposed ES and GO TO STEP 13. 
 
-• 
+â€¢ 
 Change location of the proposed ES and GO TO STEP 1. 
 
 
@@ -3635,7 +3635,7 @@ Compare, Mode B, calculated C/I (0.01) with the required, Mode B, C/I(0.01). Ifi
 4.13.1 Interference Analysis Procedure -Flow Chart 
 STEP 1 STEPS 
 Prepare Table I 
-·. Proposed ES 
+Â·. Proposed ES 
 STEP2 
 STEP3 
 ' 
@@ -3689,7 +3689,7 @@ BTR, BUR
 L 
 Compare C/1 required with calculated 
 f----0 
-• 
+â€¢ 
 Continue next TS 
 
 4.14 CASE STUDY -INTERFERENCE CALCULATION 
@@ -3725,21 +3725,21 @@ TERRESTRIAL TERRESTRIAL SPECIFICATIONS STATIONTSt STATIONTS2
 Latitude 49 02' 55"N 49 21' 13" Longitude 122 32' 26" W 122 57' 33" Ground Elevation 133m 827m PTMAX 37dBm 37dBm Antenna Type 28375 28375 Antenna Gain 43.1 43.1 Antenna Height 27m 27m A.F.S.L. 0.5 0.5 Equipment Type MMXX MMXX Equipment Stability 0.001% 0.001% Traffic Type 1800 FM 1800 FM Tx Frequency 6226.89 6034.150 
 Rx Frequency 6034.150 6226.89 Polarization H H 
 Distance TS 1 -TS2 = 45.6km 
-Azimuth TS! . TS2 = 318.2° 
-Elev. TS! . TS2 = 0.7° 
+Azimuth TS! . TS2 = 318.2Â° 
+Elev. TS! . TS2 = 0.7Â° 
 
 TABLE 4.14.3 
 SUMMARY OF TERRESTRIAL STATIONS TS3, TS4 
 TERRESTRIAL TERRESTRIAL SPECIFICATIONS STATIONTS3 STATIONTS4 
 Latitude Longitude Ground Elevation PTMAX Antenna Type Antenna Gain Antenna Height A.F.S.L. Equipment Type Equipment Stability Traffic Type Tx Frequency Rx Frequency Polarization 
-4916' 52"N 123° 07' 02" w 29m 30dBm KS 123 
+4916' 52"N 123Â° 07' 02" w 29m 30dBm KS 123 
 82m 
 1.5dB TD-2X 0.001% 5250 4050MHz 3650MHz H 
-49° 12' 01" w 122° 30' 37" w 332m 
+49Â° 12' 01" w 122Â° 30' 37" w 332m 
 KS 123 
 44m 
 1.5 dB TD-2X 0.001% 5250 3650MHz 4050MHz H 
-Distance TS3 -TS4 = 45.10 km Azimuth TS3 . TS4 = 101.27° Elev. TS3 . TS4 = 0.2° 
+Distance TS3 -TS4 = 45.10 km Azimuth TS3 . TS4 = 101.27Â° Elev. TS3 . TS4 = 0.2Â° 
 STEPS 
 Calculate the ES Beam-Axis Vector BE 
 First calculate the S, E, Z components ofthe topocentric coordinates system of the Es. Following section 4.8.4 we have: 
@@ -3767,8 +3767,8 @@ Sul = Eu2 Z3 -Eu3 Z2 = 0.4119146166
 Su2 = Eu3 Z1 -Eu1 Z3 = 0.6359047866 Su3 = Eu1 Z2 -Eu2 Z1 = -0.6526495622 and: Su = [Sui, Su2, Su3 l 
 Next, from the geodetic latitude, calculate the geocentric latitude CLAT, and the distance from the earth's center to the ES. 
 From equation 4.26 (see section 4.7.2) we have: Tan (CLAT) = (1 -t)2 Tan (LAT) or 
-Tan (CLAT) = Arc Tan (1.153126845) = 49.06793267° or 
-CLAT = 49° 4' 4.5" 
+Tan (CLAT) = Arc Tan (1.153126845) = 49.06793267Â° or 
+CLAT = 49Â° 4' 4.5" 
 From equation 4.27 (see section 4.7.2) we obtain: 
 JREI = -===IRE====I== 
 0 
@@ -3779,7 +3779,7 @@ where: IREI = 6374.815 km
 
 0.0067396608 
 therefore: IREI = 6362.589159 km Following section 4.8.5, from the calculated CLAT and distance generate the unit geocentric vector IRul. That is: 
-REu1 = -cos (CLAT) • cos (LONG) = 0.3561908424 REu2 = cos (CLAT) sin (LONG) = 0.5498796414 
+REu1 = -cos (CLAT) â€¢ cos (LONG) = 0.3561908424 REu2 = cos (CLAT) sin (LONG) = 0.5498796414 
 0 
 
 REu3 = sin (CLAT) = 0.7554869051 
@@ -3787,10 +3787,10 @@ where:
 
 and: IREul = 1 (unit vector) 
 From the calculated, unit vector Ru and the distance I RI calculate the geocentric vector, RE, 
-where REI = REu1 • R = 2266.295992 km RE2 = REu2 • R = 3498.658245 km RE3 = REu3 • R = 4806.852792 km 
+where REI = REu1 â€¢ R = 2266.295992 km RE2 = REu2 â€¢ R = 3498.658245 km RE3 = REu3 â€¢ R = 4806.852792 km 
 and: RE= [REi,RE2,RE3] 
 The calculated geocentric vector RE is from the earth's center to the ES, assuming zero ground elevation, now calculable to the vector IiiHIfrom the earth's center to the ES antenna center. ) The ES antenna center height is given by: IHI = Ground elevation+ 6 m = 61 + 6 = 67 IIi Therefore 
-REHi -IHI• z, + RE1 = 2266.319766 RE H2 -IHI• Z2 + RE2 = 3498.694945 REH3 -IHl•Z3 + RE3 = 4806.90355 
+REHi -IHIâ€¢ z, + RE1 = 2266.319766 RE H2 -IHIâ€¢ Z2 + RE2 = 3498.694945 REH3 -IHlâ€¢Z3 + RE3 = 4806.90355 
 where: REH = [REH!, REH2, REH3] and: IREH I = 6362.656159 
 Next, following section 4.8.7, generate the geostationary satellite vector S. From the equation 
 4.39 we have: Sul = 0.3255681545 
@@ -3798,24 +3798,24 @@ Su2 = 0.94565185756 ' su3 = 0
 where: 
 = I (unit vector) 
 and from equation 4.40 we obtain: 
-S1 = IS I • Sul = 13719.28371. S2 = IS I • Su2 = 39843.69297 S3 = ISi • Su3 = 0 
+S1 = IS I â€¢ Sul = 13719.28371. S2 = IS I â€¢ Su2 = 39843.69297 S3 = ISi â€¢ Su3 = 0 
 where: S = [S1,S2,S3] and Is I = 42,139.5137 km 
 Utilizing equation 4.41 (see section 4.9.2) we generate the earth stations beam axis vector BE, given by: 
 BE= S -RH 
 that is: BE1 = S1 -RH! = 11452.96394 BE2 = S2 -RH2 = 36344.99803 BE3 = S3 -R H3 = 4806.90355 
 where: 
---..... ­
+--..... Â­
 BE= [BE1,BE2,BE3] 
 and: I BE I = 38408.79569 km 
 Following section 4.9.3 calculate the ES elevation angle ELES. From equation 4.46 we have 
 
 BE1Z1 + BE2Z2 + BE3Z3 
-cos (BE,Z) = IBEl•IZI or 4063.786053 + 19908.68077 -3641.99814 cos (BE, Z) = 20330.46868 
-and 0 = Arc cos (BE,Z) = 58.04061049° 
+cos (BE,Z) = IBElâ€¢IZI or 4063.786053 + 19908.68077 -3641.99814 cos (BE, Z) = 20330.46868 
+and 0 = Arc cos (BE,Z) = 58.04061049Â° 
 therefore from equation 4.9.2 we obtairi 
-ELES = 31.95938951 ° 
+ELES = 31.95938951 Â° 
 ) 
-Next, following section 4.9.4. calculate the ES Azimuth AZES. Using equation 4.49 we have cos 0 = o.950283763 or 0° = ARc cos 0° = 18.14273153° And from equation 4.50 AZES = 161.8572685° 
+Next, following section 4.9.4. calculate the ES Azimuth AZES. Using equation 4.49 we have cos 0 = o.950283763 or 0Â° = ARc cos 0Â° = 18.14273153Â° And from equation 4.50 AZES = 161.8572685Â° 
 STEP6 Calculate the TS beam Axis Vector BT 
 From the given geographical parameters of the terrestrial station TS and the adjacent terrestrial station UTS, following section 4.10.2 we obtain 
 IB,I = 0.5463772774 
@@ -3828,7 +3828,7 @@ Engineering Considerations 4 -95 Fall 1996
 IST1I = 0.4140920539 
 IST2I = 0.6347987554 IST3 I = -0.652348305 
 RTm = 2276.487498 RTH3 = 2489.831348 RTH3 = 4808.588984 . 
-·and: IRTHI = 6362.691744 km 
+Â·and: IRTHI = 6362.691744 km 
 And finally: 
 IBTij = -0.7389229814 
 IBT2I = 0.662052007 
@@ -3843,8 +3843,8 @@ From the calculated vectors REH and RTH we calculate the difference in height be
 ~o = 0.0021365285 
 0 
 
-From the angular distance $, and the height H, calculate the apparent elevation angle 0° (see section 4.9.5). The angle 0° is the apparent elevation angle between ES . TS that is 
-(ELESTS) = 0° = 0.1047009456° 
+From the angular distance $, and the height H, calculate the apparent elevation angle 0Â° (see section 4.9.5). The angle 0Â° is the apparent elevation angle between ES . TS that is 
+(ELESTS) = 0Â° = 0.1047009456Â° 
 and: 
 ETRV1 = RTHJ -REHi = 10.16640461 ETRV2 = RTH2 -REH2 = -8.865632317 ETRV3 = RTH3 -REH3 = 1.682624244 
 and: jETRVI = 13.59361775 km 
@@ -3859,27 +3859,27 @@ ERTVu2 = -0.6521907913
 ERTVu3 = 0.123780459 
 STEPS 
 Calculate the ES Off-Axis angle ESOX. Using equation 4.5 of section 4.9.6 we obtain 
-(ESOX) = Angle (BE,ETRV) = 144.1805° 
+(ESOX) = Angle (BE,ETRV) = 144.1805Â° 
 STEP9 
-Calculate the effective of Rx gain ofthe ES antenna. From the ES· antenna pattern, find the discrimination in dB, which corresponds to the off-axis angle (ESOX). 
-For ESOX = 114.1805° . ES Discrim. = 69 dB. The ES Antenna gain ESGRX = 50.9 dBi 
+Calculate the effective of Rx gain ofthe ES antenna. From the ESÂ· antenna pattern, find the discrimination in dB, which corresponds to the off-axis angle (ESOX). 
+For ESOX = 114.1805Â° . ES Discrim. = 69 dB. The ES Antenna gain ESGRX = 50.9 dBi 
 Engineering Considerations 4-97 Fall 1996 
 
 therefore: 
 ES GRX (114.1805)0 = 50.9 -69 = -18.l dBi 
 STEP 10 
 -
-Calculate the TS-ES effective vector TERV. AS in STEP 7, the elevation angle (ELTSES) = -0.15919589° and: [TERVu1[ = -0.7624199768 [TERVu2[ = 0.6279860448 [TERVu3[ = -0.1560426431 where: [TERv[ = 13.602537 km 
+Calculate the TS-ES effective vector TERV. AS in STEP 7, the elevation angle (ELTSES) = -0.15919589Â° and: [TERVu1[ = -0.7624199768 [TERVu2[ = 0.6279860448 [TERVu3[ = -0.1560426431 where: [TERv[ = 13.602537 km 
 STEP 11 
 Calculate the TS Off-Axis angle (TSOX) 
-TSOX = Angle (BT, TERV) or (TSOX) = -0.7° 
+TSOX = Angle (BT, TERV) or (TSOX) = -0.7Â° 
 
 STEP 12 
 Calculate the effective Tx gain of the TS antenna. For the TS antenna pattern, find the discrimination in dB which corresponds to the calculated off axis angle (TSOX). 
-For TSOX = -0.7° . TS Discr. = 2 dB 
+For TSOX = -0.7Â° . TS Discr. = 2 dB 
 The TS Antenna gain TSGTX = 39.4 dBi 
 therefore: 
-TS GTX (0.7°) = 37.4 dBi 
+TS GTX (0.7Â°) = 37.4 dBi 
 STEP 13 
 Calculate, Mode A, 20% basic transmission loss L(20%). Since the distance ES-TS is 13.6 km 
 ) 
@@ -3889,7 +3889,7 @@ we obtain:
 L(20%) = 126.9453 dB 
 STEP 14 
 Calculate, Mode A, 20% interference level 1(20) 
-1(20%) = TSP TX+ TS GTX(0.7°) -L(20%) + ES GRX(l 14.18°) or: 1(20%) = -101.1 dBW 
+1(20%) = TSP TX+ TS GTX(0.7Â°) -L(20%) + ES GRX(l 14.18Â°) or: 1(20%) = -101.1 dBW 
 And for ES receive power of-120 dBW we obtain: 
 C/I (20) = -120 + 101.1 = -18.9 dB 
 
@@ -3931,7 +3931,7 @@ EV is the vector from the earth station to the rain scatter volume.
 TV is the vector from the terrestrial station T to the rain scatter volume. Therefore: 
 ET+TV=11,ES 
 TV =11, ES-ET 
-Where 11, is a positive scalar number. The distance from the earth station tot he rain scatter volume is numerically equal to "'· The parameter 11, is calculated by making minimum the discrimination angle a. Three cases could occur for a minimum. 
+Where 11, is a positive scalar number. The distance from the earth station tot he rain scatter volume is numerically equal to "'Â· The parameter 11, is calculated by making minimum the discrimination angle a. Three cases could occur for a minimum. 
 The calculated "' is less than 0.1 or negative. In this case 11, will be arbitrarily set at 0.1 (since distances are in km, this would mean that the rain scatter volume is at a minimum of 100 meters in front ofthe ES (earth station) antenna); 
 "' is positive, but the calculated rain cell height is greater than the maximum height. In this case "' will be recalculated using the maximum rain cell height corresponding to the latitude ofthe ES; 
 the calculated value of"' is greater than 0.1 and less or equal to the value corresponding to the maximum rain cell height. In this case the calculated value of"' will be used. 
@@ -3942,12 +3942,12 @@ ITul ITvl
 "'ES. TU-ET. TU 
 = 
 ITullTvl 
-"' ES • TU -ET• TU 
-= (11,2 + ET2 -211,ES • ET)112 
+"' ES â€¢ TU -ETâ€¢ TU 
+= (11,2 + ET2 -211,ES â€¢ ET)112 
 The condition for a minimum is obtained by differentiating with respect to "-, equating to zero and solving for 11,: 
-ET2 (ES • TU) -(ET. TU) (ES • ET) 
+ET2 (ES â€¢ TU) -(ET. TU) (ES â€¢ ET) 
 /1., = "' "' 
-(ES • ET) (ES • TU) -(ET. TU) substituting this value of A., the vectors EV and TV, and the discrimination angle a., can be 
+(ES â€¢ ET) (ES â€¢ TU) -(ET. TU) substituting this value of A., the vectors EV and TV, and the discrimination angle a., can be 
 calculated. 
 The condition for A. minimum also determines a rain cell height. If this rain cell height exceeds 
 the maximum rain cell height corresponding to the latitude of the earth stations, A. and a. have to be recalculated. 
@@ -3959,7 +3959,7 @@ A-= HR I sin (ESELEV)
 and the angle a. is also re-calculated by substituting this new value of A.. 
 ) 
 The value ofHR is a function of the latitude ofthe earth station, as follows: 
-HR= 5.2(km) for lat~ 20° . HR= -0.081 *lat -2450/(lat3) + 7.15(km) for 20° <lat~ 70° HR= 1.47(km) forlat > 70° 
+HR= 5.2(km) for lat~ 20Â° . HR= -0.081 *lat -2450/(lat3) + 7.15(km) for 20Â° <lat~ 70Â° HR= 1.47(km) forlat > 70Â° 
 where at is the latitude ofthe earth station. 
 4,l4A.3 Rain Scatter Cell on the TU Vector 
 In this case: 
@@ -3983,7 +3983,7 @@ ESY: y component ofvector ES. ESY= cos (ESELEV) * sin (ESAZ)
 ESZ= 
 ESZ= 
 ) 
-·ETAZ: ETELEV: ETDIST: ETX: ETX= ETY: ETY= ETZ: ETZ= EUAZ: EUELEV: EUDIST: 
+Â·ETAZ: ETELEV: ETDIST: ETX: ETX= ETY: ETY= ETZ: ETZ= EUAZ: EUELEV: EUDIST: 
 EUX: 
 EUX= 
 EUY: 
@@ -4054,7 +4054,7 @@ R: surface rainfall rate, in mm/hr (for the rain climate zone recorded in the ra
 earth station). 
 10 log Ab=0.005 ROA (f-10)1-7 (dB) for fi:10 (GHz) 
 10 log Ab=0 for f<IO (GHz) 
-LR= 0 for f<l (GHz) LR= A* 10·3 *f3·2 (dB) for 1 (GHz) ::; f ::;10 (GHz) LR= A* 10 ·2 *f2·2 (dB) for f> 10 (GHz) 
+LR= 0 for f<l (GHz) LR= A* 10Â·3 *f3Â·2 (dB) for 1 (GHz) ::; f ::;10 (GHz) LR= A* 10 Â·2 *f2Â·2 (dB) for f> 10 (GHz) 
 
 The value ofthe constant A is obtained from the following table: 
 Rain Zone Rain Rate (Rain Field) Constant A (min/hr) 
@@ -4079,17 +4079,17 @@ GER: maximum gain ofRx antenna at the earth station, in dBi ERDISC: discriminati
 0 
 AFSLER: same, ES antenna receiving AFSLTT: same, TS antenna transmitting AFSLTR: same, TS antenna receiving FTX: transmit frequency, in GHz FRX: receive frequencies, in GHz 
 . A: constant ( obtained from table for rain zone) 
-R: rain rate, in mm/hr, for rain zone in rain field ofES station LRTX = 0 ifFTX<l (GHz) LRRX = 0 ifFRX<l (GHz) LRTX =A* I 0·3 *FTX3·2 if I (GHz)'.5:FTX'.5:10 (GHz) 
+R: rain rate, in mm/hr, for rain zone in rain field ofES station LRTX = 0 ifFTX<l (GHz) LRRX = 0 ifFRX<l (GHz) LRTX =A* I 0Â·3 *FTX3Â·2 if I (GHz)'.5:FTX'.5:10 (GHz) 
 0 
-LRRX =A* 10·3 *FRX3·2 if 1 (GHz):-,FRX:-,10 (GHz) 
-LRTX= A*10"2 *FTX2·2 ifFTX>lO (GHz) 
-LRRX= A*10·2 *FRX2·2 ifFRX>lO (GHz) 
+LRRX =A* 10Â·3 *FRX3Â·2 if 1 (GHz):-,FRX:-,10 (GHz) 
+LRTX= A*10"2 *FTX2Â·2 ifFTX>lO (GHz) 
+LRRX= A*10Â·2 *FRX2Â·2 ifFRX>lO (GHz) 
 ABTX = 0 ifFTX<lO (GHz) 
 ABRX = 0 ifFRX<lO (GHz) ABTX = O.OOS*Ro.4 *(FTX-10)1-7 (dB) ifFTX:2:10 (GHz) 
 ABRX = O.OOS*Ro.4 *(FRX-10)1-7 (dB) ifFRX:2:10 (GHz) 
-For the rain scattering cell on the ES vector L VESTX = 168+20log (TVDIST) -20log (FTX) -13.21og ® + ABTX + LRTX -GTRNET + AFSLET + AFSLTR ( dB) LVESRX = 168+20log (TVDIST)-20log (FRX)-13.2logR + ABRX + LRRX-GTTNET + AFSLER + AFSLTT (dB) ) For the rain scattering cell on the TU vector: LVTSTX= 168+20log (EVDIST) -20log (FTX)-13.2logR + ABTX + LRTX-GERNET+ AFSLTT+AFSLER (dB) LVTSRX = 168+20log (EVDIST)-20log (FRX) -13.2logR + ABRX + LRRX-GETNET+ 
+For the rain scattering cell on the ES vector L VESTX = 168+20log (TVDIST) -20log (FTX) -13.21og Â® + ABTX + LRTX -GTRNET + AFSLET + AFSLTR ( dB) LVESRX = 168+20log (TVDIST)-20log (FRX)-13.2logR + ABRX + LRRX-GTTNET + AFSLER + AFSLTT (dB) ) For the rain scattering cell on the TU vector: LVTSTX= 168+20log (EVDIST) -20log (FTX)-13.2logR + ABTX + LRTX-GERNET+ AFSLTT+AFSLER (dB) LVTSRX = 168+20log (EVDIST)-20log (FRX) -13.2logR + ABRX + LRRX-GETNET+ 
 AFSLTR+AFSLET (dB) For the ES into TS case: If L VESTX :-;; L VTSRX 
-· then LS=L VESTX otherwise LS=L VTSRX 
+Â· then LS=L VESTX otherwise LS=L VTSRX 
 For the TS into ES case: IfLVTSTX :-;; LVESRX then LS=L VTSTX otherwise LS=L VESRX 
 _) 
 Engineering Consideration 4.12A-11 Fall 1996 
@@ -4140,7 +4140,7 @@ If Constant6 < 20*log(EVDIST) + ERDISC, then EVDIST = EVDIST3 and ERDISC = DISCR
 ANNEX3B 
 MICROWAVE RADIO PASS.IVE REPEATERS 
 3.BJ Passive Repeater Links ............................................................................................... JBl-2 
-3.B.2 Passive Repeater Types· ................................................................................................ 3B 1-2 
+3.B.2 Passive Repeater TypesÂ· ................................................................................................ 3B 1-2 
 3.B.3 Passive Repeater Interference Analysis ...................................................................... JBl-3 
 3.B.3.0 Description ofthe Model..: .......................................................................... JBl-3 
 3.B.3.1 Back-to-Back Antennas Repeater-Interference Analysis Model ................. 3Bl-3 
@@ -4182,13 +4182,13 @@ The virtual active site (Figure 3.B.3.1.B) equipment and traffic type at side P1
 The receive power at the virtual receivers are calculated the same as for active links. The 
 Q receiver power at P1 , for example, is calculated assuming that there is a link b.etween active A transmitter and P1 virtual receiver. Now the transmit power at the virtual transmitter at P2, is numerically equal to the receive power at P1 , since no losses are assumed between the two sides ofthe passive. Finally, the receiver power at active B is calculated assuming that there is a link between the virtual transmitter at P2 and the receiver at active B. 
 An interfering signal incident onto the passive repeater, will not affect the passive per se. But it could be re-transmitted to one of the active receivers and cause interference to this receiver. Interference into antenna Pi, for example, could affect the receiver at active B. To predict the interfering effects at an active receiver there are two solutions: calculate the actual interference level (as explained above) and compare with the requirements of the particular active receiver, or to "transfer" the active receiver requirements to the corresponding virtual receiver. Considering program complexity and database structure, FCSA adopted the latter solution. 
-In the case of C/I calculations, this approach is very close to the actual case. For example, interference into P 1 would be re-transmitted by the transmitter at P2• But so would be the desired receive signal at P1• Then, the relative level of both signals will be the same at the receiver at active B as at virtual reciever at Pi, with the exception of minor path propagation loss differences if both signals not have exactly the same nominal frequency. 
+In the case of C/I calculations, this approach is very close to the actual case. For example, interference into P 1 would be re-transmitted by the transmitter at P2â€¢ But so would be the desired receive signal at P1â€¢ Then, the relative level of both signals will be the same at the receiver at active B as at virtual reciever at Pi, with the exception of minor path propagation loss differences if both signals not have exactly the same nominal frequency. 
 Fall 1996 3B.1-4 Engineering Considerations 
 
 In the case ofabsolute level ofinterference (-I) calculations, there could be larger difference. For example, if the receive signal level at active B is transferred to the virtual receiver at P1, the following corrections should be applied: 
 C.F. = GP2 -PL (2, B) + GB -AFSLB 
 where: 
-C.F. = correction factor, dB · GP2 = antenna gain at P2, dBi PL(2,B) = propagation loss between P2 and B, dB GB = receive antenna gain at active B, dBi AFSLB = receive antenna feeder system loss at B, dB 
+C.F. = correction factor, dB Â· GP2 = antenna gain at P2, dBi PL(2,B) = propagation loss between P2 and B, dB GB = receive antenna gain at active B, dBi AFSLB = receive antenna feeder system loss at B, dB 
 
 An example ofthis correction factor calculation is presented on Table 3B.1 below. This example shows that, in all practical cases, the error made by "transferring" th~ requirement to the virtual receiver is always in the conservative side. Worst-case, or near-worst-case, values have been used in this example, i.e. largest antenna diameter commercially available for the specific bands and 0.5 km path length. 
 Band (GHz)  Ant. Diameter (feet)  Total Ant. Gain (dB)  P. Loss (dB)  Corr. Factor (dB)  
@@ -4197,8 +4197,8 @@ Band (GHz)  Ant. Diameter (feet)  Total Ant. Gain (dB)  P. Loss (dB)  Corr. Fact
 Table3.B.1 Example of Back-to-Back Passive repeater -I requirement correction Factor 
 Engineering Consideration 3B.1-5 Fall 1996 
 
-Let us assume, for example, that a 6 GHz receiver at active B can tolerate a maximum o· 
-interference level of -100 (dBm). Then, we translate this requirement without correction to the virtual receiver at P1• Now we will assume that the virtual receiver at P1 can tolerate a maximum interference level of -100 ( dBm), and the program will report an interference case if this level is exceeded. Table 3.B.1 indicates that for 6 (GHz) the correction factor is -8.99 (dB), which really means that the maximum acceptable interference level at P1 should be [-100 -(-8.99)] = -91.1 (dBm). 
+Let us assume, for example, that a 6 GHz receiver at active B can tolerate a maximum oÂ· 
+interference level of -100 (dBm). Then, we translate this requirement without correction to the virtual receiver at P1â€¢ Now we will assume that the virtual receiver at P1 can tolerate a maximum interference level of -100 ( dBm), and the program will report an interference case if this level is exceeded. Table 3.B.1 indicates that for 6 (GHz) the correction factor is -8.99 (dB), which really means that the maximum acceptable interference level at P1 should be [-100 -(-8.99)] = -91.1 (dBm). 
 (This is equivalent to say that the interfering signal at P2 will have a net propagation loss of 8.99 (dB) from P2 to B. Therefore, a -100 (dBm) signal at P2 will become a -108.99(dBm) signal at 
 B). 
 The FCSA program does not apply this level-correction factor. Therefore, the interference requirements applied at back-to-back passive repeater sites are always in the conservative side. 
@@ -4238,7 +4238,7 @@ The far-field billboard type passive repeater gain, is calculated as:
 PGAIN =20 log (EFAREA) + 40 log (Freq.) -77.32344 
 where: 
 PGAIN = total (two-way) passive repeater gain, dBi 
-EFAREA = passive effective area, in m2• Is the passive height times width times the cosine ofhalf the included angle. · 
+EFAREA = passive effective area, in m2â€¢ Is the passive height times width times the cosine ofhalf the included angle. Â· 
 Freq. = is the frequency in MHz. 
 
 l} 3.B.5. BILLBOARD TYPE PASSIVE REPEATER OFF-AXIS DISCRIMINATION 
@@ -4256,7 +4256,7 @@ where:
 IA = is the (total) included angle, (degrees) El = least vertical path (active-to-passive) angle, (degrees) s2 = greatest vertical path angle, (degrees) s3 = vertical face angle ofthe passive, (degrees) 
 The passive vertical face angle can be calculated form the following relations: 
 tana(cos EJ -cos s2)
-tan l:i.a =__:..__ _,____-""­
+tan l:i.a =__:..__ _,____-""Â­
 ( ) cos llj + COS ll2 
 cos(l:i.a)(sine1-sine2) 
 tan(e3 ) = cosa (cos llJ + cos e2) 
@@ -4274,7 +4274,7 @@ where:
 C = EIRP (Y) + GRX (X) -AFSL (X) -Path Loss (XY) =_ = EIRP (Y) + GRX (X) -AFSL (X) -32.45 -20 log (XY) -20 log (Freq.) 3A-2 and: I = EIRP (A) + GRX (X) -ANT. DISCR. -AFSL (X) -Path loss (AX) = = EIRP (A) + GRX (X) -ANT. DISCR. -AFSL (X) -32.45 -20 log (XA) -20 LOG (Freq.) 3A-3 
 ) 
 Substituting Equations 2 and 3 in Equation I we obtain: 
-CI I (dB) = EIRP(Y) + GRX (X) -AFSL(X) -32.45 -20log (XY) ­
+CI I (dB) = EIRP(Y) + GRX (X) -AFSL(X) -32.45 -20log (XY) Â­
 20log (Freq) -EIRP (A) -GRX (X)+ AFSL (X) + 32.45 + 3A-4 
 20log (XA) 20log (Freq) + ANT. DISCR. or: 
 CI I (dB) EIRP (Y) -EIRP(A) + 20 log XA + ANT. DISCR. 3A-5 XY 
@@ -4324,7 +4324,7 @@ H copolar + V crosspolar
 H crosspolar + V copolar least value is total crosspolar 
 V copolar + H crosspolar V crosspolar + H copolar 
 3.2.4 Passive Repeaters 
-least value is total worst case polarization · discrimination 
+least value is total worst case polarization Â· discrimination 
 Passive repeater patterns are calculated on the basis ofthe dimensions ofthe passive reflector for the included angle and frequency band of a particular case. Detailed calculations of the passive repeater patterns are given in Annex 3 B. 
 3.2.5 Antenna Height (AHT) 
 Antenna height is the height of the antenna centre above ground in meters. 
@@ -4366,13 +4366,13 @@ From antenna with radome, if the radome does not affect the antenna pattern, the
 .The frequency stabilities for some equipment commonly used by FCSA members are: 
 _) 
 
-{± 0,005% (± 194KHz) 0
+{Â± 0,005% (Â± 194KHz) 0
 4 GHz=> 
-± 0.0025 (± 78 KHz) 
-± 0.002% (± 124 KHz) ± 0.005% (± 309 KHz) 
-6GHz => ± 0.004% (± 247 KHz) ± 0.002 (± 1.235 MHz) 
-11 GHz=> ± 0.005% (± 5.6 MHz) 
-The above stability values are the net values including the cumulative effect of the· initial modulator if any, and intervening transmit local oscillators and receive local oscillators or frequency shifters. In the case of remodulating equipment this degenerates to the transmit oscillator stability alone. 
+Â± 0.0025 (Â± 78 KHz) 
+Â± 0.002% (Â± 124 KHz) Â± 0.005% (Â± 309 KHz) 
+6GHz => Â± 0.004% (Â± 247 KHz) Â± 0.002 (Â± 1.235 MHz) 
+11 GHz=> Â± 0.005% (Â± 5.6 MHz) 
+The above stability values are the net values including the cumulative effect of theÂ· initial modulator if any, and intervening transmit local oscillators and receive local oscillators or frequency shifters. In the case of remodulating equipment this degenerates to the transmit oscillator stability alone. 
 In cases where the net stability is not known, or the above values seem conservative, the stability should be computed in the following way. 
 Remodulating Equipment 
 Use the stability ofthe transmit oscillator that is likely to be obtained for 95% of the time, taking into account factors such as the maintenance regime and temperature environment to be expected. 
@@ -4396,7 +4396,7 @@ SH= .SM 2 + H SrLO + (H-1) sho
 3.2.9 Filtering 
 The filter characteristics ofthe receive and transmit equipment are required for the calculation of the interference level I or the carrier to noise ratio C/1 (see Annex 2A.2). 
 If the filter characteristics are not known, FCSA members, for the calculation of interference level, assume a filter with a 25 dB per octave roll-off and cut-off at: 
-Fe = ± 1.5 (f + 2f8) 3.7 
+Fe = Â± 1.5 (f + 2f8) 3.7 
 Where: 
 
 = desired carrier frequency. = system peak deviation. = top baseband frequency. 
@@ -4432,7 +4432,7 @@ The transition distance, Dh in km, is defined as follows: Dh = 4:123* ((HTx"0.5)
 3.3.3.3 Spherical Earth Propagation Loss Calculation 
 a) For d>Dh the Spherical Earth propagation loss is calculated as follows: 
 Ploss = 29.73+30*log(Fmhz)+ 10log(d)+30*log(theta)+N(H,h) 
-Where:· 
+Where:Â· 
 Ploss = pathloss, in dB Fmhz = Interfering frequency, in MHz d = Interfering to victim site distance, km theta = (d-Dh)/8.5 H = theta*d/4000 h = l.063*(theta"2)*(10"-3) N(H,h) = 20*log(5+0.27*H)+ 1.17261 *h 
 b) For d<= Dh the Spherical Earth propagation loss is calculated as free space propagation loss: 
 Ploss= 32.45+20*log(d)+20*log(Frequency) 
@@ -4488,7 +4488,7 @@ STEP6
 From the calculated azimuths in STEP 5, calculate the DISCRIMINATION ANGLES between the proposed station(s) and the existing station(s). 
 BAND ANALYSIS 
 STEP7 
-For every pair of proposed and existing stations calculate EIRP ADVANTAGE utilizing equation 3.5. For Band analysis assume the worst case values, that is PTMAX for interferer and PRMIN for the victim station. · 
+For every pair of proposed and existing stations calculate EIRP ADVANTAGE utilizing equation 3.5. For Band analysis assume the worst case values, that is PTMAX for interferer and PRMIN for the victim station. Â· 
 STEPS 
 For every pair of proposed and existing stations calculate DISTANCE ADV ANT AGE, using equation 3.4. 
 STEP9 
@@ -4534,7 +4534,7 @@ c)
 Ifpost manual analysis does not eliminate the interference cases, then: -Change frequency plan of the proposed terrestrial system and GO TO STEP 7. 
 
 
-Ifthis is not possible: · -Change LOCATION ofthe proposed terrestrial system and GO TO STEP 1. 
+Ifthis is not possible: Â· -Change LOCATION ofthe proposed terrestrial system and GO TO STEP 1. 
 
 3.4.1 Interference Analysis Procedure --Flow Chart 
 STEP 1 STEP7 STEP 13 
@@ -4563,9 +4563,9 @@ For the purpose of analysis assume that a new microwave link is proposed between
 STEP 1 TABLE3.5.1 SUMMARY OF THE PROPOSED SYSTEM SPECIFICAITONS 
 SPECIFICATIONS STATION X TS-X STATION Y TS-Y 
 Latitude ( ~) Longitude (;\,) Ground Elevation (GASL) Maximum Tx Power PTXMAX Minimum Tx Power PTXMIN Antenna Type Antenna Gain Antenna Height AFSL Equipment Type Equipment Stability Modulation Channel Capacity RMS Deviation Midband Frequency Tx Frequency Rx Frequency Polarization 
-53° 23' 06" N 113° 12' 48" w 755 m 
-37.0 dBm 30.0dBm PL8-19C 32 dBi 46m 1.5dB SS2000Y 0.001% FDM-FM 600 ch. 200KHz 2100MHz 2120.5 MHz 1907.5 MHz H 53° 29' 10" N 
-113° 29' 10" w 679m 37.0dBm 30.0dBm PL6 -19C 
+53Â° 23' 06" N 113Â° 12' 48" w 755 m 
+37.0 dBm 30.0dBm PL8-19C 32 dBi 46m 1.5dB SS2000Y 0.001% FDM-FM 600 ch. 200KHz 2100MHz 2120.5 MHz 1907.5 MHz H 53Â° 29' 10" N 
+113Â° 29' 10" w 679m 37.0dBm 30.0dBm PL6 -19C 
 29.5 dBi 16m 
 0.5 dB SS2000Y 0.001% FDM-FM 600 ch. 200KHz 2100 MHz 1907.5 MHz 2120.5 MHz H 
 Note: PTXMIN is the actual transmit power. 
@@ -4591,7 +4591,7 @@ A
 
 
 
-B 53° 25' 20"N 113° 14' 05"W 
+B 53Â° 25' 20"N 113Â° 14' 05"W 
 y 
 
 .....__ ......... 
@@ -4599,7 +4599,7 @@ y
 .....__ 
 ......... 
 X 
-53° 23' 06"N 113° 12' 4s"w 
+53Â° 23' 06"N 113Â° 12' 4s"w 
 
 Figure 3.1 
 A 
@@ -4614,25 +4614,25 @@ Figure 3.2
 TABLE 3.5.2 SUMMARY OF THE EXISTING SYSTEM SPECIFICATIONS 
 SPECIFICATIONS STATION A TS-X STATION B TS-Y 
 Latitude($) Longitude (A) Ground Elevation (GASL) Maximum Tx Power PTXMAX Minimum Tx Power PTXMIN Antenna Type Antenna Gain Antenna Height AFSL Equipment Type Equipment Stability Modulation Channel Capacity RMS Devation Midband Frequency Tx Frequency Rx Frequency Polarization 
-53°31'37"N 
-113° 20' 27" w 760m 40.0dBm 
+53Â°31'37"N 
+113Â° 20' 27" w 760m 40.0dBm 
 33.0 dBm HPS-19D 
 32.0 dBi 50m 
-1.9 dB FM2300Z 0.00025% FDM-FM 960 ch. 200KHz 2100 MHz 1907.5 MHz 2120.5 MHz V 53° 25' 20" N 113° 14' 05" w 763 m 
+1.9 dB FM2300Z 0.00025% FDM-FM 960 ch. 200KHz 2100 MHz 1907.5 MHz 2120.5 MHz V 53Â° 25' 20" N 113Â° 14' 05" w 763 m 
 40.0 dBm 
 33.0 dBm HP6-19C 
 29.5 dBi 50m 
-3.8 dB FM2300Z 0.00025% FDM-FM 960 ch. 200KHz · 2100 MHz 2120.5 MHz 1907.5 MHz V 
+3.8 dB FM2300Z 0.00025% FDM-FM 960 ch. 200KHz Â· 2100 MHz 2120.5 MHz 1907.5 MHz V 
 Note: PTXMIN is actual transmit power. 
 STEP 5: Distance and Azimuth Calculations 
 From the equations given in Annex 2A and the coordinates of the proposed and existing sites, calculate the distances and azimuths. The results are shown in Tables 3.5.3 and 3.5.4. 
 
 TABLE3.5.3 DISTANCES IN KM 
 DISTANCE km  TS.A  TS.B  TS.X  TS.Y  
-TS.A  -­ 13.62  17.92  10.66  
-TS.B  13.62  -­ 4.38  18.15  
-TS.X  17.92  4.38  -­ 21.34  
-TS.Y  10.66  18.15  21.34  -­ 
+TS.A  -Â­ 13.62  17.92  10.66  
+TS.B  13.62  -Â­ 4.38  18.15  
+TS.X  17.92  4.38  -Â­ 21.34  
+TS.Y  10.66  18.15  21.34  -Â­ 
 
 ) 
 TABLE3.5.4 AZIMUTHS IN DEGREES 
@@ -4640,10 +4640,10 @@ AZIMUTH
 s 
 TS.A TS.B TS.X TS.Y 
 TS.A TS.B TS.X TS.Y 
--­ 148.8°  151.75°  244.82°  
-328.89°  -­ 161.04°  293.16°  
-331.85°  341.06°  -­ 301.94°  
-64.7°  112.96°  121.72°  -­ 
+-Â­ 148.8Â°  151.75Â°  244.82Â°  
+328.89Â°  -Â­ 161.04Â°  293.16Â°  
+331.85Â°  341.06Â°  -Â­ 301.94Â°  
+64.7Â°  112.96Â°  121.72Â°  -Â­ 
 
 The calculated distances and azimuths are shown in Figure 3.3. 
 
@@ -4653,14 +4653,14 @@ Figure 3.3: Distances -Azimuths
 STEP 6: Discrimination Angles Calculations 
 From the geometry of Figure 3.3, we calculate the discrimination angles between the terrestrial stations A, B, X and Y. 
 ' 
-Discrimination angle BAX = 2.95° ' 
-" BAY = 92.02° ' 
-" ABX = 167.85° ' 
-" ABY = 35.73° ' 
-" YXA = 29.91° ' 
-" YXB = 39.12° ' 
-" XYA = 57.02° ' 
-" XYB = 8.76° 
+Discrimination angle BAX = 2.95Â° ' 
+" BAY = 92.02Â° ' 
+" ABX = 167.85Â° ' 
+" ABY = 35.73Â° ' 
+" YXA = 29.91Â° ' 
+" YXB = 39.12Â° ' 
+" XYA = 57.02Â° ' 
+" XYB = 8.76Â° 
 The calculated discrimination angles are shown in Figure 3.4. 
 ) BAND ANALYSIS MODE (B) 
 STEP 7: Calculation of EIRP Advantage 
@@ -5136,7 +5136,7 @@ B
 +71 
 +3.6 
 ) From Table 3.5.20 we eliminate interference cases between stations BBXand stations ABY. 
-For the existing interference cases between station ABX and BBX we must proceed with post manual analysis. · 
+For the existing interference cases between station ABX and BBX we must proceed with post manual analysis. Â· 
 STEP 18: Post Manual Analysis 
 a) Antenna peak-to RMS factor (see Section 2.6.6) is not applicable once conditions 1 and 4 in Section 2.6.6. are not met; that is: 
 ' 
@@ -5213,7 +5213,7 @@ For A~< 0 and A'A, >O Az= SM-'6/2 B.Az = Az + '6 + 11
 For A~ < 0 and A'A,:,; 0 Az = 211 -SM -'6/2 B.Az = Az + '6 +11 
 
 3. 
-For A~ 2! 0 and A'A-< 0 Az = 11 ± SM -'6/2 B.Az = Az + '6 +11 
+For A~ 2! 0 and A'A-< 0 Az = 11 Â± SM -'6/2 B.Az = Az + '6 +11 
 
 4. 
 For A~ 2! 0 and A'A, 2! 0 Az = 11 -SM -'6/2 B.Az = Az + '6 +11 
@@ -5289,9 +5289,9 @@ A discussion on the interference model employed for generating CTX curves.
 The use of digital microwave radio systems created a need to develop analytical tools for estimating permissible levels of interference. The original tools were developed before digital radios appeared on the market and thus did not consider them. These tools needed upgrading to perform calculations which include DIA, AID and DID interference cases for various types of radio equipment. To this end AGT, on behalf of FCSA, has developed a set of computer programs dealing with the above interference cases. The intent of this CTX curve development is to extend the MICS database to . include digital radio equipment by exhausting all feasible interference scenarios between equipment types. 
 2.1 TS-TS SHORT HAUL INTERFERENCE OBJECTIVE 
 FCSA has set, for terrestrial-into-terrestrial M/W radio interference, a maximum permissible interference level for short haul digital and analog applications at the level (measured at the victim receiver's input port) which causes the victim's fade margin to be reduced by 1.0 dB below 18 
-Q GHz and 3 dB above 18 GHz. This maximum level will vary with the· separation between the victim's and interferer's carrier frequencies and with different equipment types. In this case, a CTX curve is simply a graph which relates the permissible interference power to frequency separation for specific interferer/victim pairs. 
+Q GHz and 3 dB above 18 GHz. This maximum level will vary with theÂ· separation between the victim's and interferer's carrier frequencies and with different equipment types. In this case, a CTX curve is simply a graph which relates the permissible interference power to frequency separation for specific interferer/victim pairs. 
 2.2 TS-TS LONG HAUL INTERFERENCE OBJECTIVE 
-The long haul interference ·objective for terrestrial M/W radio digital systems is 1.0 dB degradation to the receiver's noise threshold. For analog systems the objective remains the same as for the A/A case (4.0 dBrnCO worst-slot noise). 
+The long haul interference Â·objective for terrestrial M/W radio digital systems is 1.0 dB degradation to the receiver's noise threshold. For analog systems the objective remains the same as for the A/A case (4.0 dBrnCO worst-slot noise). 
 3.0 
 SOLUTION OUTLINE 
 This section discusses a solution to the above problem for the main co-channel CTX objective. A discussion on spurious response appears in Section 4. 
@@ -5299,7 +5299,7 @@ This section discusses a solution to the above problem for the main co-channel C
 The interfering effect into a co-channel analog victim will depend on the energy distribution of the interfering signal. The treatment of the DIA case is identical to the A/A case (which was developed earlier) except that in the DIA case empirically derived interference power spectral density (PSD) data (rather than computed PSD data ) is used. The theoretical development of AlA interference is discussed in Annex 2A.1. 
 3.2 DID AND AID CASES
 ) 
-This section discusses DID and AID interference cases. Since the treatment of DID is identical to AID, one Interference model is used. Both cases use empirically derived victim frequency response data. The DID case uses empirically derived interferer PSD data while the AID case uses computer generated interferer PSD data. A digital victim is sensitive to the total interference power of the interferer at the demodulator. This sensitivity to interference is well correlated with the Nyquist bandwidth and is related to the thermal noise floor power. The noise floor power is independent of modulation method and data rates, but dependent solely on receiver bandwidth and receiver noise figure. The method adopted by ·FCSA assumes that the total interference power at the demodulator input when added to the thermal noise power represents fairly closely the degradation of threshold, relative to the threshold with thermal noise alone. 
+This section discusses DID and AID interference cases. Since the treatment of DID is identical to AID, one Interference model is used. Both cases use empirically derived victim frequency response data. The DID case uses empirically derived interferer PSD data while the AID case uses computer generated interferer PSD data. A digital victim is sensitive to the total interference power of the interferer at the demodulator. This sensitivity to interference is well correlated with the Nyquist bandwidth and is related to the thermal noise floor power. The noise floor power is independent of modulation method and data rates, but dependent solely on receiver bandwidth and receiver noise figure. The method adopted by Â·FCSA assumes that the total interference power at the demodulator input when added to the thermal noise power represents fairly closely the degradation of threshold, relative to the threshold with thermal noise alone. 
 
 3.2.1 Interference Model Elements 
 The interference model is based on the following elements: 
@@ -5333,7 +5333,7 @@ Practical receivers are currently designed such that the victim nominal receive 
 The bandwidth (denoted by B) in the thermal noise power calculation (i.e., kTBF) is the 
 
 
-• brickwall filter bandwidth. A brickwall filter is defined as an ideal filter that has the same area under the curve as the actual combined RF + IF + BB filters used. 
+â€¢ brickwall filter bandwidth. A brickwall filter is defined as an ideal filter that has the same area under the curve as the actual combined RF + IF + BB filters used. 
 
 Victim Power level diagram (power at reciever input port) 
 -30 dBm typ 
@@ -5343,12 +5343,12 @@ Approx. IO dB
 
 1 
 _ d::etyMp argi~ .:~ 
-~'.~~.f~:~~·cr~'. ...........L....
+~'.~~.f~:~~Â·cr~'. ...........L....
 77 
 I dB 
 -78 dBm typ 
 -94 dBm typ 
-······················r····················· 
+Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·rÂ·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â· 
 I dB 
 -95 dBm typ 
 
@@ -5465,16 +5465,16 @@ IS
 16 
 ,. 
 16 ARY QAM WITH CO-CHANNEL INTERFERENCE NO INTERFERENCE 
-Pe 10·3 10·6 
+Pe 10Â·3 10Â·6 
 
 Figure 5. 16 ARY QAM with Co-channel Interference: This figure was taken from V.K. Prabhu's paper (4). 
 2A.2 -16 
 Engineering Consideration 
 
-20 r--.---.-~-.-.--r--,--,--.....,..-.,...........-...,.....~--­
+20 r--.---.-~-.-.--r--,--,--.....,..-.,...........-...,.....~--Â­
 ,. 
 11 
-1• 
+1â€¢ 
 Cl) ,..l 
 Ul 
 -
@@ -5489,19 +5489,19 @@ z
 -<
 Q 
 ~ 
-0 •
+0 â€¢
 ) 
 Ul 
 Q 
 I 
-• 
+â€¢ 
 2 
 8-PSK WITH CO-CHANNEL INTERFERENCE 
 NO INTERFERENCE 
 Pe  CNR(dB)  
-10·'  15,678  
-10·'  19.122  
-10·9  21.053  
+10Â·'  15,678  
+10Â·'  19.122  
+10Â·9  21.053  
 
 
 oL_L_i_J._...L......L_-=::::~~---.._J 
@@ -5520,9 +5520,9 @@ _)
 
 NO INTERFERENCE  
 Pe  SNR(Db)  
-10·3  17.116  
-10·6  20.667  
-10·9  22.643  
+10Â·3  17.116  
+10Â·6  20.667  
+10Â·9  22.643  
 
 s 
 ' 
@@ -5536,20 +5536,20 @@ V.K. Prabhu's paper (4).
 4.0 SPURIOUS RECEIVER RESPONSE 
 The responses of concern are the image, IF and 1/2 IF response. These all are sensitive to receiver filter characteristics. IF and 1/2 IF response are also sensitive to the receiver signal handling characteristics. 
 4.1 IMAGE RESPONSE 
-The image response is a mixing phenomenon where the receiver's response to the frequency fRF +/-2fIF (where fRF denotes the victim receiver RF frequency and fIF denotes the victim's intermediate frequency: usually 70 MHz) is limited by the RF filter selectivity at that frequency. The simplest method to generate CTX objectives for image response is to replicate the main co­channel CTX objective shifted by 2fIF and increasing the interference power by the RF filter selectivity at 2fIF MHz from center. This approximation permits some errors due to not accounting for the amplitude slope of the RF filter across the image spectrum; however, CTX objectives are conservative. 
+The image response is a mixing phenomenon where the receiver's response to the frequency fRF +/-2fIF (where fRF denotes the victim receiver RF frequency and fIF denotes the victim's intermediate frequency: usually 70 MHz) is limited by the RF filter selectivity at that frequency. The simplest method to generate CTX objectives for image response is to replicate the main coÂ­channel CTX objective shifted by 2fIF and increasing the interference power by the RF filter selectivity at 2fIF MHz from center. This approximation permits some errors due to not accounting for the amplitude slope of the RF filter across the image spectrum; however, CTX objectives are conservative. 
 In the CTX model the image response is accounted for by replicating a doublesided version of the
 ) main CTX objective shifted in frequency by 2fIF and by increasing the interference objective by an amount equal to the RF filter response (attenuation) at frequency fRF +/-2fIF, A comparison is then made between the main interference objective and the replicated objective over the frequency range 2fRF +/-fIFl2. The worst interference objective is selected. 
 Potential problems associated with truncating the image response at that frequency range could arise causing error in the interference objective data, but in practical cases this situation is unlikely to occur. Furthermore, to be technically correct, the image CTX objective should be computed by adding the main co-chanD:el CTX objective to the replicated CTX objective (rather than comparing); however, since the level of the main objective is negligible as compared to the replicated objective, determining the image objective by comparing does not create significant errors. See Figure 8 for details on the frequency range and level of the CTX image and IF objectives. 
 4.2 IF RESPONSE 
 0 
 The IF spurious response is a second order distortion product that can create an interference spectrum whose bandwidth is equal to the sum of the interferer and victim bandwidths (i.e., convolution of the interferer and victim PSD). The generated second order energy depends mainly on the receiver front end design and will be controlled if the energy at 'IF' response frequency can be maintained 10 to 20 dB below the receiver overload point, as measured at the receiver RF input port. As suppliers do not generally provide this type of information it will be difficult to get an exact objective. 
-In the CTX model the IF response is accounted for by replicating the main co-channel objective shifted in frequency by fIF from the center frequency and by increasing the interference objective by an amount equal to the sum of 20 dB plus the RF filter response ( attenuation at the frequency shifted by fRF ± fIF/2). The worst objective is selected. The problems associated with truncating at fIF ± fIF/2 are exactly the same as those discussed in Section 4.1. 
+In the CTX model the IF response is accounted for by replicating the main co-channel objective shifted in frequency by fIF from the center frequency and by increasing the interference objective by an amount equal to the sum of 20 dB plus the RF filter response ( attenuation at the frequency shifted by fRF Â± fIF/2). The worst objective is selected. The problems associated with truncating at fIF Â± fIF/2 are exactly the same as those discussed in Section 4.1. 
 
 ILVLdBm 
 
-20 dB + RF FILTER RESPONSE @fRF ±f!F
+20 dB + RF FILTER RESPONSE @fRF Â±f!F
 -100 
--80 RF FILTER RESPONSE @fRF ±2frF 
+-80 RF FILTER RESPONSE @fRF Â±2frF 
 -60 -40 -20 IF RESPONSE 0 fs 
 
 
@@ -5617,7 +5617,7 @@ u
 0 
 .,oo 
 -~o-L---~--.......--l-,---,--.--,---,-,---r--r---r-r--i--r---r--,-r--j
-• 
+â€¢ 
 140 140
 21 II
 -40 -21 
@@ -5631,7 +5631,7 @@ I. IO dB Flat Fade Margin Degradation
 I dB Flat Fade Margin Degradation 
 
 
-Note: Fade Margin Threshold is 10·' BER. 
+Note: Fade Margin Threshold is 10Â·' BER. 
 Figure 9. Example of a Susceptibility to CW Interference Curve: Typical Type -x receiver 
 
 
@@ -5701,7 +5701,7 @@ i:,..
 RELATIVE FREQUENCY (MHz) 
 Figure 12. Example of a victim selectivity curve: Typical type -x receiver 
 111 
-11!1l@noni§ijin&tWw1i6ri"ffiii¥1 
+11!1l@noniÂ§ijin&tWw1i6ri"ffiiiÂ¥1 
 -120 -100 -80 
 
 20 
@@ -5756,7 +5756,7 @@ Threshold Degradation ..........................................................
 Filter Characteristics ................................................................................................. 2Al-21 
 
 8. 
-Spurious Responses·············································································:···················· 2Al-22 
+Spurious ResponsesÂ·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·:Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â· 2Al-22 
 
 9. 
 References ................................................................................................................. 2Al-23 
@@ -5778,10 +5778,10 @@ fs
 = Minimum baseband frequency 
 fmin 
 = Maximum baseband frequency 
-fm N = Number oftelephone channels in the baseband /',.cr = Per channel RMS deviation cr = System RMS frequency deviation NLR = Noise load ratio M = Modulation index =cr/fm P(f) = Spectrum power ofthe modulated carrier in a narrow band of width fb at frequency fc±f 
+fm N = Number oftelephone channels in the baseband /',.cr = Per channel RMS deviation cr = System RMS frequency deviation NLR = Noise load ratio M = Modulation index =cr/fm P(f) = Spectrum power ofthe modulated carrier in a narrow band of width fb at frequency fcÂ±f 
 flfm
 ) X = = 
-XJ fminlfm Hp(f) = Relative deviation due to pre-emphasis P1(f) = Spectrum power of the modulated carrier in a narrow band of width fb at frequency f (referenced to the absolute zero frequency) NPR = Noise power ratio NPR0 = NPR for C/1 = 0 l',.f Telephone channel bandwidth K = 1.374 x 10·20 mw. secl°K T = 291°K F = Noise figure crp = System peak frequency deviation C = Desired carrier level I = Interfering carrier level a = Filter attenuation 
+XJ fminlfm Hp(f) = Relative deviation due to pre-emphasis P1(f) = Spectrum power of the modulated carrier in a narrow band of width fb at frequency f (referenced to the absolute zero frequency) NPR = Noise power ratio NPR0 = NPR for C/1 = 0 l',.f Telephone channel bandwidth K = 1.374 x 10Â·20 mw. seclÂ°K T = 291Â°K F = Noise figure crp = System peak frequency deviation C = Desired carrier level I = Interfering carrier level a = Filter attenuation 
 f, = 1.25 fm 
 y = flf, 
 R~(o) = Mean-square value of phase modulation 
@@ -5816,7 +5816,7 @@ Sample Calculation #3:
 ) 
 fs worst fch C/I (dB) assumed worst. C/I (dB)@assumed (MHz) (MHz) @worst fch fch (MHz) worst fch 
 0 0.69 66.2 0.65 66.2 I I 74.1 I 74.1 2 1.3 63.8 1.3 63.8 
-· In addition, the worst slot C/I for co-channel interference has been determined for desired and interfering channel loadings of 24, 60,120,300,600,960, 1200 and 1800 channels and combinations of these. The results indicate that the worst slot can be approximated by . fm1 I 2 or fm1 I 4, whichever is worse, to an accuracy ofat worst 1.1 dB in the computed C/I 
+Â· In addition, the worst slot C/I for co-channel interference has been determined for desired and interfering channel loadings of 24, 60,120,300,600,960, 1200 and 1800 channels and combinations of these. The results indicate that the worst slot can be approximated by . fm1 I 2 or fm1 I 4, whichever is worse, to an accuracy ofat worst 1.1 dB in the computed C/I 
 requirement. 
 In fact, out ofa sample of 44 different combinations of desired and interfering channel loadings, 42 where better than or equal to 0.5 dB. 
 J 
@@ -5833,33 +5833,33 @@ where:
 Following Ref. 3, Annex A, pg. 56, we neglect the last term oft'F2(f). The spectrum for x :s; x1 is assumed to be negligible, i.e.: 
 f
 10 log ...fl!.p(f) = -100 dB, x:S: XJ fb 
-Following Ref. I, Appendix I B, the mean~square value of the phase modulation with pre­emphasis is: 
+Following Ref. I, Appendix I B, the mean~square value of the phase modulation with preÂ­emphasis is: 
 
 The second term of the integration can be evaluated from: 
 2
 dy 
 I l A -J[2ysinP] I . AI [y -2ycosp + l]l
----cos I-' tan --'--~ --sm I-' n -'-----'---'--­
+---cos I-' tan --'--~ --sm I-' n -'-----'---'--Â­
 4
 fy -2y2 cos (2P) + I 2 sin(2P) I-y2 2 y2 +2ycosp+I 
-Then: 2 cos 2 p = 1.3354 cos 2 p = 0.6677 2p = 48.11 ° 
-p = 24.055° 
+Then: 2 cos 2 p = 1.3354 cos 2 p = 0.6677 2p = 48.11 Â° 
+p = 24.055Â° 
 
 fm 
 r-r.=-dy lf-,. y4 -L3354y2 + 1 
 mm 
 fr 
--1 (2y sin 24.055°) 
+-1 (2y sin 24.055Â°) 
 cos 24.0550 tan 1 1-y2 
-2 sin48.l 1° 
-_2,sin24.055o ln ( y2 -2y cos 24.0550+1) 2 y2 + 2y cos 24.055°+ 1 
+2 sin48.l 1Â° 
+_2,sin24.055o ln ( y2 -2y cos 24.0550+1) 2 y2 + 2y cos 24.055Â°+ 1 
 fm 
-2 = [o.6717{0.9132 tan-1(0·815~Y)-0.2038 1n(Y -1 ·8263Y + 1)}.Jr;
+2 = [o.6717{0.9132 tan-1(0Â·815~Y)-0.2038 1n(Y -1 Â·8263Y + 1)}.Jr;
 2
 1 -y y + 1.8263 + 1 fmin fr fm 0 815 8263
-=[0.6133 tan-1( · ~Y)-0.1369 ln (y:-1. Y+l)]fr 1 -y y + l.8263y + 1 fmin · fr fm 
+=[0.6133 tan-1( Â· ~Y)-0.1369 ln (y:-1. Y+l)]fr 1 -y y + l.8263y + 1 fmin Â· fr fm 
 Jfm 4 4.5854dy2 [2.8123tan-1(0.815~y)-0.62771n(y:-l,8263y+l)]fr . y -l.3354y + 1 1-y y + l.8263y + 1 fmin
-fmin -­
+fmin -Â­
 --. f 
 ~ . r 
 = _8123 tan-1[0.8152fm If; ]-0_6277 ln [(fm I fr ):-1.8263 fm /fr+ 1]
@@ -5869,18 +5869,18 @@ fmin -­
 2 1 -(1 / 1.25) 2 (l / 1.25) 2 + (1.8263 / l.25) + 1 
 2
 -1[0.8152x1 /1.25]. [(x1 /1.25) -l.8263x1 /1.25+1]
--2.8123 tan -----''---+ . 7 1 -'--''------'------''---­
+-2.8123 tan -----''---+ . 7 1 -'--''------'------''---Â­
 0627 n 1-(X] / 1.25)2 (X] / 1.25)2 + 1.8263 X] / 1.25 + 1 
 0 6522 
-= 2.9991 + 1.7904-2.8123 tan-I[ · x\] 1-0.64x1 
+= 2.9991 + 1.7904-2.8123 tan-I[ Â· x\] 1-0.64x1 
 +0.6277 ln [0.64xi2-L461x1 + 1] 0.64xi2 + l.461x1 + 1 
 0 6522 0 64 46
 1
-=4.7895-2.8123tan-1 [ · x ]+0.6277 ln[ · xi2-1. lx1 + -1] 1-0.64x12 0.64x12 + l.461x1 + 1 
+=4.7895-2.8123tan-1 [ Â· x ]+0.6277 ln[ Â· xi2-1. lx1 + -1] 1-0.64x12 0.64x12 + l.461x1 + 1 
 
 Therefore, the mean-square value of the phase modulation with pre-emphasis is: 
 25 0 6522
-1. -1.25 + 4.7895-2.8123 tan-1[ · x~] _ 3.15cr 2 XJ 1-0.64x1
+1. -1.25 + 4.7895-2.8123 tan-1[ Â· x~] _ 3.15cr 2 XJ 1-0.64x1
 _:___:___:____
 R~ (o) = 
 7.90 (fm -fmin )fr [O 64x 2 1 461x + 1]
@@ -5890,13 +5890,13 @@ R~ (o) =
 Then the residual carrier component with emphasis: 
 
 Similar to equation (18) of Garrison (Ref. 2) and neglecting the effect ofpre-emphasis on the second and higher order sidebands, we obtain: 
-) -P(f) = exp [-R~(o)] -+ ­
+) -P(f) = exp [-R~(o)] -+ Â­
 fm j[fm] [1
 fb x=o 2 
 
-l+----6·_90___ 
+l+----6Â·_90___ 
 5.25
-1+------­
+1+------Â­
 2 
 1.25ffm f. )
 ( 
@@ -5952,7 +5952,7 @@ The noise power ratio for C/I = 0, i.e., the ratio of the desired signal to the 
 
 where: 
 6 9020 log {Hp (fc11)} = 5-10 log 
-1 + · l + 5.25 
+1 + Â· l + 5.25 
 1.25fmJ -fch ) 2 ( 
 fch 1.25fmJ 
 The variation ofthe I(f) function may be assumed to be small over the telephone channel bandwidth Af, except where I(f) includes a component due to the beating ofthe two carriers. ) This occurs when fch = f5, i.e., when P=O. 
@@ -5977,7 +5977,7 @@ ab
 a1 bI 
 
 ab1 
-••••••.••••••.••••••• 
+â€¢â€¢â€¢â€¢â€¢â€¢.â€¢â€¢â€¢â€¢â€¢â€¢.â€¢â€¢â€¢â€¢â€¢â€¢â€¢ 
 ab 
 ab 
 .................... . 
@@ -5991,7 +5991,7 @@ Let the area below the product spectrum P 1(0) P 2(-0) be denoted by A and the a
 1 
 l(fch) = -[C1 (0) + C2]
 4 
-= ¼[2(A+a1b1-ab)+C2] 
+= Â¼[2(A+a1b1-ab)+C2] 
 .t.f
 For ~=8 (o<8:S:-):
 2 
@@ -6000,12 +6000,12 @@ C1(8) = 2ff P1 (0) P2 (8-0) d0
 -CJ = 2 (A1+a1b-ab+ab1-ab) "' 2(A +a1b+ab1-2ab) = C1(0)+2(a1b+ab1-a1bl-ab) = C1(0)-2(a1-a)(b1-b) 
 1 
 l(fch + 8) = 4 [C1(8)+C2] 
-= ¼[C1(0)-2(a1-a)(b1-b) +C2] 1
-= I(fch)-½ (a1-a)(b -b) 
+= Â¼[C1(0)-2(a1-a)(b1-b) +C2] 1
+= I(fch)-Â½ (a1-a)(b -b) 
 ) 
 I(f) 
 
-··········i····· t½ (a 1-a) (b 1-b) 
+Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·iÂ·Â·Â·Â·Â· tÂ½ (a 1-a) (b 1-b) 
 .........' ' ' ........:l, 
 ' ' 
 ' ' 
@@ -6016,7 +6016,7 @@ I(f)
 ........., ..............., ................... 
 fch +(Lif/2)
 I(f)df =I(fch +8) .t.f + I(fc11)-I(fch +8)
-t ( f/2ch-Li) · = I(fch)-2 1 (aI -a)(b1 -b) ] (.t.f-l)+Ifch _
+t ( f/2ch-Li) Â· = I(fch)-2 1 (aI -a)(b1 -b) ] (.t.f-l)+Ifch _
 [ 
 1 I I (.t.f-1)]
 = I(fch)-2 (a -a)(b -b) M i'.f
@@ -6027,11 +6027,11 @@ rfch +(~f /2)I(f) df = I I (f ) ~f Jfch -(~f/2) ch where 1 I
 
 = -[C1 +C2]
 4 
-I I · I I (~f-1)]
+I I Â· I I (~f-1)]
 = 2 (A+a b -ab)-(a -a)(b -b) ~
 [ 
 I J (~f-1)]
-= 2[f.oof PJ(0)P2(-0)d0-(a -a) (b -b) -­
+= 2[f.oof PJ(0)P2(-0)d0-(a -a) (b -b) -Â­
 . -CJ ~f 
 Assuming a 10 dB carrier dispersal, the above derivation must be modified by replacing a1b1 
 0 
@@ -6062,7 +6062,7 @@ where: NPRint = NPR0 + C -I
 and: NPR1h = SIN11i -BWR + NLR in the top slot 
 Now: S/Nth = C-10log2KT-10logt.f-F+20log(t.cr.2) -20 log fm1 
 = C-10 log (2xl.374xl0-20 x291) -10 log 3100-F + 20 log t.cr + 20 log.2 fm1 t.cr 
-= C+139.1-F+20log ­fm1 
+= C+139.1-F+20log Â­fm1 
 
 With emphasis: 
 0 
@@ -6090,10 +6090,10 @@ f -f . NPRo = 20 log cr + 20 log Hp (fch) -10 log m\/l ;mI
 /lcr
 = 20 log -+ NLR-BWR + 20 log Hp (fch) fch 
 -10 lcig[O(fch)-Ispike)llf + Ispike] 
-· · 10 
+Â· Â· 10 
 
 Then for !orig haul: C/I = 84-(NPR0+BWR-NLR) Acr [ Ispike ]
-= 84-20 log--20 log Hp(fch) + 10 log (I(fch)-Ispike) Af + ~­
+= 84-20 log--20 log Hp(fch) + 10 log (I(fch)-Ispike) Af + ~Â­
 fch 
 or: required C /I = where: 
 and: 
@@ -6128,19 +6128,19 @@ Filters are assumed to cut off at the design maximum half-bandwidth of 1.5 (crp+
 __l....:og::..f_.e.s_-_lo.=:.g_l_.5....:(_cr.e...p_+_2_f,.,,m.:....)__ ., f f )
 a= -x 25 illr s>.15 (crp+2 m 
 log 1.5(2cr p + 4 fm) -log 1.5 (cr p + 2 fm) amax = 60 25 fs 
-= --log-----"'---­
+= --log-----"'---Â­
 log2 1.5(crp+2fm) 
 ) 
 8. SPURIOUS RESPONSES 
-We consider spurious responses at ±140 MHz (since the local oscillator may be either above or below the desired carrier), and ±70 MHz. We ignore spurious responses at ±35 MHz and ±105 MHz as these are expected to be down by the same order of magnitude as the assumed filter 
-characteristics. The spurious responses at ± 140 MHz ±fm MHz are equal to the response at ±fm MHz, but attenuated by the assumed 60 dB image rejection. The spurious responses at ±70 ±fm MHz are conservatively estimated to be 20 dB down from the response at ±fm MHz in addition 
+We consider spurious responses at Â±140 MHz (since the local oscillator may be either above or below the desired carrier), and Â±70 MHz. We ignore spurious responses at Â±35 MHz and Â±105 MHz as these are expected to be down by the same order of magnitude as the assumed filter 
+characteristics. The spurious responses at Â± 140 MHz Â±fm MHz are equal to the response at Â±fm MHz, but attenuated by the assumed 60 dB image rejection. The spurious responses at Â±70 Â±fm MHz are conservatively estimated to be 20 dB down from the response at Â±fm MHz in addition 
 to the filter attenuation (see Ref. 2 and 7). 
 9. REFERENCES 
 1) R.G. Medhurst, "RF Spectra and Interfering Carrier Distortion in FM Trunk Radio Systems with Low Modulation Ratios", IRE Transaction on Communications Systems, Jt1ne 1961, pp. 107-115. 
 2) G.J. Garrison, "An Extended Analysis of RF Interference in FDM-FM Radio Relay Systems", IEEE Transaction on Communication Technology, October 1967, pp. 705-713. 
 3) Electron Industries Association, Industrial Electronics Bulletin No. 10-C: "Interference Criteria for Microwave Systems in the Safety and Special Radio Services", August 1976. 
 4) R. Hamer, "Radio-Frequency Interference in Multi-Channel Telephony F.F. Radio Systems", The Institution ofElectrical Engineers, Paper No. 3326E, January 1961, pp. 75-89. 
-5) B.A. Pontano, J.C. Fuenzalida, N.K.M. Chitre, "Interference into Angle -Modulated Systems Carrying Multichannel Telephony Signals", IEEE Transactions on· Communications, June 1973, pp. 714-727. 
+5) B.A. Pontano, J.C. Fuenzalida, N.K.M. Chitre, "Interference into Angle -Modulated Systems Carrying Multichannel Telephony Signals", IEEE Transactions onÂ· Communications, June 1973, pp. 714-727. 
 ) 
 6) A. Das, G. Sharp, FCC Report No. RS75-04, "Convolution Method ofInterference Calculation", April 1975. 
 7) B.R. Hallford, J.N. Ratti, "Microwave Receiver Interference Characteristic Measurements", IEEE Transactions on Communications Technology, August 1966, pp. 455-469. 
@@ -6148,7 +6148,7 @@ _)
 CHAPTER TWO 
 OVERVIEW OF FREQUENCY COORDINATION 
 2.1 INTRODUCTION 
-Microwave radio stations, whether terrestrial or in the fixed-satellite service, need to be protected from interference caused by other such stations. Failure to do so can result in service degradation· or even interruption, and expensive plan alteration ranging up to total site relocation. 
+Microwave radio stations, whether terrestrial or in the fixed-satellite service, need to be protected from interference caused by other such stations. Failure to do so can result in service degradationÂ· or even interruption, and expensive plan alteration ranging up to total site relocation. 
 The only practical way to avoid unacceptable interference is through calculations which predict the interference levels to be expected, supported on occasions by trial field measurements where the time and expense to do so is justified. 
 The microwave interference calculation problem then, is to predict interference through calculations, with sufficient accuracy such that the risk of causing or experiencing unacceptable interference is compatible with the risk of the investment in the microwave plan involved, at minimum cost, within the time frames allowed by licensing procedures and system implementation schedules. 
 ) 
@@ -6171,7 +6171,7 @@ Co-channel sideband beat occurs when the interfering carrier is so close to the 
 Adjacent channel sideband beat occurs when the interfering and desired signals are so close together that their sidebands occupy the same frequency spectrum. Adjacent channel sideband beat interference occurs when both the desired and interfering systems are fully or nearly fully modulated. 
 2.3.3 Threshold Degradation and Capture Effect 
 0 
-Threshold degradation occurs when the interfering signal arrives at the desired receiver at a level comparable to the front end thermal noise. Threshold level is considered to be the receiver input level that results in 54 dBrnCO of noise in the worst channel. A related phenomenon is capture of the demodulator by the interfering signal during fades of the desired signal. • 
+Threshold degradation occurs when the interfering signal arrives at the desired receiver at a level comparable to the front end thermal noise. Threshold level is considered to be the receiver input level that results in 54 dBrnCO of noise in the worst channel. A related phenomenon is capture of the demodulator by the interfering signal during fades of the desired signal. â€¢ 
 2'.3.4 Spurious Response 
 Spurious responses of the receiver can include all the mechanisms previously discussed and can occur at several frequencies greatly removed from the carrier frequency particularly at 70 MHz and 140 MHz. 
 2.3.5 Interference into Digital Systems 
@@ -6240,7 +6240,7 @@ P'.I
 ~ 
 60
 " >
-·.;:: 
+Â·.;:: 
 u 
 :E'" 
 0 
@@ -6258,7 +6258,7 @@ Figure 2.1: General Interference Curve with Various Mechanisms C/I Objective in 
 2.6 TECHNICAL PARAMETERS 
 The following parameters are required for interference calculations: 
 2.6.1 Latitude and Longitude 
-Victim and interfering microwave stations' latitudes and longitudes are required to determine ­path lengths, azimuths and discrimination angles. The required equations are given in Annex 2.B. 
+Victim and interfering microwave stations' latitudes and longitudes are required to determine Â­path lengths, azimuths and discrimination angles. The required equations are given in Annex 2.B. 
 2.6.2 Transmit Power (PTX) 
 The output maximum power of the interfering station and the minimum transmit power in the desired microwave link. Reference point for PTX is the antenna input (antenna flange). 
 ) 
@@ -6333,7 +6333,7 @@ In Chapter 5 the problem of intersection between a terrestrial station antenna m
 In Chapter 6, the need for computerized interference calculation programs and the general structure of a computer based microwave interference calculation system is illustrated. 
 ) 
 Figure 2.1 General Interference curve with various mechanisms C/I objectives in dB versus Frequency Separation in MHz ....................................... 2-8 Figure 3.1 Interference Analysis -Study Case .................................................................... 3-22 Figure 3.2 Study case geometry .......................................................................................... 3-23 Figure 3.3 Distances -Azimuths ........................................................................................ .'3-26 Figure 3.4 Discrimination angles ........................................................................................ 3-28 Figure 4.1 Model path geometry ........................................................................................... 4-4 Figure 4.2 Zone "A" 20% ...................................................................................................... 4-5 Figure 4.3 Short Term Mode 1 Transmission Loss Calculation Flow-Chart ...................... 4-11 Figure 4.4 Rain -climatic zones ofthe world ..................................................................... 4-15 Figure 4.5 Rainfall rate distributions ................................................................................... 4-16 Figure 4.6 Earth station service arc ..................................................................................... 4-18 
-Figure 4.7 Angular distance 0 and Apparent Elevation angle 0 ........................................ 4-23 Figure 4.8 Elevation angle 0 and distance d for unrefracted ray ......................................... 4-24 Figure 4.9 Geometrical distance D to a point on the refracted beam, H km above the station ................................................................................................ 4-27 Figure 4.10 Geodetic latitude 0 -Geocentric latitude \Jf •••••••••••••••••••••••••••••••••••••••••••••••••••••• 4-30 Figure 4.11 Geocentric Coordinates System I, J, K .............................................................. 4-33 Figure 4.12 Topocentric Coordinates System S, E, Z ........................................................... 4-34 
+Figure 4.7 Angular distance 0 and Apparent Elevation angle 0 ........................................ 4-23 Figure 4.8 Elevation angle 0 and distance d for unrefracted ray ......................................... 4-24 Figure 4.9 Geometrical distance D to a point on the refracted beam, H km above the station ................................................................................................ 4-27 Figure 4.10 Geodetic latitude 0 -Geocentric latitude \Jf â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢ 4-30 Figure 4.11 Geocentric Coordinates System I, J, K .............................................................. 4-33 Figure 4.12 Topocentric Coordinates System S, E, Z ........................................................... 4-34 
 Figure 4.13 Vector Z not parallel to the earth radius vector R ........................................... 4-35 Figure 4.14 ES parameters, LAT, LONG, Height.. ............................................................... 4-37 
 -
 Figure 4.15 VectorZ ............................................................................................................. 4-38 
@@ -6353,7 +6353,7 @@ Figure 4.36 Scatter volume in BE ...............................................
 Figure4.37 Scatter volume in BT .................... : ................................................................... 4-77 Figure 5.1 Geometry Relating Unrefracted Radio Rays (PYa, PYu, and PY') and the Geostationary Orbit (GSO) .................................................................................. 5-2 Figure 5.2 Definition of the Assumed Radio Horizon, Rh .................................................. 5-10 Figure 5.3 Trace of a Refracted Radio Ray Intercepting the GSO ....................................... 5-12 Figure 5.4 Examples ofReflected Orbit Trace Calculations., ............................................. 5-19 Figure 5.5 Three Reference points along the Azimuth Axis ............................................... 5-21 Figure 5.6 Maximum Azimuth Displacement (in one direction ) for angular Separation v ....................................................................................................... 5-23 
 ) 
 Figure 5.7 Critical Azimuth Sc(l) and Sc(2) for Minimum Angular Separation v ............. 5-24 Figure 5.8 Graphical Solution for Sc(l) (minimum angular separation v ........................... 5-26 Figure 5.9 Angular Separation where So is North of the GSO ........................................... 5-27 Figure 5.10 Angular Separation where So is south ofthe GSO ............................................ 5-29 Figure 5.11 Scan Iteration to fund Us ................................................................................... 5-30 Figure 5.12 Interference Prediction Process .......................................................................... 5-38 Figure 5.13 Example 1 .......................................................................................................... 5-40 Figure 5.14 
-Example 4 ······:··································································································· 5-42 Figure 5.15 Example 5 .......................................................................................................... 5-44 Figure 5.16 Example 6 .......................................................................................................... 5-46 Figure 5.17 Example 7 .......................................................................................................... 5-48 
+Example 4 Â·Â·Â·Â·Â·Â·:Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â· 5-42 Figure 5.15 Example 5 .......................................................................................................... 5-44 Figure 5.16 Example 6 .......................................................................................................... 5-46 Figure 5.17 Example 7 .......................................................................................................... 5-48 
 Engineering Considerations iii -3 Fall 1996 
 Figure A.5.1 Longitude of orbit Intersept .......................... : ................................................... SA-2 
 Q 
@@ -6413,7 +6413,7 @@ e = Elevation angle D = Distance for a specified ray height e = Eccentricity IV 
 0 
 
 Chapter 4 ( continued) 
-µ 
+Âµ 
 E HASL ANTH ELES AZES 
 ETRV RE RT 
 ' 
@@ -6494,7 +6494,7 @@ I.EXECUTIVE SUMMARY
 2.6.6 Antenna Peak-to-RMS Factor .............................................................. 2-10 
 2.6. 7 Effective Isotropic Radiated Power (EIRP) ............. , ........................... 2-11 
 2.6.8 Frequency Stability of Transmitter ...................................................... 2-11 
-2.6.9 Frequency Separation ........................................................................... 2-11 · 2.6.10 Desired and Interfering Channel Capacity ........................................... 2-12 
+2.6.9 Frequency Separation ........................................................................... 2-11 Â· 2.6.10 Desired and Interfering Channel Capacity ........................................... 2-12 
 2.6.11 Obstruction Loss .................................................................................. 2-12 
 2.7 Data Base Requirements .................................................................................. 2-13 
 Annex 2A-I Analog FDM-FM Interference Analysis ......................................................... 2Al-1 
@@ -6531,7 +6531,7 @@ J
 Annex3A Definition ofEIRPADV and DISTADV ...................................................... 3Al-l 
 Annex3B Microwave Radio Passive Repeaters ...............................................................3B 1-1 
 4.EARTH STATION -TERRESTRIAL STATION INTERFERENCE ANALYSIS 
-4.1 Introduction ........................................................................................................ 4-1 · 4.2 Interference Level Prediction ............................................................................. 4-2 
+4.1 Introduction ........................................................................................................ 4-1 Â· 4.2 Interference Level Prediction ............................................................................. 4-2 
 4.2.1 Propagation Mechanisms ....................................................................... 4-2 Basic Transmission Loss and Interference Level (Mode 1) ............................... 4-3 
 4.3.1 General ................................................................................................... 4-3 
 4.3.2 Long Term Basic Transmission Loss L(20) .......................................... 4-3 
@@ -6627,16 +6627,16 @@ Maximum Trausmit Power .........................................................
 Annex 5.1 Geometric Orbit Trace .................................................................................... 5A-1 
 Annex 5.2 Critical Azimuth Sc(2) .................................................................................... 5A-5 
 Annex 5.3 Critical Azimuth Sc(!) .................................................................................... 5A-8 ) Annex5.4 Calculation of the Angular Separation Un .................................................... 5A-15 
-Annex 5.5 Angular Separation U5 ••••••••••••••••••••••••••••••••••••••••••••••••• .'•••••••••••••••••••••••••••••••• 5A-17 
+Annex 5.5 Angular Separation U5 â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢ .'â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢ 5A-17 
 6. COMPUTER-AIDED TECHNIQUES 
 6.1 Introduction ........................................................................................................ 6-1 
 6.2 The Benefits and Costs of a Computerized System ........................................... 6-2 
 6.3 Elements of a Computer Software Package for Microwave Interference System ................................................................................................................ 6-3 
 6.3.1 System Components .............................................................................. 6-3 
-6.3 .2 · Data Base Management System ............................................................. 6-4 
+6.3 .2 Â· Data Base Management System ............................................................. 6-4 
 6.3 .3 Technical Programs ............................................................................... 6-6 
 6.3 .4 Program Structure .................................................................................. 6-7 
-MICROWAVE FREQUENCY COORDINATION . ) ENGINEERING CONSIDERATIONS · 
+MICROWAVE FREQUENCY COORDINATION . ) ENGINEERING CONSIDERATIONS Â· 
 ABSTRACT 
 This document contains the Engineering background of the Microwave Interference Calculation Analysis required for frequency coordination between Communication Carriers. 
 The document was prepared for the purpose of describing the technical foundation of the required interference analysis between terrestrial stations and earth stations and between terrestrial stations with satellite orbit. 
