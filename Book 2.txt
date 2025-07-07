@@ -1,12 +1,12 @@
-Appendix B 
+Appendix B   
 The MICS Subsidiarv Tables 
 
 8.0 GENERAL 
 The subsidiary tables are INGRES tables wherein are stored changeable common data elements that are referenced 
 by the Primary database tables and MICS programs, like VALIDATE and TSIP. (There are also other codes in 
 MICS which are not kept in subsidiary database tables and are not changeable except by changing some of the 
-MICS programs •• e.g. polarization codes), To update existing or add new data to these rnblcs the M!CS user will 
-create and appropriate subsidiary update file. · 
+MICS programs â€¢â€¢ e.g. polarization codes), To update existing or add new data to these rnblcs the M!CS user will 
+create and appropriate subsidiary update file. Â· 
 
 The MICS microwave database currently contains 16 subsidiary data tables. These subsidiary data tables consist of 
 
@@ -65,7 +65,7 @@ sd_eqpt Equipment AGT Telesat
 sd_note Note table* Members, FCSA Members, FCSA 
 sd_oper, sd_ocoo Operating companies FCSA FCSA 
 sd_plan, sd_plnd Frequ_ency plans BC Tel Teleglobe 
-sd_rout Routes• Members, FCSA Members, FCSA 
+sd_rout Routesâ€¢ Members, FCSA Members, FCSA 
 sd_town Tower Notes* FCSA FCSA 
 sd_towr Towers Bell-OR UNITEL 
 sd traf Traffic FCSA FCSA 
@@ -246,10 +246,10 @@ TSIP Reference Manual A.1-1 Spring 1996
 
 Table A.1.0-1 
 
-• 0 
+â€¢ 0 
 
 * TS-PDF NAME : operl 
-• 
+â€¢ 
 
 TT,U,OPERl,,,, 
 
@@ -265,7 +265,7 @@ SD,BC,UNKN,3,,,,,,, ,08-jun-1994,UT
 AK,A;U,=UNKNA,=UNKNB, 12, l,, 
 AQ,TR,UHXI0-65EL,20.0,191.34,-0.46,54.89,N,,,,,, ,08-jun-1994 
 
-·--------------------
+Â·--------------------
 
 
 AK,A,U,=UNKNA,=UNKNB,12,2,, 
@@ -282,7 +282,7 @@ SK,A,U,=UNKNB,SITE B,50-30-58.00N, 120-09-08.00W, 734.0,,
 
 SD,BC,UNKN,3,,,,,,, ,08-jun-1994,UT 
 
-•---------------------Name Not Available -----------------------AK,
+â€¢---------------------Name Not Available -----------------------AK,
 A,U,=UNKNB,=UNKNA,12, 1,, 
 AQ,TR,UHXI0-65ER,20.0,11.23,0.09,54.89,N,,,,,, ,08-jun-1994 
 *+++++++++++++!II I I I I+++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
@@ -344,10 +344,10 @@ TT,U,OPERl, , , ,
 SK,A,U,=UNKNA,SITE A,51-00-00.00N,120-00-00.00W,999.0,, 
 SD,BC,UNKN,3,,,,,,, ,08-jun-1994,UT
 
-•--------------------Name Not Available _______________:_________ 
+â€¢--------------------Name Not Available _______________:_________ 
 
 AK,A,U,=UNKNA,=UNKNB,12,l,,) AQ,TR,UHXI0-65EL,20.0,191.34,-0.46,54.89,N,,,,,, ,08-jun-1994 
-AO,,,,,,,,,,,,,,•--------------------AK,
+AO,,,,,,,,,,,,,,â€¢--------------------AK,
 A,U,=UNKNA,=UNKNB,12,2,, 
 AQ,DVl,UHXI0-65EL,15.0,191.34,-0.46,54.89,N,,,,,, ,08-jun-1994 
 AO,,,,,,,,,,,,,, 
@@ -356,7 +356,7 @@ CK,A,U,=UNKNA,=UNKNB,12,IA,,
 CT,,, ,6905000.0,H,l,3.7,, ,RD-U6C,A,31.0,0.0,D7138,3DS3,3,X 
 CR,6565000.0,H, 1,2, ,RD-U6C,B,D7138,3DS3,3,X 
 CQ,3.0,-31.3,2.8,-31.1,,,, 
-CO, ,·,,, , , ,08-jun-1994 
+CO, ,Â·,,, , , ,08-jun-1994 
 *=====--============================================= 
 SK,A,U,=UNKNB,SITE B,50-30-58.00N,120-09-08.00W,734.0,, 
 SD,BC,UNKN,3,,,,,,, ,08-jun-1994,UT* === Name Not Available -------------------------AK,
@@ -427,7 +427,7 @@ TD,
 A,U,=ES0 I ,TEST EXAMPLE,AB,TELS,FE, l 8-sep-1992, 
 SD,51-02-29.00N, 114-03-08.00W, 1044.0,A,2,l, , ,30-jul-1992
 
-•·---------------------
+â€¢Â·---------------------
 
 
 AK,A,U,=ESOl,=TELS0I, ,I,, ,!8-sep-1992, 
@@ -449,7 +449,7 @@ ZK,N,A,U,=ESO l ,=TELSO I, 148.57,5.00, I 0.00,3.50, ,
 ZK,N,A,U,=ESO l ,=TELSO I, 174.79,5.00, I 0.00,2.00, , 
 ZK,N,A,U,=ESOl,=TELSOl,359.00,0.00,l.OO,O.OO,,
 
-•--------------------
+â€¢--------------------
 
 
 CK,A, U, =ESO I,=TELSO 1,00 I, , l 8-sep-1992, 
@@ -458,7 +458,7 @@ CT,6385000.0,V,26.0,26.00,27.0,UNKNOWN,D7900,l,2DS3,X
 
 CR,4160000.0,H,-120.00, UNKNOWN,D7900,-158.0,-13 8 .0,-13 8.0, l ,2DS3,X 
 
-·--------------------
+Â·--------------------
 
 
 CK,A,U,=ESOl,=TELSOI,002, ,18-sep-1992, 
@@ -467,7 +467,7 @@ CT,6415000.0,V,26.5,26.00,27.0,UNKNOWN,D7900,l,2DS3,X
 
 CR,4180000.0,H,-120.00, UNKN O WN,D7900,-158.0,-13 8.0,-13 8.0, l,2DS3 ,X 
 
-•--------------------------------------------------
+â€¢--------------------------------------------------
 
 
 Example of ES PDF in text !"flat-file"} format 
@@ -488,7 +488,7 @@ frequencies, 63 85000.0 and 4160000.0 in the CT and CR records respectively, are
 e.g. 26.0 in the CT record, -120.0 in the CRreocrd. 
 ) 
 
-For a detailed discussion of each· field in the ES pdf, see the MICS User Guide, section 1.2. 
+For a detailed discussion of eachÂ· field in the ES pdf, see the MICS User Guide, section 1.2. 
 
 Fall 1996 A.2-2 TSIP Reference Manual 
 
@@ -757,7 +757,7 @@ passive) is equal to the receive power of the link Al-P (at the passive site)
 
 ) 
 
-TSIP Reference Manual A.5-2 ·Fall 1997 
+TSIP Reference Manual A.5-2 Â·Fall 1997 
 
 
 ) 
@@ -805,7 +805,7 @@ Country: Select Env Sites:
 CALL SIGNS 
 
 OFER.CODES 
-¦ 
+Â¦ 
 TSIP Run Name: 
 
 r~igm+ 
@@ -1080,40 +1080,40 @@ PONOl<A 111.00 1.00 A Blockage, dB
 
 """' ''""'"""" 
 
-•UNKNl.X LOCAX LOCAT:ION A ANIK D2 
-°""" TS Longitude, 110,00 Deg. w AtL_ 
+â€¢UNKNl.X LOCAX LOCAT:ION A ANIK D2 
+Â°""" TS Longitude, 110,00 Deg. w AtL_ 
 
 +----case aeaneuy Geomet:r:y to Rllin Volume ----+ 
 Site Dist ,..mti> Total Ant. Dist to Vol: MES M TU Elev
 
 -"'
 
-T -> B 235,6"0 ··~
+T -> B 235,6"0 Â·Â·~
 
-188. 79 1.00 -·· Diser. T ·> Vol: 235.68 219.21 
-·" 
+188. 79 1.00 -Â·Â· Diser. T Â·> Vol: 235.68 219.21 
+Â·" 
 
-T ·> U 51.51 190.•U .08 SET: 145.95 58,00 E ·> Vol: 2323.Sl 3"7.64 -26.48
+T Â·> U 51.51 190.â€¢U .08 SET: 145.95 58,00 E Â·> Vol: 2323.Sl 3"7.64 -26.48
 
-·" 
+Â·" 
 
 B .,. U 184.11 7 ,92 ura, 1,98 7 .es
 
-·" 
+Â·" 
 
 ' 
 ' 
 -> T 235,6"0 8 .39 Angle SSV: 172.00 Seang, 2,86
 
-·" 
+Â·" 
 
-B ·> S 174.79 31.47 Angle UTV: 2.a, 
+B Â·> S 174.79 31.47 Angle UTV: 2.a, 
 
 ----.
 
-• 
+â€¢ 
 
---TX Interferer Stn,Ant.Sya.Info -----Station T ---TS •.• --RX Victilll Stn.Ant,Sys,Info 
+--TX Interferer Stn,Ant.Sya.Info -----Station T ---TS â€¢.â€¢ --RX Victilll Stn.Ant,Sys,Info 
 
 Station E ---ES Antenna. 
 #, 1l ADse: TX Gain: J!l.4 dB 
@@ -1124,7 +1124,7 @@ TX.Ant.Code: KS15676' Hodel: RX.Ant,COde: TSOSOCH
 Hodel: Trop: JOO klll 
 xref .. , Ant, IU56764H TX.Ant.Ht: 86S,OO (111) J\MSL 
 
-xref ..• Ant: TSOSOC06 RX.Ant.Ht: 1048.00(Prec:SJOO klll 
+xref ..â€¢ Ant: TSOSOC06 RX.Ant.Ht: 1048.00(Prec:SJOO klll 
 Ant.Elev.: 1641.00 111 (N!SL) [ 86S.OO 111 (AGL)] 
 
 Ant.Elev.: 20!12.00rll (N!SL) [ 1048.00 m (AGL)] 
@@ -1132,7 +1132,7 @@ Stn.Elev,: 776.00 111 (J\MSL)
 
 Stn.Elev., lOH.00111 {NISL)
 
-• 
+â€¢ 
 
 --TX Interferer Sys.Bqp,CTX.8and Info -Station T ---TS ... RX Victim Sya .Eqp,CTX,Band Info 
 
@@ -1140,9 +1140,9 @@ Stn.Elev., lOH.00111 {NISL)
 
 ---ES 
 
-Eqpt. Planned / Traffic COde, TD·2CR Al320 ''"". Planned / Traffic COde, D7!101 
-Default Traffic Code, A1200 Eqpt. Default / Traffic Code, -""""°"" Al200 
-Freq.Jlnd ' " • Freq.llnd 
+Eqpt. Planned / Traffic COde, TDÂ·2CR Al320 ''"". Planned / Traffic COde, D7!101 
+Default Traffic Code, A1200 Eqpt. Default / Traffic Code, -""""Â°"" Al200 
+Freq.Jlnd ' " â€¢ Freq.llnd 
 
 ' " 
 " 
@@ -1152,7 +1152,7 @@ UA TX.Freq. RX.Freq, Chn Freq. >ET.
 mT. v,c. v,c. v,c. Interference Requirements, CC>R 
 (MEzl 
 
-,..., ""· ""· 
+,..., ""Â· ""Â· 
 
 '" 
 '" 
@@ -1162,11 +1162,11 @@ Sep, TXPwr AFLS E>RP Not APSL RXPwr Lou CALC. EEQD.
 
 STN.T STE.E T.R (dBW) Aron (dBw) AeOo ldBI ct,
 
-• en 
+â€¢ en 
 ------.----------.--------
 
 
--·· 
+-Â·Â· 
 
 ' 
 ' 
@@ -1198,7 +1198,7 @@ C>LLB Loe.Coda ] BS Site Name E Satellite Name s AAC> Rain Zn I Path PrOfile
 
 .--------------------------------------------------No 
 
-oo.m mm KAV»MH ""°KA 111.00 l.00 A 2 Blocltage, dB
+oo.m mm KAVÂ»MH ""Â°KA 111.00 l.00 A 2 Blocltage, dB
 
 "" 
 
@@ -1208,55 +1208,55 @@ oo.m mm KAV»MH ""°KA 111.00 l.00 A 2 Blocltage, dB
 Site Dist ...... Blev Angle Total Ant. Dist to vol: =BS =TU Azmth Elev 
 T -> B 2Js.,o 188.79 1.00 Diocr. T -> Vol: 235.68 219.2l 
 
-·" 
+Â·" 
 
-T ·> U 51.Sl 190,U SET, US.95 58.00 E -, Vol: 2323.51 347 .64 -26.4.8
+T Â·> U 51.Sl 190,U SET, US.95 58.00 E -, Vol: 2323.51 347 .64 -26.4.8
 
-·" ·" 
+Â·" Â·" 
 
-B ·> tJ 18-l.ll 7 .92 tm, l.'8 7 .85
+B Â·> tJ 18-l.ll 7 .92 tm, l.'8 7 .85
 
-·" 
+Â·" 
 
-B ·> T 235.60 8 .39 Angle SEV, 172.00 Seang: 2.86
+B Â·> T 235.60 8 .39 Angle SEV, 172.00 Seang: 2.86
 
-·" 
+Â·" 
 
-E ·> S 174,79 Jl.47 Angle tl'l'V: 2.86
+E Â·> S 174,79 Jl.47 Angle tl'l'V: 2.86
 
-• 
+â€¢ 
 
---TX Interferer Stn.J\nt.Sys.Info -----Station T ---TS •+• --RX Victiffl St:.n.Ant.Syo.Info -----Station E ---&S Antenna 
+--TX Interferer Stn.J\nt.Sys.Info -----Station T ---TS â€¢+â€¢ --RX Victiffl St:.n.Ant.Syo.Info -----Station E ---&S Antenna 
 # , ll AUse: TX Gain, 39,4 dB Antenna #: Gain, 43.7 dB COord Dist. 
 TX.Ant.Code: ltS156764 Model: RX.Ant.Code: TSOSOC04 Hodel: Trap: 300 km 
 
-X:i:ef •• , Ant: K156764B TX.Ant,Bt: 865,00 (m) AMSL Xref ••• Ant, TS0S0C0G RX.Ant.Kt, 1H8.00(Prec:S300 km 
+X:i:ef â€¢â€¢ , Ant: K156764B TX.Ant,Bt: 865,00 (m) AMSL Xref â€¢â€¢â€¢ Ant, TS0S0C0G RX.Ant.Kt, 1H8.00(Prec:S300 km 
 Ant.Slav,: 1641.00 m (AMSLJ [ 865.00 m (AGL)] Ant.Elev., 2092.00m (AMSL) [ 104.8.00 ffl (AGL)J 
 
 Stn.Blev.: 776.00m (AMSL) St:.n.Blev.: 1044.00111 (J\MSL) 
 
---TX Interferer Sys.Eqp.crx.Ba.nd Info -Station T ---TS .•. . RX Victim Sys.Eqp.Cl'X.B11.Ild Info -----Station E ---ES . 
+--TX Interferer Sys.Eqp.crx.Ba.nd Info -Station T ---TS .â€¢. . RX Victim Sys.Eqp.Cl'X.B11.Ild Info -----Station E ---ES . 
 Eqpt. Planned / Traffic COde, TD-2CR A1320 Eqpt. Planned / Traffic Code, -07901) Default Traffic COde: A1200 Eqpt. Default / Traffic Code: -A1200 
 Freq.BM Freq.end
 
-•
+â€¢
 
 ' " ' " 
 
 SC 
-UA TX.Freq. RX.Freq. Fuq. VIC. VIC. VIC. Interference Requirements: =•
+UA TX.Freq. RX.Freq. Fuq. VIC. VIC. VIC. Interference Requirements: =â€¢
 
-""" ""'· ""'· ""'· ""'· 
+""" ""'Â· ""'Â· ""'Â· ""'Â· 
 
 BS (MHz) (MHz) Sop. TX,W, AFLS Not Noe AFSC RXPwr
 
-'" ""' "'" """'· ,,,
+'" ""' "'" """'Â· ,,,
 
 Sn<.T T.R (MHz) (d.Bw) Aron AeGn (dBw) (dB) C/I Margin
 
-""'·'
+""'Â·'
 
-• '""' -· 
+â€¢ '""' -Â· 
 ------.----------.---
 
 
@@ -1289,10 +1289,10 @@ operate in the 6 GHz band, which is shared with the satellite service.
 
 Table 4 9 J 
 
-• 
+â€¢ 
 
 * TS-PDF NAME: orbit 
-• 
+â€¢ 
 
 TT,S,orbit,, ,05-jul-1995,13:51 
 *================================== 
@@ -1302,7 +1302,7 @@ SD,AB,UNTL,5, ,231-0003929,5, ,1, ,0000,25-nov-1992,FT
 AK,U,C,CHB923,CHB924,l l,21,28-jan-1993,14:33 
 AQ,TR,Ul2X59CR,47.0,176.61,-l.30,59.53,,,,,, ,l,25-nov-1992 
 
-·--------------------
+Â·--------------------
 
 
 ) 
@@ -1311,31 +1311,31 @@ AK,U,C,CHB923,CHB924,ll,22,28-jan-1993,14:33
 
 AQ,DV1,Ul2X59CR,35.0,176.61,-l.29,59.53,,,,,, ,l,25-nov-1992 
 
-• I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
+â€¢ I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
 CK,U,C,CHB923,CHB924,l l,200 l,28-jan-1993,21: 17 
 CT,02,4, 1,6226890.0,H,21,3.6, , ,RD-6C, ,32.0,0.0,D7137,3DS3,5,K 
 CR,5974850.0,H,21,22, ,RD-6C, ,D7137,3DS3,5,K 
 CQ,3.6,-29.4,3.2,-29.0, , , , 
 
-• I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
+â€¢ I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
 CK,U,C,CHB923,CHB924,l l,2002,28-jan-1993,21: 17 
 CT,02,4,1,6286190.0,H,21,3.6,, ,RD-6C, ,32.0,0.0,D7137,3DS3,5,K 
 CR,6034150.0,H,21,22, ,RD-6C, ,D7137,3DS3,5,K 
 CQ,3.6,-29.5,3.2,-29.1,,,, 
 
-• I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
+â€¢ I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
 CK,U,C,CHB923,CHB924, 11,2003,28-jan-1993,21: 17 
 CT,02,4,l,6345490.0,H,21,3.6,, ,RD-6C, ,32.0,0.0,D7137,3DS3,5,K 
 CR,6093450.0,H,21,22, ,RD-6C, ,D7137,3DS3,5,K 
 CQ,3.6,-29.5,3.2,-29.1,,,, 
 
-• I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
+â€¢ I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
 CK,U,C,CHB923,CHB924,l l,2004,10-may-1993,22:53 
 CT,,, ,6404790.0,H,21,3.6,, ,RD-6C, ,32.0,0.0,D7137,3DS3,5,K 
 CR,6152750.0,H,21,22, ,RD-6C, ,D7137,3DS3,5,K 
 CQ,3.6,-29.6,3.2,-29.2,, , , 
 *=================================== 
-·SK,U;U,CHB924,RADNOR,51-08-03.00N,114-41-18.00W,200.0,25-jan-1993,16:02 
+Â·SK,U;U,CHB924,RADNOR,51-08-03.00N,114-41-18.00W,200.0,25-jan-1993,16:02 
 SD,AB,UNTL,5, ,231-0003930,5, ,1, ,0000,25-nov-1992,FT 
 *==========HIGHLAND================== 
 AK,U,C,CHB924,CHB923,l l,21,28-jan-1993, 14:33 
@@ -1345,7 +1345,7 @@ TSIP Reference Manual 4.9 -1 Summer1995
 
 AQ,TR,U12X59CR,54.0,356.65,0.90,59.53,,,,,, ,l,25-nov-1992 
 
-·--------------------
+Â·--------------------
 
 
 AK,U,C,CHB924,CHB923, 11,22,28-jan-1993,14:33 
@@ -1374,7 +1374,7 @@ CQ,3.9,-30.0,3.4,-29.5,,,,
 *------CALGARY-----------AK,
 U,U,CHB924,CHB925,ll,21,28-jan-1993,l4:33 
 AQ,TR,Ul2X59CR,28.0,104.88,0.95,45.59,,,,,, ,l,25-nov-1992 
-·--------------------
+Â·--------------------
 
 
 AK,U,U,CHB924,CHB925,ll,22,28-jan-1993,14:33 
@@ -1395,7 +1395,7 @@ CK,N,U,CHB924,CHB925, 11,2003,28-jan-1993,21: 17
 CT,02,3,2,6093450.0,V,21,2.8,, ,RD-6C, ,32.0,0.0,D7137,3DS3,5,K 
 CR,6345490.0,V,21,22, ,RD-6C, ,D7137,3DS3,5,K 
 CQ,2.8,-27.1,2.3,-26.6,,,, 
-• I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
+â€¢ I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
 CK,N,U,CHB924,CHB925,l l ,2004, 1 0-may-1993,22:53 
 CT,,, ,6152750.0,V,21,2.8,, ,RD-6C, ,32.0,0.0,D7137,3DS3,5,K 
 CR,6404790.0,V,21,22, ,RD-6C, ,D7137,3DS3,5,K 
@@ -1412,7 +1412,7 @@ Summer1995 4.9-2 TSIP Reference Manual
 AK,U,U,CHB925,CHB924,l l,21,28-jan-1993,14:33 
 AQ,TR,Ul2X59CR,38.0,285.37,-l.26,45.59,,,,,, ,l,IO-dec-1992 
 
-·--------------------
+Â·--------------------
 
 
 AK,U,U,CHB925,CHB924,ll,22,28-jan-1993,14:33 
@@ -1449,7 +1449,7 @@ Tab)e4.9.2
 
 
 OPER.CODES 
-¦ 
+Â¦ 
 3. I.A TSIP Parameters 
 PDF Type Env File Type: 
 
@@ -1577,7 +1577,7 @@ TSIP Reference Manual 4.9-5 Summer1995
 The orbit intersection report (XXX.ORBIT) is presented on Table 4.9.4. The 2 south (south-east more exactly) 
 pointing links were analyzed by the program. The first hop, Highland-Radnor, did not intersect the geostationary 
 
-orbit (the report indicates that the antenna main beam points ·below the sea level horizon). The second link 
+orbit (the report indicates that the antenna main beam points Â·below the sea level horizon). The second link 
 intersects the geostationary satellite orbit. 
 
 The report presents, first, a summary of the input data (station name, latitude, longitude, ground elevation and 
@@ -1589,7 +1589,7 @@ Table 4,9.4
 
 FREQUENCY COORDINATION SYSTEM ASSOCIATION 
 
-·MICS orbit Report 
+Â·MICS orbit Report 
 
 ORBIT Program 
 
@@ -1876,8 +1876,8 @@ small due to the shape ofthe actual horizon, you should recalculate the EIRP val
 Note for 3A and 3B, if actual radio horizon rises above the assumed radio horizon the actual radio horizon may 
 block the intersection. 
 
-Also included are the "critical azimuths" (azimuths within which the link cannot avoid a ± 2 degree intersection at 
-the given link elevation angle), and the "critical longitudes (orbital longitudes included within a ± 2 degree 
+Also included are the "critical azimuths" (azimuths within which the link cannot avoid a Â± 2 degree intersection at 
+the given link elevation angle), and the "critical longitudes (orbital longitudes included within a Â± 2 degree 
 intersection at the given in azimuth and elevation). 
 
 Report Fonn 3 B 
@@ -1970,7 +1970,7 @@ Table 4.8.JA
 Please Make Your Selection 
 I. Antenna Tables 3. Plan Tables 
 2. CTI{ Tables 4. Equipment Tables 
-Command Line: @.ij~~i.¥Jfta®.Je.~<t~itJ~¥~M1Mtt,4M[#t~W4.¥ffilft¾fP:-.~.:::::»= · ~::::,::;:;":;Bx:::::.:::::x:3::.•:::::.-.: ·tW.:::.~,.;:::::;:;::::r'.;:;:::: .;:;::.,;::,.:::::,::: , :::-: :#..: -*~ 
+Command Line: @.ij~~i.Â¥JftaÂ®.Je.~<t~itJ~Â¥~M1Mtt,4M[#t~W4.Â¥ffilftÂ¾fP:-.~.:::::Â»= Â· ~::::,::;:;":;Bx:::::.:::::x:3::.â€¢:::::.-.: Â·tW.:::.~,.;:::::;:;::::r'.;:;:::: .;:;::.,;::,.:::::,::: , :::-: :#..: -*~ 
 GO(Enter) SHELL("K) HELP(PF2) END(PF3) EXIT(PF4) 
 
 ISIP Temporary Data Menu 
@@ -2109,7 +2109,7 @@ l,A,42,30.0,8 FOOT HIGH PERF.,SPPP,50.0, ,
 
 2,A,$TEMPORAR312,2.0,24.0,45.0,25.5,48.0,0, 
 
-2,A, $TEMPORAR312, 3. 0, 24. 0, 45·. 0,25. 5, 48. 0, 0, 
+2,A, $TEMPORAR312, 3. 0, 24. 0, 45Â·. 0,25. 5, 48. 0, 0, 
 
 2,A,$TEMPORAR312,4.0,30.0,45.0,28.0,51.5,0, , 
 
@@ -2162,7 +2162,7 @@ l,A,42,30.0,8 FOOT HIGH PERF.,SPPP,50.0, ,
 2,A,$TEMPORAR312,170.0,70.0,73.0,68.0,68.0,-1073741824, 
 
 2,A,$TEMPORAR312,170.l,68.0,73.0,68.0,68.0,-1073741824, 
-·-:i,A, $TEMPORAR312, 180. 0, 68. 0,73. 0, 68. 0, 68. 0, 0, 
+Â·-:i,A, $TEMPORAR312, 180. 0, 68. 0,73. 0, 68. 0, 68. 0, 0, 
 
 Temporary Antenna Data Fi1e 
 
@@ -2251,7 +2251,7 @@ l,A,U,$TRAF,Al200,$EQPTNEW,-94.2,14.9,-97.9,57,TEMPORARY DATA EXAMPLE,,
 2,A,U,$TRAF,Al200,$EQPTNEW,38000.00,-SO.l,, 
 2,A,U,$TRAF,Al200,$EQPTNEW,40000.00,-45.S,, 
 2,A,U,$TRAF,Al200,$EQPTNEW,4l000.00,-44.8,, 
-2 ,A, U, $TRAF ,Al200, $EQPTNEW, 46000. 00, ·-41. 8,, 
+2 ,A, U, $TRAF ,Al200, $EQPTNEW, 46000. 00, Â·-41. 8,, 
 2,A,U,$TRAF,Al200,$EQPTNEW,47000.00,-40.9,, 
 2,A,U,$TRAF,Al200,$EQPTNEW,49000.00,-38.4,, 
 2,A,U,$TRAF,Al200,$EQPTNEW,S0000.00,-36.3,, 
@@ -2263,7 +2263,7 @@ l,A,U,$TRAF,Al200,$EQPTNEW,-94.2,14.9,-97.9,57,TEMPORARY DATA EXAMPLE,,
 2,A,U,$TRAF,Al200,$EQPTNEW,64000.00,-22.9,, 
 2,A,U,$TRAF,Al200,$EQPTNEW,66000.00,-22.l,, 
 2,A,U,$TRAF,Al200,$EQPTNEW,68000.00,-21.2,, 
-2 ,A, U, $TRAF ,Al200 ,·$EQPTNEW, 70000. 00, -20 .·O,, 
+2 ,A, U, $TRAF ,Al200 ,Â·$EQPTNEW, 70000. 00, -20 .Â·O,, 
 2,A,U,$TRAF,Al200,$EQPTNEW,72000.00,-l9.3,, 
 
 2,A,U,$TRAF,Al200,$EQPTNEW,74000.00,-l8.S,, 
@@ -2344,7 +2344,7 @@ the user has to depress "0" (NEXT) in the number pad.
 Table4 82C 
 
 3.2.2.A TEMPORARY CTX SDF FORM 
-. SDB Operation ':1»( • Record Status ii:OEi 
+. SDB Operation ':1Â»( â€¢ Record Status ii:OEi 
 Desired Traffic Type ''oi!fkmF'i Interfering Traffic Type ;H&lf.ioo@ii 
 Receive Equip Code 
 .Description 
@@ -2377,13 +2377,13 @@ An example of a temporary equipment file is presented on Table 4.8.3.3A.
 
 Table 4.8 3.3A 
 
-• 
+â€¢ 
 
 *TEMPORARY EQPT SDFNAME: neweqpt
-• 
+â€¢ 
 
 A,U,$EQPTNEW,0.000500,,UNKNOWN,NEW EQUIPMENT,TEMPORARY DATA EXAMPLE,A,$TRAF,,70.0,,-100.0,05,, 
-A,U,$EQPTNWl,0.000500,,UNKNOWN,NEW EQUIPMENT #2,TEMPORARY DATA EXAMPLE,A,$TRAFI,, 70.0,,· 
+A,U,$EQPTNWl,0.000500,,UNKNOWN,NEW EQUIPMENT #2,TEMPORARY DATA EXAMPLE,A,$TRAFI,, 70.0,,Â· 
 100.0,05,, 
 
 Temporary Equipment Pata File 
@@ -2465,10 +2465,10 @@ An example ofa frequency plan temporary data file is presented on Table 4.8,3.4A
 
 Table 4,8,3.4A 
 
-• 
+â€¢ 
 
-• PLAN SDF NAME: templan 
-• 
+â€¢ PLAN SDF NAME: templan 
+â€¢ 
 
 l,A,U,04,$PLl,NEW,0l,N,C,25-jan-1993, 
 2,A, U,04,$PL I, I, 1713000.0,0 I, 1821500.0,0 I, 1734000.0,02, 1842500.0,02,, 
@@ -2477,7 +2477,7 @@ l,A,U,04,$PL2,NEW,0l,N,C,25-jan-1993,
 2,A, U,04,$PL2, I,1717000.0,0I,1825500.0,0I,173 8000.0,02, 1846500.0,02,, 
 2,A,U,04,$PL2,2,1759000.0,03,1867500.0,03,1780000.0,04,1888500.0,04,, 
 
-Temporary Freqµency Plan Data File 
+Temporary FreqÂµency Plan Data File 
 
 Summer1995 4.8 -10 TSIP Reference Manual 
 
@@ -2555,10 +2555,10 @@ Summer1995 4.8-12 TSIP Reference Manual
 
 Tab)e4 8 4 
 
-• 
+â€¢ 
 
 * TS-PDF NAME : tempdat 
-• 
+â€¢ 
 
 TT,T,TEMPDAT,MTS,PRODUCED BY CATLOG,, 
 *=================================== 
@@ -2568,16 +2568,16 @@ SD,MB,MANH,2,,,, ,I, ,0,09-jan-1992,CT
 AK,A,U,=MANHOl l,=MANH022,04,l l,, 
 AQ,TR,$TEMPORAR312,131.0,189.85,-0.25,48.l6,N,,,,,, ,09-jan-1992 
 
-•II I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
+â€¢II I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
 CK,A,U,=MANH0l l,=MANH022,04,IO0I,, 
 CT,,, ,1716562,0,V,11,8.2, ,0.O,SS2W,A,30.0,0.0,A0300,MESS,2,X 
 CR,1825562.0,V,l l,, ,SS2W,A,A0300,MESS,2,X 
 CQ,8.2,-48.6,0.0, ,0.0, , , 
-•------NameNotAvailable -------AK,
+â€¢------NameNotAvailable -------AK,
 A,U,=MANH0I l,=MANH023,04,11,, 
 AQ,TR,$TEMPORAR312,131.0,157.65,-0.29,54.90,N,,,,,, ,09-jan-1992 
 
-• I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
+â€¢ I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
 CK,A,U,=MANH0l l,=MANH023,04,IO0I,, 
 CT,,, ,1710437.0,H,l l,8.3, ,0.0,SS2W,A,30.0,0.0,A0300,MESS,2,X 
 CR,1819437.0,H,l l,, ,SS2W,A,A0300,MESS,2,X 
@@ -2589,7 +2589,7 @@ SD,MB,MANH,2,,,, ,I, ,0,05-mar-1991,CT
 AK,A,U,=MANH022,=MANHOl l,04,11,, 
 AQ,TR,$TEMPORAR312,18.0,9.76,-0.07,48.16,N,,,,,, ,05-mar-1991 
 
-•II I I I I.I I I I I I I I I I I I I I I I I I I I I I I I I 11 I I I I I I I I I I I I I I I 11 11 I I I I I I I I I I I I I I I I I I I I I I I 
+â€¢II I I I I.I I I I I I I I I I I I I I I I I I I I I I I I I 11 I I I I I I I I I I I I I I I 11 11 I I I I I I I I I I I I I I I I I I I I I I I 
 CK,A,U,=MANH022,=MANHOl l,04,I00I,, 
 CT,,, ,1825562.0,V,11,1.5, ,O.0,SS2W,A,30.0,0.0,A0300,MESS,2,X 
 CR,1716562.0,V,l l,, ,SS2W,A,A0300,MESS,2,X 
@@ -2603,7 +2603,7 @@ SD,MB,MANH,2,,,, ,l, ,0,05-mar-1991,CT
 AK,A,U,=MANH023,=MANHOl l,04,l l,, 
 AQ,TR,$TEMPORAR312,18.0,337.87,-0.08,54.90,N,,,,,, ,05-mar-1991 
 
-• I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
+â€¢ I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I 
 CK,A,U,=MANH023,=MANH0I J,04,I00J,, 
 CT,,, ,1819437.0,H,l l,4.3, ,0.O,SS2W,A,30.0,0.0,A0300,MESS,2,X 
 CR,1710437.0,H,11,, ,SS2W,A,A0300,MESS,2,X 
@@ -2732,7 +2732,7 @@ The TSIP interference analysis report ofthis example is presented on Table 4.8.7
 
 Table 4,8,7 
 
-FJ:'equeney coordination Sy•tem Association 
+FJ:'equeney coordination Syâ€¢tem Association 
 
 Page: 
 M1'.STBR DATA BASE --TSTS Interference Study Report -C&&e Detail 
@@ -2744,19 +2744,19 @@ cue Number Interferer from Bnvironment File Analysis Type: P/C PDF_Run tempdat_l
 
 Margin 10.000 
 +----case Geometry +--------+ Notes: Interference Case 
-call :I call Irx station Station r:cx OP l OP Inc I·Irx ltm I•Vrx Km I Ang.DSG ,. No 
+call :I call Irx station Station r:cx OP l OP Inc IÂ·Irx ltm Iâ€¢Vrx Km I Ang.DSG ,. No 
 CALL vrx can v Station vrx Station V OP Vrx OP V 
 
 '" 
 '" 
-vrx-v Km Vrx Ang.DEG • OVerReach Profile 
+vrx-v Km Vrx Ang.DEG â€¢ OVerReach Profile 
 No 
 
 XOFSU XOF032 GRDNTH>L 28.73 -12.6 Blockage: dB
 
 """" """" 
 
--MANH022 •MANHDll BOISSEVJUN BRNO Sotml ta .16 22,2 At K•
+-MANH022 â€¢MANHDll BOISSEVJUN BRNO Sotml ta .16 22,2 At Kâ€¢
 
 """" """" 
 
@@ -2764,7 +2764,7 @@ XOFSU XOF032 GRDNTH>L 28.73 -12.6 Blockage: dB
 Antenna #: u ADse, Ta Gain, dB Antenna II: u AUH: 
 
 Ta Gain: dB 
-TX.Ant.cede: PL12•17E Oiser. H CPol: 23 ,3 dB RX,Ant.COde: 
+TX.Ant.cede: PL12â€¢17E Oiser. H CPol: 23 ,3 dB RX,Ant.COde: 
 
 $Tm-lPORA1Ul2 Discr. H CPol: 40.0 dB 
 X R.ef. Oiler. V CPol: 23,l dB X llef. Mt Discr. V CPol: 39.7 dB
@@ -2774,11 +2774,11 @@ X R.ef. Oiler. V CPol: 23,l dB X llef. Mt Discr. V CPol: 39.7 dB
 Model: Discr. H XPol: 53,0 dB Model: Discr. R XPol, 5t.0 dB 
 Discr. V XPOl: 53,0 dB Discr. V XPol: S7 .2 dB
 
-• 
+â€¢ 
 
 0 
 
---TX InteX'ferer Sys.Bqp.C'rX.Blllld Info -Station I ---TS ---•+• --RX Victim Sys.Bqp.C"rX,Blllld Info -----Station Vrx ---TS 
+--TX InteX'ferer Sys.Bqp.C'rX.Blllld Info -Station I ---TS ---â€¢+â€¢ --RX Victim Sys.Bqp.C"rX,Blllld Info -----Station Vrx ---TS 
 Bqpt, Planned / Tnffic1 2GltM8 D7U51 Bqpt, Planned/ TX'affic: SS2W A0300 
 crou Ref, TX'affic, D7507 
 
@@ -2799,7 +2799,7 @@ TX.Freq. p RX.Freq. PC!m Freq, Int. Int. Vic. Vic,
 
 E Stn.I Stn.Vrx L T.R {dBm) {dB) {dB) {dBm) DISC CPol XPOl {dB) {dB)
 
-""" ""'· ""'·
+""" ""'Â· ""'Â·
 
 '""'' 
 
@@ -2855,7 +2855,7 @@ CT, , , ,6565000.0,V,11,3.7, , ,RD-U6C, ,31.0, ,D7138,3DS3,2,K
 ) CR,6905000.0,V,11,12, ,RD-U6C, ,D7138,3D83,2,K 
 CQ,3.0,-30.1,2.8,-29.9, , , , 
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-CK,A, U, CHB895, CHB896, 12·, TSTl, 28-jan-1993, 
+CK,A, U, CHB895, CHB896, 12Â·, TSTl, 28-jan-1993, 
 CT, , , ,6920000.0,V,11,3.7, , ,RD-U6C, ,31.0,0.0,D7138,3DS3,2,K 
 CR,6915000.0,V,11,12, ,RD-U6C, ,D7138,3D83,2,K 
 CQ,3,0,-30.1,2.8,-29.9, , , , 
@@ -3078,7 +3078,7 @@ Yes __ Ho __
 
 
 CHB895 CHB896 BLACKPOOL FISHTRAP UNTL UNTL 45.70 90,93 -1.5 Blockage: __ dB 
-CHB897 CHB896 00MB FISHTRAP UNTL UNTL 45.27 1.6 At X• 
+CHB897 CHB896 00MB FISHTRAP UNTL UNTL 45.27 1.6 At Xâ€¢ 
 
 --TX Interferer Stn.Ant.Sys.Info -----Station I ---TS ... RX Victim Stn.Ant.Sys.Info Station Vo:. ---TS -Antenna#: 
 11 AUse: TR Gain: 44,0 dB Antenna #: 11 AUse: TR Gain: 44,0 dB 
@@ -3088,7 +3088,7 @@ Model: UHX10-6SE Oiscr. H XPol, 30.0 dB Model: UHXl0-658 Oiscr. H XPol: 30,0 dB
 
 Oiscr. V XPol: 30.0 dB Oiscr. V XPol: 30.0 dB 
 
---TX Interferer Sys,Bqp,CTX,Band Info -Station I ---TS •+* --RX Victim Sys,Bqp.CTX.Band Info -----Station Vo:. ---TS 
+--TX Interferer Sys,Bqp,CTX,Band Info -Station I ---TS â€¢+* --RX Victim Sys,Bqp.CTX.Band Info -----Station Vo:. ---TS 
 Eqpt. Planned / Traffic: RD-U6C 07138 Bqpt. Planned/ Traffic: RD-U6C D713B 
 Cross Ref, Traffic: 07135 Bqpt. X Ref. / Traffic: RD-6A D7135 
 
@@ -3099,7 +3099,7 @@ as (MHz) 0 (MHz) 0 Sta Sep. TXPwr APSL APSL RXPwr Path TANT EIRP DIST CALC C/I O
 
 Stn,I L Stn.Vo:. L T.R (MH:i:) (dBm) (dBi (dB) (dilm) Loss DISC ADV. ADV, CPol XPol (dB) (dB)
 
-• 
+â€¢ 
 
 ------.-------------------
 
@@ -3114,14 +3114,14 @@ Model: UHXl0-658 Oiscr. H XPol: 30,0 dB Model: UHXl0-658 Diser, H XPol: 30,0 dB
 
 Oiscr. V XPol: 30,0 dB Diser, V XPol: 30.0 dB
 
-• 
+â€¢ 
 
 --TX Interferer Sys.Bqp.CTX.Band Info -Station I ---TS *+* --RX Victim Sys,Bqp.CTX.Band Info -----Station Vo:. ---TS --
 Bqpt. Planned/ Traffic: RD-U6C D713B Bqpt. Planned/ Traffic: RD-U6C D713B 
 Cross Ref. Traffic: D7135 Bqpt. X Ref. / Traffic: RD-6A D7135 
 TX.Freq.Bnd : 12 RX.Freq.Bnd : 12
 
-• 
+â€¢ 
 
 SC 
 UA TX.Freq, p RX.Freq. p Chn Freq. Int, Int. Vie. Vic. 
@@ -3167,7 +3167,7 @@ CHB896 CHB897 FISHTRAP DOME UNTL UNTL 45.27
 o.oo -90.0 Blockage, dB 
 CHB896 CHB895 FISHTRAP BLACKPOOL UNTL UNTL 45.70 -90,0 
 
-At K• 
+At Kâ€¢ 
 
 --TX Interferer Stn.Ant.sys.Info -----Station I ---TS ... RX Victim Stn.Ant.Sys.Info 
 
@@ -3198,7 +3198,7 @@ SC
 UA TX.Freq. p RX.Freq. p Chn Freq. Int, Int. Vic. Vic, 
 BS (MHz) 0 (MHz) 0 Sta Sep. TXPwr AFSL AFSL RXPwr Path TANT BIRP DIST CALC C/I OR -I RBQD. MARGIN
 
-• Stn.I L Stn.Vrx L T.R (MHz) (dBm) (dB) (dB) (dBm) Loss DISC ADV, ADV. CPol XPol (dB) (dB)------.-----------.----------.-------.-1 
+â€¢ Stn.I L Stn.Vrx L T.R (MHz) (dBm) (dB) (dB) (dBm) Loss DISC ADV, ADV. CPol XPol (dB) (dB)------.-----------.----------.-------.-1 
 6,905.0000 H 6,920.0000 V 2 2 14,866 31.00 3, 7 3.0 -30.1S 49.2 159. 0 0, 0 -93 .2 (-92, 9) ,.,
 95,9 -98 .6 
 
@@ -3241,8 +3241,8 @@ MARGIN
 
 Stn.I L Stn.Vrx L T,R (MHz) (dBm} (dB) (dB) (dBm)
 
-• 
-• 
+â€¢ 
+â€¢ 
 Loss DISC ADV. ADV. CPol XPol (dB) (dB) 
 2 6,905,0000 H 6,920.0000 V 2 2 14.866 31.00 3,7 2,8 -29.95 49.2 159.0 0.0 -93.2 (-92.7) -95.7 
 
@@ -3540,7 +3540,7 @@ Case Detail Report Y
 Case Summary Report N 
 
 Number of TS->ES Stations Passed 0 
-Number of ES->TS Stations •Passed 2 
+Number of ES->TS Stations â€¢Passed 2 
 Number of TS Cases 1 
 Number of ES Cases 0 
 
@@ -3661,7 +3661,7 @@ CR,6800000.0,H,ll, , ,FLH6, ,AS250,VID,S,G
 CQ,4.7,-42.2, , , , , , 
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 CK,N,U,$BCT02,CFW303,12,1002,0S-apr-1995,06:16 
-CT, I I I I I I I I IO• o, I I I
+CT, I I I I I I I I IOâ€¢ o, I I I
 
 I I I 
 
@@ -3855,7 +3855,7 @@ frse>
 
 J 
 J 
-TS File A~•iust TS File TSIP Execution Report 
+TS File A~â€¢iust TS File TSIP Execution Report 
 
 TSIP Reference Manual 4.5-3 Summer1995 
 
@@ -3949,20 +3949,20 @@ The list ofstations passed to analysis ofthis example is presented on Table 4.5.
 Table 4.5,5 
 
 FREQtraNCT COORDIWI.TION SYSTm-1 ASSOCIATION PAGB: l 
-MASTER DATA BASS --TSTS Interference Study Report -Station SUrmw:y DATB:04-may•UJIS 
+MASTER DATA BASS --TSTS Interference Study Report -Station SUrmw:y DATB:04-mayâ€¢UJIS 
 
 Stations Passed To Anlllyaia 
 
-••• PRa-1 PROPOSED PILE ••• I ••• FROM BNVIAOMO:N'l' FILE ••• 
+â€¢â€¢â€¢ PRa-1 PROPOSED PILE â€¢â€¢â€¢ I â€¢â€¢â€¢ FROM BNVIAOMO:N'l' FILE â€¢â€¢â€¢ 
 call sign Station Name Oper Latitude LOngitude Gmd I Call Sign Station Name oper Latitude LOngitude G:rnd 
 
-•I • 
+â€¢I â€¢ 
 
 ----------------------------------------------------------I ---------------------------------------------------------
 
 
-•UNKNl\. SITE A tJNKN 51-00-00.oo 120-00-00.00 999 $BCT02 N.JOIM CATV BCT 
-•1.INKNB SITE B UNKN 50•30-58.00 120•09•08.00 734 CFWJ0J KT LOLO BCT 50•"8-04.00 120•07-36.00 1746 
+â€¢UNKNl\. SITE A tJNKN 51-00-00.oo 120-00-00.00 999 $BCT02 N.JOIM CATV BCT 
+â€¢1.INKNB SITE B UNKN 50â€¢30-58.00 120â€¢09â€¢08.00 734 CFWJ0J KT LOLO BCT 50â€¢"8-04.00 120â€¢07-36.00 1746 
 TS file Against TS File List ofStations Passed to Analysis 
 
 TSIP Reference Manual 4.5-5 Summer1995 
@@ -3991,7 +3991,7 @@ Yes __ No __
 
 +----------------------------------------.---+ 
 
-=UNKNA ¦UNKNB SITE A SITE B UNKN UNKN 54.89 42.83 24.3 Blockage: __ dB 
+=UNKNA Â¦UNKNB SITE A SITE B UNKN UNKN 54.89 42.83 24.3 Blockage: __ dB 
 $BCT02 CFl-1303 N.KAM CATV MT LOLO BCT BCT 20,45 -16.3 
 
 At K= 
@@ -4005,7 +4005,7 @@ X Ref. Ant : UHXlO-EiSER Disc:r. V CPol: 4Ei.O dB X Ref. Ant : P4-Ei5C Disc:r. V
 Model: OHXlO-EiSE Disc:r. H XPol: EiS.5 dB Model: Disc:r. H XPol: 42.l dB 
 Disc:r. V XPol: EiS.3 dB Disc:r. V XPol: 42.l dB
 
-• 
+â€¢ 
 
 --TX Interferer Sys.Eqp.crx.eand Info -Station I ---TS *+* --RX Vic:tim sys.Eqp.C'rX.eand Info-----Station voe ---TS 
 Eqpt. Planned/ Traffic:: RD-UEiC D7138 Eqpt. Planned/ Traffic:: FLHEi A52SO 
@@ -4013,7 +4013,7 @@ Cross Ref. Traffic:: D7135 Eqpt. X Ref. / Traffic:: UNKNOWN Al200
 TX.Freq.end : 12 + RX.Freq.end : 12 
 SC 
 UA TX.Freq. p RX.Freq. p Chn Freq. Int. Int. Vic:. Vic:. 
-BS {MHz) 0 (MHz) 0 Sta Sep. TXPwr AFSL AFSL RXPwr Path TANT EIRP DIST CALC C/I OR ·I REQD. MARGIN 
+BS {MHz) 0 (MHz) 0 Sta Sep. TXPwr AFSL AFSL RXPwr Path TANT EIRP DIST CALC C/I OR Â·I REQD. MARGIN 
 
 0 
 
@@ -4133,7 +4133,7 @@ AQ,RX,UHX8-59D,12.0,33.10,-0.28,26.40,N, , , , ,15-jan-1988
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 CK,A,U,ZCGJ43,ZCGJ49,11,1002, , 
 CT,02,6,1,6404790.0,H,11,2.8, ,0.0,RA2B, ,37.0,0.0,AlBOO,PROT,5,F 
-CR,6152750.0,H,12, ,RA2B, ,·A1800,PROT,5,G 
+CR,6152750.0,H,12, ,RA2B, ,Â·A1800,PROT,5,G 
 CQ,3.0,-23.4,0.0, ,o.o, , , 
 
 *=========================================================================== 0
@@ -4237,7 +4237,7 @@ PDF Type Env File Type:
 PDF Name Env File Name: 
 TSORB Cale? Spherical Earth Cale? 1iNH 
 
-X.;•;,;,;•:•:~, 
+X.;â€¢;,;,;â€¢:â€¢:~, 
 
 Coord. Dist.: Analysis Option: 
 Required Margin: Chan Status Codes: 
@@ -4272,14 +4272,14 @@ Summer1995 4.4-4 TSIP Reference Manual
 
 ) 
 3.1 TSIP PARAMETER FILES 
-Project Code jf&§J?QM!lJ;!ll'l!! 
+Project Code jf&Â§J?QM!lJ;!ll'l!! 
 Existing Tsip Parameter files 
 Filename 
 GO(!) BATCH(2) EDIT(Enter) DELETE(4) COPY(S) > 
 PRINT/EXPORT(6) SHELL("K) HELP(PF2) END(PF3) 
 EXIT(PF4) ) 
 3.1 TSIP PARAMETER FILES 
-Project Code jf&§J?QM!lJ;!ll'l!! 
+Project Code jf&Â§J?QM!lJ;!ll'l!! 
 Existing Tsip Parameter files 
 Filename 
 GO(!) BATCH(2) EDIT(Enter) DELETE(4) COPY(S) > 
@@ -4745,7 +4745,7 @@ MASTER DATA BASB --TSES Interference Study Report -Station Suimiary DATB:10-mar-
 
 Stations Passed To Analysis 
 
-••• FROM Terrestrial Station FILE ••• FROM Barth Station PILE••• 
+â€¢â€¢â€¢ FROM Terrestrial Station FILE â€¢â€¢â€¢ FROM Barth Station PILEâ€¢â€¢â€¢ 
 Call Sign Station Name Oper Latitude Longitude Gmd Call Sign Station Name Oper Latitude Longitude Gmd 
 
 (m) (m) 
@@ -4777,29 +4777,29 @@ $GBML03 CALGARY G&M GBMl-51-05-20.00 114-00-37 .00 1080
 ZCGJ43 ALDERSYDE AGT 50-43-06.00 113-44-30.00 1116 
 ZCGJ49 CIIBADI.E AGT 50-55-01.00 113-32-12. 00 1015 
 
-•TBLS4L CACGARY TESS 51-02-58,00 114-04-01.00 1045 
+â€¢TBLS4L CACGARY TESS 51-02-58,00 114-04-01.00 1045 
 ZCGJ43 ALDBRSYDE AGT 50-43-06.00 113-44-30, 00 1116 
 ZCGJ49 CIIBADSB AGT 50-55-01.00 113-32-12.00 1015 
 
-•TELS9B BlO TBl,$ 53-29-34.00 113-29-38.00 
+â€¢TELS9B BlO TBl,$ 53-29-34.00 113-29-38.00 
 ZCGJ49 CIIBADSE AGT 50-55-01,00 113-32-12.00 1015 
 
 "' 
 
-•TBLS9B B10 TESS 53-29-34,00 113-29-38.00 674 
+â€¢TBLS9B B10 TESS 53-29-34,00 113-29-38.00 674 
 ZCGJ49 CIIBADSB AGT 50-55-01.00 113-32-12, 00 1015 
 
-•TELSKP ClO TESS 51-03-10.00 114-00-56.00 1067 
+â€¢TELSKP ClO TESS 51-03-10.00 114-00-56.00 1067 
 ZCGJ43 ALDBRSYDE AGT 50-43-06.00 113-44-30. 00 1116 
 ZCGJ49 CHEADLE AGT 50-55-01,00 113-32-12, 00 1015 
 
 ) 
 ) 
-•TBLSKP ClO TESS 51-03-10.00 114-00-56.00 1067 
+â€¢TBLSKP ClO TESS 51-03-10.00 114-00-56.00 1067 
 ZCGJ43 ALDERSYDE AGT 50-43-06.00 113-44-30. 00 1116 
 ZCGJ49 CIIBADSE AGT 50-55-01.00 113-32-12. 00 1015 
 
-•TGLB0l CALGAAY C TGCB 51-02-09.00 114-03-26.00 1044 
+â€¢TGLB0l CALGAAY C TGCB 51-02-09.00 114-03-26.00 1044 
 
 ZCGJ43 ALD&RSYDE AGT 50-43-06.00 113-44-30.00 1116 
 ZCGJ49 CHEADLE AGT 50-55-01.00 113-32-12,00 1015 
@@ -4832,33 +4832,33 @@ DATB:lO-mar-1995
 
 Stations Passed To Analysis 
 
----li'ROM Barth Station FILE ---••• FROM Terrestrial Station FILE 
+---li'ROM Barth Station FILE ---â€¢â€¢â€¢ FROM Terrestrial Station FILE 
 Call Sign Station Name Oper Latitude Longitude G:rnd Call Sign Station Name Oper Latitude Longitude(ml 
 
-•TBLS3D EDMONTON TELS SJ-34-10,00 113-27-25.00 658 -----------ZCGJ49 
+â€¢TBLS3D EDMONTON TELS SJ-34-10,00 113-27-25.00 658 -----------ZCGJ49 
 CHBADLE AGT 50-55-01.00 113-32-12.00 1015
 
-•TBLS4L CALGARY TELS 51-02-58.00 114-04-01,00 1045 
+â€¢TBLS4L CALGARY TELS 51-02-58.00 114-04-01,00 1045 
 ZCGJ43 ALDEP.SYDE AGT 50-43-06.00 113-44-30.00 1116 
 Zi:GJ49 CHEADLE AGT 50-55-01. 00 113-32-12.00 1015
 
-•TBLS9B ElO TELS 53-29-34. 00 113-29-38.00 674 
+â€¢TBLS9B ElO TELS 53-29-34. 00 113-29-38.00 674 
 ZCGJ49 CHEADLE AGT 50-55-01.00 113-32-12. 00 1015 
 
 "' 
 "'
-•TBLS9B ElO TELS 53-29-34,00 113-29-38.00 
+â€¢TBLS9B ElO TELS 53-29-34,00 113-29-38.00 
 ZCGJ49 CHEADLE AGT 50-55-01.00 113-32-12.00 1015 
 
 ..TBLSKP ClO TELS 51-03-10,00 114-00-56. 00 1067 
 ZCGJ43 ALOERSYDE AGT 50-43-06.00 113-44-30.00 1116 
 ZCGJ49 CHEADLE AGT 50-55-01. 00 113-32-12.00 1015
 
-•TBLSKP ClO TELS S1-03-10.00 114-00-56.00 1067 
+â€¢TBLSKP ClO TELS S1-03-10.00 114-00-56.00 1067 
 ZCGJ43 ALOEP.SYDE AGT 50-43-06. 00 113-44-30. 00 1116 
 ZCGJ49 CHEADLE AGT 50-55-01.00 113-32-12.00 1015
 
-•TGLBOl CALGARY C TGLB 51-02-09.00 114-03-26.00 1044 
+â€¢TGLBOl CALGARY C TGLB 51-02-09.00 114-03-26.00 1044 
 ZCGJ43 ALDERSYDE AGT 50-43-06.00 113-44-30.00 1116 
 ZCGJ49 CHBADLE AGT 50-55-01.00 113-32-12.00 1015 
 
@@ -4917,7 +4917,7 @@ E -, s 169.63 31.09 I + Angle OTV: 70,26 ----+
 --TX Interferer Stn.Ant.Sys.Info -----Station T ---TS -----RX Victim Stn.Ant.Sys.Info Station E ---ES Antenna 
 #: 21 AUse: TX Gain: 38.3 dB Antenna #: Gain: 44.2 dB Coord Dist. 
 TX.Ant.Code: HCX:3510 Model: RX.Ant.Code: ESACS-4B Model: Trap: 250 km 
-Xref.,. Ant: None TX.Ant.Ht: 1128.00 (m) AMSL Xref, • • Ant: None RX.Ant.Ht: l055.00(Prec:S250 km 
+Xref.,. Ant: None TX.Ant.Ht: 1128.00 (m) AMSL Xref, â€¢ â€¢ Ant: None RX.Ant.Ht: l055.00(Prec:S250 km 
 
 Ant.Elev.: 2244.00 m (AMSL) [ 1128,00 m {AGL)) Ant.Elev.: 2105.00m (AMSL) [ 1055, 00 m (AGL)] 
 Stn,Elev.: 1116.00 m (AMSL) + Stn.Elev.: 1050.00 m (AMSL) 
@@ -5009,7 +5009,7 @@ is the longitude of a point on the geostationary orbit).
 Read by TSIP from the ES station antenna record. 
 
 This is the range for the ES antenna pointing. The antenna 
-could point to ARC!± ARC2. This field is part of the ES 
+could point to ARC!Â± ARC2. This field is part of the ES 
 antenna record. 
 
 Radio propagation zone. Read by TSIP from the ES 
@@ -5195,7 +5195,7 @@ Distance, in km, from the ES to the rain scatter volume
 Distance from station E to the rain scatter volume, in km 
 (worst case on TU). 
 
-Azimuth from the ES to the scattering volume, in degrees.· 
+Azimuth from the ES to the scattering volume, in degrees.Â· 
 
 Elevation angle from the ES to the scattering volume, in 
 degrees. 
@@ -5410,14 +5410,14 @@ applicable to Band Analysis. TSIP uses 0 dB in Band
 analysis. 
 
 Interfering net antenna gain (it is equal to the TS antenna 
-gain minus the discrimination: 38.3 • 46.0 = -7.7 dB). 
+gain minus the discrimination: 38.3 â€¢ 46.0 = -7.7 dB). 
 
 Interfering signal EIRP, in dBW (it is equal to the Tx 
-power plus the net antenna gain: 13.0 • 7.70 = 5.30 dBW). 
+power plus the net antenna gain: 13.0 â€¢ 7.70 = 5.30 dBW). 
 
 Victim antenna net gain, in dB (it is equal to the ES 
 antenna gain, minus the discrimination and minus the ES 
-AFSL: 44.2 • 52.36 • 0.5 = -8.66 dB). 
+AFSL: 44.2 â€¢ 52.36 â€¢ 0.5 = -8.66 dB). 
 
 ES receive antenna feeder system loss, in dB. 
 
@@ -5443,7 +5443,7 @@ Maximum acceptable long term interference level (into the
 ES), in dBW. Read by TSIP from the ES channel record. 
 
 Long term interference margin, in dB. (It is equal to the 
-calcualted minus the required interference level: -140.54 • 
+calcualted minus the required interference level: -140.54 â€¢ 
 142 =-1.64). The calculated margin is negative, therefore 
 this is an interference case. 
 
@@ -5456,7 +5456,7 @@ ofinterference. Read by TSIP from the ES channel record.
 
 Short term Tropospheric propagation interference margin, 
 in dB. (It is equal to the calculated minus the reg. int. 
-level: -140.54 • 142.0 = -1.46 dB). The calculated margin 
+level: -140.54 â€¢ 142.0 = -1.46 dB). The calculated margin 
 
 TSIP Reference Manual 4.4-21 Summer1995 
 
@@ -5495,8 +5495,8 @@ Call T Call u I Station T Station u OPT OP u ARC 1 ARC 2 Rain Zn I Path Profile
 
 +--------------------------------------------------Yes No 
 
-•TBLS4L •TBLS4L CALGARY TELS TS 94,00 1,00 A 2 Blockage: dB 
-ZCGJ43 ZCGJ49 ALDERSYDE CHEADLE AGT AGT Longitude: 93.00 Deg. W At K•_ 
+â€¢TBLS4L â€¢TBLS4L CALGARY TELS TS 94,00 1,00 A 2 Blockage: dB 
+ZCGJ43 ZCGJ49 ALDERSYDE CHEADLE AGT AGT Longitude: 93.00 Deg. W At Kâ€¢_ 
 +----Case Geometry ---*+*---Geometry to Rain Volume 
 
 Site Dist Azmth Elev 
@@ -5507,7 +5507,7 @@ E -:,. U 40.05 111.39 -.28
 E -:,. T 43,37 148.02 
 E -:,. S 153 .65 28.31 
 
-·" 
+Â·" 
 
 Angle Total Ant. Dist to Vol: on ES on TU Azmth Elev 
 SET: 
@@ -5517,7 +5517,7 @@ UTB,
 Discr. 
 49,15 
 41.52 
-T •:,. Vol:• •:,. Vol: 
+T â€¢:,. Vol:â€¢ â€¢:,. Vol: 
 43.28 
 .10 
 .10 
@@ -5525,19 +5525,19 @@ T •:,. Vol:• •:,. Vol:
 328.00 
 147,90 
 .90 
-·" 
-• 
+Â·" 
+â€¢ 
 Angle SEV: 
 Angle OTV: 
 27.90 
 64 .84 
 Seang, 64. 84 ----+ 
 
---TX Interferer Stn.Ant.Sys,Info -----Station E ---ES ---••• --RX Victim Stn,Ant.Sys.Info Station T ---TS 
+--TX Interferer Stn.Ant.Sys,Info -----Station E ---ES ---â€¢â€¢â€¢ --RX Victim Stn,Ant.Sys.Info Station T ---TS 
 
 Antenna#: Gain: 46.8 dB Coord Dist. Antenna #: 11 AUse: TR Gain: 40.9 dB 
 TX.Ant.Code: TS050C06 Model: Trop: 300 km RX.Ant.Code: HCX-5908 Model: 
-Xref ..• Ant: TS050C04 Pree: 300 km Xref .•• Ant: None 
+Xref ..â€¢ Ant: TS050C04 Pree: 300 km Xref .â€¢â€¢ Ant: None 
 
 Ant.Elev.: 2195.00 m (AMSL) [ 1150.00 m (AGL)] Ant.Elev.: 2244.00 m (AMSL) { 1128.00 m (AGL) ] 
 
@@ -5555,7 +5555,7 @@ OA TX.Freq. RX.Freq. Chn Freq. INY. INY. INY. INY. VIC, VIC, VIC, Interference R
 BS (MHz) (MHz) Sta Sep. TXPwr AFLS Net EIRP Net AFSL RXPwr Loss CALC . RBQD . 
 STN.E Sffl.T T.R (MHz) (dBw) ATGn (dBW) AtGn (dBW) (dB) -I -I Margin
 
-• 
+â€¢ 
 
 1 6,137.5000 6,137.5000 30.0 .5 -.62 10.15 -2.85 201-T: 140,95 -131.42 -158.00 -26.58 
 Station u TxPwr/AFSL/Again: Energy Dispersal: ,01\ T: 140,95 -131.42 -138.00 -6.58 
@@ -5663,7 +5663,7 @@ the longitude of a poiot on the geostationary orbit). Read by
 
 TSIP from the ES station antenna record. 
 This is the range for the ES antenna poiotiog. The antenna 
-could poiot to ARC I ± ARC 2. This field is part of the ES 
+could poiot to ARC I Â± ARC 2. This field is part of the ES 
 antenna record. 
 
 Radio propagation zone. Read by TSIP from the ES records. 
@@ -6145,32 +6145,32 @@ Case Number 1 Interferer from Proposed Pile Analysis Type: P/C PDF Pile oper2pc_
 ' 
 
 Margin o.oo 
-•-Site Information -• Notes: Interference case 
+â€¢-Site Information -â€¢ Notes: Interference case 
 Call T Call U I Station T Station u OPT OP U satellite Service Radio/ Yeo No 
 CALLE Loe.Code I ES Site Name E Satellite Name s OP E OP S ARC 1 ARC 2 Rain Zn PathPro'.file 
 
-.----------------------------------------------Ye• No
+.----------------------------------------------Yeâ€¢ No
 
----------• 
+---------â€¢ 
 
 ZCGJ4J ZCGJ49 ALDERS'IOE CHEADLE AGT AGT 107.00 38.00 A 2 Blockage: dB 
-a'l'ELSKP •'l'ELSKP ClO TELS TS Longitude: 111.00 Deg, w At K•
+a'l'ELSKP â€¢'l'ELSKP ClO TELS TS Longitude: 111.00 Deg, w At Kâ€¢
 
 
 .----Case Geometry ---*+*---Geomet:r;y to Rain Volume ----+ 
 
 Site Dist Azmth Elev 
-T ·> E 41,90 332.72 1.00 
-T ·> u 26.40 33 .10 
+T Â·> E 41,90 332.72 1.00 
+T Â·> u 26.40 33 .10 
 
-·" 
+Â·" 
 
-E ·> u 36.87 114.01 -.17 
+E Â·> u 36.87 114.01 -.17 
 E -> T 41.90 152.51 
 
-·" 
+Â·" 
 
-E ·> s 144 .so 25.55 
+E Â·> s 144 .so 25.55 
 
 Angle Total Ant. 
 
@@ -6182,9 +6182,9 @@ T -> Vol: 35.78 5.78 333.91 3.79
 
 SET: 25, 86 46,15 
 
-•-> Vol, 6.95 39.37 145.18 
+â€¢-> Vol, 6.95 39.37 145.18 
 
-·"
+Â·"
 
 UTE, 60.39 46,00 
 
@@ -6192,18 +6192,18 @@ Angle SBV: 24 .87 Seang: 24,87
 
 Angle UTY, 59.20 ----+
 
-• 
+â€¢ 
 
 ... 
 
 ) 
 ) 
-TX Interferer Stn.Ant.Sys.Info -----Station T ---TS --•• 
+TX Interferer Stn.Ant.Sys.Info -----Station T ---TS --â€¢â€¢ 
 RX Victim Stn.Ant.Sys.Info Station E ES 
 Antenna#: 21 AUse, TX Gain: 38.3 dB Antenna #: Gain: 43,7 dB Coord Dist. 
 TX.Ant.Code: HCX3510 Model: RX.Ant.Code: TS050C04 Model, Trop: 300 km 
 
-Xref, , , Ant: None TX.Ant.Ht: 1128.00 (m) AMSL Xref ••• Ant: TSOSOC06 RX.Ant.Ht: 1071,00(Prec:S300 km 
+Xref, , , Ant: None TX.Ant.Ht: 1128.00 (m) AMSL Xref â€¢â€¢â€¢ Ant: TSOSOC06 RX.Ant.Ht: 1071,00(Prec:S300 km 
 Ant.Elev.: 2244,00 m (AMSL) 1128,00 m (AGL)) Ant.Elev,: 2138,00m (AMSI,J [ 1071.00 m (AGl,) J 
 Stn,Elev.: 1116.00 m (AMSL) sen.Elev,: 1067,00 m (AMSI,J 
 
@@ -6328,7 +6328,7 @@ is the longitude of a point on the geostationary orbit). Read
 
 by TSIP from the ES station antenna record. 
 This is the range of the ES antenna pointing. The antenna 
-could point to ARC I ± ARC2. This field is part of the ES 
+could point to ARC I Â± ARC2. This field is part of the ES 
 antenna record. 
 
 Radio propagation zone. Read by TSIP from the ES 
@@ -6468,7 +6468,7 @@ staiton in dB.
 
 (This block ofrecords contains the results ofthe TSIP rain scatter calculations). 
 
-Dist T·. Vol (on ES): 
+Dist TÂ·. Vol (on ES): 
 
 Dist T . Vol (on TU): 
 
@@ -6840,7 +6840,7 @@ MASTER DATA BASE --ES to TS Interference Study Report -case Detail Date: 09-mar-
 Environment PDF File , opar2pc_pc 
 case Number : Interferer from Environment File Jl.nalysilll Type, COOrd. Di&t.: 300.00 km 
 Margin 
-+· Site Information 
++Â· Site Information 
 
 -+ Notes: I:nterference case 
 
@@ -6850,36 +6850,36 @@ can T call U I Station T Station U OP T OP U ARCl ARC2 IRainZnl Path Profile
 
 +---------------------------------------------------------------------+ YH __ No 
 
-•TBLSXP •TBLSKP·2 ClO TBLS TS 107.00 38.00 A 2 Blockage: dB 
+â€¢TBLSXP â€¢TBLSKPÂ·2 ClO TBLS TS 107.00 38.00 A 2 Blockage: dB 
 ZCGJ4.!I Z03J43 CHEADLE ALDJ!:RSYDE AGT AGT Longitude: 111.00 Deg. W At X-_ 
-.----caae Geometry ---•+•---Geometry to Rain Vol\111\e ----+ 
+.----caae Geometry ---â€¢+â€¢---Geometry to Rain Vol\111\e ----+ 
 
 Site Dist Elev 
-T ·> E 36.87 "'·"'2!14.38 1.00 
+T Â·> E 36.87 "'Â·"'2!14.38 1.00 
 T -:, U -,:.26.4.0 213, 26 .u 
-E ·> U 41,!IO 152.51 
+E Â·> U 41,!IO 152.51 
 
 B .,,, T 36.87 lU.Ol 
 
--·" 
+-Â·" 
 
-·" 
+Â·" 
 
 H .,,, S 127.86 lB,lB 
 
 Total Ant. Dilt to Vol: on ES on TU Azmth Elev 
 Dis=, T .,,, Vol: 28.21 8.65 289,55 5.25 
-SKT: -··22.19 46.88 E -:,, Vol: 9.60 36.54 127.53 .42 
+SKT: -Â·Â·22.19 46.88 E -:,, Vol: 9.60 36.54 127.53 .42 
 
 Bl,12 39.45""'' Angle SBV: 17.77 Seang: 76 .82 
 
 + Angle UTV: 76,82 
---TX Interferer Stn,Ant.Sys.Info ••••• Station E ---ES ---•+• --RX Victim Stn.Allt.Sy1.lnfo ••••• St11.ti011 T ---TS 
+--TX Interferer Stn,Ant.Sys.Info â€¢â€¢â€¢â€¢â€¢ Station E ---ES ---â€¢+â€¢ --RX Victim Stn.Allt.Sy1.lnfo â€¢â€¢â€¢â€¢â€¢ St11.ti011 T ---TS 
 Antenna#: Gain: 46.8 dB 
 
 Coord Dist, Antenna # : 12 ADsa: RX Gain: 40.9 dB 
 TX.Ant.cede: TS050C06 Hodel: Trop: 300 km RX.Ant.Code: HCX-5908 Model: 
-lCref, .• Ant: TS050C04 Pree, 300 km xref . . . Ant : None 
+lCref, .â€¢ Ant: TS050C04 Pree, 300 km xref . . . Ant : None 
 Ant.Elev.: 2138.00 m (AHSL) [ 1071.00 m (AGL)] Ant,Hlev.: 2054.00 m (AHSL) [ 1039.00 m (AGL)] 
 Stn.Elev,: 1067.00 m (AHSL) + Stn.Elev.: 1015,00 m (AHSL) 
 
@@ -6896,16 +6896,16 @@ TX.Freq, RX.Freq. Om Freq, mT. ?NY. ?NY. VIC. VIC. VIC. Interference Requirement
 
 "" ,....,
 
-BS (Hlh;) Sep, N,c ""·
+BS (Hlh;) Sep, N,c ""Â·
 
 TXPwr Bnl' N,c RXl'wr CALC. 
 
-s-m., s-m.T T.R'" (MH:i:J (dBwl """' .,.. (dBW) ,_, '"°"
+s-m., s-m.T T.R'" (MH:i:J (dBwl """' .,.. (dBW) ,_, '"Â°"
 
-• 
-• 
-A<Gn ""'' (dB) C/I C/I Margin---------.----------.-----.-----.-----.-----.---· 
-l 6,405.0000 6,404.7900 5 5 0.58 26.00 .5 -1.15 -.58 3.3 -2,,31 201-T: 139.91 62 ,40 63 .51 • l.ll 
+â€¢ 
+â€¢ 
+A<Gn ""'' (dB) C/I C/I Margin---------.----------.-----.-----.-----.-----.---Â· 
+l 6,405.0000 6,404.7900 5 5 0.58 26.00 .5 -1.15 -.58 3.3 -2,,31 201-T: 139.91 62 ,40 63 .51 â€¢ l.ll 
 Station tJ TxPwt'/AFSL/Again: 40.9 Energy Diaper.al: 27.00 .OUT: 139,91 62 .40 43 .51 18 .89 
 201-RAC/TAC Factor: -17,47 .on P, 170.06 90.ll 43.51 46.60 
 
@@ -7012,7 +7012,7 @@ is the longitude of a point on the geostationary orbit). Read
 
 by TSIP from the ES station antenna record. 
 This is the range of the ES antenna pointing. The antenna 
-could point to ARC I ± ARC2. This field is part of the ES 
+could point to ARC I Â± ARC2. This field is part of the ES 
 
 antenna record. 
 
@@ -7571,7 +7571,7 @@ CK,A,U,=ES0l,=TELS0!,001, ,!8-sep-1992,
 CT,6385000.0,V,26.0,26.00,27.0,UNKNOWN,D7900,l,2DS3,X 
 CR,4160000.0,H,-120.00,UNKNOWN,D7900,-158.0,-138.0,-138.0,l,2DS3,X 
 
-·------------------
+Â·------------------
 
 
 CK,A,U, =ES0 I, =TELS0 1,002, , l 8-sep-1992, 
@@ -7755,68 +7755,68 @@ figure is reported in the "study" report. In the ES-TS case, this figure is 80 g
 
 Tahle4435A 
 
-) FREQUENCY COORDIW\.TION S¥STl!M ASSOCll.Tl:ON PAGE: 2 
+) FREQUENCY COORDIW\.TION SÂ¥STl!M ASSOCll.Tl:ON PAGE: 2 
 
 MASTER DATA BASB --BSTS :Interference Study 11.epoi:t -Station SUlllllllrY DAT&:16-jun-1995 
 
 StatiOil!I PaSBed TO .Analysis 
 
-••• FROM Barth Station FILE ••• I """ PRCM Terrestrial Station FILE ••• 
+â€¢â€¢â€¢ FROM Barth Station FILE â€¢â€¢â€¢ I """ PRCM Terrestrial Station FILE â€¢â€¢â€¢ 
 call Sign Station Name Oper Latitude Longitude Grnd I call Sign Station Name Oper latitude Longitude Gi:nd 
 
-•1 ----------------------------------------------------------
+â€¢1 ----------------------------------------------------------
 I ---------------------------------------------------------
 
 
--TELSO> TEST EXAMPLE TELS Sl-02-29.00 114-0l•OB,OO lOU 
+-TELSO> TEST EXAMPLE TELS Sl-02-29.00 114-0lâ€¢OB,OO lOU 
 CZA761 mm. 0-2,-Jo.oo 117-17-57.00 
 CZA905 "'"'"'' mm. 52-0-57 .00 110-51-42.00 "'m 
-VBH957 """""""" o-:17-Jo,oo 115•37-f.S,OO 2201 
+VBH957 """""""" o-:17-Jo,oo 115â€¢37-f.S,OO 2201 
 
 VDA756 "'"""""mLN<D "'" 53-24-41.00 112-15-40.00 
-VDA757 Romm •= 53-0B•SO.OO 112-38-20.00 772"'
+VDA757 Romm â€¢= 53-0Bâ€¢SO.OO 112-38-20.00 772"'
 
-•=
+â€¢=
 
-VDA758 53-03-27.00 113•11·15,00 m 
-VDA759 """""" •= 53-01-41,00 113-55-37,00 
-VIlrl.760 -FRANCIS •=•= 53-16-43.00 114-22-04. 00 .,. "' 
+VDA758 53-03-27.00 113â€¢11Â·15,00 m 
+VDA759 """""" â€¢= 53-01-41,00 113-55-37,00 
+VIlrl.760 -FRANCIS â€¢=â€¢= 53-16-43.00 114-22-04. 00 .,. "' 
 VDA76l 53-34-55.00 114-37-56.00 m 
-VBZ6l8 """'" •= 113-54-15.00 1067
+VBZ6l8 """'" â€¢= 113-54-15.00 1067
 
 PINERIDGE 51-03-28.00
 
-•=
+â€¢=
 
 VBZ619 STRATHMORE 51-02-18.00 113-19-02.00 953
 
-•=
+â€¢=
 
 VBZ620 GLE,CHEN 50-51-37. 00 112-57-14.00 
-VBZ62l BASSIOIO •= 50-45-44 .oo ll2·24•0B. 00 '" 
-VBZ622 BROO><S •= 50-32-17. 00 111-50-16. 00 "' 
-VBZ623 =• •=•= 50-22-18. 00 111-28-07.00 "' 
+VBZ62l BASSIOIO â€¢= 50-45-44 .oo ll2Â·24â€¢0B. 00 '" 
+VBZ622 BROO><S â€¢= 50-32-17. 00 111-50-16. 00 "' 
+VBZ623 =â€¢ â€¢=â€¢= 50-22-18. 00 111-28-07.00 "' 
 
-VBZ624 SOFnBLD 50-09-55.00 lll·Ol-32.00 "' 
+VBZ624 SOFnBLD 50-09-55.00 lllÂ·Ol-32.00 "' 
 
-VBZ625 MEDICIN HAT •=•= 50-02-24.00 110·37•11.00 "' ,.. 
+VBZ625 MEDICIN HAT â€¢=â€¢= 50-02-24.00 110Â·37â€¢11.00 "' ,.. 
 XKP93l mm. 53-34-55.00 114-37-56 .00 m 
-XOA792 """'" 49•27•30.00 115•37•45 .00 2201 
-XOA793 "'""""" "'' 49-38-20.00 116-26•20. 00 2396 
+XOA792 """'" 49â€¢27â€¢30.00 115â€¢37â€¢45 .00 2201 
+XOA793 "'""""" "'' 49-38-20.00 116-26â€¢20. 00 2396 
 
 XOD90 53-32-30.00 113-22-00.00
 
 """""""" TAUC"" 
 
-."""'"""' 113 •39-00. 00
+."""'"""' 113 â€¢39-00. 00
 
 XOP47 >LACKFALD TAUC 52-19-20.00 "' 
-XOP49 TAUC 51•16•37.00 114·29-44.00 1317"' 
-XOP55 ""°""""'OLDS TAUC 51·45•30.00 114•05•35.00 1044 
-XOH206 PIGEON TAUC 52-57-13.00 113·52•27.00 
+XOP49 TAUC 51â€¢16â€¢37.00 114Â·29-44.00 1317"' 
+XOP55 ""Â°""""'OLDS TAUC 51Â·45â€¢30.00 114â€¢05â€¢35.00 1044 
+XOH206 PIGEON TAUC 52-57-13.00 113Â·52â€¢27.00 
 XOH282 TAUC 51-02-40.00 114-ll-55.00 1212'" 
 
-·"""""""' 
+Â·"""""""' 
 
 XOH290 sumw<CB TAUC 53-30-20.00 114-33-10.00 
 XOH29l TAUC 53-38-46.00 113-59-46.00 "' 
@@ -7840,7 +7840,7 @@ DA'l'B:16-jun-199S
 
 StatiOillil Pasaed TO Analysis 
 
----PROM Barth Station FILE ---••• FRa-1 Terrestrial Station FILE ••• 
+---PROM Barth Station FILE ---â€¢â€¢â€¢ FRa-1 Terrestrial Station FILE â€¢â€¢â€¢ 
 
 C&ll Sign Station Name Oper latitude Longitude 
 
@@ -7856,7 +7856,7 @@ TXLS Sl-02-29.00 114-03-0B.00 1044
 
 .....,., 
 
-'™" CATV Sl-02-06.00 ll3-2S-26.00 
+'â„¢" CATV Sl-02-06.00 ll3-2S-26.00 
 
 1-UNTL0S ""' 
 
@@ -7870,16 +7870,16 @@ ARDROSSAN C
 = 
 53-30-40.00 113-07-ll.00
 
-""""°" KAVANAGH "' 
+""""Â°" KAVANAGH "' 
 
 = 
 = 
 53-08-06.00 113-32-20.00
 
-""""°" CRANBlUXlK CO 49-30-37.00 llS-t5-5o,oo "'930
+""""Â°" CRANBlUXlK CO 49-30-37.00 llS-t5-5o,oo "'930
 
-•BCMCCBCO BO<C 
-•UNTL96 mm. 52-58-17,00 lll-22-17.00 
+â€¢BCMCCBCO BO<C 
+â€¢UNTL96 mm. 52-58-17,00 lll-22-17.00 
 crw,15 '"''"""'"" BC, 49-26-32.00 lU-S9-2S.00 2130"' 
 B""'""
 
@@ -7891,7 +7891,7 @@ NELSON C.O. m 49-29-29.00 117-17-37,00 '" CGB219 m>><>NroN TE mm. 53-32-35.00 11
 
 "' 
 
-=• ..oo.. AGT S0-34-55.00 lll-53-52.00 "' 
+=â€¢ ..oo.. AGT S0-34-55.00 lll-53-52.00 "' 
 IDDBSLEIGH AGT S0-44-13,00 111-18-00.00 "' """' ATLn AGT 50-50-22. no 110-56-27.00 "' 
 
 CGJlO 
@@ -7917,8 +7917,8 @@ ca.n, KAVANAGH ""' 53-08-06 .00 113-32-20,00 "'
 
 ""'
 
-=• AGT 52-t0-"7 .oo llJ-t0-37.00 "' CGJU "-DERSYDB""""" 50--13-06.00 113-44-30.00 1116"' CGJH2 SIIBRWOOD PK ""',m 53-31-37.00 113-20-29.00 
-crun """'8Ril>GB AGT 49·4.1-36.00 112-so-02.00 
+=â€¢ AGT 52-t0-"7 .oo llJ-t0-37.00 "' CGJU "-DERSYDB""""" 50--13-06.00 113-44-30.00 1116"' CGJH2 SIIBRWOOD PK ""',m 53-31-37.00 113-20-29.00 
+crun """'8Ril>GB AGT 49Â·4.1-36.00 112-so-02.00 
 
 "' 
 
@@ -7932,11 +7932,11 @@ ca.m <.ATHCM
 
 ""' 
 ""' 
-50-n-oo.oo 112-10•39.00 ,., "' 
+50-n-oo.oo 112-10â€¢39.00 ,., "' 
 
 ca.,s, ,m,n ""' 
 
-50•26-37 .00 111-33-52.00 
+50â€¢26-37 .00 111-33-52.00 
 CGJH6 
 
 "" 53-32-25.00 113-29--15.00 m 
@@ -7944,63 +7944,63 @@ CGJH6
 m,ao LXDUC 
 CG187l 
 
-""'""""' •= 53-U-16.00 113-36-36,00 ,,. m 
+""'""""' â€¢= 53-U-16.00 113-36-36,00 ,,. m 
 
 = 
 
 s2-u-t5.oo lll-39-30.00
 
-"""'"" •=
+"""'"" â€¢=
 
-•OWBI.L 50•0S-4S.00 111-02-s8.oo '"
+â€¢OWBI.L 50â€¢0S-4S.00 111-02-s8.oo '"
 
 =" 
 
-CG1894 RED-""•= 52-15-0t.00 113-52-13.00 "'... 
+CG1894 RED-""â€¢= 52-15-0t.00 113-52-13.00 "'... 
 
 CGJ895 BOWDKN 51-55-21. 00 lU-01-18. 00
 
-•= 0 
+â€¢= 0 
 
 CGJB96 CROSSFIELD 51-23-53,00 
 
 lU-00-"7,00 1128'"
 
-•=
+â€¢=
 
 m,902 SDW LIFE 51-02-50.00 lU-03-S0.00 1044
 
-•=
+â€¢=
 
 CHB880 mm. S3-2-1-n.oo 112-15-40.00 
 CHB88l """"' S3-o8-5o.oo 112-38-20.00 m"' 
 
 ROONn mm. 
 CHB882 DNTL 53-03-27.00 113 -11-15. 00 m 
-CHBB83 """""' DNTL 53·01-U.00 ll3-5S-37.00 ,u 
+CHBB83 """""' DNTL 53Â·01-U.00 ll3-5S-37.00 ,u 
 
-CHBB84 DNTL 53-16-U ,00 114·22•0-1,00 ,,. 
+CHBB84 DNTL 53-16-U ,00 114Â·22â€¢0-1,00 ,,. 
 
 -
 
-CHB9l8 "'"'"''' 53-16·-13.00 llJ-51·11.00
+CHB9l8 "'"'"''' 53-16Â·-13.00 llJ-51Â·11.00
 
 CAUW< DNTL 
 
-CHB920 DNTL 52-tS-SJ. 00 llt•0l-33.00 "' 
-CHB92l """'"'GILBY mm. S2-29-42.00 114-19-22.00 1088"' CHB922 RAVEN mm. S2•02•59.00 lU-32•-17.00 1068 
-CHB923 DNTL 51•-10•06.00 lU•H-19,00 13"7 
+CHB920 DNTL 52-tS-SJ. 00 lltâ€¢0l-33.00 "' 
+CHB92l """'"'GILBY mm. S2-29-42.00 114-19-22.00 1088"' CHB922 RAVEN mm. S2â€¢02â€¢59.00 lU-32â€¢-17.00 1068 
+CHB923 DNTL 51â€¢-10â€¢06.00 lUâ€¢H-19,00 13"7 
 
 CHB92t """'"""' 
 
-DNTL 51-17-03.00 lU•U-18 .00 1519
+DNTL 51-17-03.00 lUâ€¢U-18 .00 1519
 
-"""'°" 
+"""'Â°" 
 
 CHB92S CALGARY mm. 51-01-38.00 llt-03-37.00 1072 
 C.JY203 CBC S3-31-33.00 113-26-29 .on 
-C.JY802 ""'""""'SHERWOOD PK CBC 53•30•53.00 113-17-07.00 "'732 
-C.JY80J CBC 53•18•53.00 lU-0J•ll.00
+C.JY802 ""'""""'SHERWOOD PK CBC 53â€¢30â€¢53.00 113-17-07.00 "'732 
+C.JY80J CBC 53â€¢18â€¢53.00 lU-0Jâ€¢ll.00
 
 """""' 
 
@@ -8032,29 +8032,29 @@ MASTER DATA BASE --ES to TS Interference Study Jtepo:rt -Caae Detail Date: 16-ju
 Environment MDB_TS PDF Pile : esOl l 
 case Number : l Interferer frCll'I Proposed File Analyais Type: P/C C0ord. Dist.: 300.oo Jan 
 
-••
+â€¢â€¢
 MaJ:
 gin o.oo 
-Site Information -• Notes: Interference case 
+Site Information -â€¢ Notes: Interference case 
 CALLE Loc.COde I ES Site Nillllle B Satellite Name s OPE OPS Satellite Service Radio/ I Yo, __ No 
 call T call u I Station T station u OPT OPU Rain Zn I Path Profile+---------------+ y., No 
-•TKLSOl •ESOl TBST "'°'""" 11NIK D2 TSLS TS lll.00 1.00 A 2 Blockage, di 
+â€¢TKLSOl â€¢ESOl TBST "'Â°'""" 11NIK D2 TSLS TS lll.00 1.00 A 2 Blockage, di 
 CHB924i CHB925 CAWARY mm. mm. Longitude: 110.00 Deg. W At JC,._
 
 """""' 
 
-+----case Geometry ---·+•---Geometry to Rain Volume ----+ 
++----case Geometry ---Â·+â€¢---Geometry to Rain Volume ----+ 
 
 Site Dist A>mth Elev 
 T -> E S2.05 121.0l 6.36 
-T ·> U 52.,2 122,80 -... E ·> U 1.67 199.73 2.12 
-E ·> T 52.05 301,51 2,25 
-E ·> S 177.36 31.S6 
+T Â·> U 52.,2 122,80 -... E Â·> U 1.67 199.73 2.12 
+E Â·> T 52.05 301,51 2,25 
+E Â·> S 177.36 31.S6 
 
 --TX Interferer Stn.Ant.Sys.Info -----Station E ---ES -----RX Vic:tim Stn.Ant.Sys.Info Station T ---TS 
 
 Antenna I: Gain: ,,.8 dB COOrd Dist. Antenna#: 21 AUse, TR Gain, H.8 dB 
-TX,Ant.COde: TSOSOC06 Hodel: Trop: 300 Ian RX.Ant.cede: Ol2X59CR Hodel :UHX12X·59C 
+TX,Ant.COde: TSOSOC06 Hodel: Trop: 300 Ian RX.Ant.cede: Ol2X59CR Hodel :UHX12XÂ·59C 
 xref ... Ant, TS05oco, Pree, 300 km xref ... Ant, Ol2X59CL 
 
 Ant.Elev.: 2092.00 ffl (AMSL) [ lOU.00 m (JI.Gl,J] Ant.Elev,: 3066,00 m (AMSL) I 15'7.00 m (AGL)] 
@@ -8062,13 +8062,13 @@ sen.Elev., lOU.00 m (AMSL) Stn,Elev.: 1519.00 m (AMSI,)
 
 --TX Interferer Sys,Eqp,C'l"X.Band Info -Station E ---ES *+* -RX Vic:tim Sys.Eqp,C'l"X,Band Info -----Station T ---TS -
 Eqpt. Planned / Traffic COde: IDIKNOWN D7900 Eqpt. Planned / Traffic cede: RD-6C D7137 
-Default Traffic COde: D7900 Bqpt. Default / Traffic cede: RD•6A D7135 
+Default Traffic COde: D7900 Bqpt. Default / Traffic cede: RDâ€¢6A D7135 
 Freq.end ll + Freq.Bnd ll 
 
 TX.Freq, RX.Freq, Cho Freq. v,c, v,c, v,c, Interference Requirements, FCSA
 
 "" 
-SC ,...., ""'· ""'· ""'· ""'·
+SC ,...., ""'Â· ""'Â· ""'Â· ""'Â·
 
 BS (MHz) St, Sep. Not Ell<P Not APSL RXPwr CALO. REQD, 
 
@@ -8081,11 +8081,11 @@ STN.E STN.T T.R =-"""' ATGn >tGn (dBw) (dB) Margin
 
 6,'15.0000 6,f04i.7900 7 .08 26 .00 ., 5.00 -ll,82 ,., 20, T: 142.92 -123. 7f -130.U -6.39
 
--27 ·" 
+-27 Â·" 
 
 ) 
 ) 
-' Station U TxPwr/AFSI,/Again:" ,,.8 Energy Diaper.al: 27.00 .01' T: 142.92 -123.74 •130,U -6.39 
+' Station U TxPwr/AFSI,/Again:" ,,.8 Energy Diaper.al: 27.00 .01' T: 142.92 -123.74 â€¢130,U -6.39 
 20, PAC/TAC Factor: -17."7 .01'11 P: 142.16 -116, 16 -130.14 -13.98 
 6,385.0000 6,,o,.7900 16.66 26 .00 ., 5.00 -ll.82 ,., -27."7 20, T: U2 .88 -123. 70 -127.88 -4 .18I ' Station U TxPwr/APSI,/Again," U.8 Energy Disper11al: 27 .00 .01' T: 1"2.88 -123. 70 -127.88 -4 .18
 
@@ -8093,7 +8093,7 @@ STN.E STN.T T.R =-"""' ATGn >tGn (dBw) (dB) Margin
 
 20, AAC/TAC Factor: -17."7 .01' P: 142.16 -116.16 -127,88 -11,71 
 
-+----CIIH Geometry ---·+·---Geometry to Rain Volume ----+ 
++----CIIH Geometry ---Â·+Â·---Geometry to Rain Volume ----+ 
 
 ...... TOtal Ant. Dist to Vol: 00,., 00 "1 ~mth 
 
@@ -8107,19 +8107,19 @@ Angle SBV: 30.59 S,:ang: 1.03
 
 Angle trrv: 1.03 ----+
 
-• 
+â€¢ 
 
-•+• 
+â€¢+â€¢ 
 
 Site Dist A>mth Elev 
-T ·> E 52,05 121.01 6 ,36 
+T Â·> E 52,05 121.01 6 ,36 
 T -> U 52,'2 122.80 
 
--·" 
+-Â·" 
 
 E -> U l.67 l.99.73 2.12 
-E ·> T 52.05 301.51 2.25 
-E ·> S 177,36 31,56 
+E Â·> T 52.05 301.51 2.25 
+E Â·> S 177,36 31,56 
 
 >nglo Total Ant, 
 
@@ -8133,18 +8133,18 @@ E -> Vol: l.52 l.96 179,33 1,03
 
 Angle SEV: 30.59 S,:ang: 1.03 
 
-• 
-• 
+â€¢ 
+â€¢ 
 Angle trrv: 1.03 ----+ 
 --TX Interferer Stn.Ant.Sys.rnfo -----Station E ---ES ---*+* --RX Victim Stn.Ant.Sy9.Info Station T ---TS 
 
 Antenna I: Gain: '6,8 dB COOrd Dist. Antenna #, 22 P.Uee, DVl Gain: 44.8 dB 
-TX.Ant.COda: TS050C06 Hodel, Trap: 300 km RX.Ant.Code: Ul2X59CR Hodel:TJHX12X·59C 
-xref ..• Ant: TS050C04 Pree, 300 km xref,,, Ant: Ol2X59CL 
+TX.Ant.COda: TS050C06 Hodel, Trap: 300 km RX.Ant.Code: Ul2X59CR Hodel:TJHX12XÂ·59C 
+xref ..â€¢ Ant: TS050C04 Pree, 300 km xref,,, Ant: Ol2X59CL 
 
 Ant.Elev,: 2092,00 m (AH.SI,) [ 1048.00 m (AGL)] Ant.Elev,: 3054,00 m (AMSL) [ 1535.00 m (AGI,)l 
 
-• Report, tsesrp3s out Pile, t11asrpls.lis 
+â€¢ Report, tsesrp3s out Pile, t11asrpls.lis 
 Prequeocy coordioation System A.uociation Page, 2 
 MASTER DATA BASE --ES to TS Interference Study RepOrt ca11e Detail Date: 16-jun-1995 
 
@@ -8159,9 +8159,9 @@ Preq,Bnd 11 + Preq.Bnd 11
 
 TX.Freq. RX.Freq. Chn Freq. v,c, v,c, v,c, Interference Requirements, FCSA
 
-"".. SC ,...., ,.,,. ""'· ""'· ""'· ""'·
+"".. SC ,...., ,.,,. ""'Â· ""'Â· ""'Â· ""'Â·
 
-(MHz) />.FLS Not Ell<P Not JU'SL RXPwr CALO. REQD •
+(MHz) />.FLS Not Ell<P Not JU'SL RXPwr CALO. REQD â€¢
 
 = _, _,
 
@@ -8197,7 +8197,7 @@ Table 44 36B
 Frequency COOrdination System A811ociation Page, l 
 MASTER DATA BASE --TS to BS Interference Study Report -case Detail Date,16-jun-1995 
 
-Environme.nt Coord. Dist, · km 
+Environme.nt Coord. Dist, Â· km 
 case Number , Interferer frQl!I Environment File J\nlllysis Type, PDF File , es01_1
 
 _.. 
@@ -8205,14 +8205,14 @@ _..
 0.00 
 +-Site Information Notes, Interference case
 
-·•
+Â·â€¢
 
 C&ll T call U I Station T Station U OP T OP U Satellite Service Radio/ I Yea __ No 
 
 o.LL E Loe.Code I BS Site NII.IIIEI E Satellite Nllll\e s OPE OP s ARC 1 ARC 2 Rs.in zn I Path Profile
 +--------------------------------------------------------------Yes No
 
-• 
+â€¢ 
 
 Blockage, -;m 
 Longitude, Deg. W At K-_ 
@@ -8238,16 +8238,16 @@ UTE,
 Angle SIN, 
 Angle tJTV,
 
-.•.
+.â€¢.
 
 Inte:i:-ferer Stn.Ant.Sys.Info -----Station T ---TS -----,x Victim stn.Ant,Sys,Info Station B 
 
----BS • 
+---BS â€¢ 
 Antenna # , AUse : Gain: dB Antenna #: Gain, dB COOJ:'dDist. 
 TX.Ant.Code: Model, RX,Ant.COde: Model: Trop, km 
-XJ:'af, •• Ant, None TX.Ant.Ht: (m) »ISL X:t:'ef ... Ant, None RX.Ant.Ht: (Prec::SL km 
-Mt.Elev., o,oo m (»ISL) [ m (AGL)] Ant.Elev.: o. oom (»ISL) [ m (AGL) I 
-Stn.Blev.: m (»ISL) Stn,Blev., m (»ISL) 
+XJ:'af, â€¢â€¢ Ant, None TX.Ant.Ht: (m) Â»ISL X:t:'ef ... Ant, None RX.Ant.Ht: (Prec::SL km 
+Mt.Elev., o,oo m (Â»ISL) [ m (AGL)] Ant.Elev.: o. oom (Â»ISL) [ m (AGL) I 
+Stn.Blev.: m (Â»ISL) Stn,Blev., m (Â»ISL) 
 
 --TX Interfere:i:-Sys.Bqp,C'l'X,Band Info -Station T ---TS --*+* 
 -RX Victim Sys.Bqp.C'l'X.Band Info -----Station B ---BS -
@@ -8258,18 +8258,18 @@ Fnq.Bnd + FJ:'eq,Bnd
 SC 
 0A TX.FJ:'eq. RX.Freq, Chn Freq, VIC. VIC. VIC, Interference Requirements:
 
-""· ""· ""·
+""Â· ""Â· ""Â·
 
 (MHz) (MHz) Sop. TXPwr APLS N,e" sn<.T T.R'" (MHz) (dBW) Aron (dBw) AeGn (dllwl (dB) C/1 C/I Mll'9'in 
 
-""· N-' ,,., ..... RXPwr Loss C1\LC, REQD. 
+""Â· N-' ,,., ..... RXPwr Loss C1\LC, REQD. 
 
-""·'
+""Â·'
 
 ' ------.----------.---
 
 
-• No Interference cases Reported • 
+â€¢ No Interference cases Reported â€¢ 
 
 IS into ES Interference Report Example 
 
@@ -8293,10 +8293,10 @@ operating in the 6 GHz frequency band. Site A has a receive diversity antenna; s
 
 Table 4.3.I 
 
-• 
+â€¢ 
 
-• TS-PDF NAME : operl
-• 
+â€¢ TS-PDF NAME : operl
+â€¢ 
 
 TT,U,OPERl,,,, 
 
@@ -8309,7 +8309,7 @@ SK,A, U, =UNKNA,SITE A,51-00-00.00N, 120-00-00.00W,999 .0,,
 AK,A,U,=UNKNA,=UNKNB,12,1,, 
 AQ,TR,UHXI0-65EL,20.0,191.34,-0.46,54.89,N,,,,,, ,08-jun-1994
 
-•--------------------
+â€¢--------------------
 
 
 AK,A,U,=UNKNA,=UNKNB,12,2,, 
@@ -8455,7 +8455,7 @@ Temp CDC Table: Same as above.
 
 Temp Eqpt Table: Same as above. 
 
-Country: All (TSIP will analyze Canadian and U.S. stations if· 
+Country: All (TSIP will analyze Canadian and U.S. stations ifÂ· 
 any in the coordination area). 
 
 Select Env Sites: All (TSIP will analyze all sites within coordination 
@@ -8848,8 +8848,8 @@ PROPOSED FILE =au FROM ENVIRONMENT FILE'"==
 Call Sign Station Oper Latitude Longitude Gmd Call Sign station Name aper----Latitude Longitude Gmd 
 Name (ml (ml 
 
-•tlNKNA SITE A UNKN 51.-00-00.00 120-00-00.00 "' 
-•ONKNB SITE B UNKN 50-30-58.00 120-09-08.00 734 \-INLB02 CLEARWATER INLB 50-41-06. 00 120-07-41.00 1146 
+â€¢tlNKNA SITE A UNKN 51.-00-00.00 120-00-00.00 "' 
+â€¢ONKNB SITE B UNKN 50-30-58.00 120-09-08.00 734 \-INLB02 CLEARWATER INLB 50-41-06. 00 120-07-41.00 1146 
 CFW203 GREENSTONE BCT 50-36-48.00 120-38-26.00 1774 
 CFW303 MT LOLO BCT 50-48-04. 00 120-07-36,00 1746 
 CGF452 SILVER STAR BCT 50-22-ll. 00 119-03-48.00 1890 
@@ -8907,7 +8907,7 @@ XOA751 OXANl\GAN RCTI 49-42-46, 00 119-36-26.00 1574
 
 X0D250 MT LOLO INLB 50-48-02,00 120-07-37.00 1743 
 
-IS-IS ISi£ Sl!lliQins Eass~d !Q Anal!t'.sis Eirn11112I~ (!'LC) 
+IS-IS ISiÂ£ Sl!lliQins Eass~d !Q Anal!t'.sis Eirn11112I~ (!'LC) 
 
 TSIP Reference Manual 4.3 -11 Summer1995 
 
@@ -8938,7 +8938,7 @@ OVerReach Profile
 
 +-----------------------------------------------------------------.---Yes No 
 
-•UNKNA =ONKNB SITE A SITE B UNKN UNKN 54.89 42,83 24.3 Blockage: _ dB 
+â€¢UNKNA =ONKNB SITE A SITE B UNKN UNKN 54.89 42,83 24.3 Blockage: _ dB 
 $BC'l'02 CFH303 N,KAM CATV MT LOLO BCT BCT 20.45 -16.3 
 At K= 
 
@@ -8960,7 +8960,7 @@ Cross Ref. Traffic: D7135 Eqpt. X Ref. / Traffic: UNKNOWN Al200
 TX.Freq.Bnd : 12 + RX.Freq.Bnd : 12 
 SC 
 UA TX.Freq. p RX.Freq. p Chn Freq. Int. Int. Vic. Vic. 
-BS (MHz} 0 (MHz) 0 Sta Sep. TXPwr AFSL AFSL RXPwr Path TANT EIRP DIST CALC C/I OR ·I REQD. MARGIN 
+BS (MHz} 0 (MHz) 0 Sta Sep. TXPwr AFSL AFSL RXPwr Path TANT EIRP DIST CALC C/I OR Â·I REQD. MARGIN 
 E Stn.I L Stn.Vrx L T.R (MHz) (dBm) (dB) (dB) {dBm) Loss DISC ADV. ADV. CPol XPol (dB) (dB) 
 
 0 
@@ -8970,7 +8970,7 @@ E Stn.I L Stn.Vrx L T.R (MHz) (dBm) (dB) (dB) {dBm) Loss DISC ADV. ADV. CPol XPo
 
 1 6,905.0000 H 6,920.0000 H 3 5 14.599 31.00 3.7 4.7 -42.37 141.9 71.3 -9.8 67.9 ( 81. 8) 69.4 -1,5
 
-'·' 
+'Â·' 
 
 Report field-by-file comments: 
 
@@ -9308,7 +9308,7 @@ ofthe interfering path length to the victim path length: 20
 log (42.83/20.45) =6.4. 
 
 Calculated Co-polar C/1 or interference level, in dB or 
-dBm respectively. In this case the value calculated· is a 
+dBm respectively. In this case the value calculatedÂ· is a 
 C/1 value. TSIP will calculate a C/1 or -I value depending 
 on the CTI{ used for the case. 
 
@@ -9347,7 +9347,7 @@ MASTER DATA BASE --TSTS Interference Study Report -Case Sunma.ry
 
 Date:20-dec-1994 
 
-case # Interferer F Victim F I->V Off Off RX Ana p p TX -> RX Cale. Reqd. MargnStation r Station r Dist AX> AX> RSL Typ o o Freq.Sep. -I or C/I ·I Check 
+case # Interferer F Victim F I->V Off Off RX Ana p p TX -> RX Cale. Reqd. MargnStation r Station r Dist AX> AX> RSL Typ o o Freq.Sep. -I or C/I Â·I Check 
 /Sub TX --------> o RX 0 (km) TX RX (dBm) L L (MHz) COPL XPOL C/I (dBm) Detail 
 -------------------m ---------------m -------------------------I>V --------------------------1 
 1 SITE A P N,KAM CATV E 42.83 24.3 -16.3 -42.37 C/I H H 14,599 67.9 81,8 69.4 -1,5 
@@ -9925,7 +9925,7 @@ Call Sign Station Name aper Latitude Longitude Grnd Call Sign Station Name Oper 
 
 '" 
 
-•lJNKNB SITE B UNKN 50-30-56.00 120-09-06.00 734 UNLB02 CLEARWATER INLB 50-41-06. 00 120-07-41.00 1146 
+â€¢lJNKNB SITE B UNKN 50-30-56.00 120-09-06.00 734 UNLB02 CLEARWATER INLB 50-41-06. 00 120-07-41.00 1146 
 =WESTAV SAVONA WEST 50-41-51. 00 120-46-50.00 1494 
 CFW203 GREENSTONE BCT 50-36-46, 00 120-36-26.00 1774 
 CFW303 MT LOLO BCT 50-48-04, 00 120-07-36.00 1746 
@@ -10011,7 +10011,7 @@ X Ref. /Int ' UHX10-65ER Discr. V CPol: 46.0 dB X Ref. Ant : P4-65C Discr. V CPo
 Model: UHX10-65E Discr. H XPol: 65.5 dB Model: Discr. H XPol: 42.l dB 
 Discr. V XPol: 65.3 dB + Discr. V XPol: 42.1 dB 
 
---TX Interferer Sys.Eqp.crx.Band Info -Station I ---TS ••• RX Victim sys.Eqp.crx.Band Info Station Vrx ---TS --
+--TX Interferer Sys.Eqp.crx.Band Info -Station I ---TS â€¢â€¢â€¢ RX Victim sys.Eqp.crx.Band Info Station Vrx ---TS --
 Eqpt. Planned/ Traffic: RD-U6C D7138 Eqpt. Planned/ Traffic: FLH6 A5250 
 cross Ref. Traffic: Eqpt. X Ref. / Traffic: 
 
@@ -10068,7 +10068,7 @@ BAND
 operl_band 
 
 The following group offields for the report summarizes the particular geometry ofthe 
-interfering and victim hops, i.e. distances and discrimination angles.) · 
+interfering and victim hops, i.e. distances and discrimination angles.) Â· 
 
 In TSIP a case number is assigned to each Interfering/Victim 
 pair of stations. The case could be divided into sub-cases. For 
@@ -10149,7 +10149,7 @@ Notes: (This is the block of records in the right upper comer of the report. The
 not filled in by the program; they can be used to record post-analysis notes). 
 Interference Case Yes No 
 
-TSIP reports interference cases in accordance with TSIP rules and available information. · But a case reported by 
+TSIP reports interference cases in accordance with TSIP rules and available information. Â· But a case reported by 
 TSIP might not be considered an interference case by the operator. For example, ifthe interfering path is blocked. 
 
 Over Reach Profile Yes ____ No 
@@ -10416,7 +10416,7 @@ Case# Interferer F Victim F I->V Off Off RX llna P P TX -> RX Cale. Reqd. MargnS
 ----------------m ----------------m I>V ----------l 
 l SITE A P N.KAM CATV E 42.83 24.3 -16.3 -42.21 C/I H H 58.9 110.0 -51.l 
 
-2 l CLEARWATER E SITE A p 36.18 161.6 3.2 ·31.28 C/I V H 41. 7 110.0 -68.3 
+2 l CLEARWATER E SITE A p 36.18 161.6 3.2 Â·31.28 C/I V H 41. 7 110.0 -68.3 
 2 CLEARWATER E SITE A p 36.18 161.6 3.2 -31..08 C/I V H 41.7 110.0 -68.3 
 
 3 1 SITE A P CLEARWATER E 36.18 3.2 14.3 -72,20 C/I H V 65.2 llO.O -44.8 
@@ -10460,7 +10460,7 @@ p
 2 SILVER STAR E SITE A p 96.43 14.1 -55,1 -3l.08 C/I V H 97.l 110.0 -12.9 
 
 16 1 SITE A P DOME E 35.79 27.6 28.8 -29.94 C/I H V 87,l llO,O -22.9 
-l SITE A P DOME E 35. 79 27.6 28.8 -23.50 C/I H V 89.2 llO,O · -20.8 
+l SITE A P DOME E 35. 79 27.6 28.8 -23.50 C/I H V 89.2 llO,O Â· -20.8 
 2 SITE A P DOME E 35. 79 27.6 28.8 -29.74 C/I H V 87.l 110,0 -22.9 
 2 SITE A P DOME E 35. 79 27.6 28.8 -28.75 C/I H V 87.3 110.0 -22,7 
 3 SITE A P DOME E 35, 79 27.6 28.8 -28.55 C/I H V 87,3 llO.O -22.7 
@@ -10814,7 +10814,7 @@ EXAMPLE OF TSIP INTRA ANALYSIS
 4.10.1 TSIP Parameter Files 
 4.10.2 TSIP Study Reports 
 4.10.3 TSIP Interference Analysis Reports 
-TSIP Reference Manual 4 · iii Summer1995 
+TSIP Reference Manual 4 Â· iii Summer1995 
 
 
 3.5 
@@ -10902,7 +10902,7 @@ The extent ofbending (value ofT) depends on the climate of the region where the 
 
 o 
 
-the TS and on the TS antenna main beam · initial elevation angle. The refraction correction angle. (T) is, 
+the TS and on the TS antenna main beam Â· initial elevation angle. The refraction correction angle. (T) is, 
 unfortunately, a non-linear function of the initial elevation angle of the TS beam (Ei). Therefore, approximate 
 numerical methods have to be used for calculating the refraction-corrected elevation angle (Ef). 
 
@@ -11175,7 +11175,7 @@ Max. Freq. Separation (MHz):,:;~J!OW9XJ>
 
 1 
 
-~~=~;::~;~~:es: i1iw !!;;!:'l;!::'<:;;t:·u>:C@(H). 
+~~=~;::~;~~:es: i1iw !!;;!:'l;!::'<:;;t:Â·u>:C@(H). 
 
 Temp CTX Table: 
 Temp Eqpt Table: 
@@ -11229,7 +11229,7 @@ directory.
 Fall 1996 3.4-2 TSIP Reference Manual 
 
 
-Env File Name· 
+Env File NameÂ· 
 
 TSORB Cale ?: 
 Propagation Loss Model # 
@@ -11282,7 +11282,7 @@ as a function of frequency separation are stored in the MICS subsidiary (sd _ctx
 sd_ctxd) tables, called "CTX" tables. Ifthe user does not enter any values in tliis 
 Required Margin field, TSIP will use the default value (0dB). This means that 
 TSIP will report all those cases which do not meet the CTX requirement for this 
-particular frequency separation. If the user enters •.positive valued, TSIP will use 
+particular frequency separation. If the user enters â€¢.positive valued, TSIP will use 
 this value as a "safety margin", and will report all those cases which do not meet 
 the CTX requirement plus the margin. Although negative margin values can be 
 entered, they should not be used in general; they are useful only for special cases of 
@@ -11369,7 +11369,7 @@ companies he/she is doing the analysis on behalf of.
 Fall 1996 3.4 -4 TSIP Reference Manual 
 
 
-TSIP Run Name· This is a suffix added by TSIP to the TSIP tables root name. Note that TSIP writes 
+TSIP Run NameÂ· This is a suffix added by TSIP to the TSIP tables root name. Note that TSIP writes 
 the analysis to Ingres tables. If a TSIP study is repeated and the root name of the 
 study (i.e. name of the parameter file) or the TSIP Run Name are not changed, the 
 tables of the first study will be overwritten. Then if the user wants to repeat an 
@@ -11418,7 +11418,7 @@ To facilitate the interference calculations for Mode 1 and Mode 2 propagation, t
 
 11Radio-Climatic Zones11 and "Rain-Climatic Zones11 
 
-• 
+â€¢ 
 
 3.4.4.2 Radio Climatic Zones 
 The radio climatic zone is part of the earth station site record (radio field). The radio zone parameter is used in the 
@@ -11525,10 +11525,10 @@ f = frequency in GHz.
 The distance between the interfering and victim stations, d in km, is calculated by TSIP from the geographical 
 coordinates, which are part of the pdf being analyzed and environment records. 
 
-3.4.5.2 Loo~•Tenn Propa~ation Mode I Interference Power Level 
+3.4.5.2 Loo~â€¢Tenn Propa~ation Mode I Interference Power Level 
 The long-term propagation Mode I interference power level is calculated in TS-ES as follows: 
 
-I (20%T) = P(T) • AFSL (T) + G (T, effec.) -L (20%) + G (R, effec.) • AFSL (R) {dBW) 
+I (20%T) = P(T) â€¢ AFSL (T) + G (T, effec.) -L (20%) + G (R, effec.) â€¢ AFSL (R) {dBW) 
 
 Where: 
 
@@ -11632,7 +11632,7 @@ Water vapour attenuation:
 
 1 
 
-B(V)=3.sx10·4 + I 2 +3x(I0-6)xl2(dB/km)
+B(V)=3.sx10Â·4 + I 2 +3x(I0-6)xl2(dB/km)
 
 2 
 
@@ -11644,7 +11644,7 @@ Where:
 B(V) = rate of attenuation due to water vapour, in dB/km 
 f = frequency, in GHz 
 All effects except atmospheric gases attenuation 
-B (z) = 0.154 (I+ 3.05 log f)°"4 x (0.9028 + 0.0486 log q)2 (dB/km) 
+B (z) = 0.154 (I+ 3.05 log f)Â°"4 x (0.9028 + 0.0486 log q)2 (dB/km) 
 Where: 
 B(z) = attenuation caused by all effects except atmospheric 
 
@@ -11685,9 +11685,9 @@ TS-ES will automatically select the appropriate set ofequations.
 3.4.6.2 Short-Term Propagation Mode I Interference Power Level 
 The calculation of the short-term interference power level differs, from the calculation for the Jong term case, only 
 in the value ofthe basic transmission Joss employed in the equation. Therefore: 
-I (0.0l¾T) =P(T)-AFSL (T) + G(T, effec.)-L(0.01%) + G (R, effec.)-AFSL (R) (dBW) 
+I (0.0lÂ¾T) =P(T)-AFSL (T) + G(T, effec.)-L(0.01%) + G (R, effec.)-AFSL (R) (dBW) 
 Where: 
-I (0.0J¾T) =Propagation Mode I interference power level at the input ofthe victim receiver, not exceeded for all 
+I (0.0JÂ¾T) =Propagation Mode I interference power level at the input ofthe victim receiver, not exceeded for all 
 
 but 0.01% ofthe time, in dBW. 
 
@@ -11704,7 +11704,7 @@ TSIP Reference Manual 3.4-11 Summer1995
 3.4.7.I Definition ofthe Problem 
 CCIR propagation Mode 2 can be defined as the propagation of radiowaves, from interfering transmitters to victim 
 receivers, due to scattering from volumes in the troposphere (e.g. heavy rain clouds or "rain cells") which may be, 
-but are usually not, in the great circle plane (the great circle defined by the interfering and victim stations). · 
+but are usually not, in the great circle plane (the great circle defined by the interfering and victim stations). Â· 
 
 The problem can be subdivided into the geometrical problem of determining the path followed by the radiowave 
 and the calculation of the interference power level (which is also a function of the first one). By far, the most 
@@ -11746,11 +11746,11 @@ Summer1995 3.4 -12 TSIP Reference Manual
 
 R = surface rainfall rate, in mm/hr (for the rain climatic zone 
 recorded in the rain field ofthe earth station). 
-JO log Ab= 0.005 x R0·1 (f-JO)J.7 (dB) for £l:JO (GHz) 
+JO log Ab= 0.005 x R0Â·1 (f-JO)J.7 (dB) for Â£l:JO (GHz) 
 JO log Ab= 0 for f<JO (GHz)' 
 LR= 0 for f J (GHz) 
 LR= Ax 10-3 x f3.2 (dB) for. I,; f<IO (GHz) 
-LR= Ax 10·2 x f2.2 (dB) for JO,; f(GHz) 
+LR= Ax 10Â·2 x f2.2 (dB) for JO,; f(GHz) 
 
 (The value ofthe constant A, as a function ofthe rain climatic zone is given in Table 3.4.1). 
 G(B, effec.) = antenna gain os Station Bin the direction of the 
@@ -11771,7 +11771,7 @@ having the larger product of antenna beamwidth and distance from antenna to scat
 
 3.4.7.4 Propa~atioo Mode 2 Interference Power I,eve1 
 The short-term propagation Mode 2 interference power level is calculated in TS-ES as: 
-1(0.0l¾P) = P(T)-Ls(O.OJ) 
+1(0.0lÂ¾P) = P(T)-Ls(O.OJ) 
 Where: 
 1(0.0 I %P) = propagation Mode 2 (precipitation scatter) Interference power level not exceeded for all but 
 0.01% of the time, in dBW. 
@@ -11785,7 +11785,7 @@ not appear explicitly in the equations.
 TSIP Reference Manual 3.4 -13 Summer1995 
 
 
-3.4.8 Earth Station-Terrestrial Station <ES-TS) Interference· Band Analysis 
+3.4.8 Earth Station-Terrestrial Station <ES-TS) InterferenceÂ· Band Analysis 
 0 
 
 3.4.8.1 ES-TS Band Analysis Interference Leve) Calculations 
@@ -11796,23 +11796,23 @@ output report. 1(20%T) is the CCIR Propagation Mode I interference power level a
 receiver, in dBW, not exceeded for all but 20% of the time. In Band Analysis, 1(20%T) is calculated as per 
 paragraph 3.4.5.2, assuming that P(T) = PTMAX -ED4 (dBW). PTMAX and ED4 are the maximum 
 transmit power and energy dispersal factor, respectively, indicated in the earth station records. The ED4 
-factor is stored in the p4kHa field ofthe ES channel record; • 
+factor is stored in the p4kHa field ofthe ES channel record; â€¢ 
 
-short-term tropospheric (CCIRPropagation Mode I) I level. This level is designated as 0.0l¾T in the ESTS 
-report. 1(0.0l¾n is the CCIR Propagation Mode I interference power level at the input of the victim 
-receiver, in dBW, not exceeded for all but 0.01% of the time. In Band Analysis, 1(0.0l¾T) is calculated as 
+short-term tropospheric (CCIRPropagation Mode I) I level. This level is designated as 0.0lÂ¾T in the ESTS 
+report. 1(0.0lÂ¾n is the CCIR Propagation Mode I interference power level at the input of the victim 
+receiver, in dBW, not exceeded for all but 0.01% of the time. In Band Analysis, 1(0.0lÂ¾T) is calculated as 
 per paragraph 3.4.6.2, assuming P(n = PTMAX -ED4 (dBW). PTMAX and ED4 are the maximum 
 transmit power and energy dispersal factor, respectively, indicated in the earth station records; 
 
-short-term precipitation scatter (CCIR Propagation Mode 2) I level. This level is designated as 0.0l¾P in 
-the ES-TS output report. 1(0.0I¾P) is the CCIR Propagation Mode 2 interference power level at the input of 
-the victim receiver, in dBW, not exceeded for all but 0.01% of the time. In Band Analysis, 1(0.0l¾P) is 
+short-term precipitation scatter (CCIR Propagation Mode 2) I level. This level is designated as 0.0lÂ¾P in 
+the ES-TS output report. 1(0.0IÂ¾P) is the CCIR Propagation Mode 2 interference power level at the input of 
+the victim receiver, in dBW, not exceeded for all but 0.01% of the time. In Band Analysis, 1(0.0lÂ¾P) is 
 calculated as per paragraph 3.4.7.4 assuming P(T) = PTMAX -ED4 (dBW). PTMAX and ED4 are the 
 maximum transmit power and energy dispersal factor, respectively, indicated in the earth station records. 
 
 0 
 
-3.4.8.2 ES-TS Band Analysis Reqµjrements 
+3.4.8.2 ES-TS Band Analysis ReqÂµjrements 
 In ES-TS Band Analysis TSIP will select either CCIR or FCSA requirements. If the ES and TS stations are both 
 owned by FCSA members who subscribe to the "Telesat-RAC-TAC" agreement, TSIP will select FCSA 
 requirements, otherwise CCIR requirements will be selected. CCIR requirements will also be selected for nonFCSA 
@@ -11827,30 +11827,30 @@ Propagation Mode Level (dBW/4KHz)
 EC.SA .cclR 
 
 20%T -158 -151 
-0.0l¾T -138 -137 
-0.0l¾P -138 -137 
+0.0lÂ¾T -138 -137 
+0.0lÂ¾P -138 -137 
 
 (T: Tropospheric; P: Precipitation scatter) 
 For FCSA operators who subscribe to the Telesat-RAC-TAC agreement, interference is considered to exist if: 
 
 1(20%T) >= -158 -Margin (dBW); and/or 
 
-1(0.0l¾T) >= -138 -Margin (dBW); and/or 
+1(0.0lÂ¾T) >= -138 -Margin (dBW); and/or 
 
 0 
 
 Summer1995 3.4-14 TSIP Reference Manual 
 
 
-1(0.0l¾P) >= -138 -Margin (dBW) 
+1(0.0lÂ¾P) >= -138 -Margin (dBW) 
 
 In every other case, interference is considered to exist if: 
 
 1(20%T) >= -151 -Margin (dBW); and/or 
 
-1(0.0l¾T) >= -137 -Margin (dBW); and/or 
+1(0.0lÂ¾T) >= -137 -Margin (dBW); and/or 
 
-1(0.0l¾P) >= -137 -Margin (dBW) 
+1(0.0lÂ¾P) >= -137 -Margin (dBW) 
 
 Margin is the value recorded in the TSIP parameter file. This value is selected by the user at the time of creating tbe 
 TSIP parameter file. 
@@ -11874,17 +11874,17 @@ victim receiver, exceeded during all but 20% of the time. The carrier level, C, 
 output power of the terrestrial station transmitter. The interference level is calculated as per paragraph 
 
 3.4.5.2 using P(T) = P(Channel); 
-short-term tropospheric, C/1 (0.0l¾T). This is the CCIR Propagation Mode I C/1 ratio at tbe input oftbe 
+short-term tropospheric, C/1 (0.0lÂ¾T). This is the CCIR Propagation Mode I C/1 ratio at tbe input oftbe 
 victim receiver, exceeded during all but 0.01% of the time. The carrier level, C, is calculated using the 
 actual output power of the terrestrial station transmitter. The interference level is calculated as per paragraph 
 3.4.6.2, using P(T) = P(Channel); 
 
-short-term precipitation, C/1 (0.0l¾P). This is the CCIR propagation Mode 2 C/1 ratio at tbe input of the 
+short-term precipitation, C/1 (0.0lÂ¾P). This is the CCIR propagation Mode 2 C/1 ratio at tbe input of the 
 victim receiver, exceeded during all but 0.01 % of the time. The carrier level, C, is calculated using the 
 actual output power oftbe terrestrial station transmitter. The interference level is calculated as per paragraph 
 3.4.7.4, using P(T) = P(Channel). 
 
-3.4.9.2 ES-TS P)an/Channe! Analysis Reqµjrements 
+3.4.9.2 ES-TS P)an/Channe! Analysis ReqÂµjrements 
 The required C/1 or I values in Plan/Channel Analysis are derived from appropriate carrier-to-interference (CT.)() 
 curves. If, however, a CT.)( for the victim and interfering traffics under study cannot be found, TSIP ES-TS uses a 
 required C/1 values of95 (dB) for frequency separations (between victim and interfering carriers) up to 500 (MHz), 
@@ -11944,7 +11944,7 @@ Summer1995 3.4-16 TSIP Reference Manual
 Ifan I type CTI( is found, interference is considered to exist if: 
 I(20%T) >= I (From CTI{) -Margin (dBW); and/or 
 I(0.01%T) >= I (From CTI()-Margin (dBW); and/or 
-1(0.0l¾P) >= I (From CTI()-Margin (dBW) 
+1(0.0lÂ¾P) >= I (From CTI()-Margin (dBW) 
 
 Ifa C/1 type CTI( is found, interference is considered to exist if: 
 C/1 (20% T) <= C/1 (From CTI() + CTI( (Correction Factor)+ Margin 
@@ -11953,7 +11953,7 @@ C/1 (20% T) <= C/1 (From CTI() + CTI( (Correction Factor)+ Margin
 C/1 (0.01 %T) <= C/1 (From CTI()+ CTI( (Correction Factor)+ Margin (dB); and/or 
 C/1 (0.01 %P) <= C/1 (From CTX) + CTI( (Correction Factor)+ Margin (dB) 
 
-3.4.10 Terrestrial Station-Earth Station (JS-ES} Interference· Band Analysis 
+3.4.10 Terrestrial Station-Earth Station (JS-ES} InterferenceÂ· Band Analysis 
 3.4.10.1 TS-ES Band Analysis Interference Level Calculations 
 TSIP TS-ES calculates the same 3 levels defined in paragraph 3.4.8.1 for the ES-TS case, but with the ES and TS 
 roles interchanged. That is, the TS is the interfering station and the ES is the victim station in this case. 
@@ -11961,7 +11961,7 @@ roles interchanged. That is, the TS is the interfering station and the ES is the
 -the long-term tropospheric propagation interference level, 1(20%T), is calculated as per paragraph 3.4.5.2, 
 assuming P(T) = 13(dBW); 
 
--the short-term tropospheric propagation interference level, 1(0.0l¾T), is calculated as per paragraph 3.4.6.2, 
+-the short-term tropospheric propagation interference level, 1(0.0lÂ¾T), is calculated as per paragraph 3.4.6.2, 
 assuming P(T) = 13(dBW); 
 
 the short-term precipitation scatter interference level, I(0.01%P), is calculated as per paragraph 3.4.7.4, 
@@ -12194,7 +12194,7 @@ TSORB Cale? Propagation Loss Model #: i!ll!!F
 
 Max. Freq. Separation (MHz): ' :1/~\!ll(~O)jfiii;@ 
 Coard. Dist.: 
-Required Margin: ~~=~;;:~;~~:es: !f!!:~fl!!!~llf£i:·:f;Jiif'..LLf:Cbfa'
+Required Margin: ~~=~;;:~;~~:es: !f!!:~fl!!!~llfÂ£i:Â·:f;Jiif'..LLf:Cbfa'
 
 ) 
 
@@ -12262,14 +12262,14 @@ the file has to be valid for TSIP; i.e. the VALIDATE status code (right column o
 screen 1.1) has to be 11U11 
 , or 11S11. If this is not the case TSIP will report an error 
 
-condition. · 
+condition. Â· 
 
 The cursor will go to this field only if the Env File Type selected above is PDF_ TS. 
 The user will enter the environment file name. This name shall match exactly the 
 naine of the TS file on Screen I.I and the file has to be valid for TSIP (i.e. status U, 
 Tor S). 
 
-This field will indicate to TSIF° if the user wants to execute an "Orbit Intersection 
+This field will indicate to TSIFÂ° if the user wants to execute an "Orbit Intersection 
 analysis" (see section 3.5). The default value in this field is "N", that means TSIP 
 will not perform an orbit intersection analysis unless the user changes it to "Y". 
 
@@ -12300,7 +12300,7 @@ environment which are located within these circles will be selected for further
 analysis. 
 
 This parameter is used to sensitize the interference analysis in terms of maximum 
-acceptable interference level, or minimum acceptable carrier to· interference ratio; 
+acceptable interference level, or minimum acceptable carrier toÂ· interference ratio; 
 default value is 0( dB). The maximum acceptable carrier to interference ratio (C/1) as 
 a function of frequency separation are stored in the MICS subsidiary (sd _ ctx and 
 sd _ ctxd) tables, called "CTX" tables. Ifthe user does not enter any values in this 
@@ -12316,7 +12316,7 @@ Required MarEin:
 
 Analysis Option: 
 
-Chan Status Codes· 
+Chan Status CodesÂ· 
 
 ) 
 
@@ -12356,7 +12356,7 @@ paragraphs 3.1.1, 3.1.2 and 3.1.3 respectively).
 Valid options are any combination of numbers from I to 9, separated by commas, or 
 "ALL". This field will indicate to TSIP which environment channels to analyze. If 
 the user inputs "5", for example, TSIP will select only channels with status code 5 
-(licensed channels) from the environment. Ifthe selection is ALL, TSIP will look at · 
+(licensed channels) from the environment. Ifthe selection is ALL, TSIP will look at Â· 
 all channels, regardless of their status codes. For a table of status codes see 
 Appendix A. 
 
@@ -12374,7 +12374,7 @@ codes. See section 4.8.
 
 Valid options are 11 CAN11, 
 11 USA11 and 11 ALL11 
-• Depending on the option selected, 
+â€¢ Depending on the option selected, 
 
 TSIP will look at stations located in Canada, or in the US or in both countries. 
 
@@ -12463,7 +12463,7 @@ antnumbtxl field of this channel record.
 Path Loss: is the propagation loss, in dB, from the (remote) victim hop transmitter to the victim 
 receiver, calculation of path loss is discussed in paragraph 3.3.3. 
 
-AGain Rx(]): is the antenna gain•, in dBi, of the main receiver of the first channel of the victim 
+AGain Rx(]): is the antenna gainâ€¢, in dBi, of the main receiver of the first channel of the victim 
 station. The antenna number of this antenna is stored in the antnumbrxl field of this 
 channel record. 
 
@@ -12523,7 +12523,7 @@ Where C/1 is the carrier to interference ratio calculated as per Paragraph 3.3.1
 
 If no margin (see Required Margin in 3.3.0) has been entered by the user in the TSIP parameter file, TSIP will 
 report.all cases whose C/1 is less than 110 (dB). If a margin is inputted by the user, TSIP will report all those cases 
-whose margin· is less than 11 0(dB) plus this margin (i.e. if the user inputs a margin of SdB TSIP will report all cases 
+whose marginÂ· is less than 11 0(dB) plus this margin (i.e. if the user inputs a margin of SdB TSIP will report all cases 
 where the C/I is less than l 15dB) 
 
 3.3 .2 TS-TS Plan and Channel Analysis Calculations 
@@ -12598,7 +12598,7 @@ I= PTX (int) -AFSL (int)+ AGAIN (int) -Path Loss (int)
 Where: 
 
 I: interfering signal level at the input of the victim receiver in (dBm) 
-PTX (int): interferer transmit power, in (dBm).· This value is stored in the pwrtx field of the 
+PTX (int): interferer transmit power, in (dBm).Â· This value is stored in the pwrtx field of the 
 channel record ofthe interfering channel under analysis. 
 
 AFSL (int): . interferer transmit antenna feeder system loss, in (dB). This value is stored in the 
@@ -12645,7 +12645,7 @@ I (calculated)> I (maximum acceptable)
 C/1 ( calculated) < C/1 (minimum required) 
 
 Maximum acceptable values of interference and minimum required C/1 ratios are stored in MICS in the "CTX 
-Tables". A CTX table indicates, for a given combination ·of desired and interfering traffic and receive equipment, 
+Tables". A CTX table indicates, for a given combination Â·of desired and interfering traffic and receive equipment, 
 the maximum acceptable level of interference, or the minimum C/1 ratio required by the victim receiver, as a 
 function of the frequency separation between desired and interfering carriers. 
 
@@ -12653,7 +12653,7 @@ The maximum acceptable I and minimum required C/1 values listed on the CTX's, ar
 standards (e.g. allowable interference noise in a VF channel; allowable degradation of the fade margin of a hop) 
 agreed upon by all FCSA member companies. More infonnation about these requirements and derivation of the 
 CTX's, can be found in the "Microwave Frequency Coordination Engineering Considerations". A complete 
-description ofthe CTX tables is given in Annex B of this manual. · 
+description ofthe CTX tables is given in Annex B of this manual. Â· 
 
 Fall 1996 3.3 -8 TSIP Reference Manual 
 
@@ -12678,7 +12678,7 @@ I TFCR TFCI EQPR
 3 TFCR TFCI DFLT 
 4 TFCR XTFCI EQPR 
 5 TFCR XTFCI XEQPR 
-6 · TFCR XTFCI DFLT 
+6 Â· TFCR XTFCI DFLT 
 7 XTFCR TFCI EQPR
 
 ) 8 XTFCR TFCI XEQPR 
@@ -12720,7 +12720,7 @@ I. CC:IR-SJM (already in use.in TSIP, TS-TS and TS-ES)
 EO). 
 5. OH LOSS propagation loss calculations (future option). 
 This option will include a digital terrain database, a profile builder program and an OH LOSS 
-calculation module. · 
+calculation module. Â· 
 
 Defaults are Option #1 for TS-ES and Option #3 for TS-TS (as it was in the VAX). 
 
@@ -12782,7 +12782,7 @@ The transition distance, Dh in km, is defined as follows:
 
 5 5
 
-Dh = 4.123* ( HTx0· + HRx0· ) 
+Dh = 4.123* ( HTx0Â· + HRx0Â· ) 
 
 It is the added distance to the common horizon ofthe interfereing and victim stations. 
 
@@ -12793,7 +12793,7 @@ Ploss = 29.73 + 30*1og(Fmhz)+I0*log(d)+30*1og(theta)+N(H,h)
 
 Where: 
 Ploss = tt_***_chan.pathloss 
-Fmhz = tt_•••_chan.intfreqtx in Mhz 
+Fmhz = tt_â€¢â€¢â€¢_chan.intfreqtx in Mhz 
 d = tt_***_site.intlvicldist 
 theta = (d -Dh)/8.5 
 H = theta*d/4000 
@@ -12828,14 +12828,14 @@ Antenna Heights
 The antenna heights used in this algorithm relate to TSIP heights as follows: 
 
 If interfering transmitting station is the PCS station, then interferer (aht) = Hpcs and victim(aht) = 
-Hmw. The interfering Tx station is the PCS station iftt_•••_chan.inttraftx = "PS****". 
+Hmw. The interfering Tx station is the PCS station iftt_â€¢â€¢â€¢_chan.inttraftx = "PS****". 
 
 0
 
 Ifthe victim receiving statation is the PCS station, then interferer(aht) = Hmw and victim(aht) = Hpcs. 
 The victim Rx station is the PCS station if tt_***_chan.victrafrx = "PS****". 
 
-Note that aht is the antenna height in meters, read from ft_•••_ante.ah!, when the station belongs to the proposed 
+Note that aht is the antenna height in meters, read from ft_â€¢â€¢â€¢_ante.ah!, when the station belongs to the proposed 
 file, or from mt_ante.aht, when the station belongs to the environment. 
 Then; interferer(aht) = aht(int) + intgmd 
 victim(aht) = aht(vic) + vicgrnd 
@@ -12845,8 +12845,8 @@ Transition Distance
 The transition distance, Dh in km, is defined as follows: 
 
 Dh = 4.123*(Hpcs0
-·' + Hmw0
-·') 
+Â·' + Hmw0
+Â·') 
 
 This is the added distance to the common horizon. 
 
@@ -12870,7 +12870,7 @@ H = theta*d/4000
 h = l.063*(theta2) * (10"3) 
 N(H,h) = 20*log(5+0.27*H)+ 1.17261*h 
 
-· Propagation Loss Within the Transition Zone 
+Â· Propagation Loss Within the Transition Zone 
 
 a) Ford <= Dh and Hpcs <= 60, the propagation loss is calcualted as follows: 
 Ploss = 69.55 + 26.16*1og (Fmhz) -13.82*log(Hmw) + [44.9 -6.55*log(Hmw)]*log(d) 2*[
@@ -13011,7 +13011,7 @@ equipment subsidiary table divided by 100%) times the midband frequency. Finally
 
 separation, fs, is calculated as: 
 
-fs: IfWN -fIN I± (Sw fWB + SI fNI)/100 
+fs: IfWN -fIN IÂ± (Sw fWB + SI fNI)/100 
 fwN: nominal frequency, wanted signal 
 fIN: nominal frequency, interfering signal 
 Sw: frequency stability factor, wanted signal, in % 
@@ -13339,7 +13339,7 @@ Atmospheric Refraction
 Spring 1996 3 -iv TSIP Reference M~ual 
 
 
-. Contents ·· 
+. Contents Â·Â· 
 
 
 Section 2 
@@ -13478,7 +13478,7 @@ user's station into the PDF's stations.
 Summer1995 2.2 -1 TSIP Reference Manual 
 
 
-<Contents • 
+<Contents â€¢ 
 
 
 1.0 
@@ -13524,7 +13524,7 @@ Retrieval ofData using Reports option or Ingres
 TSIP Reference Manual 1-i Summer1995 
 
 
-· ··. )RadioBystems 
+Â· Â·Â·. )RadioBystems 
 
 Section I 
 
@@ -13735,7 +13735,7 @@ the system structure, its component parts and their interrelations.
 Summer1995 0-1 TSIP Reference Manual 
 
 
-·· Contents and Layout 
+Â·Â· Contents and Layout 
 
 CONTENTS AND LAYOUT 
 This manual is divided into 5 sections and 2 appendices: 
@@ -13778,7 +13778,7 @@ TSIP Reference Manual 0.1 -1 Summer1995
 
 
 ; ; 
-.Introduction · I 
+.Introduction Â· I 
 
 0.2 RELATED DOCUMENTATION 
 0 
@@ -13788,7 +13788,7 @@ documentation. Other related documents are:
 
 -Engineering Considerations 
 
-• MICS User Guide 
+â€¢ MICS User Guide 
 -Frequency Coordination Procedures and Database 
 Maintenance Responsibilities. 
 
@@ -13959,8 +13959,8 @@ basic tool in computation ofthe interference objectives.
 
 2.0 PROBLEM STATEMENT 
 To characterize a victim dataset for a radio receiver, three of the parameters that the CTX program 
-requires are the receiver's Intermediate Frequency (IF), RF filter response at ± IF away from the carrier or 
-Specific IF Response Factor, and RF filter response at ± 2 ' IF away from the carrier or Specific 2 ' IF 
+requires are the receiver's Intermediate Frequency (IF), RF filter response at Â± IF away from the carrier or 
+Specific IF Response Factor, and RF filter response at Â± 2 ' IF away from the carrier or Specific 2 ' IF 
 Response Factor. These Specific Response Factors can be extracted from Tiireshold / Continuous Wave 
 Interference Curve, or Susceptibility to Continuous Wave Interference Curve. 
 
@@ -13998,7 +13998,7 @@ CTX GENERATION FOR DUAL CONVERSION RECEIVERS Page 1
 
 ()
 
-AI70 -RF filter ·response (dB) at carrier frequency shifted by the IF frequency XIF 
+AI70 -RF filter Â·response (dB) at carrier frequency shifted by the IF frequency XIF 
 
 which can be found from the RF filter curve (Note 2) 
 AIJ40 -RF filter response (dB) at carrier frequency shifted by twice the intermediate 
@@ -14053,7 +14053,7 @@ are descripted in the following sections.
 Image response is the receiver's response to a mixing phenomenon where an interference frequency is mixed 
 with the local oscillator (LO) to produce an interference spectrum similar to the intermediate frequency at 
 the intermediate frequency (IF) stage. For receivers with a single 1F stage, the interference frequency is F, 
-± 2 IF (where F, denotes the victim receive RF frequency), and the image response is limited by the RF 
+Â± 2 IF (where F, denotes the victim receive RF frequency), and the image response is limited by the RF 
 filter selectivity at that frequency. On the other hand, image response for dual conversion receivers is more 
 complex due to the additional IF stage. 
 
@@ -14091,11 +14091,11 @@ second local oscillator frequency.
 i) When mixed with LO1, an interference spectrum similar to IF1 at the IF 1 stage is produced. 
 The receiver response at this frequency is dependent on the RF filter response. 
 ii) and iii) When mixed with LO1, an interference spectrum at the IF 1 stage is produced, which can be 
-down converted by LO2• The second order product is an interference spectrum similar to 
+down converted by LO2â€¢ The second order product is an interference spectrum similar to 
 IF2, thus interfering with IF2. The receiver response at this frequency is dependent on the 
 combined response ofthe RF filter, and the first IF filter. 
 iv) and v) When mixed with LO1, an interference spectrum similar to IF2 at the IF 1 stage is produced, 
-which can be down converted by LO2• The fundamental product is an interference 
+which can be down converted by LO2â€¢ The fundamental product is an interference 
 spectrum similar to IF2 at the IF2 stage. The receiver response at this frequency is 
 dependent on the combined response of the RF filter, the first IF filter, and the second 
 mixer efficiency. 
@@ -14116,11 +14116,11 @@ Second LO Frequency (LO2 , MHz): 156.4
 Second IF Frequency (IF2 , MHz): 21.4 
 Image Response 
 Possible Frequencies (MHz): 
-i) Fe± 2 IF1 F, -270 = 10347.5 F, + 270 = 10822.5 
-ii) Fc±21F2 F, + 42.8 = 10660.3 F,-42.8=10509.7 
-Iii) Fc±2L02 F,-312.8= 10304.7 F, + 312.8 = 10865.3 
-iv) F, ±(IF,+ IF2) F,-156.4=10481.1 F, + 156.4 = 10708.9 
-v) F, ± (IF, -IF2) F, -113.6 = 10503.9 F,+ 113.6= 10666.1 
+i) FeÂ± 2 IF1 F, -270 = 10347.5 F, + 270 = 10822.5 
+ii) FcÂ±21F2 F, + 42.8 = 10660.3 F,-42.8=10509.7 
+Iii) FcÂ±2L02 F,-312.8= 10304.7 F, + 312.8 = 10865.3 
+iv) F, Â±(IF,+ IF2) F,-156.4=10481.1 F, + 156.4 = 10708.9 
+v) F, Â± (IF, -IF2) F, -113.6 = 10503.9 F,+ 113.6= 10666.1 
 
 Table 2Possible image response frequencies for Receiver #1. 
 
@@ -14151,29 +14151,29 @@ CTX GENERATION FOR DUAL CONVERSION RECEIVERS Page 5
 ()
 
 In the case ofreceivers with a single IF stage, the IF response depends on the sum ofthe RF filter response 
-at F, ± IF, and 20 dB. For dual conversion receivers, there are frequencies other than F, ± IF that can 
+at F, Â± IF, and 20 dB. For dual conversion receivers, there are frequencies other than F, Â± IF that can 
 produce an interference spectrum at the IF frequencies due to the additional IF stage. According to Case 
 Studies I through 4 in Appendix 1, the possible frequencies which can interfere with the IF frequencies are 
 as follow: 
 
 L01 < Fe and L02 > IF1 I L01 < Fe and L02 < IF1 I L01 > Fe and L02 > IF1 I L01 > Fe and L02 < IF1 
-vi) Fe± IF1 
-vii) Fe± IF2 
-viii) F, ± (LO2+ IF2) I F, ±(LO,· IF2) I F, ±(LO,+ IF2) I F,± (LO2-IF2) 
+vi) FeÂ± IF1 
+vii) FeÂ± IF2 
+viii) F, Â± (LO2+ IF2) I F, Â±(LO,Â· IF2) I F, Â±(LO,+ IF2) I F,Â± (LO2-IF2) 
 
 Table 3Poss1ble IF response frequencies for dual conversion receiver. 
 
-vi) Both F, and F, ± IF1 get into the first mixer. A second order distortion product similar to IF1 is 
-generated at the IFI stage, thus interfering with IF1• The receiver response at this frequency is 
+vi) Both F, and F, Â± IF1 get into the first mixer. A second order distortion product similar to IF1 is 
+generated at the IFI stage, thus interfering with IF1â€¢ The receiver response at this frequency is 
 dependent on the combined response ofthe RF filter and first mixer efficiency. 
-vii) Both F, and F, ± IF2 get into the first mixer. A second order distortion product similar to IF2 is 
+vii) Both F, and F, Â± IF2 get into the first mixer. A second order distortion product similar to IF2 is 
 generated at the IF1 stage. Again, it is mixed with LO2 and produces a fundamental product similar 
 to IF2, thus interfering with IF2. The receiver response at this frequency is dependent on the 
 combined response ofthe RF filter, first IF filter, and first and second mixer efficiencies. 
-viii) Either F, ± (LO2 + IF2) or F, ± (LO2 -IF2), and Fe get into the first mixer. A second order 
+viii) Either F, Â± (LO2 + IF2) or F, Â± (LO2 -IF2), and Fe get into the first mixer. A second order 
 distortion product either (LO2 + IF2) or (LO2 -IF2) respectively is generated at the IF1 stage. 
 Again, it is mixed with LO2 and produces a second order product similar to IF2, thus interfering 
-with IF2• The receiver response at this frequency is dependent on the combined response of the RF 
+with IF2â€¢ The receiver response at this frequency is dependent on the combined response of the RF 
 filter, first IF filter, and first mixer efficiency. 
 (J 
 
@@ -14194,19 +14194,19 @@ Second LO Frequency (LO2, MHz): 156.4
 Second IF Frequency (IF2, MHz): 21.4 
 IF Response 
 Possible Frequencies (MHz): 
-vi) Fe± IF1 F,±135 Fc±135 
-vii) Fe± IF2 F,±21.4 F,±21.4 
-viii) F, ± (LO2 + IF2), for LO2 > IF, F,-177.8 F,+177.8 
+vi) FeÂ± IF1 F,Â±135 FcÂ±135 
+vii) FeÂ± IF2 F,Â±21.4 F,Â±21.4 
+viii) F, Â± (LO2 + IF2), for LO2 > IF, F,-177.8 F,+177.8 
 or 
-F, ± (LO, -IF,), for LO,< IF, 
+F, Â± (LO, -IF,), for LO,< IF, 
 
 Table 4Poss1ble IF response frequencies for Receiver #2. 
 
-) vi) A 135 MHz second order distortion product at IF1 interferes with IF 1• The receiver response at this 
+) vi) A 135 MHz second order distortion product at IF1 interferes with IF 1â€¢ The receiver response at this 
 frequency is dependent on the combined response of the RF filter, and the first mixer efficiency. 
 
-vii) A 21.4 MHz second order distortion product at IF1• The fundamental product with LO2 is 21.4 
-MHz at IF2 stage (same as the IF2 frequency), thus interfering with IF2• The receiver response at 
+vii) A 21.4 MHz second order distortion product at IF1â€¢ The fundamental product with LO2 is 21.4 
+MHz at IF2 stage (same as the IF2 frequency), thus interfering with IF2â€¢ The receiver response at 
 this frequency is dependent on the combined response of the RF filter, first IF filter, and first and 
 second mixer efficiencies. 
 viii) A 177.8 MHz second order distortion product at IF1. The second order product with LO2 is 21.4 
@@ -14216,8 +14216,8 @@ first IF filter.
 5.0 CTXDOATD CTX DATASET GENERATION PROGRAM 
 In the CTX model, the image response is accounted for by replicating a double-sided version of the main 
 CTX objective shifted in frequency by 2 IF and by increasing the interference objective by an amount equal 
-to the RF filter response (attenuation) at frequency F, ± 2 IF. A comparison is then made between the main 
-interference objective and the replicated objective over the frequency range 2 IF± IF/2. 
+to the RF filter response (attenuation) at frequency F, Â± 2 IF. A comparison is then made between the main 
+interference objective and the replicated objective over the frequency range 2 IFÂ± IF/2. 
 
 J 
 
@@ -14228,15 +14228,15 @@ CTX GENERATION FOR DUAL CONVERSION RECEIVERS Page 7
 
 The IF response is accounted for by replicating the main co-channel objective shifted in frequency by IF 
 from the centre frequency and by increasing the interference objective by an amount equal to the sum of 20 
-dB plus the RF filter response (attenuation) at the frequency shifted by F, ± IF. A comparison is made 
-between the main co-channel objective and the replicated response over the frequency range IF ± IF/2. The 
+dB plus the RF filter response (attenuation) at the frequency shifted by F, Â± IF. A comparison is made 
+between the main co-channel objective and the replicated response over the frequency range IF Â± IF/2. The 
 worst objective is selected. 
 ' ( 
 ) 
 _, 
 In the victim file, it is prefered to use the Specific IF Response Factor and the Specific Image Response 
 Factor derived from the T/1 or C/1 curves. In the program, the Specific IF Response Factor is assumed to 
-be 20 dB higher than the RF filter attenuation at F, ± IF, therefore the Specific IF Response Factor can be 
+be 20 dB higher than the RF filter attenuation at F, Â± IF, therefore the Specific IF Response Factor can be 
 input into the victim file after reducing it by 20 dB. 
 For more indepth explanation on the CTX model, refer to the CTX instructions in the TSIP Reference 
 Manual. 
@@ -14251,7 +14251,7 @@ compared to the channel bandwidth, therefore the responses at these frequencies 
 individually provided the proper Specific Factors are used. By comparing and selecting the worst objective 
 over these frequency ranges, a composite CTX curve is produced for dual conversion receiver. 
 Q 
-· 
+Â· 
 6.1 Interferer Dataset 
 The following interferer dataset is created using Equipment # I power spectral density (PSD) shown in 
 Figure 2. 
@@ -14273,9 +14273,9 @@ CTX GENERATION FOR DUAL CONVERSION RECEIVERS Page 8
 96 09 20 Network Standard 
 
 ClR 10.5685 6H1 SPAN 2 HIiz/ IES BIi 4kllz 
-l£F ·1 dllll 10 d&/ ATTEH 20 dB SIIP WIO 
+lÂ£F Â·1 dllll 10 d&/ ATTEH 20 dB SIIP WIO 
 13.2 M>/9 49 (J)R I ' , 11 
-I \Ulll-lz I J fj>Qa-\ \ ..•..FCC·; \' 
+I \Ulll-lz I J fj>Qa-\ \ ..â€¢..FCCÂ·; \' 
 I , I 
 s., Mtv RF Channol 
 WF .01 
@@ -14324,7 +14324,7 @@ respectively.
 
 -40 
 
-=5.0.•. 
+=5.0.â€¢. 
 
 -60 
 
@@ -14336,7 +14336,7 @@ respectively.
 \ 
 0 
 T/1 vs Frequency Offset (CW signal) 
--··· 
+-Â·Â·Â· 
 .. 
 \ 
 \. " ------...... ----
@@ -14397,14 +14397,14 @@ RF Filter Response (dB)
 
 Image Response 
 
-i) Fe± 2 IF1 = Fc±270 
+i) FeÂ± 2 IF1 = FcÂ±270 
 
-ii) Fc±2IF2=Fc±42.8 
+ii) FcÂ±2IF2=FcÂ±42.8 
 
-iii) Fe± 2 L02 = Fe± 312.8 
+iii) FeÂ± 2 L02 = FeÂ± 312.8 
 
-iv) F, ±(IF,+ IF,)= F, ± 156.4 
-V) F, ± (IF, -IF,)= F, ± 113.6 
+iv) F, Â±(IF,+ IF,)= F, Â± 156.4 
+V) F, Â± (IF, -IF,)= F, Â± 113.6 
 IF Response 
 
 95 
@@ -14427,9 +14427,9 @@ IF Response
 
 >83 
 
-vi) Fc±IF1=Fc-±135 68 >83 
-vii) Fc±IF2=Fc±21.4 20 66.3 
-viii) F,± (LO,+ IF,)= F,± 177.8 80 >83 
+vi) FcÂ±IF1=Fc-Â±135 68 >83 
+vii) FcÂ±IF2=FcÂ±21.4 20 66.3 
+viii) F,Â± (LO,+ IF,)= F,Â± 177.8 80 >83 
 
 Note 1: Extrapolated from RF Filter Response curve. 
 
@@ -14599,7 +14599,7 @@ I INTERFERER: Eauioment # 1
 27 3.00 -95.68 3 -95.68 
 
 Figure 5 Sample of CTXDOA TD output file 
-· importe'd into EXCEL. 
+Â· importe'd into EXCEL. 
 
 J 
 
@@ -14616,7 +14616,7 @@ E m -SO
 E -80 ;; 
 > -70" ...I 
 " -60 " C., -50-~ -40., 
-£ -30 
+Â£ -30 
 ":; -200 
 "' ;fl -10 
 Q 
@@ -14624,7 +14624,7 @@ Q
 ', 
 !Fe -Fil MHz 
 
-o ~ ~ ~ ~ ~ ~ g ~ ~ § ~ B B ~ § § ~ § § ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+o ~ ~ ~ ~ ~ ~ g ~ ~ Â§ ~ B B ~ Â§ Â§ ~ Â§ Â§ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 Figure 6 Data generated with interferer dataset in Section 6.1 and victim dataset 1). 
 
 Equipment #1 Interference Curve (set IF= 135 MHz) 
@@ -14633,7 +14633,7 @@ Equipment #1 Interference Curve (set IF= 135 MHz)
 
 !Fe-Fil MHz 
 
-o ~ ~ ~ ~ ~ ~ g ~ ~ § § B B ~ § § ~ § § ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+o ~ ~ ~ ~ ~ ~ g ~ ~ Â§ Â§ B B ~ Â§ Â§ ~ Â§ Â§ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 -110 
 
 -1CD 
@@ -14664,7 +14664,7 @@ C
 
 ~ ., -40 
 
-£ -20
+Â£ -20
 
 ., 
 
@@ -14700,7 +14700,7 @@ CTX GENERATION FOR DUAL CONVERSION RECEIVERS Page 14
 
 !Fe -Fil MHz 
 
-o ~ ~ ~ ~ ~ ~ R ~ ~ § ~ § 6 ~ § § ~ § § ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ § 
+o ~ ~ ~ ~ ~ ~ R ~ ~ Â§ ~ Â§ 6 ~ Â§ Â§ ~ Â§ Â§ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Â§ 
 Figure 8 Data generated with interferer dataset in Section 6.1 and victim dataset 3). 
 
 ) 
@@ -14709,7 +14709,7 @@ Equipment #1 Interference Curve (set IF= 113.6 MHz)
 
 !Fe -Fil MHz 
 
-o ~ ~ ~ ~ ~ ~ R ~ ~ § ~ § 6 ~ § § ~ § § ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ § 
+o ~ ~ ~ ~ ~ ~ R ~ ~ Â§ ~ Â§ 6 ~ Â§ Â§ ~ Â§ Â§ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Â§ 
 -110 
 I I 
 -Hll I I 
@@ -14742,7 +14742,7 @@ I
 ~ .,o" 
 I 
 I 
-£ -30 I 
+Â£ -30 I 
 "-:, -200 I 
 "'.c -10 
 c( 
@@ -14763,9 +14763,9 @@ CTX GENERATION FOR DUAL CONVERSION RECEIVERS Page 15
 Equipment #1 Interference Curve (set IF= 177.8 MHz) () 
 
 IFc -Fil MHz 
-0 ~ A R ~ ~ ~ R ~ ~ § § B 6 ~ § § ~ § B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+0 ~ A R ~ ~ ~ R ~ ~ Â§ Â§ B 6 ~ Â§ Â§ ~ Â§ B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-•110 
+â€¢110 
 
 -100 
 
@@ -14773,7 +14773,7 @@ E -90
 
 m 
 
-~ ·BO 
+~ Â·BO 
 
 -.; 
 > -70
@@ -14827,7 +14827,7 @@ Figure 10 Data generated with interferer dataset in Section 6.1 and victim datas
 
 IFc -Fil MHz 
 
-0 ~ A R ij ~ ~ R ~ ~ § § B 6 ~ § § ~ § B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+0 ~ A R ij ~ ~ R ~ ~ Â§ Â§ B 6 ~ Â§ Â§ ~ Â§ B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
 -110 
 
@@ -14855,7 +14855,7 @@ C
 
 ., 
 
-·50
+Â·50
 
 -
 
@@ -14905,7 +14905,7 @@ curve is very cumbersome and is not very practical.
 As it is realized that many conservative assumptions have been made to the current CTX model such as the IF 
 response is based on replicating the main co-channel objective shifted in frequency by IF from the centre 
 frequency and increasing the interference objective by adding 20 dB to the RF filter response (attenuation) at the 
-frequency shifted by F, ± IF or receiver selectivity attenuation remains 11 0dB at f(max) plus 0.1 MHz entirely to 
+frequency shifted by F, Â± IF or receiver selectivity attenuation remains 11 0dB at f(max) plus 0.1 MHz entirely to 
 400 MHz for the purpose of extrapolation where f(ma'<) is the maximum frequenc}' provided in a supplier's 
 
 curve. 
@@ -14974,10 +14974,10 @@ ii) Fc+21F2 I Fc-21F2 Fc-21F2 I Fe+ 2 IF2
 iii) Fc-2L02 Fc+2L02 
 iv) F0 -(IF,+ IF,) F0 + (IF1 + IF2) 
 v) F. -(IF, -IF,) F0 + (IF1 -IF,) 
-vi) Fe± IF, 
-vii) Fe± IF2 
-viii) F0 ±(LO,+ IF,) I F, ± (LO,-IF,) 
-F. ±(LO,+ IF,) I F0 ± (LO, -IF,) 
+vi) FeÂ± IF, 
+vii) FeÂ± IF2 
+viii) F0 Â±(LO,+ IF,) I F, Â± (LO,-IF,) 
+F. Â±(LO,+ IF,) I F0 Â± (LO, -IF,) 
 
 Table 6Possible image response and IF response frequencies for dual conversion receiver. 
 
@@ -15011,20 +15011,20 @@ IF,
 To have the above interference spectrum at IF1, the following are the possible frequencies at RF that can 
 mix with LO1: 
 
-i) LO1 ± (LO,+ IF,) 
+i) LO1 Â± (LO,+ IF,) 
 Since LO1= F, -!Fi, and IF1= LO2 -IF2, we have LO1= F, -LO,+ IF2. Substituting into i), we 
 have 
-F, -LO2+ IF2± (LO2+ IF2) 
+F, -LO2+ IF2Â± (LO2+ IF2) 
 = F, -LO2+ IF2+ LO2+ IF2 
 =F,+21F2 
 
 or) = F, -LO2+ IF2-LO2-IF2 
 =F,-2LO2 
 
-ii) LO1 ±IF1 
+ii) LO1 Â±IF1 
 
 Substituting LO1 = F, -IF1, we have 
-F, -IF1 ± IF1 
+F, -IF1 Â± IF1 
 =F,-IF1+IF1 
 =F, 
 
@@ -15032,9 +15032,9 @@ or
 =F,-IF1-IF1 
 =F,-2IF1 
 
-iii) LO1 ± IF, 
+iii) LO1 Â± IF, 
 Substituting LO1 = F, -IF1, we have 
-F,-IF1±IF2 
+F,-IF1Â±IF2 
 =F,-IF1+IF, 
 
 or 
@@ -15044,11 +15044,11 @@ IF Response
 The following frequencies among with F, can produce a distortion that can create an interference spectrum 
 at the IF2frequency: 
 
-iv) F, ± IF1 
-v) F, ± IF2
+iv) F, Â± IF1 
+v) F, Â± IF2
 J 
 J 
-vi) F, ±(LO,+ IF2) 
+vi) F, Â±(LO,+ IF2) 
 CTX GENERATION FOR DUAL CONVERSION RECEIVERS Page 1 
 
 
@@ -15071,11 +15071,11 @@ IF,
 To have the above interference spectrum at IF 1, the following are the possible frequencies at RF that can 
 mix with LO1: 
 
-i) LO1 ± (LO2 + IF2) 
+i) LO1 Â± (LO2 + IF2) 
 Since LO1 = F, + IF1, and IF1 = LO2 -IF2, we have LO,= F, + LO2 -IF2. Substituting into i), we 
 
 have 
-F, + LO2 -IF2 ± (LO2 + IF,) 
+F, + LO2 -IF2 Â± (LO2 + IF,) 
 = F, + LO2 -IF2 + LO2 + IF2 
 =F, + 2 LO2 
 
@@ -15084,10 +15084,10 @@ or
 = F, + LO2 -IF2 -LO2 -IF2 
 =F,-2 IF2 
 
-ii) LO1 ±IF, 
+ii) LO1 Â±IF, 
 
 Substituting LO,= F, + IF1, we have 
-F,+IF1 ±IF, 
+F,+IF1 Â±IF, 
 =F,+IF1 +IF, 
 =F,+2IF1 
 
@@ -15096,21 +15096,21 @@ or
 =F,+IF1 -IF, 
 =F, 
 
-iii) LO, ± IF2 
+iii) LO, Â± IF2 
 Substituting LO1 = F, + IF1, we have 
-F,+IF1 ±IF, 
+F,+IF1 Â±IF, 
 =F,+IF1 +IF2 
 
 or 
 =F,+IF, -IF2 
 
-· IF Response 
+Â· IF Response 
 The following frequencies among with F, can produce a distortion that can create an interference spectrum 
 . at the IF 2 frequency: 
 
-iv) F, ± IF1 
-v) F,± IF2 
-vi) F, ± (LO2 + IF2) 
+iv) F, Â± IF1 
+v) F,Â± IF2 
+vi) F, Â± (LO2 + IF2) 
 (_) 
 
 CTX GENERATION FOR DUAL CONVERSION RECEIVERS Page2 
@@ -15137,10 +15137,10 @@ IF,
 To have the above interference spectrum at IF1, the following are the possible frequencies at RF that can 
 mix with 101: 
 
-i) 101 ± IF1 
+i) 101 Â± IF1 
 
 Substituting 101 = F, -IF1, we have 
-F,-IF,±IF1 
+F,-IF,Â±IF1 
 =F,-IF1 +IF, 
 = F, 
 
@@ -15148,10 +15148,10 @@ or
 =F, -IF, -IF1 
 =F,-2IF1 
 
-ii) 101 ± (102 -IF2) 
-Since LO, = F, -IF1, and IF1 = 102 + IF2, we have 101 = F, -102 -IF2• Substituting into ii), we 
+ii) 101 Â± (102 -IF2) 
+Since LO, = F, -IF1, and IF1 = 102 + IF2, we have 101 = F, -102 -IF2â€¢ Substituting into ii), we 
 have 
-F, -102 -IF2 ± (102 -IF,) 
+F, -102 -IF2 Â± (102 -IF,) 
 = F, -102 -IF2 + L02 -IF2 
 = F, -2 IF2 
 
@@ -15160,10 +15160,10 @@ or
 = F, -L02 -IF2 -LO, + IF2 
 =F,-2L02 
 
-iii) 101 ± IF2 
+iii) 101 Â± IF2 
 
 Substituting 101 = F, -IF1, we have 
-F,-IF1 ±IF2 
+F,-IF1 Â±IF2 
 =F,-IF, +IF2 
 
 or 
@@ -15174,9 +15174,9 @@ The following frequencies among with F, can produce a distortion that can create
 
 at the IF2 frequency: 
 
-iv) F, ± IF1 
-v) F, ± IF2 
-vi) F, ± (L02 -IF2) 
+iv) F, Â± IF1 
+v) F, Â± IF2 
+vi) F, Â± (L02 -IF2) 
 J 
 
 Page 3 
@@ -15203,9 +15203,9 @@ IF2
 To have the above interference spectrum at IF,, the following are the possible frequencies at RF that can 
 mix with LO1: 
 
-i) LO,± IF, 
+i) LO,Â± IF, 
 Substituting LO,= F, + IF,, we have 
-F,+IF1 ±IF1 
+F,+IF1 Â±IF1 
 =F,+IF1 +IF, 
 =F,+2IF, 
 
@@ -15213,11 +15213,11 @@ or
 =F,+IF1 -IF, 
 = F, 
 
-ii) LO, ± (LO2 -IF2) 
+ii) LO, Â± (LO2 -IF2) 
 Since LO, = F, + IF,, and IF, = LO2+ IF2, we have LO, = F, + LO2 + IF2. Substituting into ii), 
 
 we have 
-F, + LO2 + IF2± (LO2 -IF,) 
+F, + LO2 + IF2Â± (LO2 -IF,) 
 = F, + LO2+ IF2 + LO2-IF2. 
 = F, + 2 LO, 
 
@@ -15225,9 +15225,9 @@ or
 = F, + LO2+ IF,-LO2 + IF, 
 =F,+2IF2 
 
-iii) LO, ± IF2 
+iii) LO, Â± IF2 
 Substituting LO, = F, + IF1, we have 
-F,+IF1 ±IF2 
+F,+IF1 Â±IF2 
 =F,+IF1 +IF2 
 
 or 
@@ -15238,10 +15238,10 @@ IF Response .
 The following frequencies among with F, can produce a distortion that can create an interference spectrum 
 at the IF2frequency: 
 
-iv) F,±IF1 
+iv) F,Â±IF1 
 
-v) F, ± IF2 
-vi) F, ± (LO2 -IF,) 
+v) F, Â± IF2 
+vi) F, Â± (LO2 -IF,) 
 CTX GENERATION FOR DUAL CONVERSION RECEIVERS Page 4 
 
 
@@ -15274,7 +15274,7 @@ A. Moreno
 Radio System Engineer 
 J 
 
-1 Nicholas Street, suite 700, Ottawa, Canada K1 N 787 / Telephone 613·241-3080 / Facsimile 613·241 ·9632 
+1 Nicholas Street, suite 700, Ottawa, Canada K1 N 787 / Telephone 613Â·241-3080 / Facsimile 613Â·241 Â·9632 
 
 
 Section Replace Page # With Page# 
@@ -15403,7 +15403,7 @@ Antenna code requirements for parabolic and horn reflector type antennas
 
 a) If the entire manufacturer's type number can be inserted in the 12 spaces, then it should be, e.g. Pl271G 
 coded as Pl2-71G. 
-b) If the manufacturer's type number is more than 12 characters then eliminate· any information that does 
+b) If the manufacturer's type number is more than 12 characters then eliminateÂ· any information that does 
 not affect the antenna pattern, e.g. UXHP12-35GEAB coded as UXHP1235GEAB. 
 c) In the eases of asymmetrical antenna patterns there will be a code for the left pattern (feed form at the 
 left side) and one code for the right pattern (feed form at the right side). The left hand pattern points 
@@ -15495,7 +15495,7 @@ Record Type:
 
 ) 
 ) 
-·SDF Operation: N No changes to the SDB 
+Â·SDF Operation: N No changes to the SDB 
 Record Status: C Generated from the system. 
 Antenna Code: GPL6-17 The antenna code is the key field of the antenna table. 
 
@@ -15556,7 +15556,7 @@ discrimination (H-H):
 Horizontal cross-polar 
 discrimination (H-V): 
 
-Vertical· co-polar 
+VerticalÂ· co-polar 
 discrimination (V-V): 
 
 Vertical cross-polar 
@@ -15653,7 +15653,7 @@ Note that at 180.0 degrees the discrimination values arc 37.0, 40.0, 37.0 and 40
 B.1.5 Antenna Plot File Example 
 The radiation patterns of the same antenna presented in the example of B.1 .4, can be obtained in a different format: 
 
-the "Antenna Plot File" (it is called plot file because it is separated·in columns, ready to be downloaded to a PC and 
+the "Antenna Plot File" (it is called plot file because it is separatedÂ·in columns, ready to be downloaded to a PC and 
 
 . used as input file to a plotter). This file is presented on Table B.1.5. 
 
@@ -16104,7 +16104,7 @@ EFFWID: effective width, in meters. Passive width time the cosine of one half of
 frequency: frequency, in MHz 
 OA: off-angle, in degrees. Discrimination angle measured from the main direction of 
 
-transmission.· 
+transmission.Â· 
 
 The passive beamwidth is computed from: 
 
@@ -16126,7 +16126,7 @@ CCJR4442, would indicate that the main beam antenna gain of this antenna is 44(d
 
 The discrimination of a CCIR type antenna is given by: 
 
-· DISC= 0(dB) '0,; OA ~l.O (degree) 
+Â· DISC= 0(dB) '0,; OA ~l.O (degree) 
 
 = AGAIN -32 + 25 log(OA) l .0<OA ,; 48.0 (degrees) 
 
@@ -16214,11 +16214,11 @@ plot is available then this polar plot must be converted to a suitable rectangul
 the typical curve. 
 6) Where the manufacture provides two distinct radiation pattern envelopes for the right and left 
 feed orientation of an antenna such as an Andrew UHX-type the right hand pattern will be 
-coded from Oto I 80° and the left hand pattern from I 80. I to 359.9 degrees. 
+coded from Oto I 80Â° and the left hand pattern from I 80. I to 359.9 degrees. 
 7) Where there are two distinct patterns for vertical into vertical and horizontal into horizontal 
 such as some horn reflectors and some plane polarized antennas, these will be inputted to the 4 
 discrimination columns of the antenna form. 
-8) Dual band antennas will be ·treated as two separate antennas resulting in separate codes for 
+8) Dual band antennas will be Â·treated as two separate antennas resulting in separate codes for 
 each band. In most cases, the antenna manufacturer produces separate Radiation Pattern 
 Envelopes for the two bands that the antenna operates over. In the case where the antenna 
 manufacturer produces only one pattern for both bands, two antenna codes, one for each band 
@@ -16240,7 +16240,7 @@ radiation pattern envelope. Whenever there is a change in the pattern, either fr
 crosspolar patter, a pair of discrimination values should be recorded. 
 
 d) Verticals steps in the antenna pattern are catered to by offsetting one of the angles by 0.1 degree. 
-For example, a vertical step in the antenna pattern from 60 dB to 5·3 dB at 175 degrees could be 
+For example, a vertical step in the antenna pattern from 60 dB to 5Â·3 dB at 175 degrees could be 
 coded as follows: 
 Angle (degrees) Discrimination (dB) 
 
@@ -16278,10 +16278,10 @@ B.1.13 Antenna Coding Auxiliary Tables
 There are four auxiliary tables needed in the antenna coding process. All these tables are listed in the MICS User 
 Guide. The tables are: 
 
-• Antenna Standard Frequency Bands table, listed in section 2.1-7 of the MICS User Guide, 
-• Antenna Type table, listed in section 2.1-8 of the MICS User Guide, 
-• Antenna Cross-Reference Type table, listed in section 2.1-7 of the M!CS User Guide, 
-• Antenna Manufacturer codes table, listed in section 2.1-8 of the MICS User Guide. 
+â€¢ Antenna Standard Frequency Bands table, listed in section 2.1-7 of the MICS User Guide, 
+â€¢ Antenna Type table, listed in section 2.1-8 of the MICS User Guide, 
+â€¢ Antenna Cross-Reference Type table, listed in section 2.1-7 of the M!CS User Guide, 
+â€¢ Antenna Manufacturer codes table, listed in section 2.1-8 of the MICS User Guide. 
 Winter 1995 B.l -12 TSIP Reference Manual 
 
 
@@ -16312,7 +16312,7 @@ file is presented on Table B.2.3.
 
 Table B.2.3 
 
-• 
+â€¢ 
 
 * BAND SDF NAME: b05 
 * 
@@ -16347,13 +16347,13 @@ B.2.4 Band Subsidiary Table Bandword
 To speed up TS!P culling process, the band codes within a station are mapped into "bandwords". The bandword is 
 a 32 bit word where the band codes are mapped as follows: 
 
-• take each distinct band code at a particular sit, 
-• divide 2147483648 by 2", where n is equal to the band position number minus I, 
-• sum the results. 
+â€¢ take each distinct band code at a particular sit, 
+â€¢ divide 2147483648 by 2", where n is equal to the band position number minus I, 
+â€¢ sum the results. 
 For example, station ABC123 has two bands: 11 and 12. 
 Its bandword would be: 
 
-2147483648/(zC11•
+2147483648/(zC11â€¢
 1l) 2097152 
 
 2 ]47483648/(2('2-l)) =+ 1048576 
@@ -16496,7 +16496,7 @@ Blank
 Latest date this record was updated. System generated 
 record. 
 
-Time of latest update. System generated 1·ccord. 
+Time of latest update. System generated 1Â·ccord. 
 
 Data points record, 
 
@@ -16542,7 +16542,7 @@ B.3.1 Description
 CTX are tables of interference objective curves stored according to lhe desired and interfering traffic types and the 
 receiving equipment type. Interference requirements are stored in the sd_ctx and sd_ctxd tables. 
 
-B.3.2 Analo° CTX's 
+B.3.2 AnaloÂ° CTX's 
 Curves have been drawn to represent the interference objective as a function of the frequency separation between 
 the desired and interfering carriers for selected long haul and short haul cases. AII other cases of interference are 
 cross-referenced to one of these curves or use a worst case default curve. Note 'that in band analysis CTX curves are 
@@ -16700,7 +16700,7 @@ CTX
 CROSSREFERENCE 
 
 
-PER CHANNEL · MULTICHANNEL TYPE REFERENCE 
+PER CHANNEL Â· MULTICHANNEL TYPE REFERENCE 
 RMS (kHz) PEAK (MHz) 
 
 60 50 A0060 CCIR/SAFE 
@@ -17065,7 +17065,7 @@ The threshold degradation for long haul is chosen as C/I = 50 dB and the spuriou
 
 MHz are 20 and O dB respectively below the worst requriement, but attenuated by the filter clrnracteristics. 
 
-For the default curves, filters are assumed to cut off at fc ± 1.5 (f + 2fB), where fc is the desired carrier frequency, f 
+For the default curves, filters are assumed to cut off at fc Â± 1.5 (f + 2fB), where fc is the desired carrier frequency, f 
 is the system peak deviation and fB is the top baseband frequency. A roll-off of 25 dB per octave was used. The 
 
 specific curves use filter clrnracteristics based on the supplier's infornrntion. 
@@ -17080,28 +17080,28 @@ Rules for assigning digital equipment and traffic:
 \. any digital equipment should be assigned a unique equipment code along with a unique traffic code ("matched" 
 equipement and traffic code pairs); 
 
-• if a new digital equipment is cross-referenced to an existing specific equipment type, the traffic type associated 
+â€¢ if a new digital equipment is cross-referenced to an existing specific equipment type, the traffic type associated 
 to the new equipment should be cross-referenced to the matched traffic type of the specific equipement. 
 0
 
 The following step by step procedure should be followed to assign new digital equipment and traffic codes: 
 
-• assign new equipement code (consult with the FCSA Database Administrator); 
-• assign a unique traffic code (consult with the FCSA DBA); 
-• decide whether a family ofCTX's will be generated (radio system designer decision); 
-• if no CTX's are going to be generated, cross-reference the equipment code and traffic code to an existing 
+â€¢ assign new equipement code (consult with the FCSA Database Administrator); 
+â€¢ assign a unique traffic code (consult with the FCSA DBA); 
+â€¢ decide whether a family ofCTX's will be generated (radio system designer decision); 
+â€¢ if no CTX's are going to be generated, cross-reference the equipment code and traffic code to an existing 
 matched pair (radio system designer decision). Request approval of the cross references from equipment and 
 CTX's coordinators and posting to the subsidiary MDB (FCSA DBA); 
-• if CTX's are going to be generated, decide on family of CTX's (radio system designer decision' should 
+â€¢ if CTX's are going to be generated, decide on family of CTX's (radio system designer decision' should 
 consider all traffic types operating in the same and adjacent bands); 
-• generate the family of CTX's (radio system designer): 
-• request approval of the curves from the CTX's coordinators and posting to the subsidiary database (FCSA 
+â€¢ generate the family of CTX's (radio system designer): 
+â€¢ request approval of the curves from the CTX's coordinators and posting to the subsidiary database (FCSA 
 DBA). 
 Example 
 
-• a set ofCTX curves exists for equipment ABCD carrying traffic 777N ("matched traffic type"); 
-• a user wants to add new equipment WXYZ, carrying traffic 7NNN, to the subsidiary database; 
-• no specific set of CTX's would be prepared for equipment WXYZ, because the user wants to cross-reference it 
+â€¢ a set ofCTX curves exists for equipment ABCD carrying traffic 777N ("matched traffic type"); 
+â€¢ a user wants to add new equipment WXYZ, carrying traffic 7NNN, to the subsidiary database; 
+â€¢ no specific set of CTX's would be prepared for equipment WXYZ, because the user wants to cross-reference it 
 to equipment ABCD. 
 Application of the proposed rules would imply, in this example, that along with cross-referencing equipment 
 WXYZ to ABCD, the user should cross-reference traffic type 7NNN to traffic type 777N. 
@@ -17120,7 +17120,7 @@ objective for a given combination of desired and interfering traffic types, rece
 separation between the desired and interfering carriers. 
 
 The user has the option to specify temporary CTX curves in his/her input for an interference analysis. These 
-objectives are then used in preference to any information stored in the subsidiary tables. For·more details see 
+objectives are then used in preference to any information stored in the subsidiary tables. ForÂ·more details see 
 
 section 4.8. 
 
@@ -17266,14 +17266,14 @@ XTFCJ Cross-reference to TFCJ, if available
 
 EQPR Receive equipment type 
 
-XEQPR Cross-reference to EQPR, if available · 
+XEQPR Cross-reference to EQPR, if available Â· 
 
 DFLT Default (blank) EQPR 
 
 TSIP Reference Manual B.3-9 Winter 1995 
 
 
-ScQuence ·Desired Traffic Interfering Traffic Receive Equipment 
+ScQuence Â·Desired Traffic Interfering Traffic Receive Equipment 
 
 TFCR TFCI EQPR 
 2 TFCR TFCI XEQPR 
@@ -17416,7 +17416,7 @@ CREATED:95-10-05
 Note: The PSD data was trunctated at 4.0 MHz and then extrapolated to 150 dB in the frequency range of 4.1 MHz 
 to 400 MHz. 
 
-Interfering Spectum File Exa·mple 
+Interfering Spectum File ExaÂ·mple 
 
 Winter 1995 B.3 -12 TSIP Reference Manual 
 
@@ -17463,7 +17463,7 @@ Where:
 -NAME2 is the name of the victim radio equipment which is not limited in length or character type. 
 
 -ABW is the Authorized Bandwidth obtained either from the manufacturers specifications or the Department of 
-Communications Standard Radio System Plan for the band and bit rate chosen. · 
+Communications Standard Radio System Plan for the band and bit rate chosen. Â· 
 
 -NF is the Noise Figure of the radio obtained from the manufactuers specifications sheet. 
 
@@ -17489,7 +17489,7 @@ NOTE]: If a user chooses a default selectivity, the program will still look for 
 the selectivity data at frequencies above those provided by the supplier must be truncated to 110 dB 
 starting 0.1 MHz above the highest frequency given in the specifications to a frequency of400 MHz. 
 
-Winter 1995 B.3 -14 TSIP Reference Manual • 
+Winter 1995 B.3 -14 TSIP Reference Manual â€¢ 
 
 
 NOTE2: The program uses A 170 and Al 140 as default values to approximate the If and Image response of the 
@@ -17599,7 +17599,7 @@ file is as follows:
 
 HEADING 
 
-N, Fmin,· Fmax .1Frms/ 
+N, Fmin,Â· Fmax .1Frms/ 
 
 COMMENTS 
 
@@ -17619,7 +17619,7 @@ File: a1200.int
 
 INTERFERE: ANALOG SPECTRUM FOR 1200 VF CHANNELS: Al200 
 1200, 0.3, 5.772, 0.140/ 
-CREA TED ON 95-1 o·-06 
+CREA TED ON 95-1 oÂ·-06 
 
 Victim Receiver Filter File 
 
@@ -17853,7 +17853,7 @@ I= -62.89
 I= -61.63 
 I= -60.9 I 
 
-· I= -GO. 12 
+Â· I= -GO. 12 
 I= -59.25 
 I= -58.30 
 I= -57.23 
@@ -17995,14 +17995,14 @@ B.5.3 Design Philosophv
 B.5.3.1 General 
 A general characteristic of frequency plans is that they consist of maximally four sets of frequencies, two 
 
-sets GO (transmit) and· two sets RETURN (receive) in which the two GO sets are orthogonally polarized 
+sets GO (transmit) andÂ· two sets RETURN (receive) in which the two GO sets are orthogonally polarized 
 with each other as are the two RETURN sets. One GO set is matched with one RETURN set which may or 
 may not be copolar. Therefore it follows that each frequency plan may contain up to four sets of 
 frequencies numbered one to four. For some plans some sets may be empty. 
 
 The assignment of frequencies for any plan to the four sets is based on the following logic: 
 
-I.· Set one is the set of frequencies which includes the lowest frequency in the plan. 
+I.Â· Set one is the set of frequencies which includes the lowest frequency in the plan. 
 
 2. Let us take Set one as a reference and call it a GO set. Then Set two is the complimentary 
 RETURN set, if is exists, which may be copolar or crosspolar with Set one. Set three, if it 
@@ -18216,7 +18216,7 @@ I. ABW = Authorized Bandwidth of digital victim (MHz).
 
 6. FMINI = Minimum baseband frequency of victim (MHz). 
 7. FMIN2 = Minimum baseband frequency of interferer (MHz). 
-8. DSIG2 = RMS per channel frequency deviation of interferer (MHz).· 
+8. DSIG2 = RMS per channel frequency deviation of interferer (MHz).Â· 
 9. XIF = Intermediate frequency (MHz). 
 10. FM!= Maximum baseband frequency of analog interferer (MHz). 
 11. FM2 = Maximum baseband frequency ofanalog interferer (MHz). 
@@ -18241,7 +18241,7 @@ The nme ctxdta.exe is an acronym for CTX Digital To Analog. It is the name given
 which computes C/I and I values for DIA interference cases, This program generates a list of C/I and I values 
 versus frequency separation (between victim and interferer carrier frequencies) for specific victim/interferer traffic 
 pairs spanning a frequency range from 0 to 300 MHz. The frequency is indexed using .a logarithmic scale for the 
-same reason as that stated in Section ·2.1. Note that in both programs, frequency separations are chosen by the 
+same reason as that stated in Section Â·2.1. Note that in both programs, frequency separations are chosen by the 
 program within the range 0 to 300 MHz. This was determined as a practical range but software changes could 
 permit values outside this range for special situations. Associated with this program are two input files; an analogue 
 victim data file and a digital interferer spectrum file to define the characteristics. 
@@ -18253,7 +18253,7 @@ Interference calculations dealing with analog victims use both the long and shor
 the analogue into Analogue program, These are discussed herein. 
 
 2.4.1 Long Haul Interference Criterion 
-For long haul D/A CTX curves, the program· calculates the C/I (dB) level which would generate 4 dBrnc0 of noise 
+For long haul D/A CTX curves, the programÂ· calculates the C/I (dB) level which would generate 4 dBrnc0 of noise 
 into the worst baseband voice channel of the victim receiver for a given carrier separation, Meanwhile, it ensures 
 that the threshold effect requirement is not exceeded and assumes a spurious response characteristic of the victim, 
 
@@ -18262,13 +18262,13 @@ For short haul D/A curves, the program calculates the absolute interference leve
 noise degradation in the worst (usually top) voice channel for specific carrier separations. This means that the 
 interference noise will be 5.87 dB below the top thermal noise. Meanwhile, it ensures that the threshold degradation 
 
-criterion is not violated and assumes a spurious response characteristic for the victim·. 
+criterion is not violated and assumes a spurious response characteristic for the victimÂ·. 
 
 TSIP Reference Manual B.3.1 -3 Spring 1996 
 
 
 2.5 BASIS OF CTX CALCULATIONS -DIGITAL VICTIMS 
-When ·a digital victim is involved, the program calculates the absolute interference power level (I dBm) that causes 
+When Â·a digital victim is involved, the program calculates the absolute interference power level (I dBm) that causes 
 I dB degradation of the victim's threshold for specific frequency separations. It also calculates the spurious 
 response at first and second IF frequencies in accordance with the information provided by the user, or by assuming 
 the pre-determined default values in the program. The I dB threshold degradation criterion is provisional and will 
@@ -18404,7 +18404,7 @@ ANALOO CEFALLTAlIER
 
 0
 
-"C • 
+"C â€¢ 
 
 
 ' ' 
@@ -18425,7 +18425,7 @@ C:
 
 0
 
-·--30 ' ' 
+Â·--30 ' ' 
 
 ----L. _______ .J ________ L _____ --_.!_ ________1_______ _ 
 I I I I I 
@@ -18443,13 +18443,13 @@ I I I I I
 
 -50 
 
-I• I I l l
+Iâ€¢ I I l l
 
 Cl)
 
 ...., 
 
--1--------. --------1--------+ --------l--------I----------1 --------1----~. •
+-1--------. --------1--------+ --------l--------I----------1 --------1----~. â€¢
 
 ...., -60 
 
@@ -18512,13 +18512,13 @@ a,)
 
 eJ)= 
 
-·-fa;,,
+Â·-fa;,,
 
 ~ 
 
 Ci 
 
-i• 
+iâ€¢ 
 
 
 I.() 
@@ -18582,7 +18582,7 @@ into Analogue Program (based on analogue parameters).
 
 2.8.1 Range of First and Second IF Responses 
 For IF and Image responses, the main responses from O -0.5 XIF is shifted to IF and 2IF. The responses are 
-truncated beyond ±0.5 XIF. An image of these responses is also created below IF and 2IF (image) to create the 
+truncated beyond Â±0.5 XIF. An image of these responses is also created below IF and 2IF (image) to create the 
 complete IF and image responses. 
 
 2.9 BRICKWALLFILTER 
@@ -18774,7 +18774,7 @@ allowable interference levels involving their products.
 The Susceptibility of CW Interference technique measures the CW interference level, at some frequency separation 
 from the victim centre frequency, that degrades the victim receiver's threshold by some value, usually !db. The 
 method uses a pseudorandom bit stream/BER test set pair to determine the threshold without interfeerence at some 
-BER (normally 1 o·'). 
+BER (normally 1 oÂ·'). 
 
 The desired signal level is increased, usually by I dB, and the interference level is increased until the BER returns to 
 thevalue used to measure threshold. This procedure is repeated for various interering frequencyies. Figure 3.1.3.l 
@@ -18788,7 +18788,7 @@ Note also that a coaxial system with transitions to waveguide could be used if p
 inserted to avoid overdriving the receiver. 
 3. Perform recommended aliganment procedures on tranmitter and receiver to optimize threshold. Measure 
 threshold, without interference, by turning off the interference source and increasing attenuationof test 
-transmitter until BER of 104 is indicated on BER test set. Record threshold for BER of 1o·' on test form 
+transmitter until BER of 104 is indicated on BER test set. Record threshold for BER of 1oÂ·' on test form 
 (attachment 1). 
 4. Increase desired signal level 1 db above recorded threshold value by removing 1dB of attenuation. 
 Note: This adjustment is the most critical adjustment of the procedure. Where reading accuracy of the 
@@ -18810,7 +18810,7 @@ The test frequencies should include:
 
 a) co-channel (zero separation) 
 b) at least 6 equally spaced frequencies wihtin the assigned bandwidth of the victim. 
-c) at least 10 frequencies at separation between 0.SBW and 2 IF (Image), on each side of victim's· 
+c) at least 10 frequencies at separation between 0.SBW and 2 IF (Image), on each side of victim'sÂ· 
 assignment. This should include critical frequecies such as inflection points, filter poles and 
 transition to areas of sepp slope. 
 d) Separation equal to 2IF (Image) and IF frequencies. 
@@ -18861,7 +18861,7 @@ BER
 I I 
 I 
 I 
-I '· 
+I 'Â· 
 
 Signal 
 
@@ -18920,7 +18920,7 @@ Pattern
 Generator 
 Notes: 
 
-I) Test transmiter and receiver·must be a matching pair and must include RF filters. 
+I) Test transmiter and receiverÂ·must be a matching pair and must include RF filters. 
 2) The microwave generator requires frequency and level calibration and stability. External calibration is to be used if not built into the generator. Maximum 
 level from the generator should be at least+ IO dBm. 
 3) BER testing can be done at any bit rate available on the radio under test. 
@@ -19265,7 +19265,7 @@ ALPHAI(l,47)
 (PWRRATIO). 
 
 D TO A (DORA=0) 
-·READN2, 
+Â·READN2, 
 FMIN2,FM2,DSIG2 
 CALC.NLR2 
 SIGMA2,M2 
@@ -19311,7 +19311,7 @@ Z2(1,36)
 TSIP Reference Manual B.3.1 -29 Spring 1996 
 
 
-isyna\~~11@sJ<-:;;;.:Is<>r::w ;rrxs:;.,q:;;;c;:><Y:::;x:r;;r~:rA,«49::,m;~11,wAJtl)Tf?.R~!ef#\iiit;;;; 
+isyna\~~11@sJ<-:;;;.:Is<>r::w ;rrxs:;.,q:;;;c;:><Y:::;x:r;;r~:rA,Â«49::,m;~11,wAJtl)Tf?.R~!ef#\iiit;;;; 
 
 DOATD 
 
@@ -19613,7 +19613,7 @@ TSIP Reference Manual
 B.3.1 -35 Spring 1996 
 
 
-·o 
+Â·o 
 
 FS= 0.00 I= -101.75 
 FS= 0.10 I= -101.75 
@@ -19873,7 +19873,7 @@ Culling Parameters
 
 SA 
 
-E I DELETE ALL 2 INSERT CULL 3 DEL CULL 4 SHELL °K . 
+E I DELETE ALL 2 INSERT CULL 3 DEL CULL 4 SHELL Â°K . 
 
 Figure B.4. IA 
 
@@ -20030,7 +20030,7 @@ First-intermediate frequency, in MHz.
 No value entered in this example. 
 6 
 
-Receiver threshold, in dBm, for given BER (e.g. Io· ) 
+Receiver threshold, in dBm, for given BER (e.g. IoÂ· ) 
 MICS frequency band Code. 
 Latest date this record was updated, system input. 
 Time oflatcst modification. 
@@ -20141,13 +20141,13 @@ CI I . = 50 -FILTER RESPONSE
 mm 
 
 (3) SPURIOUS RESPONSE CRITERION 
-This criterion deals with the spurious responses at±140 MHz and ±70 MHz. The spurious responses at±140 MHz 
+This criterion deals with the spurious responses atÂ±140 MHz and Â±70 MHz. The spurious responses atÂ±140 MHz 
 
-are equal to the responses at± f01 MHz but attenuated by an assumed 60 dB rejection. The spurious responses at 
+are equal to the responses atÂ± f01 MHz but attenuated by an assumed 60 dB rejection. The spurious responses at 
 
-±70 MHz are conservatively estimated to be 20 dB down from the response at MHz in addition to the filter 
+Â±70 MHz are conservatively estimated to be 20 dB down from the response at MHz in addition to the filter 
 
-± f111 
+Â± f111 
 
 attenuation. 
 
@@ -20165,7 +20165,7 @@ This criterion is calculated by using the equation
 
 ) 
 
-I= NPR -139.1 + NF -20log(L>cr I fm ) + BWR • NLR 
+I= NPR -139.1 + NF -20log(L>cr I fm ) + BWR â€¢ NLR 
 
 o I 
 -20 log [ Hp(fml)]-5.87 (dbm) 
@@ -20180,9 +20180,9 @@ L>cr = RMS Per channel frequency deviation
 
 f011 
 
-Hp (f ) = Relative deviation of fm I due to pre• emphasis
+Hp (f ) = Relative deviation of fm I due to preâ€¢ emphasis
 
-ml · 
+ml Â· 
 BWR Bandwidth ratio, previously defined 
 
 NLR Noise load ratio, previously defined 
@@ -20268,7 +20268,7 @@ FS: 0.01
 
 CT0l= 66.22 I= -105.95 
 FS: .4 
-·CT0I= 66.20 I= -105.92 
+Â·CT0I= 66.20 I= -105.92 
 FS: .5 
 CT0I= 66.79 I= -106.51 
 FS: .8 
@@ -20316,7 +20316,7 @@ TSIP Reference Manual B.3.2-5 \Vinter 1995
 To perform the data adjustment in obtaining a long, haul specific CTX curve, the JF and RF filter characteristics 
 must be available. With the specific combined IF and RF filter characteristics and the default filter characteristics, 
 
-the specific C/1 value can be obtained by applying the equation · 
+the specific C/1 value can be obtained by applying the equation Â· 
 
 C/Is = C!Id +(Zd-Zs) 
 where C / I = Specific carrier to interference ratio 
@@ -20351,7 +20351,7 @@ Figure 2 shows the combined IF and RF response of the Farinon FM2-2300 system wi
 corresponding default filter assumed by MICS. Figure 3 shows the long haul default and specific CTX curves for 
 960/960 victim/interference pair. 
 
-Winter · B.3.2 -6 TSIP Reference Manual 
+Winter Â· B.3.2 -6 TSIP Reference Manual 
 
 
 L V J 
@@ -20361,7 +20361,7 @@ L V J
 
 I I' j ' I
 
-I 11 I I I I I i I I I i I I i I I · 
+I 11 I I I I I i I I I i I I i I I Â· 
 
 I I 
 
@@ -20387,12 +20387,12 @@ Attenuation {dB)
 . . 
 ------
 I 
-----·
-·.. 
--·---
+----Â·
+Â·.. 
+-Â·---
 . 
 . 
--··-
+-Â·Â·-
 ----
 ---
 -
@@ -20401,7 +20401,7 @@ I
 .\ I I I'-IJif -',,_::: 
 ~,1l~-\ 
 j-_\ ' .,\ ' 
-I : ••••.. 
+I : â€¢â€¢â€¢â€¢.. 
 40 
 50 
 60 
@@ -20509,7 +20509,7 @@ I _I I
 I-
 ----
 I 
-I·I 
+IÂ·I 
 LI 
 I 
 I ' I 
@@ -20524,7 +20524,7 @@ JI
 I 
 -
 0.01 0.1 1 10 100 1000 
-Frecµincy Sep:tration 
+FrecÂµincy Sep:tration 
 
 Default Curve 
 Specific curve Farinon FMZ-2300 
@@ -20562,10 +20562,10 @@ I
 I 
 I 
 ,_ -~ -
-----·--·----
+----Â·--Â·----
 --
 I I I 
-·1 I 7 
+Â·1 I 7 
 -
 OI(~ 
 00 
@@ -20574,7 +20574,7 @@ OI(~
 --
 ---------I' 
 :--j\, ---. 
--·.. 
+-Â·.. 
 -. 
 -
 -I 
@@ -20594,7 +20594,7 @@ I
 
 I 
 
-0 I ·r 
+0 I Â·r 
 
 ' 
 
@@ -20604,7 +20604,7 @@ Fnq.m;y~cn
 Default Curve 
 RQCO 
 
-TSIP Reference Manual B.3.2 -9 ·winter 1995 
+TSIP Reference Manual B.3.2 -9 Â·winter 1995 
 
 
 3.2 Short Haul Specific Curves 
@@ -20689,7 +20689,7 @@ A name or symbol used in place of another name, symbol, or
 group of symbols; usually shorter or easier to use then what it 
 represents. For example, the full pathname for a user's public 
 directory would be: /prod/users/user/public. The alias for that 
-directory is $userp. User can define their own aliases in .cslu·c 
+directory is $userp. User can define their own aliases in .csluÂ·c 
 file. 
 Format: alias symbol command 
 Example: alias dir ls -II more 
@@ -20707,7 +20707,7 @@ ES antenna gain towards the horizon.
 i -1 Fall 1997 
 
 
-. : ·TSIP:,R.eferen~e Manna! & mies User Guide I 
+. : Â·TSIP:,R.eferen~e Manna! & mies User Guide I 
 
 apropos 
 
@@ -20779,10 +20779,10 @@ Parts of each mies menu screen. User types a menu alias to move
 quickly to that particular screen. See User Guide Appendix E 
 Menu Aliases. 
 
-Fall 1997 · i -2 Glossary 
+Fall 1997 Â· i -2 Glossary 
 
 
--.t'$I):>,Refefence Marilial'&·mics User Gujd.e· · .. Glossary 
+-.t'$I):>,Refefence Marilial'&Â·mics User Gujd.eÂ· Â· .. Glossary 
 
 COORDCHK 
 
@@ -20849,7 +20849,7 @@ i -3 Fall 1997
 Glossary 
 
 
-' ·•· TSIPReference)\1anual.& mies User Guide I 
+' Â·â€¢Â· TSIPReference)\1anual.& mies User Guide I 
 
 Current Directory 
 
@@ -20921,7 +20921,7 @@ Microwave radio earth stations.
 Fall 1997 i -4 Glossary 
 
 
-ItS~p·~eference J\1a~~al & mi~s User Guide. Glossary 
+ItS~pÂ·~eference J\1a~~al & mi~s User Guide. Glossary 
 
 Execution Report 
 
@@ -20999,7 +20999,7 @@ user's pdf list. Currently not used.
 i -5 Fall 1997 
 
 
-· , ''.TSII' Reference·l\'.la.imal & mies User Guide • 
+Â· , ''.TSII' ReferenceÂ·l\'.la.imal & mies User Guide â€¢ 
 
 Ingres 
 Interferer 
@@ -21066,7 +21066,7 @@ be passed to analysis.
 Fall 1997 i -6 Glossary 
 
 
-ITSIP Reference Manual & ~ics User Guide Glossary · 
+ITSIP Reference Manual & ~ics User Guide Glossary Â· 
 
 Margin. 
 MDB 
@@ -21141,7 +21141,7 @@ Usually the user who creates a file.
 i -7 Fall 1997 
 
 
-·. T8IP Refereiil\e Manual &mies User Guide 
+Â·. T8IP Refereiil\e Manual &mies User Guide 
 
 PASIVE Auxiliary program calculates the powers in a connection between 
 two active stations involving from I to 4 intermediate passive 
@@ -21237,7 +21237,7 @@ directory.
 User Defined Reports. A user can run all reports that have been 
 written with the Ingres Report Writer. 
 
-Plotting Reports are four types: ITU contour, · CTX Table, 
+Plotting Reports are four types: ITU contour, Â· CTX Table, 
 Antenna Gain/ Angle and ES Antenna Horizon/Elevation Gain. 
 The programs produce plot data which can than be downloaded 
 and imported into a plotter package. 
@@ -21647,7 +21647,7 @@ directories. For example as input to or
 output from auxiliary calculation programs. 
 
 
-"'*"·•ck 
+"'*"Â·â€¢ck 
 
 ~.(Up 
 
@@ -21843,7 +21843,7 @@ PROTECT MODE PROCEDURE Page 1 of2
 PROTECT MODE 
 
 . 
--~•ck 
+-~â€¢ck 
 
 ,:V:tt Up
 
@@ -22362,7 +22362,7 @@ the environment which are located within
 these circles will be selected for further 
 analysis. 
 
-In the angular section of± 5° from the 
+In the angular section ofÂ± 5Â° from the 
 
 main beam ofthe antenna, TSIP doubles 
 
@@ -22576,7 +22576,7 @@ see section 4.2.1.
 
 
 . 
-111'.°.'.k Ji'IiILHjpme
+111'.Â°.'.k Ji'IiILHjpme
 .. 
 
 , .....j~P 
@@ -22998,7 +22998,7 @@ file://C:\My Documents\My Webs\tsip doc\ts_ts__plan_chan_anal.htm
 2/16/2001 
 
 
-TS-TS Plan and Channe~llmii»'clllatlUltions Interfering Receive Page 5 of5 
+TS-TS Plan and Channe~llmiiÂ»'clllatlUltions Interfering Receive Page 5 of5 
 
 Traffic Traffic Equipment 
 
@@ -23492,7 +23492,7 @@ file://C:\My Documents\My Webs\tsip doc\ant_ cons _tsts _ anal.htm 2/16/2001
 
 . ' 
 
-!•·Df· .,,., 1\U' xl'i '.. ·_';•, .,,:,•, 
+!â€¢Â·DfÂ· .,,., 1\U' xl'i '.. Â·_';â€¢, .,,:,â€¢, 
 
 . \,-',;') . ; ' 
 
